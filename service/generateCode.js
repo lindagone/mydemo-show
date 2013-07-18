@@ -20,12 +20,6 @@ var newDir = function (className, cb){
  * 将template中的所有文件复制到./dist/className文件夹中
  * **/
 var cpFiles = function(className, cb){
-	child = exec('cp -a ./template/java ./dist/' + className,
-		function (error, stdout, stderr) {
-		    if (error !== null) {
-		      console.log('exec error: ' + error);
-	    	}
-	    });
 	child = exec('cp -a ./template/webapp ./dist/' + className,
 		function (error, stdout, stderr) {
 		    if (error !== null) {

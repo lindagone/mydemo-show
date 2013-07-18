@@ -90,6 +90,7 @@ require.config({
         'async': jsRoot + 'lib/async',
         'keymaster': jsRoot + 'lib/keymaster',
         'hbs': jsRoot + 'lib/resthub/require-handlebars',
+        'und': jsRoot + 'lib/resthub/require-underscoreTemplate',
         'moment': jsRoot + 'lib/moment',
 		'json2': jsRoot + 'lib/json2',
         'console': jsRoot + 'lib/resthub/console',

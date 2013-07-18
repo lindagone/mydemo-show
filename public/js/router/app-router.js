@@ -1,5 +1,5 @@
-define([ 'backbone', 'view/codeGena/codeGenerator-View','view/mail/mail-base-view','view/notice/notice-index-view','backbone-queryparams'], function(
-		Backbone, codeGeneratorView, MailBaseView, NoticeIndexView) {
+define([ 'backbone','view/codeGena/codeGenerator-View','view/mail/mail-base-view','view/notice/notice-index-view','backbone-queryparams'], function(
+		Backbone, CodeGeneratorView, MailBaseView, NoticeIndexView) {
 	var options = {
 		routes : {
 			'': 'anything',
@@ -14,7 +14,8 @@ define([ 'backbone', 'view/codeGena/codeGenerator-View','view/mail/mail-base-vie
 	      console.info("anything is " + whatever);
 	    },
 	    generateCode : function(){
-			new codeGeneratorView({root:"#bodyContainer"});
+	    	console.log("into gena code");
+			new CodeGeneratorView({root:"#bodyContainer"});
 		},
 		mailbox : function(){
 			console.log("into mailbox page");

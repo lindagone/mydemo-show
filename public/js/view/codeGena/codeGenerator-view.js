@@ -66,7 +66,7 @@ function(_, Resthub, template) {
 			}
 			
 			$("span.myClass").html(JSON.stringify(_mymodel));
-			
+
 			$.ajax({
 				type:"POST",
 				url:"/api/code",
