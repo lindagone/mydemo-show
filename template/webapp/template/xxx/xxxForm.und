@@ -1,11 +1,11 @@
 <div class="social-box">
 	<div class="header">
 		<% if(type == "add"){ %>
-		<h4>添加{{xxx}}</h4>
+		<h4>添加{{className}}</h4>
 		<% }else if(type == "edit"){ %>
-		<h4>编辑{{xxx}}</h4>
+		<h4>编辑{{className}}</h4>
 		<% }else if(type == "show"){ %>
-		<h4>查看{{xxx}}</h4>
+		<h4>查看{{className}}</h4>
 		<% } %>
 	</div>
 	<div class="body">
@@ -21,7 +21,7 @@
 			</tbody>
 		</table>
 		<% }else{ %>
-		<form action="#" class="form-horizontal {{xxx}}-form">
+		<form action="#" class="form-horizontal {{className}}-form">
 			<div class="control-group">
 				<label class="control-label">{{fieldZh}}</label>
 				<div class="controls">
@@ -32,7 +32,7 @@
 				<button type="button" class="btn btn-primary saveItem">
 					确定
 				</button>
-				<a class="btn btn-danger" href="/{{xxx}}">
+				<a class="btn btn-danger" href="/{{className}}">
 					取消
 				</a>
 			</div>

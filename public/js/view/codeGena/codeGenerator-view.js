@@ -71,8 +71,9 @@ function(_, Resthub, template) {
 				type:"POST",
 				url:"/api/code",
 				data:_mymodel
-			}).done(function(){
+			}).done(function(data){
 				console.log("back is ok...");
+				$("#downloadpackage").attr("href","/download" + data)[0].click();
 			}).fail(function(){
 				console.log("something is wrong at node...");
 			});

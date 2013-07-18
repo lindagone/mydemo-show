@@ -1,4 +1,4 @@
-define(['underscore', 'resthub', 'und!template/{{xxx}}/{{xxx}}List'], 
+define(['underscore', 'resthub', 'und!template/{{className}}/{{className}}List'], 
 function(_, Resthub, template) {
 	var ListView = Resthub.View.extend({
 		
@@ -14,7 +14,7 @@ function(_, Resthub, template) {
 			var _self = this;
 			_self.page = (!!options.page)? options.page : 1;
 			$.ajax({
-				url : window.contextBase + "/api/{{xxx}}",
+				url : window.contextBase + "/api/{{className}}",
 				data : {page:_self.page}
 			}).done(function(data){
 				_self.render(data);
@@ -25,7 +25,7 @@ function(_, Resthub, template) {
 			var _self = this;
 			if (data.content){//pagination goes here
 				if (data.content.length===0 && data.totalPages!==0){
-					window.approuter.navigate("/{{xxx}}?page=" + data.totalPages,{trigger:"true"});
+					window.approuter.navigate("/{{className}}?page=" + data.totalPages,{trigger:"true"});
 				}else{
 					if(data.totalPages===0){
 						var options = {
@@ -34,7 +34,7 @@ function(_, Resthub, template) {
 					            size: "small",
 					            alignment: "right",
 					            onPageClicked: function(e,originalEvent,type,page){
-					            	var _url = "/{{xxx}}?page=" + page;
+					            	var _url = "/{{className}}?page=" + page;
 					            	window.approuter.navigate(_url,{trigger:"true"});
 					            }
 						};
@@ -45,18 +45,18 @@ function(_, Resthub, template) {
 					            size: "small",
 					            alignment: "right",
 					            onPageClicked: function(e,originalEvent,type,page){
-					            	var _url = "/{{xxx}}?page=" + page;
+					            	var _url = "/{{className}}?page=" + page;
 					            	window.approuter.navigate(_url,{trigger:"true"});
 					            }
 						};
 					}
-					_self.$el.html(_self.template({{{xxx}}s:data.content}));
+					_self.$el.html(_self.template({{className}}s:data.content}));
 					_.defer(function() {
 				        _self.$el.find('.pagination').bootstrapPaginator(options);
 				     });
 				}
 			}else{// no pagination
-				_self.$el.html(_self.template({{{xxx}}s:data}));
+				_self.$el.html(_self.template({{className}}s:data}));
 			}
 
 			return _self;
@@ -64,11 +64,11 @@ function(_, Resthub, template) {
 		
 		deleteItem : function(e){
 			var _self = this;
-			var {{xxx}}Id = $(e.target).closest('td').attr('data-{{xxx}}Id');
+			var {{className}}Id = $(e.target).closest('td').attr('data-{{className}}Id');
 			
 			$.ajax({
 				type:"DELETE",
-				url:window.contextBase + "/api/{{xxx}}/"+ {{xxx}}Id
+				url:window.contextBase + "/api/{{className}}/"+ {{className}}Id
 			}).done(function(){
 				window.globalNotify({
 					type:"success",

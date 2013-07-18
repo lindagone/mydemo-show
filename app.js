@@ -12,15 +12,21 @@ app.use(express.methodOverride());
 app.use(express.static(__dirname + '/public'));
 
 app.post("/api/code", function(req, res){
-	console.log(req.body);
 	var codeHandler = require("./service/generateCode").generating;
-	codeHandler(req.body, function(){
-		res.send("OK");
+	codeHandler(req.body, function(zipPath){
+		//res.sendfile(app.get("root") + zipPath);
+		//console.log(app.get("root") + "/public/img/logo.png");
+		res.send(zipPath);
 	});	
 });
+app.get("/download/*",function(req,res){
+	
+	res.sendfile(app.get("root") + "/" + req.params[0]);
+})
 app.get('/*', function(req, res){
 	res.sendfile(app.get("root") + "/public/index.html");
 });
+
 
 http.createServer(app).listen(app.get('port'), function() {
 	console.log("listening: " + app.get('port'));

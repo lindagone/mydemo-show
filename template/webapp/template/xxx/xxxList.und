@@ -1,13 +1,13 @@
 <div class="social-box">
 	<div class="header">
 		<div class="tools">
-			<a class="btn btn-success" href="/{{xxx}}/new"><i class="icon-pencil"></i> 添加</a>
+			<a class="btn btn-success" href="/{{className}}/new"><i class="icon-pencil"></i> 添加</a>
 		</div>
 	</div>
 	<div class="body">
 		<div class="row-fluid">
 			<div class="span12">
-				<table class="table table-bordered table-condensed" id="{{xxx}}List">
+				<table class="table table-bordered table-condensed" id="{{className}}List">
 					<thead>
 						<tr>
 							{{#fields}}
@@ -17,14 +17,14 @@
 						</tr>
 					</thead>
 					<tbody>
-						<% _.each({{xxx}}s, function({{xxx}}){%>
+						<% _.each({{className}}s, function({{className}}){%>
 						<tr>
 							{{#fields}}
-							<td><%= {{xxx}}.{{fieldName}} %></td>
+							<td><%= {{../className}}.{{fieldName}} %></td>
 							{{/fields}}
-							<td  data-{{xxx}}Id=<%= {{xxx}}.id %> >
-								<a href="/{{xxx}}/<%= {{xxx}}.id %>" class="btn btn-small">查看</a>
-								<a href="/{{xxx}}/<%= {{xxx}}.id %>/edit" class="btn btn-small">修改</a>
+							<td  data-{{className}}Id=<%= {{className}}.id %> >
+								<a href="/{{className}}/<%= {{className}}.id %>" class="btn btn-small">查看</a>
+								<a href="/{{className}}/<%= {{className}}.id %>/edit" class="btn btn-small">修改</a>
 								<button class="btn btn-small btn-delete">删除</button></td>
 						</tr>
 						<% }) %>

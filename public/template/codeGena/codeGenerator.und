@@ -40,6 +40,9 @@
 				<button type="button" class="btn btn-primary generateCode">
 					generate code
 				</button>
+				<div style="display:none">
+					<a data-bypass href=""  id="downloadpackage">download</a>
+				</div>
 			</div>
 		</form>
 		<span class="myClass"></span>

@@ -1,0 +1,42 @@
+<div class="social-box">
+	<div class="header">
+		<% if(type == "add"){ %>
+		<h4>添加test</h4>
+		<% }else if(type == "edit"){ %>
+		<h4>编辑test</h4>
+		<% }else if(type == "show"){ %>
+		<h4>查看test</h4>
+		<% } %>
+	</div>
+	<div class="body">
+		<% if(type == "show"){ %>
+		<table class="table table-bordered table-condensed">
+			<tbody>
+				
+				<tr>
+					<td width="40%">名称</td>
+					<td width="60%"><%= model.name %></td>
+				</tr>
+				
+			</tbody>
+		</table>
+		<% }else{ %>
+		<form action="#" class="form-horizontal test-form">
+			<div class="control-group">
+				<label class="control-label"></label>
+				<div class="controls">
+					<input type="text" name="name" class="grd-white" value="<%= model. %>" required/>
+				</div>
+			</div>
+			<div class="form-actions">
+				<button type="button" class="btn btn-primary saveItem">
+					确定
+				</button>
+				<a class="btn btn-danger" href="/test">
+					取消
+				</a>
+			</div>
+		</form>
+		<% } %>
+	</div>
+</div>

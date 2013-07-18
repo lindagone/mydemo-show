@@ -1,5 +1,5 @@
-define(['underscore', 'resthub', 'und!template/{{xxx}}/{{xxx}}Form', 'model/{{xxx}}'], 
-function(_, Resthub, template, {{Xxx}}) {
+define(['underscore', 'resthub', 'und!template/{{className}}/{{className}}Form', 'model/{{className}}'], 
+function(_, Resthub, template, {{ClassName}}) {
 	var FormView = Resthub.View.extend({
 		template : template,
 
@@ -13,14 +13,14 @@ function(_, Resthub, template, {{Xxx}}) {
 			//id 不存在，add
 			if(!options.id){
 				_self.type = "add";
-				_self.model = new {{Xxx}}();
+				_self.model = new {{ClassName}}();
 				_self.render();
 			}
 			
 			//id 存在，type不存在，edit
 			if(!!options.id && !options.type){
 				_self.type = "edit"; 
-				_self.model = new {{Xxx}}({id:options.id});
+				_self.model = new {{ClassName}}({id:options.id});
 				_self.model.fetch().done(function(){
 					_self.render();
 				});
@@ -29,7 +29,7 @@ function(_, Resthub, template, {{Xxx}}) {
 			//id 存在，type存在，show
 			if(!!options.id && !!options.type){
 				_self.type = "show"; 
-				_self.model = new {{Xxx}}({id:options.id});
+				_self.model = new {{ClassName}}({id:options.id});
 				_self.model.fetch().done(function(){
 					_self.render();
 				});
@@ -47,7 +47,7 @@ function(_, Resthub, template, {{Xxx}}) {
 			_self.$el.html(_self.template(options));
 
 			_.defer(function(){
-				_self.$el.find("form.{{xxx}}-form").validate();
+				_self.$el.find("form.{{className}}-form").validate();
 			});
 			return _self;
 		},
@@ -55,7 +55,7 @@ function(_, Resthub, template, {{Xxx}}) {
 		saveItem : function(e){
 			var _self = this;
 			
-			if(!_self.$el.find("form.{{xxx}}-form").valid()) return;
+			if(!_self.$el.find("form.{{className}}-form").valid()) return;
 				
 		 	_self.populateModel();
 	    	_self.model.save()
@@ -64,7 +64,7 @@ function(_, Resthub, template, {{Xxx}}) {
 						type:"success",
 						htmlContent:"保存成功！",
 						cb:function(){
-//							window.approuter.navigate(window.contextBase + "/api/{{xxx}}/");
+//							window.approuter.navigate(window.contextBase + "/api/{{className}}/");
 						}
 					});
 	    		});

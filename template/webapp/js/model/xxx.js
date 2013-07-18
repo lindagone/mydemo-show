@@ -1,9 +1,9 @@
 define(['backbone'], function(Backbone) {
-    var {{Xxx}} = Backbone.Model.extend({
-    	urlRoot: window.contextBase + '/api/{{xxx}}',
+    var {{ClassName}} = Backbone.Model.extend({
+    	urlRoot: window.contextBase + '/api/{{className}}',
     	clear: function() {
             this.destroy();
         }
     });
-    return {{Xxx}};
+    return {{ClassName}};
 });
