@@ -1,0 +1,74 @@
+<div class="row-fluid hero-unit">
+	<form action="#" class="form-horizontal">
+		<div class="span6">
+			<div class="control-group">
+				<label class="control-label">用户名</label>
+				<div class="controls">
+					<input type="text" name="username" value="<%=model.username%>" />
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label">工号/学号</label>
+				<div class="controls">
+					<input type="text" name="uniqueNo" value="<%=model.uniqueNo%>" />
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label">全称</label>
+				<div class="controls">
+					<input type="text" name="fullname" value="<%=model.fullname%>" />
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label">常用邮箱</label>
+				<div class="controls">
+					<input type="text" name="email" value="<%=model.email%>" />
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label">身份类型</label>
+				<div class="controls">
+					<select name="category" data-placeholder="请选择身份"
+						tabindex="1">
+						<option value="">请选择</option>
+						<option value="1" <% if (model.category == 1) { %> selected <%}%>>教师</option>
+						<option value="0" <% if (model.category == 0) { %> selected <%}%>>学生</option>
+						<option value="3" <% if (model.category == 3) { %> selected <%}%>>家长</option>
+					</select>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label">性別</label>
+				<div class="controls">
+					<label class="radio"> 
+					<input type="radio" name="gender" value="1" <% if (model.gender == 1) { %> checked <%}%>>男
+					</label> 
+					<label class="radio"> 
+					<input type="radio" name="gender" value="0" <% if (model.gender == 0) { %> checked <%}%>>女
+					</label> 
+					<label class="radio"> 
+					<input type="radio" name="gender" value="-1" <% if (model.gender == -1) { %> checked <%}%>>不详
+					</label>
+				</div>
+			</div>
+			<div class="form-actions" style="background-color: rgb(255, 255, 255);border-top:0px">
+			
+				<button type="button" class="btn btn-primary btn-user-save">保存</button>
+				<button type="button" class="btn btn-danger btn-user-cancel">取消</button>
+			
+			</div>
+		</div>
+		<div class="span6">
+			<div class="control-group">
+				<label class="control-label">分配角色</label>
+				<div class="controls">
+					<select name="roles" class="span12" multiple="multiple" data-placeholder="选择角色" size="10" tabindex="1">
+					<% _.each(roleOptions, function(role) { %>
+						<option value="<%=role.id%>" <% var contain = _.find(model.roles, function(r){ return r.id == role.id; });if ( contain ) { %> selected <%}%> ><%=role.roleName %> </option>
+					<% }) %>
+					</select>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>

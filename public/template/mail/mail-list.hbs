@@ -1,0 +1,110 @@
+<!-- BEGIN HEADER INBOX -->
+<div class="header">
+	<!-- BEGIN EMAIL ACTIONS -->
+	{{#ifequals boxType "trash"}}
+	<a href="#deleteMail" class="btn btn-small btn-success"> 还原邮件</a>
+	{{/ifequals}}
+	
+	{{#ifequals boxType "notTrash"}}
+	<a href="#deleteMail" class="btn btn-small"> 删除邮件</a>
+	{{/ifequals}}
+	<a href="#deleteMailAll" class="btn btn-small btn-danger"> 彻底删除</a>
+	<div class="btn-group">
+	    <button class="btn dropdown-toggle btn-small" data-toggle="dropdown"> 标记为<span class="caret"></span></button>
+	    <ul class="dropdown-menu">
+		    <li><a href="">已读</a></li>
+		    <li><a href="">未读</a></li>
+	    </ul>
+    </div>
+    <div class="btn-group mailFilter">
+	    <button class="btn dropdown-toggle btn-small" data-toggle="dropdown"> 查看: <span class="mailStatus">全部邮件</span><span class="caret"></span></button>
+	    <ul class="dropdown-menu">
+		    <li><a href="#allMail">全部邮件</a></li>
+			<li><a href="#alreadyReadMail">已读邮件</a></li>
+			<li><a href="#notReadMail">未读邮件</a></li>
+			<li><a href="#hasAttachment">有附件</a></li>
+			<li><a href="#notHasAttachment">无附件</a></li>
+			<li><a href="#normalMail">普通邮件</a></li>
+			<li><a href="#receiptMail">回执邮件</a></li>
+	    </ul>
+    </div>
+	<!-- END EMAIL ACTIONS -->
+
+	<!-- BEGIN MINI-PAGINATION -->
+	<div class="tools">
+		<span>1/3 页 共 36封</span>
+		<div class="btn-group">
+			<a href="#" class="btn btn-small"><i class="icon-chevron-left"></i></a>
+			<a href="#" class="btn btn-small"><i class="icon-chevron-right"></i></a>
+		</div>
+		<div class="btn-group mailPageFilter">
+		    <button class="btn dropdown-toggle btn-small" data-toggle="dropdown"> 每页 <span class="pageStatus">10封</span> <span class="caret"></span></button>
+		    <ul class="dropdown-menu">
+			    <li><a href="#10">10封</a></li>
+			    <li><a href="#20">20封</a></li>
+			    <li><a href="#30">30封</a></li>
+			    <li><a href="#40">40封</a></li>
+			    <li><a href="#50">50封</a></li>
+		    </ul>
+	 	</div>
+	</div>
+	<!-- END MINI-PAGINATION -->
+</div>
+<!-- END HEADER INBOX -->
+<div class="body">
+	<!-- BEGIN EMAILS LIST -->
+	<table class="table table-hover ">
+		<thead>
+			<tr>
+				<th><input type="checkbox"></th>
+				<th><i class="icon-ok-sign"></i> <i class="icon-envelope"></i> <i class="icon-paper-clip"></i></th>
+				<th>发件人</th>
+				<th>主题</th>
+				<th>发件日期</th>
+				<th>邮件大小</th>
+			</tr>
+		</thead>
+		<tbody>
+			<!-- BEGIN EMAIL INFO -->
+			<tr>
+				<td><input type="checkbox"></td>
+				<td><i class="icon-ok-sign"></i> <i class="icon-envelope" style="visibility:hidden"></i> <i class="icon-paper-clip" style="visibility:hidden"></i></td>
+				<td>白雪飞</td>
+				<td><a href="" class="readMail">阅读回执：测试邮箱</a></td>
+				<td>2013-06-12 09:01:01</td>
+				<td>500.00 B</td>
+			</tr>
+			
+			<tr>
+				<td><input type="checkbox"></td>
+				<td><i class="icon-ok-sign" style="visibility:hidden"></i> <i class="icon-envelope"></i> <i class="icon-paper-clip"></i></td>
+				<td><strong>安妮</strong></td>
+				<td><strong><a href="" class="readMail">测试邮箱</a></strong></td>
+				<td><strong>2013-06-07 09:01:01</strong></td>
+				<td><strong>500.00 B</strong></td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- END EMAILS LIST -->
+	<!-- BEGIN PAGINATION -->
+	<div class="pagination pagination-right pagination-small">
+		<ul>
+			<li class="disabled">
+				<a href="#">&laquo;</a>
+			</li>
+			<li class="active">
+				<a href="#">1</a>
+			</li>
+			<li>
+				<a href="#">2</a>
+			</li>
+			<li>
+				<a href="#">3</a>
+			</li>
+			<li>
+				<a href="#">&raquo;</a>
+			</li>
+		</ul>
+	</div>
+	<!-- END PAGINATION -->
+</div>

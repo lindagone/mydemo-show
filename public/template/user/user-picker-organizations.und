@@ -1,0 +1,30 @@
+
+
+<div class="modal-body">
+  <div class="social-box">
+	<div class="body">
+		<ul id="myTab" class="nav nav-tabs">
+			<li class="active"><a href="#user-teacher" data-toggle="tab">
+					教师</a></li>
+			<li><a href="#user-student" data-toggle="tab"> 学生</a></li>
+			<li><a href="#user-parents" data-toggle="tab"> 家长</a></li>
+			<li><a href="#user-others" data-toggle="tab"> 其它</a></li>
+		</ul>
+		<div id="myTabContent" class="tab-content">
+			<div class="tab-pane fade in active" id="user-teacher">teacher
+			</div>
+			<div class="tab-pane fade" id="user-student">
+				<div class="zTreeDemoBackground left">
+					<ul id="student-tree" class="ztree"
+						style="width: 230px; overflow: auto;">
+
+					</ul>
+				</div>
+			</div>
+
+			<div class="tab-pane fade" id="user-parents">parents</div>
+			<div class="tab-pane fade" id="user-others">others</div>
+		</div>
+	</div>
+</div>
+</div>

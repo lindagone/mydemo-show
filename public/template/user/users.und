@@ -1,0 +1,116 @@
+<!-- <div class="row-fluid">
+	<div class="span12">
+		<div id="users_container" class="users-management">
+			<div class="header">
+				<input type="button" class="btn btn-primary btn-user-add"
+					value="添加用户" />
+			</div>
+			<div class="body demo_jui">
+				BEGIN TABLE DATA
+				<table cellpadding="0" cellspacing="0" border="0" class="display" id="jqueryui-table">
+					<thead>
+						<tr>
+							<th width="100px">用户名</th>
+							<th width="200px">全称</th>
+							<th width="50px">性别</th>
+							<th width="200px">工号/学号</th>
+							<th width="300px">邮箱</th>
+							<th width="50px">身份</th>
+							<th width="100px">编辑</th>
+							<th width="300px">操作</th>
+						</tr>
+					</thead>
+					<tbody>
+					<%  var genderMap = {'1':'男', '0':'女', '-1':'不详'};
+					    var categoryMap = {0:'学生', 1:'教师', 3:'家长', 5:'管理员', 9:'其他'};
+					    _.each(users, function(user){%>
+						<tr data-user-id="<%=user.id%>">
+							<td><%=user.username%></td>
+							<td><%=user.fullname%></td>
+							<td><%=genderMap[user.gender]%></td>
+							<td><%=user.uniqueNo%></td>
+							<td><%=user.email%></td>
+							<td><%=categoryMap[user.category]%></td>
+							<td>
+								<a data-bypass href="#" class="btn btn-user-edit"><i class="icon-edit"></i>修改</a>
+							</td>
+							<td>
+								<% if (user.active) {%>
+								<a data-bypass href="#" class="btn btn-user-delete"><i class="icon-trash"></i>删除</a>
+								<% } else { %>
+								<a data-bypass href="#" class="btn btn-user-restore"><i class="icon-ok-circle"></i>恢复</a>
+								<% } %>
+
+								<% if (user.locked) {%>
+								<a data-bypass href="#" class="btn btn-user-unlock"><i class="icon-unlock"></i>解锁</a>
+								<% } else { %>
+								<a data-bypass href="#" class="btn btn-user-lock"><i class="icon-lock"></i>锁定</a>
+								<% } %>
+
+								<% if (user.settings && user.settings.noCmt) {%>
+								<a data-bypass href="#" class="btn btn-user-cmt-rel"><i class="icon-volume-up"></i>解禁评论</a>
+								<% } else { %>
+								<a data-bypass href="#" class="btn btn-user-cmt-fbd"><i class="icon-minus-sign"></i>禁止评论</a>
+								<% } %>
+								
+								<% if (user.settings && user.settings.noNtc) {%>
+								<a data-bypass href="#" class="btn btn-user-ntc-rel"><i class="icon-volume-up"></i>解禁通知</a>
+								<% } else { %>
+								<a data-bypass href="#" class="btn btn-user-ntc-fbd"><i class="icon-minus-sign"></i>禁发通知</a>
+								<% } %>
+							</td>
+						</tr>
+					<%})%>
+					</tbody>
+				</table>
+				END TABLE DATA
+			</div>
+			END TABLE BODY
+		</div>
+	</div>
+</div>
+
+<div id="user_container"></div>
+
+<div id="user_role_container"></div>
+
+ -->
+
+
+<div id="users_container" class="users-management" >	
+<div class="header">
+				<input type="button" class="btn btn-primary btn-user-add"
+					value="添加用户" />
+			</div>
+				<table id="example" cellpadding="0" cellspacing="0" border="0" class="table table-hover table-striped table-bordered">
+					<thead>
+                        <th width="10%">用户名</th>
+							<th width="15%">全称</th>
+							<th width="5%">性别</th>
+							<th width="10%">工号/学号</th>
+							<th width="15%">邮箱</th>
+							<th width="10%">身份</th>
+							<th width="10%">编辑</th>
+							<th width="25%">操作</th>
+					</thead>
+                    <tbody role="alert" aria-live="polite" aria-relevant="all">
+					</tbody>
+				</table>			
+			</div>
+<div id="user_container" ></div>
+
+<div id="user_role_container" ></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

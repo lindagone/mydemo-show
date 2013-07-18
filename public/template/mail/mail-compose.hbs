@@ -1,0 +1,64 @@
+<!-- BEGIN HEADER INBOX -->
+<div class="header">
+	<a href="#" class="btn btn-success btn-small"><i class="icon-ok"></i> 发送</a>
+	<a href="#" class="btn btn-small"><i class="icon-file-alt"></i> <strong>保存到草稿箱</strong></a>
+	<a href="#" class="btn btn-small"><i class="icon-remove-sign"></i> <strong>取消</strong></a>
+</div>
+<!-- END HEADER INBOX -->
+<div class="body">
+
+	<form id="mail-compose-form" class="form-horizontal">
+		<div class="control-group inputMailFrom" style="display: none;">
+			<label class="control-label">发件人</label>
+			<div class="controls">
+				<input type="text" value="" name="mailFrom" placeholder="请选择发件人" >
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label">收件人</label>
+			<div class="controls">
+				<input type="text" value="" name="mailTo" placeholder="请选择收件人">
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label">主题</label>
+			<div class="controls">
+				<input type="text" class="input-block-level" name="inputSubject">
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label">
+				<button type="button" class="btn btn-small">
+					添加附件
+				</button></label>
+		</div>
+		<div class="control-group">
+			<div class="">
+				<textarea id="compose-textarea" class="input-block-level">
+	                    <br>
+	                    <br>
+	                    <br>
+	                    --- --- ---
+	                    <blockquote>
+	                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+	                      <br>
+	                      <small>Someone famous <cite title="Source Title">Source Title</cite></small>
+	                    </blockquote>
+	                  </textarea>
+			</div>
+		</div>
+	</form>
+
+</div>
+<div class="footer">
+	<div class="controls">
+		<label class="checkbox">
+			<input type="checkbox" value="" checked>
+			阅读回执</label>
+	</div>
+	<a href="#" class="btn btn-success btn-small"><i class="icon-ok"></i> 发送</a>
+	<a href="#" class="btn btn-small"><i class="icon-file-alt"></i> <strong>保存到草稿箱</strong></a>
+	<a href="#" class="btn btn-small"><i class="icon-remove-sign"></i> <strong>取消</strong></a>
+</div>
+	<div id="selectMailToTest" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
+<!-- <div id="selectMailToTest"></div> -->

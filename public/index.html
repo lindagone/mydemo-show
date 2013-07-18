@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<title>产品demo演示|博校文达</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<script>
+			window.staticFileServer = 'http://localhost:3001';
+			window.jsRoot = staticFileServer + "/js/";
+			window.imgRoot = staticFileServer + "/img/";
+			window.contextBase = window.location.pathname.split("/")[1] + "/";
+			window.loadCss=function(urls) {
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0 ; i < urls.length; i++){
+					var link = document.createElement("link");
+					link.type = "text/css";
+					link.rel = "stylesheet";
+					link.href = window.staticFileServer + urls[i];
+					head.appendChild(link);
+				}
+			}
+			loadCss([
+			"/css/twitter-bootstrap/bootstrap.css?v1.3.1",
+			"/css/social.css?v1.3.1",
+			"/css/social-jquery-ui-1.10.0.custom.css?v1.3.1",
+			"/css/social.plugins.css?v1.3.1",
+			"/css/font-awesome.css?v1.3.1",
+			"/css/themes/social.theme-blue.css?v1.3.1",
+			"/css/twitter-bootstrap/bootstrap-responsive.css?v1.3.1",
+			//"/js/lib/jquery/datatables/media/css/jquery.dataTables.css?v1.3.1",
+			"/js/lib/jquery/datatables/media/DT_bootstrap.css?v1.3.1"
+			])
+		</script>
+		<style>
+			.wraper #main {
+				margin-top: 40px;
+			}
+			#main {
+				margin-left: 0;
+			}
+			.social-navbar {
+				left: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wraper">
+			<header>
+				<nav class="navbar navbar-blue navbar-fixed-top social-navbar">
+					<div class="navbar-inner">
+						<div class="container-fluid">
+							<a class="brand" href="#"> 博校文达数字校园平台</a>
+							<div id="menuContainer">
+								<ul class="nav visible-desktop">
+									<li class="dropdown bxnavbar">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown"> 工具类 <b class="caret"></b></a>
+										<ul class="dropdown-menu">
+											<li>
+												<a href="mailbox.html"><span> 邮件 </span></a>
+											</li>
+											<li>
+												<a href="notice.html"><span> 通知 </span></a>
+											</li>
+											<li>
+												<a href=""><span> 工资 </span></a>
+											</li>
+										</ul>
+									</li>
+									<li class="dropdown bxnavbar">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown"> 管理类 <b class="caret"></b></a>
+										<ul class="dropdown-menu">
+											<li>
+												<a href=""><span> 人员管理 </span></a>
+											</li>
+										</ul>
+									</li>
+									<li><a href=""> 应用类 </a></li>
+									<li><a href="generateCode.html"><span> 生成 </span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<div id="main">
+				<div class="container-fluid">
+					<div id="bodyContainer" class="row-fluid">
+						<!-- Content page here -->
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Le javascript -->
+		<script data-main="js/main" src="js/lib/require.js"></script>
+	</body>
+
+</html>

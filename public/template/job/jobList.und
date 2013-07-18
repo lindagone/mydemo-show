@@ -1,0 +1,51 @@
+<div class="social-box">
+	<div class="header">
+		<div class="tools">
+			<a class="btn btn-success" href="/job/new"><i class="icon-pencil"></i> 添加</a>
+		</div>
+	</div>
+	<div class="body">
+		<div class="row-fluid">
+			<div class="span12">
+				<table class="table table-bordered table-condensed" id="jobList">
+					<thead>
+						<tr>
+							<th>序号</th>
+							<th>名称</th>
+							<th>开始命令</th>
+							<th>结束命令</th>
+							<th>备注</th>
+							<th>类型</th>
+							<th>状态</th>
+							<th>间隔时间</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<% _.each(jobs, function(job){%>
+						<tr>
+							<td><%= job.id %></td>
+							<td><%= job.name %></td>
+							<td><%= job.startcmd %></td>
+							<td><%= job.stopcmd %></td>
+							<td><%= job.description %></td>
+							<td><%= job.type %></td>
+							<td><%= job.status %></td>
+							<td><%= job.crontime %></td>
+							<td  data-jobId=<%= job.id %> >
+								<a href="/job/<%= job.id %>" class="btn btn-small">查看</a>
+								<a href="/job/<%= job.id %>/edit" class="btn btn-small">修改</a>
+								<button class="btn btn-small btn-delete">删除</button></td>
+						</tr>
+						<% }) %>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span12">
+				<div class="pagination"></div>
+			</div>
+		</div>
+	</div>
+</div>

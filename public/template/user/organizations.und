@@ -1,0 +1,18 @@
+<div id="organizations_container" class="organizations-management">
+	<table id="organization_table" cellpadding="0" cellspacing="0" border="0" class="table table-hover table-striped table-bordered">
+		<thead>
+			<th width="30%">机构名称</th>
+			<th width="30%">父机构名称</th>
+			<th width="40%">操作</th>
+		</thead>
+		<tbody>
+			<%_.each(organizations, function(organization){%>
+			<tr>
+				<td><%=organization.name%></td>
+				<td><%=organization.parent==null?'无':organization.parent.name%></td>
+				<td>编辑</td>
+			</tr>
+			<%})%>
+		</tbody>
+	</table>
+</div> 

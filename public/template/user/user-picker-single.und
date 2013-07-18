@@ -1,0 +1,28 @@
+<div class="row-fluid">
+	<!-- 快速导航+搜索 -->
+	<div class="span6">
+	
+		<!-- 搜索 -->
+		<div class="control-group" style="margin-left: 10px; margin-top: 10px">
+			<div class="controls">
+				<div class="input-append">
+					<input class="span10" id="seach_user" type="text"
+						placeholder="请输入关键字">
+					<button class="btn btn-user-search" type="button">
+						<i class="icon-search"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- 快速导航树 -->
+		<div id="organizationlist">
+		</div>
+	</div>
+	<!-- 用户列表 -->
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	<div class="span6">
+		<div id="userlist">
+		</div>
+	</div>
+</div>
+
