@@ -1,12 +1,18 @@
-define([ 'backbone','view/codeGena/codeGenerator-view','view/test/testList-view','view/mail/mail-base-view','view/notice/notice-index-view','backbone-queryparams'], function(
-		Backbone, CodeGeneratorView, TestView, MailBaseView, NoticeIndexView) {
+define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/mail/mail-base-view', 'view/notice/notice-index-view',
+		'view/salary/mysalary-view', 'view/salary/salary-manage-view', 'view/salary/salary-accountmanage-view', 'view/salary/salary-overview-view', 
+		'backbone-queryparams'], function(
+		Backbone, CodeGeneratorView, MailBaseView, NoticeIndexView,
+		MysalaryView, SalaryManageView, AccountManageView, SalaryOverview) {
 	var options = {
 		routes : {
 			'': 'anything',
-			'generateCode.html':'generateCode',
-			'test.html':'test',
-			'mailbox.html': 'mailbox',
-			'notice.html':'notice',
+			'generateCode.html'     : 'generateCode',
+			'mailbox.html'          : 'mailbox',
+			'notice.html'           : 'notice',
+			'mysalary.html'         : 'mysalary',
+			'salarymanager.html'	: 'salarymanager',
+			'accountmanager.html'   : 'accountmanager',
+			'salaryoverview.html' 	: 'salaryoverview',
       		'*anything': 'anything'
 		},
 	
@@ -18,10 +24,6 @@ define([ 'backbone','view/codeGena/codeGenerator-view','view/test/testList-view'
 	    	console.log("into gena code");
 			new CodeGeneratorView({root:"#bodyContainer"});
 		},
-		test : function(){
-			console.log("into test");
-			new TestView({root:"#bodyContainer"});
-		},
 		mailbox : function(){
 			console.log("into mailbox page");
 			new MailBaseView({root : $('#bodyContainer')});
@@ -29,6 +31,22 @@ define([ 'backbone','view/codeGena/codeGenerator-view','view/test/testList-view'
 		notice : function() {
 			console.log("into notice page");
 			new NoticeIndexView({root : $('#bodyContainer')});
+		},
+		mysalary : function(){
+			console.log("into mysalary page");
+			new MysalaryView({root : $('#bodyContainer')});
+		},
+		salarymanager : function(){
+			console.log("into salarymanager page");
+			new SalaryManageView({root : $('#bodyContainer')});
+		},
+		accountmanager : function(){
+			console.log("into accountmanager page");
+			new AccountManageView({root : $('#bodyContainer')});
+		},
+		salaryoverview : function(){
+			console.log("into salaryoverview page");
+			new SalaryOverview({root : $('#bodyContainer')});
 		}
 	};
 

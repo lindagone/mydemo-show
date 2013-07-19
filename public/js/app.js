@@ -65,27 +65,9 @@ define(['router/app-router', 'underscore', 'jquery','bootstrap','json2','jquery-
     	  ajaxcounter--;
 	  });
 	  
-      /**
-       * 全局的错误提示样式函数
-       * **/
-      window.globalNotify = function(opts){
-    	  var icons = {
-    			  success: 'picon picon-32 picon-security-high',
-    			  fail: 'picon picon-32 picon-security-low',
-    			  def: 'picon picon-32 picon-security-medium'
-    		};
-    	   
-    	  var defaultInfo = {
-    		        title: "提示",
-    		        text: "输入错误。",
-    		        addclass: "custom",
-    		        icon: icons[opts.type || "def"],
-    		        cornerclass: "",
-    		        width: "20%"
-    		    };
-    		   
-    	  $.pnotify(_.extend(defaultInfo, opts));
-      };
+      $(window).resize( function(){
+      	$("a.brand span").text("w:" + $(window).width() + " ; h:" + $(window).height() )
+      });
     })
 
     // window.currentUser = new User();

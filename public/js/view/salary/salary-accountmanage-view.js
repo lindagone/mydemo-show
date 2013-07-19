@@ -29,15 +29,19 @@ function(_, Backbone, Resthub, baseTmpl){
 	addAccount : function(){
 		var _self = this;
 		
+		_self.$el.find("button.newaccount").hide();
 		_self.$el.find("div.list").hide();
 		_self.$el.find("div.addnew").show();
+		_self.$el.find(".accountName").html("新建套账");
 	},
 	
 	returnList : function(){
 		var _self = this;
-		
+
 		_self.$el.find("div.addnew").hide();
 		_self.$el.find("div.list").show();
+		_self.$el.find("button.newaccount").show();
+		_self.$el.find(".accountName").html("套账管理");
 	}
 	
   });

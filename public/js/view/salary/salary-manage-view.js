@@ -9,6 +9,7 @@ function(_, Backbone, Resthub, baseTmpl,SalaryMaintainItemView,SalaryItemInitial
     template: baseTmpl,
     
     events: {
+    	'click .selectAccount a' : 'selectAccount',
     	'click  #showOrg' : 'showeditSalaryMain' 	
     },
     
@@ -24,9 +25,9 @@ function(_, Backbone, Resthub, baseTmpl,SalaryMaintainItemView,SalaryItemInitial
 		_self.$el.html(_self.template());
 		//加载tab选项内容
 		new SalaryMaintainItemView({root:$('#editSalaryMain'),parent:this});
-		new SalaryItemInitializeView({root:$('#itemInitialize')});
-		new SalaryFinanceInitializeView({root:$('#financialCode')});
-		new SalaryItemTypeView({root:$('#typeInitialize')});
+		// new SalaryItemInitializeView({root:$('#itemInitialize')});
+		// new SalaryFinanceInitializeView({root:$('#financialCode')});
+		// new SalaryItemTypeView({root:$('#typeInitialize')});
 		
 		return _self;
 	},
@@ -39,6 +40,11 @@ function(_, Backbone, Resthub, baseTmpl,SalaryMaintainItemView,SalaryItemInitial
 	//这个方法的目的是：在单击其它tab项后，返回第一个tab项时，加载初始界面，供演示调用，后期可以考虑废弃
 	showeditSalaryMain:function(){	
 		new SalaryMaintainItemView({root:$('#editSalaryMain'),parent:this});
+	},
+	selectAccount : function(e){
+		var _span = $(e.target).text();
+		console.log(_span);
+		$("span.accountStatus").html(_span);
 	}
 	
   });

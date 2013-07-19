@@ -21,7 +21,7 @@ function(_, Backbone, Resthub, maintainitemTmpl,SalaryListDetailView){
     
     render : function(options) {
     	var _self = this;
-		_self.$el.html(_self.template());			
+		_self.$el.html(_self.template());	
 		return _self;
 	},
 	//点击工资条明细按钮，在父页面加载一个新的view
