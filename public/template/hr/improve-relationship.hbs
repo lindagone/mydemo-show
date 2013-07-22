@@ -1,0 +1,84 @@
+
+<!-- 家庭社会关系 -->
+<div class="row-fluid" id="myrelationship" >
+<div class="row-fluid pull-right">
+    <button type="button" class="btn btn-success">添加</button>
+</div>
+  <table class="table table-condense">
+    <thead>
+     <tr>
+     <th>姓名</th>
+     <th>称呼</th>
+     <th>出生日期</th>
+     <th>政治面貌</th>
+     <th>文化程度</th>
+     <th>工作单位</th>
+     <th>职务</th>
+     <th>功能</th>
+     </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td> <input value="" type="text" class="input-small"/></td>
+       <td> 
+       <select  class="input-small">
+<option value="-1"></option>
+<option value="1">本人</option>
+<option selected="" value="2">户主</option>
+<option value="5">配偶</option>
+<option value="6">夫</option>
+<option value="7">妻</option>
+<option value="8">子</option>
+</select>
+      </td>
+      <td><div id="datetimepicker2" class="input-append date">
+             <input value="" name="birthday" data-format="yyyy-mm-dd" type="text" class="input-small">
+                 <span class="add-on">
+                    <i class="icon-calendar"></i>
+                  </span><span class="text-error">*</span>
+                </div></td>
+      <td><select class="input-small" >
+<option value="-1"></option>
+<option selected="" value="1">少先队</option>
+<option value="2">中国共产主义青年团团员</option>
+<option value="3">中国共产预备党员</option>
+<option value="4">中国共产党员</option>
+
+<option value="14">群众</option>
+</select></td>
+      <td>
+    <select  class="input-small" >
+<option value="-1"></option>
+<option value="1">研究生</option>
+<option value="4">大学本科</option>
+<option value="11">专科毕业</option>
+<option value="20">高中</option>
+<option value="26">初中</option>
+<option value="31">小学</option>
+<option value="36">其他</option>
+</select>
+   </td>
+   <td><input value="" type="text" class="input-small"/></td>
+   <td><input value="" type="text" class="input-small"/></td>
+      <td>
+      <button type="button" class="btn btn-primary">保存</button>
+      <button type="button" class="btn btn-primary">取消</button>
+      </td>
+     </tr>
+     <tr>
+     <td>白雪飞</td>
+      <td>本人</td>
+      <td>2012-07-01</td>
+      <td>共产党员</td>
+      <td>研究所</td>
+       <td>教务处</td>
+        <td>校长</td>
+      <td>
+      <button type="button" class="btn btn-primary">修改</button>
+      <button type="button" class="btn btn-primary">删除</button>
+      </td>
+     </tr>
+    </tbody>
+  </table>
+  
+</div>

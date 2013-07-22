@@ -28,6 +28,7 @@ function(_, Backbone, Resthub, baseTmpl){
 	},
 		
 	showSalaryList : function(){
+		$(".salarySetup").hide();
 		$("#editSalaryMain").hide();
 		$("#importInfo").hide();
 		$("#EditSalaryList").show();
@@ -36,10 +37,12 @@ function(_, Backbone, Resthub, baseTmpl){
 	returnMain : function(){
 		$("#EditSalaryList").hide();
 		$("#importInfo").hide();
+		$(".salarySetup").show();
 		$("#editSalaryMain").show();
 	},
 	
 	importbybatch : function(){
+		$(".salarySetup").hide();
 		$("#EditSalaryList").hide();
 		$("#editSalaryMain").hide();
 		$("#importInfo").show();
