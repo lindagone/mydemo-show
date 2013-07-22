@@ -1,0 +1,504 @@
+<div class="social-box social-bordered">
+	<div class="header">
+		<h4><strong>工资条设置</strong></h4>
+		<div class="tools">
+			<a data-bypass href="salarymanager.html" class="btn btn-success pull-right newaccount"> <i class="icon-share-alt"></i> 返回发布工资 </a>
+		</div>
+	</div>
+	<div class="body">
+		<div class="well text-info">
+			<h5><strong>操作提示:</strong></h5>
+			<p>
+				1. 选择套账。
+			</p>
+			<p>
+				2. 初始化套账。分别对套账的工资条目、财务编号、工资类型进行初始化设置。
+			</p>
+		</div>
+		<div class="row-fluid">
+			<div class="span2">
+				选择套账:
+			</div>
+			<div class="span2">
+				<select class="input-medium">
+					<option>在职教师基本工资</option>
+					<option>临时工基本工资</option>
+					<option>校办企业津贴</option>
+				</select>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="tabbable">
+				<ul class="nav nav-tabs nav-tabs-blue">
+					<li class="active">
+						<a href="#lA" data-toggle="tab"><i class="icon-cog"></i> 工资条目初始化</a>
+					</li>
+					<li>
+						<a href="#lB" data-toggle="tab"><i class="icon-bookmark"></i> 财务编号初始化</a>
+					</li>
+					<li>
+						<a href="#lC" data-toggle="tab"><i class="icon-screenshot"></i> 工资条目类型初始化</a>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="lA">
+						<div class="row-fluid">
+							<div class="span12">
+								<div class="pull-right">
+									<button class="btn btn-small btn-success">
+										<i class="icon-plus"></i> 添加新条目
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<table class="table table-bordered table-condensed">
+								<thead>
+									<tr>
+										<th>序号</th>
+										<th>条目名称</th>
+										<th>启用</th>
+										<th>累加</th>
+										<th>类型</th>
+										<th>备注</th>
+										<th>分类</th>
+										<th>列表中的顺序</th>
+										<th>操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td></td>
+										<td>
+										<input type="text" value="" class="input-medium"/>
+										</td>
+										<td>
+										<input type="checkbox" checked/>
+										</td>
+										<td>
+										<input type="checkbox" />
+										</td>
+										<td>
+										<select style="width:100px">
+											<option>数字</option>
+											<option>文本</option>
+										</select></td>
+										<td>
+										<input type="text" value="" class="input-medium"/>
+										</td>
+										<td>
+										<select style="width:100px">
+											<option>基本工资</option>
+											<option>单价</option>
+											<option>补贴</option>
+										</select></td>
+										<td></td>
+										<td>
+										<button class="btn btn-mini btn-danger">
+											保存
+										</button>
+										<button class="btn btn-mini">
+											取消
+										</button></td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>基本工资</td>
+										<td>是</td>
+										<td>是</td>
+										<td>数字</td>
+										<td></td>
+										<td>基本工资</td>
+										<td>
+											<div class="btn-group">
+												<a data-bypass class="btn btn-small"><i class="icon-arrow-up"></i></a>
+											    <a data-bypass class="btn btn-small"><i class="icon-arrow-down"></i></a>
+											    <a data-bypass class="btn btn-small" data-toggle="popover" data-trigger="click"><i class="icon-arrow-right"></i></a>
+											</div>
+											<div style="display: none;" id="popoverContainer">
+												第 <input type="text" class="input-mini"/> 行
+												<div class="pull-right">
+													<button class="btn btn-mini btn-primary">确定</button>
+													<button class="btn btn-mini btn-primary">关闭</button>													
+												</div>
+											</div>
+										</td>
+										<td>
+										<button class="btn btn-mini">
+											修改
+										</button>
+										<button class="btn btn-mini">
+											删除
+										</button></td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>课时费1</td>
+										<td>-</td>
+										<td>-</td>
+										<td>数字</td>
+										<td></td>
+										<td>单价</td>
+										<td>
+											<div class="btn-group">
+												<a data-bypass class="btn btn-small"><i class="icon-arrow-up"></i></a>
+											    <a data-bypass class="btn btn-small"><i class="icon-arrow-down"></i></a>
+											    <a data-bypass class="btn btn-small" data-toggle="popover" data-trigger="click"><i class="icon-arrow-right"></i></a>
+											</div>
+											<div style="display: none;" id="popoverContainer">
+												第 <input type="text" class="input-mini"/> 行
+												<div class="pull-right">
+													<button class="btn btn-mini btn-primary">确定</button>
+													<button class="btn btn-mini btn-primary">关闭</button>													
+												</div>
+											</div>
+										</td>
+										<td>
+										<button class="btn btn-mini">
+											修改
+										</button>
+										<button class="btn btn-mini">
+											删除
+										</button></td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>发放银行</td>
+										<td>-</td>
+										<td>-</td>
+										<td>文本</td>
+										<td></td>
+										<td>银行账户</td>
+										<td>
+											<div class="btn-group">
+												<a data-bypass class="btn btn-small"><i class="icon-arrow-up"></i></a>
+											    <a data-bypass class="btn btn-small"><i class="icon-arrow-down"></i></a>
+											    <a data-bypass class="btn btn-small" data-toggle="popover" data-trigger="click"><i class="icon-arrow-right"></i></a>
+											</div>
+											<div style="display: none;" id="popoverContainer">
+												第 <input type="text" class="input-mini"/> 行
+												<div class="pull-right">
+													<button class="btn btn-mini btn-primary">确定</button>
+													<button class="btn btn-mini btn-primary">关闭</button>													
+												</div>
+											</div>
+										</td>
+										<td>
+										<button class="btn btn-mini">
+											修改
+										</button>
+										<button class="btn btn-mini">
+											删除
+										</button></td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>
+										<input type="text" value="课时数" class="input-medium"/>
+										</td>
+										<td>
+										<input type="checkbox" checked/>
+										</td>
+										<td>
+										<input type="checkbox" />
+										</td>
+										<td>数字</td>
+										<td>
+										<input type="text" value="补课的课时" class="input-medium"/>
+										</td>
+										<td>
+										<select style="width:100px">
+											<option>基本工资</option>
+											<option>单价</option>
+											<option>补贴</option>
+										</select></td>
+										<td>
+											<div class="btn-group">
+												<a data-bypass class="btn btn-small"><i class="icon-arrow-up"></i></a>
+											    <a data-bypass class="btn btn-small"><i class="icon-arrow-down"></i></a>
+											    <a data-bypass class="btn btn-small" data-toggle="popover" data-trigger="click"><i class="icon-arrow-right"></i></a>
+											</div>
+											<div style="display: none;" id="popoverContainer">
+												第 <input type="text" class="input-mini"/> 行
+												<div class="pull-right">
+													<button class="btn btn-mini btn-primary">确定</button>
+													<button class="btn btn-mini btn-primary">关闭</button>													
+												</div>
+											</div>
+										</td>
+										<td>
+										<button class="btn btn-mini btn-danger">
+											保存
+										</button>
+										<button class="btn btn-mini">
+											取消
+										</button></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="tab-pane" id="lB">
+						<div id="showNumber">
+							<div class="row-fluid">
+								<div class="span12">
+									<div class="pull-right">
+										<button class="btn btn-small btn-primary" data-toggle="modal" data-target="#addPeople">
+											<i class="icon-pencil"></i> 编辑发放人员
+										</button>
+										<button class="btn btn-small btn-primary editPeopleNum">
+											<i class="icon-pencil"></i> 编辑财务编号
+										</button>
+										<button class="btn btn-primary btn-small">
+											<i class=" icon-print"></i> 打印
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="row-fluid">
+								<div class="span12">
+									<table class="table table-bordered table-condensed">
+										<thead>
+											<tr>
+												<th>序号</th>
+												<th>用户编号</th>
+												<th>姓名</th>
+												<th>财务编号</th>
+												<th>操作</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>1002</td>
+												<td>白雪飞</td>
+												<td>530919061X</td>
+												<td><button class="btn btn-mini">
+													删除
+												</button></td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>1003</td>
+												<td>徐华</td>
+												<td>111033354</td>
+												<td><button class="btn btn-mini">
+													删除
+												</button></td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>1004</td>
+												<td>陈寅</td>
+												<td>110223175</td>
+												<td><button class="btn btn-mini">
+													删除
+												</button></td>
+											</tr>
+											<tr>
+												<td>4</td>
+												<td>1006</td>
+												<td>吴云瑟</td>
+												<td>13020088</td>
+												<td><button class="btn btn-mini">
+													删除
+												</button></td>
+											</tr>
+											<tr>
+												<td>5</td>
+												<td>1007</td>
+												<td>白雪华</td>
+												<td>15260119</td>
+												<td><button class="btn btn-mini">
+													删除
+												</button></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="modal hide fade" id="addPeople">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+										&times;
+									</button>
+									<h3>编辑发放人员</h3>
+								</div>
+								<div class="modal-body">
+									<div class="row-fluid">
+										<div class="span12">
+											<div class="input-append date">
+												<input type="text" class="input-medium" placeholder="TODO:选人框" />
+												<span class="add-on"> <i
+													class="icon-group"> </i> </span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<a href="" class="btn btn-primary" data-dismiss="modal" >保存</a>
+									<a href="" class="btn btn-primary" data-dismiss="modal" >关闭</a>
+								</div>
+							</div>
+						</div>
+
+						<div id="editNumber" style="display: none;">
+							<div class="row-fluid">
+								<div class="span12">
+									<div class="pull-right">
+										<button class="btn btn-small">
+											保存
+										</button>
+										<button class="btn btn-small ">
+											批量导入财务编号
+										</button>
+										<button class="btn btn-small">
+											财务号与用户编号相同
+										</button>
+										<button class="btn btn-small returnShowList">
+											取消并返回
+										</button>
+									</div>
+								</div>
+							</div>
+							<table class="table table-bordered table-condensed">
+								<thead>
+									<tr>
+										<th>序号</th>
+										<th>用户编号</th>
+										<th>姓名</th>
+										<th>财务编号</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>1002</td>
+										<td>白雪飞</td>
+										<td>
+										<input type="text"  class="input-medium" value="30919061X" />
+										</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>1003</td>
+										<td>徐华</td>
+										<td>
+										<input type="text" class="input-medium" value="5511033354" />
+										</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>1004</td>
+										<td>陈寅</td>
+										<td>
+										<input type="text" class="input-medium" value="110240575" />
+										</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>1006</td>
+										<td>吴云瑟</td>
+										<td>
+										<input type="text" class="input-medium" value="1302280088" />
+										</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>1007</td>
+										<td>白雪华</td>
+										<td>
+										<input type="text" class="input-medium" value="152601196" />
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="tab-pane" id="lC">
+						<div class="row-fluid">
+							<div class="span12">
+								<div class="pull-right">
+									<button class="btn btn-small btn-success">
+										<i class="icon-plus"></i> 添加新类型
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<table class="table table-hover table-bordered table-condensed">
+								<thead>
+									<tr>
+										<th>序号</th>
+										<th>名称</th>
+										<th>备注</th>
+										<th>操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td></td>
+										<td>
+										<input type="text" value="" class="input-medium"/>
+										</td>
+										<td>
+										<input type="text" value="" class="input-medium"/>
+										</td>
+										<td>
+										<button class="btn btn-mini btn-danger">
+											保存
+										</button>
+										<button class="btn btn-mini">
+											取消
+										</button></td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>基本工资</td>
+										<td>-</td>
+										<td>
+										<button class="btn btn-mini">
+											修改
+										</button>
+										<button class="btn btn-mini">
+											删除
+										</button></td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>
+										<input type="text" value="补贴" class="input-medium"/>
+										</td>
+										<td>
+										<input type="text" value="包含津贴" class="input-medium"/>
+										</td>
+										<td>
+										<button class="btn btn-mini btn-danger">
+											保存
+										</button>
+										<button class="btn btn-mini">
+											取消
+										</button></td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>单价</td>
+										<td>-</td>
+										<td>
+										<button class="btn btn-mini">
+											修改
+										</button>
+										<button class="btn btn-mini">
+											删除
+										</button></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

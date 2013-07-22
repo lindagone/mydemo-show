@@ -1,8 +1,8 @@
 define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/mail/mail-base-view', 'view/notice/notice-index-view',
-		'view/salary/mysalary-view', 'view/salary/salary-manage-view', 'view/salary/salary-accountmanage-view', 'view/salary/salary-overview-view', 
+		'view/salary/mysalary-view', 'view/salary/salary-manage-view', 'view/salary/salary-initialize-view', 'view/salary/salary-accountmanage-view', 'view/salary/salary-overview-view', 
 		'backbone-queryparams'], function(
 		Backbone, CodeGeneratorView, MailBaseView, NoticeIndexView,
-		MysalaryView, SalaryManageView, AccountManageView, SalaryOverview) {
+		MysalaryView, SalaryManageView, SalaryInitView, AccountManageView, SalaryOverview) {
 	var options = {
 		routes : {
 			'': 'anything',
@@ -11,6 +11,7 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/mail/mail-base-vi
 			'notice.html'           : 'notice',
 			'mysalary.html'         : 'mysalary',
 			'salarymanager.html'	: 'salarymanager',
+			'salaryinit.html'       : 'salaryinit',
 			'accountmanager.html'   : 'accountmanager',
 			'salaryoverview.html' 	: 'salaryoverview',
       		'*anything': 'anything'
@@ -39,6 +40,10 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/mail/mail-base-vi
 		salarymanager : function(){
 			console.log("into salarymanager page");
 			new SalaryManageView({root : $('#bodyContainer')});
+		},
+		salaryinit : function(){
+			console.log("into salaryinit page");
+			new SalaryInitView({root : $('#bodyContainer')});
 		},
 		accountmanager : function(){
 			console.log("into accountmanager page");
