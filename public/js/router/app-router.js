@@ -1,12 +1,13 @@
-define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/mail/mail-base-view', 'view/notice/notice-index-view',
+define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGenerator-view', 'view/mail/mail-base-view', 'view/notice/notice-index-view',
 		'view/salary/mysalary-view', 'view/salary/salary-manage-view', 'view/salary/salary-initialize-view', 'view/salary/salary-accountmanage-view', 'view/salary/salary-overview-view', 
 		'backbone-queryparams'], function(
-		Backbone, CodeGeneratorView, MailBaseView, NoticeIndexView,
+		Backbone, CodeGeneratorView, DemoGeneratorView, MailBaseView, NoticeIndexView,
 		MysalaryView, SalaryManageView, SalaryInitView, AccountManageView, SalaryOverview) {
 	var options = {
 		routes : {
 			'': 'anything',
 			'generateCode.html'     : 'generateCode',
+			'generateDemo.html'     : 'generateDemo',
 			'mailbox.html'          : 'mailbox',
 			'notice.html'           : 'notice',
 			'mysalary.html'         : 'mysalary',
@@ -24,6 +25,10 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/mail/mail-base-vi
 	    generateCode : function(){
 	    	console.log("into gena code");
 			new CodeGeneratorView({root:"#bodyContainer"});
+		},
+		generateDemo : function(){
+			console.log("into gena demo");
+			new DemoGeneratorView({root:"#bodyCOntainer"});
 		},
 		mailbox : function(){
 			console.log("into mailbox page");

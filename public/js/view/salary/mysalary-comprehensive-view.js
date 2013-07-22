@@ -9,7 +9,10 @@ function(_, Backbone, Resthub, baseTmpl){
     template: baseTmpl,
     
     events: {
-    	'click .btn-sure':'showResults'
+    	'click .btn-sure':'showResults',
+    	'click .btn-reset':'resetInput',
+    	'click .filterAccount':'filterAccount',
+    	'click .filterOver':'filterOver'
     },
     
     initialize: function(options) {
@@ -32,7 +35,23 @@ function(_, Backbone, Resthub, baseTmpl){
 	},
 	//目前设计查询和查询结果在一个界面中，输入查询条件后，单击确定按钮触发
 	showResults:function(){
-		$('#comprehensiveDetail').show();
+		$('input[name="begintime"]').val("2013-03-01");
+		$('input[name="endtime"]').val("2013-07-20");
+		$('#comprehensiveDetail').slideDown('fast');
+	},
+	
+	resetInput : function(){
+		$('input[name="begintime"]').val("");
+		$('input[name="endtime"]').val("");
+		$('#comprehensiveDetail').slideUp('fast');
+	},
+	
+	filterAccount : function(){
+		$("#accountFilter").slideDown('fast');
+	},
+	
+	filterOver : function(){
+		$("#accountFilter").slideUp('fast');
 	}
 	
 	

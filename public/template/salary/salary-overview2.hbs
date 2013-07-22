@@ -1,0 +1,365 @@
+<div class="social-box social-bordered">
+	<div class="header">
+		<h4><strong>工资决策</strong></h4>
+		<div class="tools">
+			<button class="btn btn-success pull-right" data-toggle="modal" data-target="#selectAccountSet">
+				<i class="icon-cog"></i> 选择套账
+			</button>
+		</div>
+	</div>
+	<div class="modal hide fade" id="selectAccountSet">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+				&times;
+			</button>
+			<h3>选择套账</h3>
+		</div>
+		<div class="modal-body">
+			<div class="row-fluid">
+			<div class="span2">
+				当前套账:
+			</div>
+			<div class="span4">
+				<select class="input-medium">
+					<option>在职教师基本工资</option>
+					<option>临时工基本工资</option>
+					<option>校办企业津贴</option>
+				</select>
+			</div>
+		</div>
+		</div>
+		<div class="modal-footer">
+			<a href="" class="btn btn-primary" data-dismiss="modal" >确定</a>
+			<a href="" class="btn btn-primary" data-dismiss="modal" >取消</a>
+		</div>
+	</div>
+	<div class="body">
+		<div class="row-fluid">
+			<div class="span3">
+				<span class="text-info">当前套账：在职教师基本工资</span>
+			</div>
+		</div>
+
+		<ul id="overviewTab" class="nav nav-tabs nav-tabs-blue">
+			<li class="active">
+				<a href="#statistics" data-toggle="tab"><i
+				class="icon-list-alt"></i> 工资统计</a>
+			</li>
+			<li>
+				<a href="#salaryList" data-toggle="tab"><i
+				class="icon-list"></i> 查看工资条</a>
+			</li>
+		</ul>
+		<div id="overviewTab" class="tab-content">
+			<div class="tab-pane fade in active" id="statistics">
+				<div class="row-fluid">
+					<div class="span6">
+						<!-- FLot example -->
+						<section class="social-box social-bordered">
+							<header class="header">
+								<h4><i class="icon-bar-chart"></i> 请输入统计条件</h4>
+								<div class="tools"></div>
+							</header>
+							<div class="body">
+								<form id="register-form" class="form-horizontal">
+									<fieldset class="span6">
+										<div class="control-group">
+											<label class="control-label">请选择年度：</label>
+											<div class="controls">
+												<select id="title" name="title">
+													<option value="2013">2013</option>
+													<option value="2012">2012</option>
+													<option value="2011">2011</option>
+												</select>
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label">对比项目一：</label>
+											<div class="controls">
+												<select id="title" name="title">
+													<option value="">请选择</option>
+													<option value="1">基本工资</option>
+													<option value="2">住房补贴</option>
+													<option value="3">冬季取暖补贴</option>
+													<option value="4">班主任津贴</option>
+												</select>
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label">对比项目二：</label>
+											<div class="controls">
+												<select id="title" name="title">
+													<option value="">请选择</option>
+													<option value="1">基本工资</option>
+													<option value="2">住房补贴</option>
+													<option value="3">冬季取暖补贴</option>
+													<option value="4">班主任津贴</option>
+												</select>
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label">对比项目三：</label>
+											<div class="controls">
+												<select id="title" name="title">
+													<option value="">请选择</option>
+													<option value="1">基本工资</option>
+													<option value="2">住房补贴</option>
+													<option value="3">冬季取暖补贴</option>
+													<option value="4">班主任津贴</option>
+												</select>
+											</div>
+										</div>
+
+									</fieldset>
+									<div class="clearfix"></div>
+									<div class="form-actions">
+										<button id="submit-button" class="btn btn-primary">
+											确定
+										</button>
+									</div>
+								</form>
+							</div>
+						</section>
+					</div>
+					<div class="span6">
+						<!-- FLot example -->
+						<section class="social-box social-bordered">
+							<header class="header">
+								<h4><i class="icon-bar-chart"></i> 统计结果</h4>
+								<div class="tools"></div>
+							</header>
+							<div class="body">
+								<div class="row-fluid">
+									<div class="span8 offset2">2013年度工资统计图</div>
+								</div>
+								<div id="demo-plot" style="width: 400px; height:300px;"></div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="salaryList">
+				<div id="salaryListShow">
+					<div class="row-fluid">
+						<div class="span12" style="overflow-x: auto;">
+							<div style="min-width: 1000px;">
+								<table class="table table-bordered table-condensed">
+									<thead>
+										<tr>
+											<th>序号</th>
+											<th>年度</th>
+											<th>工资条名称</th>
+											<th>起始时间</th>
+											<th>结束时间</th>
+											<th>发放时间</th>
+											<th>发放人数</th>
+											<th>发布状态</th>
+											<th>备注</th>
+											<th>操作</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>2013年</td>
+											<td>4月工资</td>
+											<td>2013-05-01</td>
+											<td>2013-05-31</td>
+											<td>2013-06-01</td>
+											<td>50</td>
+											<td>未发布</td>
+											<td>5月15日发布</td>
+											<td>
+											<button class="btn btn-mini showSalaryDetail">
+												查看工资条明细
+											</button></td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>2013年</td>
+											<td>5月工资</td>
+											<td>2013-05-01</td>
+											<td>2013-05-31</td>
+											<td>2013-06-01</td>
+											<td>50</td>
+											<td>未发布</td>
+											<td>6月15日发布</td>
+											<td>
+											<button class="btn btn-mini showSalaryDetail">
+												查看工资条明细
+											</button></td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>2013年</td>
+											<td>6月工资</td>
+											<td>2013-04-01</td>
+											<td>2013-04-30</td>
+											<td>2013-05-01</td>
+											<td>50</td>
+											<td>已发布</td>
+											<td>7月15日发布</td>
+											<td>
+											<button class="btn btn-mini showSalaryDetail">
+												查看工资条明细
+											</button></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="salaryDetailShow" style="display: none;">
+					<div class="row-fluid">
+						<div class="span12">
+							<div class="pull-right">
+								<button class="btn btn-mini returnList">
+									返回
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span12" style="overflow-x: auto;">
+							<div style="min-width: 1000px;">
+								<table class="table table-hover table-bordered table-condensed">
+									<thead>
+										<tr>
+											<th>序号</th>
+											<th>财务编号</th>
+											<th>姓名</th>
+											<th>基本工资</th>
+											<th>加班费</th>
+											<th>交通补助</th>
+											<th>岗位工资</th>
+											<th>薪级工资</th>
+											<th>教龄津贴</th>
+											<th>地区补贴</th>
+											<th>岗位津贴</th>
+											<th>骨干教师</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>1005</td>
+											<td>白雪飞</td>
+											<td>5000.00</td>
+											<td>3000.00</td>
+											<td>1000.00</td>
+											<td>1000.00</td>
+											<td>2000.00</td>
+											<td>1000.00</td>
+											<td>600.00</td>
+											<td>1000.00</td>
+											<td>1000.00</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>1006</td>
+											<td>张宏志</td>
+											<td>4000.00</td>
+											<td>1500.00</td>
+											<td>1000.00</td>
+											<td>900.00</td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>1009</td>
+											<td>徐华</td>
+											<td>3000.00</td>
+											<td>2000.00</td>
+											<td>1000.00</td>
+											<td>100.00</td>
+											<td>200.00</td>
+											<td></td>
+											<td></td>
+											<td>300.00</td>
+											<td>1000.00</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>1011</td>
+											<td>祁京生</td>
+											<td>3400.00</td>
+											<td>1200.00</td>
+											<td>1000.00</td>
+											<td>700.00</td>
+											<td>1000.00</td>
+											<td></td>
+											<td>1000.00</td>
+											<td></td>
+											<td>1000.00</td>
+										</tr>
+										<tr>
+											<td>5</td>
+											<td>1013</td>
+											<td>陈寅</td>
+											<td>4500.00</td>
+											<td>2100.00</td>
+											<td></td>
+											<td>2000.00</td>
+											<td>1000.00</td>
+											<td>1000.00</td>
+											<td></td>
+											<td>1000.00</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>6</td>
+											<td>1014</td>
+											<td>孔泉</td>
+											<td>1100.00</td>
+											<td>400.00</td>
+											<td>1000.00</td>
+											<td></td>
+											<td>1000.00</td>
+											<td>300.00</td>
+											<td>1000.00</td>
+											<td>800.00</td>
+											<td>1000.00</td>
+										</tr>
+										<tr>
+											<td>7</td>
+											<td>1016</td>
+											<td>吴云色</td>
+											<td>700.00</td>
+											<td>3000.00</td>
+											<td></td>
+											<td>500.00</td>
+											<td>1000.00</td>
+											<td>1000.00</td>
+											<td>1000.00</td>
+											<td>1000.00</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>8</td>
+											<td>1019</td>
+											<td>王梅</td>
+											<td>1000.00</td>
+											<td>3000.00</td>
+											<td>1000.00</td>
+											<td>1000.00</td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td>1000.00</td>
+											<td>1000.00</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -10,7 +10,8 @@ function(_, Backbone, Resthub, baseTmpl){
     
     events: {
     	'click .editPeopleNum':'editPeopleNum',
-    	'click .returnShowList':'returnShowList'
+    	'click .returnShowList':'returnShowList',
+    	'click .btn-delete':'deleteItem'
     },
     
     initialize: function(options) {
@@ -42,6 +43,10 @@ function(_, Backbone, Resthub, baseTmpl){
 	returnShowList : function(){
 		$("#editNumber").hide();
 		$("#showNumber").show();
+	},
+	
+	deleteItem : function(){
+		alert("项目被引用，不能删除。");
 	}
 	
   });
