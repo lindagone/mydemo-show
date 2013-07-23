@@ -9,8 +9,7 @@ function(_, Backbone, Resthub, baseTmpl){
     template: baseTmpl,
     
     events: {
-    	'click button.newaccount' : 'addAccount',
-    	'click button.save, button.return' : 'returnList'
+    	
     },
     
     initialize: function(options) {
@@ -24,24 +23,6 @@ function(_, Backbone, Resthub, baseTmpl){
 		_self.$el.html(_self.template());
 
 		return _self;
-	},
-	
-	addAccount : function(){
-		var _self = this;
-		
-		_self.$el.find("button.newaccount").hide();
-		_self.$el.find("div.list").hide();
-		_self.$el.find("div.addnew").show();
-		_self.$el.find(".accountName").html("新建套账");
-	},
-	
-	returnList : function(){
-		var _self = this;
-
-		_self.$el.find("div.addnew").hide();
-		_self.$el.find("div.list").show();
-		_self.$el.find("button.newaccount").show();
-		_self.$el.find(".accountName").html("套账管理");
 	}
 	
   });

@@ -51,11 +51,8 @@
 		<div class="row-fluid">
 			<div class="span11">
 				<div class="pull-right">
-					<button class="btn btn-primary btn-small filterAccount">
-						<i class="icon-filter"></i> 筛选工资条(4/5)-方案1
-					</button>
 					<button class="btn btn-primary btn-small" data-toggle="popover" data-trigger="click">
-						<i class="icon-filter"></i> 筛选工资条(4/5)-方案2
+						<i class="icon-filter"></i> 筛选工资条(4/5)
 					</button>
 					<button class="btn btn-primary btn-small">
 						<i class=" icon-print"></i> 打印
@@ -63,43 +60,17 @@
 				</div>
 			</div>
 		</div>
-		<div id="accountFilter" style="display: none;">
-			<div class="row-fluid">
-				<div class="span10 offset1">
-					<div class="form-inline">
-						筛选工资条:
-						<label class="checkbox"><input type="checkbox"> 全选</label>
-				    </div>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span10 offset1">
-					<label class="checkbox"><input type="checkbox" checked> 2013年3月</label>
-				    <label class="checkbox"><input type="checkbox" checked> 2013年4月</label>
-				    <label class="checkbox"><input type="checkbox" checked> 2013年5月</label>
-				    <label class="checkbox"><input type="checkbox" checked> 2013年6月</label>
-				    <label class="checkbox"><input type="checkbox"> 2013年7月</label>
-				    <button class="btn btn-mini btn-primary filterOver pull-right">确定</button>
-				</div>
-			</div>	
-			<hr />		
-		</div>
 		<div id="accountFilter2" style="display: none;">
-			<div class="row-fluid">
-				<div class="span12 form-inline">
-					<label class="checkbox"><input type="checkbox"> 全选</label>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span12 form-inline">
-					<label class="checkbox"><input type="checkbox" checked> 2013年3月</label>
-				    <label class="checkbox"><input type="checkbox" checked> 2013年4月</label>
-				    <label class="checkbox"><input type="checkbox" checked> 2013年5月</label>
-				    <label class="checkbox"><input type="checkbox" checked> 2013年6月</label>
-				    <label class="checkbox"><input type="checkbox"> 2013年7月</label>
-				</div>
-			</div>	
-			<hr />		
+			<div style="min-width:500px;">
+				<label class="checkbox"><input type="checkbox"> 全选</label>
+				<label class="checkbox"><input type="checkbox" checked> 2013年3月</label>
+			    <label class="checkbox"><input type="checkbox" checked> 2013年4月</label>
+			    <label class="checkbox"><input type="checkbox" checked> 2013年5月</label>
+			    <label class="checkbox"><input type="checkbox" checked> 2013年6月</label>
+			    <label class="checkbox"><input type="checkbox"> 2013年7月</label>
+		    </div>
+			<hr />
+			 <button class="btn btn-mini btn-primary pull-right">确定</button>	
 		</div>
 		<div class="row-fluid">
 			<div class="span10 offset1">
@@ -119,69 +90,69 @@
 						<tr>
 							<td>基本工资</td>
 							<td>基本工资</td>
-							<td style="text-align: right;">2,000.00</td>
-							<td style="text-align: right;">2,000.00</td>
-							<td style="text-align: right;"></td>
-							<td style="text-align: right;"></td>
-							<td style="text-align: right;">4,000.00</td>
+							<td class="inRight">2,000.00</td>
+							<td class="inRight">2,000.00</td>
+							<td class="inRight"></td>
+							<td class="inRight"></td>
+							<td class="inRight">4,000.00</td>
 						</tr>
 						<tr>
 							<td rowspan=2>补贴</td>
 							<td>高温补贴</td>
-							<td style="text-align: right;">500.00</td>
-							<td style="text-align: right;">500.00</td>
-							<td style="text-align: right;"></td>
-							<td style="text-align: right;"></td>
-							<td style="text-align: right;">1,000.00</td>
+							<td class="inRight">500.00</td>
+							<td class="inRight">500.00</td>
+							<td class="inRight"></td>
+							<td class="inRight"></td>
+							<td class="inRight">1,000.00</td>
 						</tr>
 						<tr>
 							<td>住房补贴</td>
-							<td style="text-align: right;">200.00</td>
-							<td style="text-align: right;">200.00</td>
-							<td style="text-align: right;">200.00</td>
-							<td style="text-align: right;">200.00</td>
-							<td style="text-align: right;">800.00</td>
+							<td class="inRight">200.00</td>
+							<td class="inRight">200.00</td>
+							<td class="inRight">200.00</td>
+							<td class="inRight">200.00</td>
+							<td class="inRight">800.00</td>
 						</tr>
 						<tr>
 							<td rowspan=2>奖金</td>
 							<td>优秀教师奖励</td>
-							<td style="text-align: right;"></td>
-							<td style="text-align: right;"></td>
-							<td style="text-align: right;">3,000.00</td>
-							<td style="text-align: right;">3,000.00</td>
-							<td style="text-align: right;">6,000.00</td>
+							<td class="inRight"></td>
+							<td class="inRight"></td>
+							<td class="inRight">3,000.00</td>
+							<td class="inRight">3,000.00</td>
+							<td class="inRight">6,000.00</td>
 						</tr>
 						<tr>
 							<td>数字教学评优</td>
-							<td style="text-align: right;"></td>
-							<td style="text-align: right;"></td>
-							<td style="text-align: right;">1,000.00</td>
-							<td style="text-align: right;">1,000.00</td>
-							<td style="text-align: right;">2,000.00</td>
+							<td class="inRight"></td>
+							<td class="inRight"></td>
+							<td class="inRight">1,000.00</td>
+							<td class="inRight">1,000.00</td>
+							<td class="inRight">2,000.00</td>
 						</tr>
 						<tr>
 							<td colspan=2>课时费1</td>
-							<td style="text-align: right;">20.00</td>
-							<td style="text-align: right;">20.00</td>
-							<td style="text-align: right;">20.00</td>
-							<td style="text-align: right;">20.00</td>
-							<td style="text-align: right;"></td>
+							<td class="inRight">20.00</td>
+							<td class="inRight">20.00</td>
+							<td class="inRight">20.00</td>
+							<td class="inRight">20.00</td>
+							<td class="inRight"></td>
 						</tr>
 						<tr>
 							<td colspan=2>课时数</td>
-							<td style="text-align: right;">30</td>
-							<td style="text-align: right;">30</td>
-							<td style="text-align: right;">30</td>
-							<td style="text-align: right;">30</td>
-							<td style="text-align: right;"></td>
+							<td class="inRight">30</td>
+							<td class="inRight">30</td>
+							<td class="inRight">30</td>
+							<td class="inRight">30</td>
+							<td class="inRight"></td>
 						</tr>
 						<tr>
 							<td colspan=2>课时费</td>
-							<td style="text-align: right;">600.00</td>
-							<td style="text-align: right;">600.00</td>
-							<td style="text-align: right;">600.00</td>
-							<td style="text-align: right;">600.00</td>
-							<td style="text-align: right;">2,400.00</td>
+							<td class="inRight">600.00</td>
+							<td class="inRight">600.00</td>
+							<td class="inRight">600.00</td>
+							<td class="inRight">600.00</td>
+							<td class="inRight">2,400.00</td>
 						</tr>
 						<tr>
 							<td colspan=2>发放银行</td>
@@ -189,7 +160,7 @@
 							<td>存入工行账户</td>
 							<td>存入工行账户</td>
 							<td>存入工行账户</td>
-							<td style="text-align: right;"></td>
+							<td class="inRight"></td>
 						</tr>
 					</tbody>
 				</table>

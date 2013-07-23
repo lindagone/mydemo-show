@@ -1,5 +1,5 @@
 // Global settings
-var staticFileServer = 'http://localhost:3001';
+var staticFileServer = '';
 var jsRoot = staticFileServer + "/js/";
 
 window.contextBase = window.location.pathname.split("/")[1] + "/";
