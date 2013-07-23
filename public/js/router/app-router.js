@@ -29,7 +29,7 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
 		},
 		generateDemo : function(){
 			console.log("into gena demo");
-			new DemoGeneratorView({root:"#bodyCOntainer"});
+			new DemoGeneratorView({root:"#bodyContainer"});
 		},
 		mailbox : function(){
 			console.log("into mailbox page");

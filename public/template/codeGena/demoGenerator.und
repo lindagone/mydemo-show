@@ -1,53 +1,128 @@
-<div class="social-box">
-	<div class="header">
-		<h4>y</h4>
-		<div class="tools">
-			针对resthub，新建java 和 webapp文件夹，完成基本的增删改查和分页
-		</div>
-	</div>
-	<div class="body">
-		<form class="form-horizontal">
-			<div class="control-group">
-				<label class="control-label">className</label>
-				<div class="controls">
-					<input type="text" name="className" value="" placeholder="类名,首字母小写"/>
-				</div>
-			</div>
-			<table class="table table-bordered table-condensed">
-				<thead>
-					<tr>
-						<th>fieldName</th>
-						<th>fieldType</th>
-						<th>field-zh</th>
-						<th>operation</th>
-					</tr>
-				</thead>
-				<tbody class="myFields">
-					<tr>
-						<td><input type="text" name="fieldName" value="" placeholder="属性名"/></td>
-						<td>
-							<select name="fieldType">
-								<option value="string">String</option>
-								<option value="date">Date</option>
-								<option value="number">Number</option>
-							</select>
-						</td>
-						<td><input type="text" name="fieldZh" value="" placeholder="属性中文"/></td>
-						<td class="fieldOpt">
-							<button class="btn btn-small btn-add">add</button>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-			<div class="form-actions">
-				<button type="button" class="btn btn-primary generateCode">
-					generate code
-				</button>
-				<div style="display:none">
-					<a data-bypass href=""  id="downloadpackage">download</a>
-				</div>
-			</div>
-		</form>
-		<span class="myClass"></span>
-	</div>
+<div class="social-box social-bordered social-blue">
+    <div class="header">
+        <h4>偷懒工具for演示</h4>
+        <div class="tools">
+            针对现在分tab和不分tab两种情况，生成简单的dom结构，然后在此基础上进行调整。
+        </div>
+    </div>
+    <div class="body">
+        <div class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label">moduleName</label>
+                <div class="controls">
+                    <input type="text" name="moduleName" value="" placeholder="模块名,首字母小写"/>
+                    <input type="text" name="moduleNameZh" value="" placeholder="模块名,中文"/>
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <label class="checkbox">
+                        <input type="checkbox" name="hasTabs" value="true">
+                        has tabs</label>
+                </div>
+            </div>
+           
+            <div class="row-fluid">
+                <div class="span10 offset1">
+                    <div class="social-box social-bordered social-blue">
+                        <div id="tabContainer">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+             <div class="row-fluid">
+                <div class="span10 offset1">
+                    <div class="social-box social-bordered social-blue">
+                        <div id="itemContainer">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-actions">
+                <button type="button" class="btn btn-primary generateCode">
+                    generate code
+                </button>
+                <span class="myClass"></span>       
+            </div>
+            <div style="display:none">
+                <a data-bypass href=""  id="downloadpackage">download</a>
+            </div>
+        </div>
+    </div>
 </div>
+
+<script type="x-template" id="editTab">    
+   <table class="table table-bordered table-condensed table-hover">
+        <thead>
+            <tr>
+                <th>NO.</th>
+                <th>tabName</th>
+                <th>tabZh</th>
+                <th>operation</th>
+            </tr>
+        </thead>
+        <tbody class="myTabs">
+            <tr>
+                <td>1</td>
+                <td>
+                <input type="text" name="tabName" value="" placeholder="tab页名"/>
+                </td>
+                <td>
+                <input type="text" name="tabZh" value="" placeholder="tab页中文"/>
+                </td>
+                <td class="tabOpt">
+                <button class="btn btn-small btn-edit-items">
+                    edit-items
+                </button></td>
+            </tr>
+        </tbody>
+    </table>
+</script>
+
+<script type="x-template" id="editItem">
+    <form class="form-horizontal myItems">
+        <table class="table table-bordered table-condensed">
+            <thead>
+                <tr>
+                    <th>fieldName</th>
+                    <th>fieldType</th>
+                    <th>field-zh</th>
+                    <th>operation</th>
+                </tr>
+            </thead>
+            <tbody class="myFields">
+                <tr>
+                    <td>
+                    <input type="text" name="fieldName" value="" placeholder="属性名"/>
+                    </td>
+                    <td>
+                    <select name="fieldType">
+                        <option value="string">String</option>
+                        <option value="date">Date</option>
+                        <option value="number">Number</option>
+                        <option value="boolean">Boolean</option>
+                    </select></td>
+                    <td>
+                    <input type="text" name="fieldZh" value="" placeholder="属性中文"/>
+                    </td>
+                    <td class="fieldOpt">
+                    <button class="btn btn-small btn-add">
+                        add
+                    </button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="pull-left">
+          <span class="tabNo"/> 生成的items为： <span class="myItems" />
+        </div>
+        <div class="pull-right">
+            <button type="button" class="btn btn-primary gatherItems">
+                gather items
+            </button>
+        </div>
+    </form>
+</script>
+
