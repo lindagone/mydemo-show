@@ -46,7 +46,7 @@ function(_, Backbone, Resthub, baseTmpl){
 	},
 	
 	deleteItem : function(){
-		alert("项目被引用，不能删除。");
+		alert("该条目已经被别的表引用，不能做删除操作。");
 	}
 	
   });

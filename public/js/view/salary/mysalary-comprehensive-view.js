@@ -30,6 +30,13 @@ function(_, Backbone, Resthub, baseTmpl){
 		setTimeout(function(){
          	$('#begintime').datepicker({dateFormat: 'yy-mm-dd'}); 
         	$('#endtime').datepicker({dateFormat: 'yy-mm-dd'});   
+        	$('[data-toggle="popover"]').popover({
+        		html:true,
+        		title:'筛选工资条',
+        		placement:'left',
+        		content:$('#accountFilter2').html(),
+        		container:$('#main')
+        	});
          },0);
 		return _self;
 	},

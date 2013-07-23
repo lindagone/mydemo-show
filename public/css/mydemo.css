@@ -2,3 +2,12 @@
 	background-color: rgb(34, 121, 201);
 	color: white;
 }
+
+tr.headColor th {
+	text-align:center;
+}
+
+td.inCenter {
+	text-align:center;
+}
+
