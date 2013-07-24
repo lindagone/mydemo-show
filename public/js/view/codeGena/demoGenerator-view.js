@@ -33,7 +33,7 @@ function(_, Resthub, template) {
                 _self.tpl = {};
 			    _self.tpl.tabTpl = _.template($('#editTab').html());
 			    _self.tpl.itemTpl = _.template($('#editItem').html());
-                $("#itemContainer").html(_self.tpl.itemTpl);
+                $("#itemContainer").append(_self.tpl.itemTpl);
 			});
 			return _self;
 		},
@@ -55,43 +55,61 @@ function(_, Resthub, template) {
 		
 		addTab : function(e){
 		    var _self = this;
-		    var _idx = _self.tabEditNow + 2;
+		    var $tde = $(e.target).parents("td");
+
+			var _idx = _self.tabEditNow + 2;
             var $tbody = $("tbody.myTabs");
 
-            $(e.target).parents("td").empty();
+            $tde.empty();
             $("#itemContainer").empty();    
             
             $tbody.append('<tr><td>' + _idx + '</td>'
                     +   '<td><input type="text" name="tabName" value="" placeholder="tab页名"/></td>'
-                    +   '<td><input type="text" name="tabZh" value="" placeholder="tab页中文"/></td>'
+                    +   '<td><input type="text" name="tabNameZh" value="" placeholder="tab页中文"/></td>'
                     +   '<td class="tabOpt">'
                     +   '<button class="btn btn-small btn-edit-items">edit-items</button>'
-                    +   '</td></tr>'); 
+	                    +   '</td></tr>'); 	    	
 		},
 		
 		editTabsItem : function(e){
 		    var _self = this;
-		    $(e.target).prop("disabled","disabled");
-		    $("#itemContainer").append( _self.tpl.itemTpl);
+		    var $tde = $(e.target).parents("td");
 		    
-		    var $tbody = $("tbody.myTabs");
-		    var $trs = $tbody.find('tr');
-		    var $etr = $(e.target).parents('tr');
-		    _self.tabEditNow = $trs.index($etr);
+		    var b_tabNameZh = !$tde.parent('tr').find('input[name="tabNameZh"]').val();
+		    var b_tabName = !$tde.parent('tr').find('input[name="tabName"]').val();
 		    
-            var _idx = _self.tabEditNow + 1;
-            $("span.tabNo").html("第 " + _idx + " 个tab");
-            
-		    var _tab = {};
-		    _tab.tabName = $etr.find("input[name='tabName']").val();
-		    _tab.tabZh = $etr.find("input[name='tabZh']").val();
-		    _self.tabs[_self.tabEditNow] = _tab;
-		    
+		    if(b_tabNameZh || b_tabName){
+		    	window.globalNotify({
+					type:"error",
+					htmlContent:"请输入tab名！"
+				});
+				return;
+		    }else{
+		    	$(e.target).prop("disabled","disabled");
+			    $("#itemContainer").append( _self.tpl.itemTpl);
+			    
+			    var $tbody = $("tbody.myTabs");
+			    var $trs = $tbody.find('tr');
+			    var $etr = $(e.target).parents('tr');
+			    _self.tabEditNow = $trs.index($etr);
+			    
+	            var _idx = _self.tabEditNow + 1;
+	            $("span.tabNo").html("第 " + _idx + " 个tab");
+	            
+			    var _tab = {};
+			    _tab.tabName = $etr.find("input[name='tabName']").val();
+			    _tab.tabNameZh = $etr.find("input[name='tabNameZh']").val();
+			    _self.tabs[_self.tabEditNow] = _tab;
+		    }
 		},
 		
 		gatherItems : function(){
 		    var _self = this;
+		    
+		    if(!_self.$el.find("form.myItems").valid()) return;
+		    
 		    var _data = _self.$el.find("form.myItems").serializeObject();
+		    
 		    var _myitems = {};
             _myitems.items  = new Array();
             
@@ -100,14 +118,14 @@ function(_, Resthub, template) {
                 _myitems.items.push({
                     fieldName:_data.fieldName[idx],
                     fieldType:_data.fieldType[idx],
-                    fieldZh:_data.fieldZh[idx]
+                    fieldNameZh:_data.fieldNameZh[idx]
                     });
                 })
             }else{
                 _myitems.items.push({
                     fieldName:_data.fieldName,
                     fieldType:_data.fieldType,
-                    fieldZh:_data.fieldZh
+                    fieldNameZh:_data.fieldNameZh
                     });             
             }
             $("span.myItems").html(JSON.stringify(_myitems));
@@ -124,6 +142,7 @@ function(_, Resthub, template) {
 		},
 		
 		submitForm : function(){
+			console.log("submitting...");
 			return false;	
 		},
 		
@@ -135,18 +154,23 @@ function(_, Resthub, template) {
 			$tbody.append('<tr><td><input type="text" name="fieldName" class="grd-white" value="" placeholder="属性名"/></td>'
 					+	'<td><select name="fieldType"><option value="string">String</option><option value="date">Date</option>'
 					+   '<option value="number">Number</option><option value="boolean">Boolean</option></select></td>'
-					+	'<td><input type="text" name="fieldZh" class="grd-white" value="" placeholder="属性中文"/></td>'
+					+	'<td><input type="text" name="fieldNameZh" class="grd-white" value="" placeholder="属性中文"/></td>'
 					+	'<td class="fieldOpt">'
 					+	'<button class="btn btn-small btn-add">add</button>'
 					+	'</td></tr>');
+			return;
 		},
 		
 		deleteField : function(e){
-			$(e.target).closest("tr").empty();			
+			$(e.target).closest("tr").empty();	
+			return;		
 		},
 		
 		generateCode : function(){
             var _self = this;
+            
+            if(!_self.$el.find("form.module-form").valid()) return;
+            
             var _mymodel = {};
             
             _mymodel.moduleName = _self.$el.find('input[name="moduleName"]').val();
@@ -162,7 +186,7 @@ function(_, Resthub, template) {
 
 			$.ajax({
 				type:"POST",
-				url:"/api/demo",
+				url:"/api/genademo",
 				data:_mymodel
 			}).done(function(data){
 				// console.log("back is ok...");

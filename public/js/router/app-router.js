@@ -1,9 +1,10 @@
 define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGenerator-view', 'view/mail/mail-base-view', 'view/notice/notice-index-view',
 		'view/salary/mysalary-view', 'view/salary/salary-manage-view', 'view/salary/salary-initialize-view', 'view/salary/salary-accountmanage-view',
-		'view/salary/salary-overview-view',
+		'view/salary/salary-overview-view','view/mytest/mytest-view',
 		'backbone-queryparams'], function(
 		Backbone, CodeGeneratorView, DemoGeneratorView, MailBaseView, NoticeIndexView,
-		MysalaryView, SalaryManageView, SalaryInitView, AccountManageView, SalaryOverview) {
+		MysalaryView, SalaryManageView, SalaryInitView, AccountManageView, SalaryOverview,
+		TestView) {
 	var options = {
 		routes : {
 			'': 'anything',
@@ -16,6 +17,7 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
 			'salaryinit.html'       : 'salaryinit',
 			'accountmanager.html'   : 'accountmanager',
 			'salaryoverview.html' 	: 'salaryoverview',
+			'test.html':'gotest',
       		'*anything': 'anything'
 		},
 	
@@ -30,6 +32,10 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
 		generateDemo : function(){
 			console.log("into gena demo");
 			new DemoGeneratorView({root:"#bodyContainer"});
+		},
+		gotest : function(){
+			console.log("into test demo");
+			new TestView({root:"#bodyContainer"});
 		},
 		mailbox : function(){
 			console.log("into mailbox page");

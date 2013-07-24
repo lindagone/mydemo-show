@@ -70,12 +70,22 @@ define(['router/app-router', 'underscore', 'jquery','bootstrap','json2','jquery-
       });
     })
 
-    // window.currentUser = new User();
-    // $.when(window.currentUser.fetch()).then(function() {
-    	// $("#currentUserLoginInfo").html("欢迎您: " + window.currentUser.get('fullname'));
-        // window.approuter=new AppRouter();
-        // Backbone.history.start({pushState: true, root:'/inq'});
-    // });
+   	 /**
+       * 全局的错误提示
+       * **/
+      window.globalNotify = function(opts){
+    	  $("#infoContainer")
+    	  	.removeAttr("class")
+    	  	.addClass("alert alert-" + opts.type)
+    	  	.html("<h4>" + opts.htmlContent + "</h4>")
+    	  	.slideDown('fast', function(){
+    		  setTimeout(function(){
+    			  $("#infoContainer").hide();
+    			  if(!!opts.cb){opts.cb();}
+    		  },3000);
+    	  });
+    	  
+      };
     window.approuter=new AppRouter();
     Backbone.history.start({pushState: true, root:'/'});
     

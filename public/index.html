@@ -44,12 +44,16 @@
 			.social-navbar {
 				left: 0;
 			}
+			#infoContainer {
+				position:fixed; right:0; left:0; top:50px; max-width:350px; margin:0 auto; border:2px solid; display:none;
+			}
 		</style>
 	</head>
 	<body>
 		<div class="wraper">
 			<header>
 				<nav class="navbar navbar-blue navbar-fixed-top social-navbar">
+					<div id="infoContainer"></div>
 					<div class="navbar-inner">
 						<div class="container-fluid">
 							<a class="brand" href="#"> demo演示 <span></span></a>
@@ -92,7 +96,7 @@
 										</ul>
 									</li>
 									<li><a href=""> 应用类 </a></li>
-									<li style="display: none;"><a href="generateCode.html"><span> resthub生成 </span></a></li>
+									<li><a href="generateCode.html"><span> resthub生成 </span></a></li>
 									<li><a href="generateDemo.html"><span> demo框生成 </span></a></li>
 								</ul>
 							</div>

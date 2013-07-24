@@ -6,12 +6,12 @@
         </div>
     </div>
     <div class="body">
-        <div class="form-horizontal">
+        <form class="form-horizontal module-form">
             <div class="control-group">
                 <label class="control-label">moduleName</label>
                 <div class="controls">
-                    <input type="text" name="moduleName" value="" placeholder="模块名,首字母小写"/>
-                    <input type="text" name="moduleNameZh" value="" placeholder="模块名,中文"/>
+                    <input type="text" name="moduleName" value="" placeholder="模块名,首字母小写" required/>
+                    <input type="text" name="moduleNameZh" value="" placeholder="模块名,中文" required/>
                 </div>
             </div>
             <div class="control-group">
@@ -50,7 +50,7 @@
             <div style="display:none">
                 <a data-bypass href=""  id="downloadpackage">download</a>
             </div>
-        </div>
+        </form>
     </div>
 </div>
 
@@ -60,7 +60,7 @@
             <tr>
                 <th>NO.</th>
                 <th>tabName</th>
-                <th>tabZh</th>
+                <th>tabNameZh</th>
                 <th>operation</th>
             </tr>
         </thead>
@@ -68,10 +68,10 @@
             <tr>
                 <td>1</td>
                 <td>
-                <input type="text" name="tabName" value="" placeholder="tab页名"/>
+                <input type="text" name="tabName" placeholder="tab页名" required/>
                 </td>
                 <td>
-                <input type="text" name="tabZh" value="" placeholder="tab页中文"/>
+                <input type="text" name="tabNameZh" placeholder="tab页中文" required/>
                 </td>
                 <td class="tabOpt">
                 <button class="btn btn-small btn-edit-items">
@@ -96,7 +96,7 @@
             <tbody class="myFields">
                 <tr>
                     <td>
-                    <input type="text" name="fieldName" value="" placeholder="属性名"/>
+                    <input type="text" name="fieldName" value="" placeholder="属性名" required/>
                     </td>
                     <td>
                     <select name="fieldType">
@@ -106,7 +106,7 @@
                         <option value="boolean">Boolean</option>
                     </select></td>
                     <td>
-                    <input type="text" name="fieldZh" value="" placeholder="属性中文"/>
+                    <input type="text" name="fieldNameZh" value="" placeholder="属性中文" required/>
                     </td>
                     <td class="fieldOpt">
                     <button class="btn btn-small btn-add">

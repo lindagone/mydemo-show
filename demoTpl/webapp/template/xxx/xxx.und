@@ -1,0 +1,210 @@
+<div class="social-box">
+	<div class="header">
+		<h4><strong><%= module.moduleNameZh %></strong></h4>
+		<% if(!!module.tabs){ %>
+		<div class="tools">
+			<%= module.tabs[0].filedNameZh %>
+		    <ul id="myTab" class="nav nav-tabs">
+			<% _.each(module.tabs,function(tab,idx){%>
+				<li <% if(idx == 0){ %>class="active"<% } %> >
+					<a data-bypass href="#<%= tab.tabName %>" data-toggle="tab"> <i class="icon-list"></i> <%= tab.tabNameZh %></a>
+				</li>
+			<% }) %>
+			</ul> 
+		</div>
+		<% } %>
+	</div>
+	<div class="body">
+		<% if(!!module.tabs){ %>
+			<div class="tab-content">
+				<% _.each(module.tabs,function(tab,idx){ %>
+					<div class="tab-pane <% if(idx == 0){ %>active<% } %>" id="<%= tab.tabName %>">
+						<div class="row-fluid">
+							<div class="span12">
+								<h4 class="inCenter"><%= tab.tabName %></h4>
+							</div>
+						</div>
+						<br />
+						<div class="row-fluid">
+							<div class="span12">
+								<div class="pull-right">
+									<button class="btn btn-small btn-primary">
+										<i class="icon-plus"></i> 添加新条目
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span12">
+								<table class="table table-bordered table-condensed table-hover">
+								<thead>
+									<tr class="headColor">
+										<% _.each(tab.items,function(item,idx){ %>
+										<th><%= item.fieldNameZh %></th>
+										<% }) %>
+										<th>操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<% _.each(tab.items,function(item,idx){ %>
+										<td <%if(item.fieldType == 'date' || item.fieldType == 'boolean'){%>class="inCenter"<%}%><%if(item.fieldType == 'number'){%>class="inRight"<%}%>>
+											<input type="text" name="<%= item.fieldName %>" class="input-medium"/>
+										</td>
+										<% }) %>
+										<td>
+											<button class="btn btn-mini btn-danger">
+												保存
+											</button>
+											<button class="btn btn-mini">
+												取消
+											</button>
+										</td>
+									</tr>
+									<tr>
+										<% _.each(tab.items,function(item,idx){ %>
+										<td <%if(item.fieldType == 'date' || item.fieldType == 'boolean'){%>class="inCenter"<%}%><%if(item.fieldType == 'number'){%>class="inRight"<%}%>>
+											
+										</td>
+										<% }) %>
+										<td>
+											<button class="btn btn-mini">
+												修改
+											</button>
+											<button class="btn btn-mini btn-delete">
+												删除
+											</button>
+										</td>
+									</tr>
+									<tr>
+										<% _.each(tab.items,function(item,idx){ %>
+										<td <%if(item.fieldType == 'date' || item.fieldType == 'boolean'){%>class="inCenter"<%}%><%if(item.fieldType == 'number'){%>class="inRight"<%}%>>
+											
+										</td>
+										<% }) %>
+										<td>
+											<button class="btn btn-mini">
+												修改
+											</button>
+											<button class="btn btn-mini btn-delete">
+												删除
+											</button>
+										</td>
+									</tr>
+									<tr>
+										<% _.each(tab.items,function(item,idx){ %>
+										<td <%if(item.fieldType == 'date' || item.fieldType == 'boolean'){%>class="inCenter"<%}%><%if(item.fieldType == 'number'){%>class="inRight"<%}%>>
+											<input type="text" name="<%= item.fieldName %>" class="input-medium"/>
+										</td>
+										<% }) %>
+										<td>
+											<button class="btn btn-mini btn-danger">
+												保存
+											</button>
+											<button class="btn btn-mini">
+												取消
+											</button>
+										</td>
+									</tr>									
+								</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				<% }) %>
+			</div>
+		<% }else{ %>
+			<div class="row-fluid">
+				<div class="span12">
+					<h4 class="inCenter"><%= module.moduleNameZh %></h4>
+				</div>
+			</div>
+			<br />
+			<div class="row-fluid">
+				<div class="span12">
+					<div class="pull-right">
+						<button class="btn btn-small btn-primary">
+							<i class="icon-plus"></i> 添加新条目
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span12">
+					<table class="table table-bordered table-condensed table-hover">
+					<thead>
+						<tr class="headColor">
+							<% _.each(module.items,function(item,idx){ %>
+							<th><%= item.fieldNameZh %></th>
+							<% }) %>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<% _.each(module.items,function(item,idx){ %>
+							<td <%if(item.fieldType == 'date' || item.fieldType == 'boolean'){%>class="inCenter"<%}%><%if(item.fieldType == 'number'){%>class="inRight"<%}%>>
+								<input type="text" name="<%= item.fieldName %>" class="input-medium"/>
+							</td>
+							<% }) %>
+							<td>
+								<button class="btn btn-mini btn-danger">
+									保存
+								</button>
+								<button class="btn btn-mini">
+									取消
+								</button>
+							</td>
+						</tr>
+						<tr>
+							<% _.each(module.items,function(item,idx){ %>
+							<td <%if(item.fieldType == 'date' || item.fieldType == 'boolean'){%>class="inCenter"<%}%><%if(item.fieldType == 'number'){%>class="inRight"<%}%>>
+								
+							</td>
+							<% }) %>
+							<td>
+								<button class="btn btn-mini">
+									修改
+								</button>
+								<button class="btn btn-mini btn-delete">
+									删除
+								</button>
+							</td>
+						</tr>
+						<tr>
+							<% _.each(module.items,function(item,idx){ %>
+							<td <%if(item.fieldType == 'date' || item.fieldType == 'boolean'){%>class="inCenter"<%}%><%if(item.fieldType == 'number'){%>class="inRight"<%}%>>
+								
+							</td>
+							<% }) %>
+							<td>
+								<button class="btn btn-mini">
+									修改
+								</button>
+								<button class="btn btn-mini btn-delete">
+									删除
+								</button>
+							</td>
+						</tr>
+						<tr>
+							<% _.each(module.items,function(item,idx){ %>
+							<td <%if(item.fieldType == 'date' || item.fieldType == 'boolean'){%>class="inCenter"<%}%><%if(item.fieldType == 'number'){%>class="inRight"<%}%>>
+								<input type="text" name="<%= item.fieldName %>" class="input-medium"/>
+							</td>
+							<% }) %>
+							<td>
+								<button class="btn btn-mini btn-danger">
+									保存
+								</button>
+								<button class="btn btn-mini">
+									取消
+								</button>
+							</td>
+						</tr>									
+					</tbody>
+					</table>
+				</div>
+			</div>
+		<% } %> 
+	</div>
+</div>
