@@ -21,7 +21,7 @@
 					<div class="tab-pane <% if(idx == 0){ %>active<% } %>" id="<%= tab.tabName %>">
 						<div class="row-fluid">
 							<div class="span12">
-								<h4 class="inCenter"><%= tab.tabName %></h4>
+								<h4 class="inCenter"><%= tab.tabNameZh %></h4>
 							</div>
 						</div>
 						<br />
@@ -49,7 +49,7 @@
 									<tr>
 										<% _.each(tab.items,function(item,idx){ %>
 										<td <%if(item.fieldType == 'date' || item.fieldType == 'boolean'){%>class="inCenter"<%}%><%if(item.fieldType == 'number'){%>class="inRight"<%}%>>
-											<input type="text" name="<%= item.fieldName %>" class="input-medium"/>
+											<input type="text" name="<%= item.fieldName %>" class="input-small"/>
 										</td>
 										<% }) %>
 										<td>
@@ -94,7 +94,7 @@
 									<tr>
 										<% _.each(tab.items,function(item,idx){ %>
 										<td <%if(item.fieldType == 'date' || item.fieldType == 'boolean'){%>class="inCenter"<%}%><%if(item.fieldType == 'number'){%>class="inRight"<%}%>>
-											<input type="text" name="<%= item.fieldName %>" class="input-medium"/>
+											<input type="text" name="<%= item.fieldName %>" class="input-small"/>
 										</td>
 										<% }) %>
 										<td>
@@ -144,7 +144,7 @@
 						<tr>
 							<% _.each(module.items,function(item,idx){ %>
 							<td <%if(item.fieldType == 'date' || item.fieldType == 'boolean'){%>class="inCenter"<%}%><%if(item.fieldType == 'number'){%>class="inRight"<%}%>>
-								<input type="text" name="<%= item.fieldName %>" class="input-medium"/>
+								<input type="text" name="<%= item.fieldName %>" class="input-small"/>
 							</td>
 							<% }) %>
 							<td>
@@ -189,7 +189,7 @@
 						<tr>
 							<% _.each(module.items,function(item,idx){ %>
 							<td <%if(item.fieldType == 'date' || item.fieldType == 'boolean'){%>class="inCenter"<%}%><%if(item.fieldType == 'number'){%>class="inRight"<%}%>>
-								<input type="text" name="<%= item.fieldName %>" class="input-medium"/>
+								<input type="text" name="<%= item.fieldName %>" class="input-small"/>
 							</td>
 							<% }) %>
 							<td>
