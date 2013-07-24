@@ -40,6 +40,10 @@ function(_, Resthub, template) {
 		
 		showEditTabTable : function(){
 		    var _self = this;
+		    _self.$el.find("span.myClass").empty();
+		    _self.tabs = null;
+		    _self.items = null;
+		    _self.tabEditNow = null;
 		    _self.hasTabs = (_self.$el.find('input[name="hasTabs"]:checked').val()) ? true:false;
 		    
 		    if(_self.hasTabs){
@@ -81,7 +85,7 @@ function(_, Resthub, template) {
 		    if(b_tabNameZh || b_tabName){
 		    	window.globalNotify({
 					type:"error",
-					htmlContent:"请输入tab名！"
+					htmlContent:"请输入tab信息！"
 				});
 				return;
 		    }else{
@@ -147,7 +151,11 @@ function(_, Resthub, template) {
 		},
 		
 		addField : function(e){
-			var $tbody = $("tbody.myFields");
+			var _self = this;
+			var $tbody = _self.$el.find("tbody.myFields");
+
+			if(!_self.$el.find("form.myItems").valid()) return;
+
 			$(e.target).removeClass("btn-add")
 						.addClass("btn-delete")
 						.html("delete");
@@ -158,21 +166,37 @@ function(_, Resthub, template) {
 					+	'<td class="fieldOpt">'
 					+	'<button class="btn btn-small btn-add">add</button>'
 					+	'</td></tr>');
-			return;
 		},
 		
 		deleteField : function(e){
 			$(e.target).closest("tr").empty();	
-			return;		
 		},
 		
 		generateCode : function(){
             var _self = this;
             
+            if(!_self.items){
+            	if(!_self.tabs){
+            		window.globalNotify({
+						type:"error",
+						htmlContent:"请生成items先！"
+					});
+					return;
+            	}else{
+            		if(!_self.tabs[_self.tabEditNow] || !_self.tabs[_self.tabEditNow].items){
+            			window.globalNotify({
+							type:"error",
+							htmlContent:"请生成items先！"
+						});
+						return;
+            		}
+            	}
+            }
+		        
             if(!_self.$el.find("form.module-form").valid()) return;
             
+            //收集下发的数据
             var _mymodel = {};
-            
             _mymodel.moduleName = _self.$el.find('input[name="moduleName"]').val();
             _mymodel.moduleNameZh = _self.$el.find('input[name="moduleNameZh"]').val();
             
@@ -194,6 +218,7 @@ function(_, Resthub, template) {
 			}).fail(function(){
 				console.log("something is wrong at node...");
 			});
+			
 		}
 		
 	});

@@ -31,16 +31,6 @@
                     </div>
                 </div>
             </div>
-            <hr />
-             <div class="row-fluid">
-                <div class="span10 offset1">
-                    <div class="social-box social-bordered social-blue">
-                        <div id="itemContainer">
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="form-actions">
                 <button type="button" class="btn btn-primary generateCode">
                     generate code
@@ -51,6 +41,16 @@
                 <a data-bypass href=""  id="downloadpackage">download</a>
             </div>
         </form>
+         <hr />
+             <div class="row-fluid">
+                <div class="span10 offset1">
+                    <div class="social-box social-bordered social-blue">
+                        <div id="itemContainer">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
 </div>
 
@@ -115,7 +115,7 @@
                 </tr>
             </tbody>
         </table>
-        <div class="pull-left">
+		<div class="pull-left">
           <span class="tabNo"/> 生成的items为： <span class="myItems" />
         </div>
         <div class="pull-right">
