@@ -1,9 +1,6 @@
 <div class="social-box social-bordered social-blue">
     <div class="header">
         <h4>偷懒工具for演示</h4>
-        <div class="tools">
-            针对现在分tab和不分tab两种情况，生成简单的dom结构，然后在此基础上进行调整。
-        </div>
     </div>
     <div class="body">
         <form class="form-horizontal module-form">
@@ -52,6 +49,13 @@
                 </div>
             </div>
     </div>
+    <footer>
+        <div class="tools">
+            <p>针对现在分tab和不分tab两种情况，生成简单的表格，然后在生成的文件里进行业务细调。</p>
+            <p>1. 单击gather items，生成表格的参数；</p>
+            <p>2. 单击generate code，生成文件。</p>
+        </div>
+    </footer>
 </div>
 
 <script type="x-template" id="editTab">    
