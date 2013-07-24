@@ -22,10 +22,6 @@ function(_, Backbone, Resthub, baseTmpl){
     render : function(options) {
     	var _self = this;
 		_self.$el.html(_self.template());
-		
-		_.defer(function(){
-			_self.flotEg();
-		});
 
 		return _self;
 	},
