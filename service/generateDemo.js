@@ -70,7 +70,6 @@ var walkfiles = function(distpath, model){
  * **/
 var changeFileCode = function(contents, model){
 	var template = _.template(contents);
-	console.log(model);
 	return template(model);
 }
 
