@@ -6,9 +6,12 @@ function (_, Resthub,functionroleTmpl,TeacherView) {
         template: functionroleTmpl,
         
         events: {
+           'click .uploader-teachers, .uploader-pics' : 'alertInfo',
            'click #teacherList li' : 'showTeacherInfo',
            'click .deleteTeacher' : 'deleteTeacher',
-    	   'click .addTeacher' : 'addTeacher'
+    	   'click .addTeacher' : 'addTeacher',
+    	   'click .openEditInfo' : 'openEditInfo',
+    	   'click .saveEditInfo' : 'saveEditInfo'
         },
         
        
@@ -26,6 +29,10 @@ function (_, Resthub,functionroleTmpl,TeacherView) {
     		return this;
     	},
     	
+    	alertInfo : function(){
+    	    alert("请注意：此处使用全局的导入，参考200上的实现！");
+    	},
+    	
     	showTeacherInfo : function(e){
     		var _name = $(e.target).closest("span").text();
     		$("#teacherInfoContainer").hide();
@@ -40,6 +47,16 @@ function (_, Resthub,functionroleTmpl,TeacherView) {
     	addTeacher : function(){
     		$("#teacherInfoContainer").show();
     		$("#showTeacherInfo").hide();
+    	},
+    	
+    	openEditInfo : function(){
+    	    $("#doEdit").show();
+            $("#myInfo").hide();
+    	},
+    	
+    	saveEditInfo : function(){
+    	    $("#myInfo").show();
+            $("#doEdit").hide();   
     	}
 
     });

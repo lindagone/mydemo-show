@@ -19,3 +19,6 @@ td.inRight {
 td.listNum {
 	width:40px;
 }
+input.aligntop {
+    vertical-align: top;
+}
