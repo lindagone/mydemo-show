@@ -1,14 +1,13 @@
-define([ 'underscore', 'resthub','hbs!template/hr/teachersearch'],
-function (_, Resthub,searchIndexTmpl) {
+define([ 'underscore', 'resthub','hbs!template/hr/hr-deptfunction'],
+function (_, Resthub,deptfunctionTmpl) {
     
-    var TeacherSearchView = Resthub.View.extend({       
+    var DeptFunctionView = Resthub.View.extend({       
     	//对应的模板
-        template: searchIndexTmpl,
+        template: deptfunctionTmpl,
         
         //事件：编辑book和删除book
         events: {
-           'click .btn-sure':"Search",
-           'click .personname':'showDetail'
+           
         },
         
        
@@ -20,19 +19,15 @@ function (_, Resthub,searchIndexTmpl) {
         },
     
         //render视图：data与hbs模板结合
-    	render: function() {   	
+    	render: function() {
+    	
     		this.$el.html(this.template());
-    		 		
+    		
     		return this;
-    	},
-    	Search:function(){
-    		$('#results').show();
-    	},
-    	showDetail:function(){
-			alert("显示教师详细信息");
-			
-		}
+    	}
+    	
+    	
 
     });
-    return TeacherSearchView;
+    return DeptFunctionView;
 });

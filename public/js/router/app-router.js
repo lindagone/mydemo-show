@@ -1,10 +1,14 @@
 define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGenerator-view', 'view/mail/mail-base-view', 'view/notice/notice-index-view',
 		'view/salary/mysalary-view', 'view/salary/salary-manage-view', 'view/salary/salary-initialize-view', 'view/salary/salary-accountmanage-view',
 		'view/salary/salary-overview-view','view/mytest/mytest-view',
+		'view/hr/hr-index-view','view/hr/personview-index-view',
+         'view/hr/hrmanage-index-view','view/hr/teachersearch-view','view/hr/setting-teacherstatus-view',
+         'view/hr/improve-teacherinf-view','view/hr/maintain-index-view', 'view/hr/setTeacherInfo-view',
 		'backbone-queryparams'], function(
 		Backbone, CodeGeneratorView, DemoGeneratorView, MailBaseView, NoticeIndexView,
-		MysalaryView, SalaryManageView, SalaryInitView, AccountManageView, SalaryOverview,
-		TestView) {
+		MysalaryView, SalaryManageView, SalaryInitView, AccountManageView, SalaryOverview, TestView,
+		HrIndexView,PersonViewIndexView,HrManageIndexView,TeacherSearchView,TeacherSettingView,TeaInfImproveView,MaintainIndexView,
+		TeacherInfoView) {
 	var options = {
 		routes : {
 			'': 'anything',
@@ -17,6 +21,14 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
 			'salaryinit.html'       : 'salaryinit',
 			'accountmanager.html'   : 'accountmanager',
 			'salaryoverview.html' 	: 'salaryoverview',
+			'hr.html'               : 'hrFunctionManage',
+			'personview.html'       : 'personView',
+			'hrmanage.html'         : 'hrManage',
+			'teachersearch.html'    : 'teacherSearch',
+			'setting.html'          : 'teacherSetting',
+			'improve.html'          : 'infImprove',
+			'maintain.html'         : 'maintainInf',
+			'teacherinfo.html'         : 'teacherinfo',
 			'test.html':'gotest',
       		'*anything': 'anything'
 		},
@@ -64,6 +76,30 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
 		salaryoverview : function(){
 			console.log("into salaryoverview page");
 			new SalaryOverview({root : $('#bodyContainer')});
+		},
+		hrFunctionManage:function(){
+			new HrIndexView({root:$('#bodyContainer')});
+		},
+		personView:function(){
+			new PersonViewIndexView({root:$('#bodyContainer')});
+		},
+		hrManage:function(){
+			new HrManageIndexView({root:$('#bodyContainer')});
+		},
+		teacherSearch:function(){
+			new TeacherSearchView({root:$('#bodyContainer')});
+		},
+		teacherSetting:function(){
+			new TeacherSettingView({root:$('#bodyContainer')});
+		},
+		infImprove:function(){
+			new TeaInfImproveView({root:$('#bodyContainer')});
+		},
+		maintainInf:function(){
+			new MaintainIndexView({root:$('#bodyContainer')});
+		},
+		teacherinfo: function(){
+			new TeacherInfoView({root:$('#bodyContainer')});
 		}
 	};
 

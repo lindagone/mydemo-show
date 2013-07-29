@@ -8,7 +8,8 @@ function (_, Resthub,searchIndexTmpl) {
         //事件：编辑book和删除book
         events: {
            'click .selectall':"SelectAll",
-           'click .unselectall':"unSelectAll"
+           'click .unselectall':"unSelectAll",
+           'click .currentstatus':"toggleStatus"
         },
         
        
@@ -25,8 +26,7 @@ function (_, Resthub,searchIndexTmpl) {
     		 		
     		return this;
     	},
-    	SelectAll:function(){
-    		
+    	SelectAll:function(){    		
     		$("input:checkbox").each(function(){    			
     			$(this).prop('checked',true);  			
     		});
@@ -39,10 +39,16 @@ function (_, Resthub,searchIndexTmpl) {
     			}else{
     				$(this).prop('checked',true);
     			}
-    		});
-    		
-    		
-    		
+    		});	
+    	},
+    	toggleStatus:function(){   	
+    	 if($('.currentstatus').text()=='开放'){   		
+    		 $('.currentstatus').text('关闭');
+    		 $('#status').text('开放');
+    	 }else{    		
+    		 $('.currentstatus').text('开放');
+    		 $('#status').text('关闭');
+    	 }
     	}
 
     });

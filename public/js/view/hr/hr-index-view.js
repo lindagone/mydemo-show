@@ -67,7 +67,7 @@ function (_, Resthub,hrIndexTmpl,DeptManageView,DeptFunctionView,FunctionRoleVie
 			$("#deptlist").find("a").attr("data-bypass",true);
 			if(treenode.name=='杨凌'){
 				$('#teacheradjust').focus();				
-				$("div.header h4").html(treenode.name+"现在的部门情况 ");
+				$("div h4").html(treenode.name+"现在的部门情况 ");
 				var str="<table class='table'><tr><th>教师姓名</th><th>原部门</th><th>去向部门</th><th>调入日期</th><th>职务名称</th><th>职务类型</th><th>功能</th></tr>"
 					+"<tr><td>"+treenode.name+"</td><td>政治教研组</td><td>"+
 					"<select class='input-small'><option>语文教研组</option><option>数学教研组</option><option>物理教研组</option></select>"
@@ -78,7 +78,7 @@ function (_, Resthub,hrIndexTmpl,DeptManageView,DeptFunctionView,FunctionRoleVie
                 $("#myTabContent2").replaceWith($("#teacheradjust"));
 				$("#teacheradjust").replaceWith(str);
 			}else{
-				$("div.header h4 span").html(treenode.name);
+				$("div h4 span").html(treenode.name);
 			}
 			
 			

@@ -1,14 +1,13 @@
-define([ 'underscore', 'resthub','hbs!template/hr/teachersearch'],
-function (_, Resthub,searchIndexTmpl) {
+define([ 'underscore', 'resthub','hbs!template/hr/improve-basicinf'],
+function (_, Resthub,baseTmpl) {
     
-    var TeacherSearchView = Resthub.View.extend({       
+    var ImproveBasicInfView = Resthub.View.extend({       
     	//对应的模板
-        template: searchIndexTmpl,
+        template: baseTmpl,
         
         //事件：编辑book和删除book
         events: {
-           'click .btn-sure':"Search",
-           'click .personname':'showDetail'
+           //'click .btn-sure':"Search"
         },
         
        
@@ -25,14 +24,8 @@ function (_, Resthub,searchIndexTmpl) {
     		 		
     		return this;
     	},
-    	Search:function(){
-    		$('#results').show();
-    	},
-    	showDetail:function(){
-			alert("显示教师详细信息");
-			
-		}
+    	
 
     });
-    return TeacherSearchView;
+    return ImproveBasicInfView;
 });

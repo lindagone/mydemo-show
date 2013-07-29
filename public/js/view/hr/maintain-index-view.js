@@ -1,14 +1,13 @@
-define([ 'underscore', 'resthub','hbs!template/hr/teachersearch'],
-function (_, Resthub,searchIndexTmpl) {
+define([ 'underscore', 'resthub','hbs!template/hr/maintain-index','view/hr/maintain-addteacher-view','view/hr/maintain-addpicture-view'],
+function (_, Resthub,otherTmpl,MaintainAddTeacherView,MaintainPicView) {
     
-    var TeacherSearchView = Resthub.View.extend({       
+    var MaintainIndexView = Resthub.View.extend({       
     	//对应的模板
-        template: searchIndexTmpl,
+        template: otherTmpl,
         
         //事件：编辑book和删除book
         events: {
-           'click .btn-sure':"Search",
-           'click .personname':'showDetail'
+           //'click .btn-sure':"Search"
         },
         
        
@@ -22,17 +21,12 @@ function (_, Resthub,searchIndexTmpl) {
         //render视图：data与hbs模板结合
     	render: function() {   	
     		this.$el.html(this.template());
-    		 		
+             new MaintainAddTeacherView({root:$("#addteacher")});
+             new MaintainPicView({root:$("#addpicture")});
     		return this;
     	},
-    	Search:function(){
-    		$('#results').show();
-    	},
-    	showDetail:function(){
-			alert("显示教师详细信息");
-			
-		}
+    	
 
     });
-    return TeacherSearchView;
+    return MaintainIndexView ;
 });

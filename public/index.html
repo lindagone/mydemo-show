@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html class="no-js">
-	<head>
-		<meta charset="utf-8">
-		<title>演示专用 | 博校文达</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="">
-		<meta name="author" content="">
+<head>
+<meta charset="utf-8">
+<title>演示专用 | 博校文达</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
 
-		<script>
+<script>
 			window.staticFileServer = '';
 			window.jsRoot = staticFileServer + "/js/";
 			window.imgRoot = staticFileServer + "/img/";
@@ -24,103 +24,118 @@
 			}
 			loadCss([
 			"/css/twitter-bootstrap/bootstrap.css?v1.3.1",
+			"/css/twitter-bootstrap/bootstrap-responsive.css?v1.3.1",
 			"/css/social.css?v1.3.1",
 			"/css/social-jquery-ui-1.10.0.custom.css?v1.3.1",
 			"/css/social.plugins.css?v1.3.1",
 			"/css/font-awesome.css?v1.3.1",
 			"/css/themes/social.theme-blue.css?v1.3.1",
-			"/css/twitter-bootstrap/bootstrap-responsive.css?v1.3.1",
 			"/js/lib/jquery/jquery.ztree/css/zTreeStyle/zTreeStyle.css",
 			"/css/mydemo.css"
 			])
 		</script>
-		<style>
-			.wraper #main {
-				margin-top: 50px;
-			}
-			#main {
-				margin-left: 0;
-			}
-			.social-navbar {
-				left: 0;
-			}
-			#infoContainer {
-				position:fixed; right:0; left:0; top:50px; max-width:350px; margin:0 auto; border:2px solid; display:none;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="wraper">
-			<header>
-				<nav class="navbar navbar-blue navbar-fixed-top social-navbar">
-					<div id="infoContainer"></div>
-					<div class="navbar-inner">
-						<div class="container-fluid">
-							<a class="brand" href="#"> demo演示 <span></span></a>
-							<div id="menuContainer">
-								<ul class="nav visible-desktop">
-									<li class="dropdown bxnavbar">
-										<a href="" class="dropdown-toggle" data-toggle="dropdown"> 工具类 <b class="caret"></b></a>
-										<ul class="dropdown-menu">
-											<li>
-												<a href="mailbox.html"><span> 邮件 </span></a>
-											</li>
-											<li>
-												<a href="notice.html"><span> 通知 </span></a>
-											</li>
-											<li class="dropdown-submenu">
-												<a tabindex="-1" href=""> 工资</a>
-												<ul class="dropdown-menu">
-													<li>
-														<a tabindex="-1" href="mysalary.html"><span>我的工资</span></a>
-													</li>
-													<li>
-														<a tabindex="-1" href="salarymanager.html">发布工资</a>
-													</li>
-													<li>
-														<a tabindex="-1" href="accountmanager.html">套账维护</a>
-													</li>
-													<li>
-														<a tabindex="-1" href="salaryoverview.html">查看工资</a>
-													</li>
-												</ul>
-											</li>
-										</ul>
-									</li>
-									<li class="dropdown bxnavbar">
-										<a href="" class="dropdown-toggle" data-toggle="dropdown"> 管理类 <b class="caret"></b></a>
-										<ul class="dropdown-menu">
-											<li>
-												<a href=""><span> 人员管理 </span></a>
-											</li>
-										</ul>
-									</li>
-									<li><a href=""> 应用类 </a></li>
-									<li style="display: none;"><a href="generateCode.html"><span> resthub生成 </span></a></li>
-									
-								</ul>
-							</div>
-							<div class="pull-right">
-								<ul class="nav visible-desktop">
-									<li><a href="generateDemo.html"><span> 工具 </span></a></li>
-								</ul>
-							</div>
+<style>
+.wraper #main {
+	margin-top: 50px;
+}
+
+#main {
+	margin-left: 0;
+}
+
+.social-navbar {
+	left: 0;
+}
+
+#infoContainer {
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: 50px;
+	max-width: 350px;
+	margin: 0 auto;
+	border: 2px solid;
+	display: none;
+}
+</style>
+</head>
+<body>
+	<div class="wraper">
+		<header>
+			<nav class="navbar navbar-blue navbar-fixed-top social-navbar">
+				<div id="infoContainer"></div>
+				<div class="navbar-inner">
+					<div class="container-fluid">
+						<a class="brand" href="#"> demo演示 <span></span></a>
+						<div id="menuContainer">
+							<ul class="nav visible-desktop">
+								<li class="dropdown bxnavbar"><a href=""
+									class="dropdown-toggle" data-toggle="dropdown"> 工具类 <b
+										class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="mailbox.html"><span> 邮件 </span></a></li>
+										<li><a href="notice.html"><span> 通知 </span></a></li>
+										<li class="dropdown-submenu"><a tabindex="-1" href="">
+												工资</a>
+											<ul class="dropdown-menu">
+												<li><a tabindex="-1" href="mysalary.html"><span>我的工资</span></a>
+												</li>
+												<li><a tabindex="-1" href="salarymanager.html">发布工资</a>
+												</li>
+												<li><a tabindex="-1" href="accountmanager.html">套账维护</a>
+												</li>
+												<li><a tabindex="-1" href="salaryoverview.html">查看工资</a>
+												</li>
+											</ul></li>
+									</ul></li>
+
+								<li class="dropdown bxnavbar"><a href=""
+									class="dropdown-toggle" data-toggle="dropdown"> 管理类 <b
+										class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li class="dropdown-submenu"><a tabindex="-1" href="">
+												人事管理</a>
+											<ul class="dropdown-menu">
+												<li><a href="setting.html"><i class=" icon-cog"></i><span>
+															教师信息状态设置</span></a></li>
+												<li><a href="teacherinfo.html"><i class="icon-edit"></i><span>
+															教师维护</span></a></li>
+												<li><a href="improve.html"><i
+														class="icon-briefcase"></i><span> 教师信息自我完善</span></a></li>
+												<li><a href="teachersearch.html"><i
+														class=" icon-search"></i><span> 教师详细信息查询</span></a></li>
+												<li><a href="hr.html"><i class="icon-user"></i><span>
+															部门功能及人员维护</span></a></li>
+												<li><a href="personview.html"><i class="icon-th"></i><span>
+															部门及人员查看</span></a></li>
+											</ul></li>
+									</ul></li>
+								<li><a href=""> 应用类 </a></li>
+								<li style="display: none;"><a href="generateCode.html"><span>
+											resthub生成 </span></a></li>
+							</ul>
+						</div>
+						<div class="pull-right">
+							<ul class="nav visible-desktop">
+								<li><a href="generateDemo.html"><span> 工具 </span></a></li>
+							</ul>
 						</div>
 					</div>
-				</nav>
-			</header>
-			<div id="main">
-				<div class="container-fluid">
-					<div id="bodyContainer" class="row-fluid">
-						<!-- Content page here -->
+				</div>
+			</nav>
+		</header>
+		<div id="main">
+			<div class="container-fluid">
+				<div id="bodyContainer" class="row-fluid">
+					<!-- Content page here -->
 
-					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<!-- Le javascript -->
-		<script data-main="js/main" src="js/lib/require.js"></script>
-	</body>
+	<!-- Le javascript -->
+	<script data-main="js/main" src="js/lib/require.js"></script>
+</body>
 
 </html>

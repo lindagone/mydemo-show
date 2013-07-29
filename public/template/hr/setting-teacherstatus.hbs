@@ -1,161 +1,256 @@
-<div class="row-fluid">
-
-<div class="social-box">
-
-	<div class="body">
-	<ul id="myTab" class="nav nav-tabs">
-				        <li class="active"><a class="active" href="#basic"
-					data-toggle="tab"><i class=" icon-edit"></i> 教师信息自我完善设置 </a></li>
-						
-						<li><a href="#advanced" data-toggle="tab"><i
-						class="  icon-hand-right"></i> 教师信息公开设置</a></li>
-						
-			</ul>
-		<div id="myTabContent" class="tab-content">
-			
-			<div class="tab-pane fade in active" id="basic">
-					
 <div class="social-box">
 	<div class="header">
-		 <div >
-								<div class="pull-left">
+		 <h4><span>教师信息状态设置</h4>
+		
+		<div class="tools">
+			
+		    <ul id="myTab" class="nav nav-tabs">
+			<li class="active"><a class="active" href="#basic"
+					data-toggle="tab"><i class=" icon-edit"></i> 教师信息自我完善设置 </a></li>
+
+				<li><a href="#advanced" data-toggle="tab"><i
+						class="  icon-hand-right"></i> 教师信息公开设置</a></li>
+				<li><a href="#maintin" data-toggle="tab"><i
+						class="  icon-hand-right"></i> 教师信息维护</a></li>
+			
+			</ul> 
+		</div>
+		
+	</div>
+	<div class="body">
+		
+			
+              <div id="myTabContent2" class="tab-content">
+               
+				<div class="tab-pane fade in active" id="basic">
+				<div class="row-fluid">
+							<div class="span12">
+								<h4 class="inCenter">教师信息自我完善设置</h4>
+							</div>
+						</div>
+				<div class="row-fluid">
+								<div class="span9 pull-left">
 									<span class="text-error">当前状态：</span><span class="text-error"
 										id="status">关闭</span>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-success btn-small currentstatus"
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-primary btn-small currentstatus"
 										data-toggle="collapse">开放</button>
 								</div>
-								<div class="pull-right">
-
-									<button class="btn btn-success btn-small selectall"
+								<div class="span3  pull-right">
+<div class="pull-right">
+									<button class="btn btn-primary btn-small selectall"
 										data-toggle="collapse">
 										<i class=" icon-check"></i> 全选
 									</button>
-									<button class="btn btn-success btn-small unselectall"
+									<button class="btn btn-primary btn-small unselectall"
 										data-toggle="collapse">
 										<i class=" icon-remove-circle"></i> 反选
 									</button>
-									<button class="btn btn-success btn-small save"
+									<button class="btn btn-primary btn-small  save"
 										data-toggle="collapse">
 										<i class=" icon-hdd"></i> 保存
 									</button>
+									</div>
 								</div>
 
-							</div>
-		 
-	</div>
-	<div class="body">
-		<table class="table table-condensed table-bordered">
-			<thead>
-				<tr>
-					<th>序号</th>
-					<th>教师属性</th>					
-					<th>是否可编辑</th>
+							</div>					
+						<div class="row-fluid">
+							<table class="table table-bordered table-condensed table-hover">
+								<thead>
+									<tr  class="headColor">
+										<th>序号</th>
+										<th>教师属性</th>
+										<th>是否可编辑</th>
+
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="inCenter">1</td>
+										<td>姓名</td>
+										<td class="inCenter"><input type="checkbox" value="1" /></td>
+									</tr>
+									<tr>
+										<td class="inCenter">2</td>
+										<td>姓名拼音</td>
+										<td class="inCenter"><input type="checkbox" value="2" checked/></td>
+									</tr>
+									<tr>
+										<td class="inCenter">3</td>
+										<td>性别</td>
+										<td class="inCenter"><input type="checkbox" value="3" /></td>
+									</tr>
+									<tr>
+										<td class="inCenter">4</td>
+										<td>证件类型</td>
+										<td class="inCenter"><input type="checkbox" value="4" /></td>
+									</tr>
+									<tr>
+										<td class="inCenter">5</td>
+										<td>民族</td>
+										<td class="inCenter"><input type="checkbox" value="5" /></td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
 					
-				</tr>
-			</thead>
-			<tbody>
-				<tr>					
-					<td>1</td>
-					<td>姓名</td>
-					<td><input type="checkbox" value="1"/></td>					
-				</tr>
-				<tr>					
-					<td>2</td>
-					<td>姓名拼音</td>
-					<td><input type="checkbox" value="2"/></td>					
-				</tr>
-				<tr>					
-					<td>3</td>
-					<td>性别</td>
-					<td><input type="checkbox" value="3"/></td>					
-				</tr>
-				<tr>					
-					<td>4</td>
-					<td>证件类型</td>
-					<td><input type="checkbox" value="4"/></td>					
-				</tr>
-				<tr>					
-					<td>5</td>
-					<td>民族</td>
-					<td><input type="checkbox" value="5"/></td>					
-				</tr>
-			</tbody>
-		</table>
 
-	</div>
-</div>
 
-				
 				</div>
-			<div class="tab-pane fade" id="advanced">
-				<div class="social-box">
-	<div class="header">
-		 
-		 <div class="pull-right">
-			
-			<button class="btn btn-success btn-small selectall" data-toggle="collapse"
+				<div class="tab-pane fade" id="advanced">
+					<div class="row-fluid">
+							<div class="span12" >
+								<h4 class="inCenter">教师信息公开设置</h4>
+							</div>
+						</div>
+						
+
+							<div class="row-fluid">
+								
+								<div class="span3  pull-right">
+<div class="pull-right">
+									<button class="btn btn-primary btn-small selectall"
+										data-toggle="collapse">
+										<i class=" icon-check"></i> 全选
+									</button>
+									<button class="btn btn-primary btn-small unselectall"
+										data-toggle="collapse">
+										<i class=" icon-remove-circle"></i> 反选
+									</button>
+									<button class="btn btn-primary btn-small save"
+										data-toggle="collapse">
+										<i class=" icon-hdd"></i> 保存
+									</button>
+									</div>
+								</div>
+
+							</div>	
+						
+						<div class="row-fluid">
+							<table class="table table-bordered table-condensed table-hover">
+								<thead>
+									<tr  class="headColor">
+										<th>序号</th>
+										<th>教师属性</th>
+										<th>本人是否可见</th>
+										<th>他人是否可见</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="inCenter">1</td>
+										<td>姓名</td>
+										<td class="inCenter"><input type="checkbox" /></td>
+										<td class="inCenter"><input type="checkbox" /></td>
+									</tr>
+									<tr>
+										<td class="inCenter">2</td>
+										<td>姓名拼音</td>
+										<td class="inCenter"><input type="checkbox" checked/></td>
+										<td class="inCenter"><input type="checkbox" /></td>
+									</tr>
+									<tr>
+										<td class="inCenter">3</td>
+										<td>性别</td>
+										<td class="inCenter"><input type="checkbox" /></td>
+										<td class="inCenter"><input type="checkbox" /></td>
+									</tr>
+									<tr>
+										<td class="inCenter">4</td>
+										<td>证件类型</td>
+										<td class="inCenter"><input type="checkbox" /></td>
+										<td class="inCenter"><input type="checkbox" /></td>
+									</tr>
+									<tr>
+										<td class="inCenter">5</td>
+										<td>民族</td>
+										<td class="inCenter"><input type="checkbox" /></td>
+										<td class="inCenter"><input type="checkbox" /></td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+					</div>
+               <div class="tab-pane fade" id="maintin">
+               	
+
+ <div class="row-fluid">
+   <h4 class="inCenter">教师信息维护</h4>
+		<div class="pull-right">
+			<button class="btn btn-primary btn-small" data-toggle="collapse"
 				data-target="#advanced-search">
-				<i class=" icon-check"></i> 全选
-			</button>
-			<button class="btn btn-success btn-small unselectall" data-toggle="collapse"
-				data-target="#advanced-search">
-				<i class=" icon-remove-circle"></i> 反选
-			</button>
-            <button class="btn btn-success btn-small save" data-toggle="collapse"
-				data-target="#advanced-search">
-				<i class=" icon-hdd"></i> 保存
+				<i class="icon-plus"></i> 添加
 			</button>
 		</div>
 	</div>
 	<div class="body">
-		<table class="table table-condensed table-bordered">
+
+		<table class="table table-bordered table-condensed table-hover">
 			<thead>
-				<tr>
+				<tr  class="headColor">
 					<th>序号</th>
-					<th>教师属性</th>					
-					<th>是否公开</th>
-					
+					<th>名称</th>					
+					<th>描述</th>
+					<th>操作</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr>					
-					<td>1</td>
-					<td>姓名</td>
-					<td><input type="checkbox"/></td>					
+				<tr>
+					<td></td>
+					<td><input type="text" value="" /></td>
+					
+					<td><input type="text" /></td>
+					<td>
+                    <button class="btn btn-small btn-danger" type="button">保存</button>
+                    <button class="btn btn-small" type="button">取消</button>
+                    </td>
 				</tr>
-				<tr>					
-					<td>2</td>
-					<td>姓名拼音</td>
-					<td><input type="checkbox"/></td>					
+				<tr>
+					<td class="inCenter">1</td>
+					<td>户口所属地区县 </td>
+					<td></td>
+					
+					<td>
+                    <button class="btn btn-small" type="button">修改</button>
+                    <button class="btn btn-small" type="button">删除</button>
+                    </td>
 				</tr>
-				<tr>					
-					<td>3</td>
-					<td>性别</td>
-					<td><input type="checkbox"/></td>					
-				</tr>
-				<tr>					
-					<td>4</td>
-					<td>证件类型</td>
-					<td><input type="checkbox"/></td>					
-				</tr>
-				<tr>					
-					<td>5</td>
-					<td>民族</td>
-					<td><input type="checkbox"/></td>					
+				<tr>
+					<td class="inCenter">2</td>
+					<td><input type="text" value="联系电话"/> </td>
+					<td><input type="text" value="" /></td>
+					
+					<td>
+                   
+                     <button class="btn btn-small btn-danger" type="button">保存</button>
+                    <button class="btn btn-small" type="button">取消</button>
+                    </td>
 				</tr>
 			</tbody>
 		</table>
 
-	</div>
 </div>
-				
+	
+               	
+               </div>
 			</div>
-			
-		</div>
+           </div>
+          
+           </div>
+          
 
 
-	</div>
-</div>
+
+
+
+
+
+
+
+
+
+
 
 
 
