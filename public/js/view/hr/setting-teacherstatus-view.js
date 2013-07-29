@@ -7,9 +7,15 @@ function (_, Resthub,searchIndexTmpl) {
         
         //事件：编辑book和删除book
         events: {
-           'click .selectall':"SelectAll",
-           'click .unselectall':"unSelectAll",
-           'click .currentstatus':"toggleStatus"
+           'click .selectall':"selectAllEdit",
+           'click .selfseeall':"selectSelfSee",
+           'click .otherseeall':"selectOtherSee",
+           
+           'click .teacherSetting':'notSelectAllEdit',
+           'click .selfsee':'notSelectAllSelf',
+           'click .othersee':'notSelectAllOther',
+           
+           'click button.status-open, button.status-close':"openToClose"
         },
         
        
@@ -26,29 +32,80 @@ function (_, Resthub,searchIndexTmpl) {
     		 		
     		return this;
     	},
-    	SelectAll:function(){    		
-    		$("input:checkbox").each(function(){    			
-    			$(this).prop('checked',true);  			
-    		});
-    		//$("tbody tr td").find('input').attr('checked',true);
+    	
+    	selectAllEdit:function(e){
+    	    if($(e.target).is(':checked')){
+    	        $("input.teacherSetting").each(function(){               
+                    $(this).prop('checked', true);           
+                });
+    	    }else{
+    	        $("input.teacherSetting").each(function(){               
+                    $(this).prop('checked',false);           
+                });
+    	    }    		
     	},
-    	unSelectAll:function(){
-    		$("input:checkbox").each(function(){
-    			if($(this).is(':checked')){   				
-    				$(this).removeAttr('checked');   				
-    			}else{
-    				$(this).prop('checked',true);
-    			}
-    		});	
+    	
+    	selectSelfSee : function(e){
+    	    if($(e.target).is(':checked')){
+                $("input.selfsee").each(function(){               
+                    $(this).prop('checked', true);           
+                });
+            }else{
+                $("input.selfsee").each(function(){               
+                    $(this).prop('checked',false);           
+                });
+            }  
     	},
-    	toggleStatus:function(){   	
-    	 if($('.currentstatus').text()=='开放'){   		
-    		 $('.currentstatus').text('关闭');
-    		 $('#status').text('开放');
-    	 }else{    		
-    		 $('.currentstatus').text('开放');
-    		 $('#status').text('关闭');
-    	 }
+    	
+    	selectOtherSee : function(e){
+            if($(e.target).is(':checked')){
+                $("input.othersee").each(function(){               
+                    $(this).prop('checked', true);           
+                });
+            }else{
+                $("input.othersee").each(function(){               
+                    $(this).prop('checked',false);           
+                });
+            }  
+        },
+    	
+    	notSelectAllEdit : function(e){
+    	    if(!$(e.target).is(':checked')){
+    	        $('input.selectall').prop('checked',false);
+    	    }
+    	},
+    	
+    	notSelectAllSelf : function(e){
+            if(!$(e.target).is(':checked')){
+                $('input.selfseeall').prop('checked',false);
+            }
+        },
+        
+        notSelectAllOther : function(e){
+            if(!$(e.target).is(':checked')){
+                $('input.otherseeall').prop('checked',false);
+            }
+        },
+    	
+    	openToClose : function(){
+    	    var _self = this;
+    	    var $buttonOpen = _self.$el.find('button.status-open');
+    	    var $buttonClose = _self.$el.find('button.status-close');
+    	    
+    	    //开启到关闭
+    	    if($buttonOpen.hasClass('btn-primary')){
+    	        $buttonOpen.removeClass('btn-primary')
+    	                   .find('span').css('visibility','hidden');
+    	        $buttonClose.addClass('btn-primary')
+    	                   .find('span').css('visibility','visible');
+    	        
+    	    //关闭到开启    
+    	    }else{
+    	        $buttonClose.removeClass('btn-primary')
+                           .find('span').css('visibility','hidden');
+                $buttonOpen.addClass('btn-primary')
+                           .find('span').css('visibility','visible');
+    	    }
     	}
 
     });
