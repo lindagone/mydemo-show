@@ -9,7 +9,7 @@ function(_, Backbone, Resthub, singleTmpl){
     template: singleTmpl,
     
     events: {
-    	
+    	'click .printsingle' : 'printsingle'
     },
     
     initialize: function(options) {
@@ -24,6 +24,10 @@ function(_, Backbone, Resthub, singleTmpl){
 		_self.$el.html(_self.template());
 
 		return _self;
+	},
+	
+	printsingle : function(){
+		window.open("/printer/salary/myprinter.html");
 	}
 	
   });

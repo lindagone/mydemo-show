@@ -8,7 +8,7 @@ tr.headColor th {
 	vertical-align: middle;
 }
 
-.inCenter, td.inCenter {
+th.inCenter, td.inCenter {
 	text-align:center;
 }
 
