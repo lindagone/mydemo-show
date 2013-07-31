@@ -1,13 +1,13 @@
-define([ 'underscore', 'resthub','hbs!template/hr/improve-basicinf'],
-function (_, Resthub,baseTmpl) {
+define([ 'underscore', 'resthub','hbs!template/hr/hr-teacheradjust'],
+function (_, Resthub,teacheradjustTmpl) {
     
-    var ImproveBasicInfView = Resthub.View.extend({       
+    var TeacherAjustView = Resthub.View.extend({       
     	//对应的模板
-        template: baseTmpl,
+        template: teacheradjustTmpl,
         
         //事件：编辑book和删除book
         events: {
-           //'click .btn-sure':"Search"
+           
         },
         
        
@@ -19,16 +19,15 @@ function (_, Resthub,baseTmpl) {
         },
     
         //render视图：data与hbs模板结合
-    	render: function() {   	
+    	render: function() {
+    	
     		this.$el.html(this.template());
-    		_.defer(function(){
-    			$('.mynav').affix();
-    			$('.mynavbar').scrollspy();
-    		});
+    		
     		return this;
-    	},
+    	}
+    	
     	
 
     });
-    return ImproveBasicInfView;
+    return TeacherAjustView;
 });

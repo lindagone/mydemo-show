@@ -3,12 +3,13 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
 		'view/salary/salary-overview-view','view/mytest/mytest-view',
 		'view/hr/hr-index-view','view/hr/personview-index-view',
          'view/hr/hrmanage-index-view','view/hr/teachersearch-view','view/hr/setting-teacherstatus-view',
-         'view/hr/improve-teacherinf-view','view/hr/maintain-index-view', 'view/hr/setTeacherInfo-view',
+         'view/hr/improve-teacherinf-view','view/hr/setTeacherInfo-view',
+         'view/studentmanage/setting-studentstatus-view','view/studentmanage/enrollmentmaintain-view',
 		'backbone-queryparams'], function(
 		Backbone, CodeGeneratorView, DemoGeneratorView, MailBaseView, NoticeIndexView,
 		MysalaryView, SalaryManageView, SalaryInitView, AccountManageView, SalaryOverview, TestView,
 		HrIndexView,PersonViewIndexView,HrManageIndexView,TeacherSearchView,TeacherSettingView,TeaInfImproveView,MaintainIndexView,
-		TeacherInfoView) {
+		StudentSettingView,EnrollmentChangeMaintainView) {
 	var options = {
 		routes : {
 			'': 'anything',
@@ -27,8 +28,9 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
 			'teachersearch.html'    : 'teacherSearch',
 			'setting.html'          : 'teacherSetting',
 			'improve.html'          : 'infImprove',
+			'stusetting.html'       : 'studentSetting',
+			'enrollmentchange.html'         : 'enrollmentChange',
 			'maintain.html'         : 'maintainInf',
-			'teacherinfo.html'         : 'teacherinfo',
 			'test.html':'gotest',
       		'*anything': 'anything'
 		},
@@ -98,8 +100,11 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
 		maintainInf:function(){
 			new MaintainIndexView({root:$('#bodyContainer')});
 		},
-		teacherinfo: function(){
-			new TeacherInfoView({root:$('#bodyContainer')});
+		studentSetting:function(){
+			new StudentSettingView({root:$('#bodyContainer')});
+		},
+		enrollmentChange:function(){
+			new  EnrollmentChangeMaintainView({root:$('#bodyContainer')});
 		}
 	};
 

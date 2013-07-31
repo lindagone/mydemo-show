@@ -7,7 +7,8 @@ function (_, Resthub,hrIndexTmpl,DeptManageView,DeptFunctionView,FunctionRoleVie
         
         //事件：编辑book和删除book
         events: {
-           
+           'click .btn-sure':'changeOk',
+           'click #myTab2 li a':'changTab'
         },
         
        
@@ -44,16 +45,17 @@ function (_, Resthub,hrIndexTmpl,DeptManageView,DeptFunctionView,FunctionRoleVie
            {name: "学校",open:true, children: [
                   		{name: "教务处",
                   			children:[
-                      {name: "语文教研组",
-                    	  children:[
-                    	     {name:"杨凌"} ]},
+                      {name: "语文教研组"},
+                    	 
                       {name: "数学教研组"},
                       {name: "英语教研组"}                      
                   			          ]},
                   		{name: "信息中心",
                   			children:[
                              {name: "电教室"}]},
-                  		{name: "行政处"},
+                  		{name: "行政处",
+                  		 children:[
+                    	     {name:"杨凌"} ]},
                   		{name: "权限查看部门"},
                   		{name: "学校资产"},
                   		{name: "平台管理"}
@@ -68,20 +70,31 @@ function (_, Resthub,hrIndexTmpl,DeptManageView,DeptFunctionView,FunctionRoleVie
 			if(treenode.name=='杨凌'){
 				$('#teacheradjust').focus();				
 				$("div h4").html(treenode.name+"现在的部门情况 ");
-				var str="<table class='table'><tr><th>教师姓名</th><th>原部门</th><th>去向部门</th><th>调入日期</th><th>职务名称</th><th>职务类型</th><th>功能</th></tr>"
+				var str="<div class=\"row-fluid\"><div class=\"span12\" style=\"text-align: center;\"><h4>杨凌现在的部门情况</h4></div></div><br/><div class='row-fluid'><div class=\"span12\" style=\"overflow-x: auto;\"><div style=\"min-width: 600px;\">"
+				+"<table class='table table-bordered table-condensed'><tr class=\"headColor\"><th>教师姓名</th><th>原部门</th><th>去向部门</th><th>调入日期</th><th>职务名称</th><th>职务类型</th><th>操作</th></tr>"
 					+"<tr><td>"+treenode.name+"</td><td>政治教研组</td><td>"+
-					"<select class='input-small'><option>语文教研组</option><option>数学教研组</option><option>物理教研组</option></select>"
+					"<input type='text'placeholder='机构单选框' class='input-small'/>"
 					
 					+"</td><td><input type=\"text\" value='2012-03-23' class='input-small'/></td><td><input type=\"text\" class='input-small' value=\"\"/></td><td>"
 					+"<select class='input-small'><option>教师</option><option>主任</option><option>职员</option></select>"
-					+"</td><td><button type='button' class='btn'>确定</button></td></tr></table>";
+					+"</td><td><button type='button' class='btn btn-mini btn-sure'>确定</button></td></tr></table></div></div></div>";
                 $("#myTabContent2").replaceWith($("#teacheradjust"));
 				$("#teacheradjust").replaceWith(str);
 			}else{
-				$("div h4 span").html(treenode.name);
+				$("div h4 span").html(treenode.name+" ");
 			}
+	
+		},
+		changeOk:function(){
+			window.globalNotify({
+            type:"success",
+            htmlContent:"杨凌在语文教研组的部门信息更新成功！",
+            //cb:function(){}
+        });
 			
-			
+		},
+		changTab:function(e){
+			var txt=$(e.target).text();
 			
 		}
     	

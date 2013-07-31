@@ -1,0 +1,1377 @@
+<div class="social-box">
+	<div class="header">
+		<h4><strong>学籍异动维护</strong></h4>
+		
+		<div class="tools">
+			
+		    <ul id="myTab" class="nav nav-tabs">
+			
+				<li class="active" >
+					<a data-bypass href="#jiedu" data-toggle="tab"> <i class="icon-list"></i> 借读</a>
+				</li>
+			
+				<li  >
+					<a data-bypass href="#jiangtiao" data-toggle="tab"> <i class="icon-list"></i> 降跳</a>
+				</li>
+			
+				<li  >
+					<a data-bypass href="#xiufuxue" data-toggle="tab"> <i class="icon-list"></i> 休学复学</a>
+				</li>
+			
+				<li  >
+					<a data-bypass href="#biye" data-toggle="tab"> <i class="icon-list"></i> 毕业</a>
+				</li>
+			
+				<li  >
+					<a data-bypass href="#zhuanxue" data-toggle="tab"> <i class="icon-list"></i> 转入转出</a>
+				</li>
+			
+				<li  >
+					<a data-bypass href="#kaichu" data-toggle="tab"> <i class="icon-list"></i> 开除</a>
+				</li>
+			
+				<li  >
+					<a data-bypass href="#tuixue" data-toggle="tab"> <i class="icon-list"></i> 退学</a>
+				</li>
+			
+				<li  >
+					<a data-bypass href="#jieye" data-toggle="tab"> <i class="icon-list"></i> 结业</a>
+				</li>
+			
+				<li  >
+					<a data-bypass href="#xuejiadjust" data-toggle="tab"> <i class="icon-list"></i> 学籍调整</a>
+				</li>
+			
+			</ul> 
+		</div>
+		
+	</div>
+	<div class="body">
+		
+			<div class="tab-content">
+				
+					<div class="tab-pane active" id="jiedu">
+						<div class="row-fluid">
+							<div class="span12">
+								<h4 class="inCenter">高中2013届 借读维护</h4>
+							</div>
+						</div>
+						<br />
+						<div class="row-fluid">
+							<div class="span12">
+								<div class="pull-right">
+									<button class="btn btn-small btn-primary">
+										<i class="icon-plus"></i> 添加借读学生
+									</button>
+									<button class="btn btn-small btn-primary">
+										<i class="icon-print"></i> 打印
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span3">
+							<ul id="lTree1" class="nav">
+							<li class="treeLeaf">
+								<i class="icon-folder-open"></i><span>当前使用的届</span>
+								<ul id="lTree2" class="nav">
+									<li >
+										<i class="icon-book"></i><span><a data-bypass >    高中2015届[高一]</a> </span>
+									</li>
+									<li >
+										<i class="icon-book"></i><span> <a data-bypass >   高中2014届[高二]</a></span>
+									</li>
+									<li >
+										<i class="icon-book"></i><span><a data-bypass >    高中2013届[高三]</a></span>
+									</li>
+
+								</ul>
+							</li>
+						</ul>
+
+						</div>
+							
+							<div class="span9">
+								<div class="span12" style="overflow-x: auto;">
+								<div style="min-width: 1300px;">
+									<table class="table table-bordered table-condensed table-hover">
+								<thead>
+									<tr class="headColor">
+										
+										<th class="listNum">序号</th>
+										
+										<th>届</th>
+										
+										<th>姓名</th>
+										
+										<th>借读学期</th>
+										
+										<th>来源学校</th>
+										
+										<th>分配班级</th>
+										
+										<th>借读原因</th>
+										
+										<th>借读日期</th>
+										
+										<th>经办人</th>
+
+										<th>操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										
+										<td ></td>										
+										<td >
+											 	高中2013届
+										</td>										
+										<td >
+											<input type="text" name="name" placeholder="人员单选框" class="input-small"/>
+										</td>										
+										<td >
+											2012-2013学年第二学期 
+										</td>
+										<td >
+											<input type="text" name="clazz" class="input-small"/>
+										</td>										
+										<td >
+											<select id="physicalClassSn" class="input-small" name="physicalClassSn">
+												<option value="CP40713">高三1班</option>
+												<option value="CP40714">高三2班</option>
+												<option value="">未分班</option>
+											</select>
+										</td>										
+																				
+										<td >
+											<input type="text" name="reason" class="input-small"/>
+										</td>										
+										<td >
+											<input type="text" name="jiedudate" class="input-small"placeholder="日期选择框"/>
+										</td>										
+										<td >
+											--<br/>（注释：保存后，当前<br/>操作人员默认为经办人）
+										</td>									
+										<td>
+											<button class="btn btn-mini btn-danger">
+												保存
+											</button>
+											<button class="btn btn-mini">
+												取消
+											</button>
+										</td>
+									</tr>
+									<tr>
+										
+										<td class="inCenter">1</td>										
+										<td >高中2013届 </td>										
+										<td >胡可</td>										
+										<td >2012-2013学年第二学期</td>										
+										<td >清华附中</td>
+										<td >高三1班 </td>
+										<td >换个学校</td>
+										<td class="inCenter">2013-07-01</td>
+										<td >白雪飞</td>
+										<td>
+											<button class="btn btn-mini btn-cancle">撤销借读</button>
+											
+										</td>
+									</tr>
+									
+																	
+								</tbody>
+								</table>
+								</div>
+								
+							</div>
+							</div>
+							
+						</div>
+					</div>
+				
+					<div class="tab-pane " id="jiangtiao">
+						<div class="row-fluid">
+							<div class="span12">
+								<h4 class="inCenter">高中2013届 升留降跳维护 </h4>
+							</div>
+						</div>
+						<br />
+						<div class="row-fluid">
+							<div class="span12">
+								<div class="pull-right">
+									<button class="btn btn-small btn-primary">
+										<i class="icon-plus"></i> 添加降跳学生
+									</button>
+									<button class="btn btn-small btn-primary">
+										<i class="icon-print"></i> 打印
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span3">
+							<ul id="lTree1" class="nav">
+							<li class="treeLeaf">
+								<i class="icon-folder-open"></i><span>当前使用的届</span>
+								<ul id="lTree2" class="nav">
+									<li >
+										<i class="icon-book"></i><span><a data-bypass >    高中2015届[高一]</a> </span>
+									</li>
+									<li >
+										<i class="icon-book"></i><span> <a data-bypass >   高中2014届[高二]</a></span>
+									</li>
+									<li >
+										<i class="icon-book"></i><span><a data-bypass >    高中2013届[高三]</a></span>
+									</li>
+
+								</ul>
+							</li>
+						</ul>
+
+						</div>
+							
+							<div class="span9">
+								<div class="span12" style="overflow-x: auto;">
+								<div style="min-width: 1300px;">
+										<table class="table table-bordered table-condensed table-hover">
+								<thead>
+									
+									<tr class="headColor">
+										
+										<th class="listNum">序号</th>
+										
+										<th>届</th>
+										
+										<th>姓名</th>
+										
+										<th>学期</th>
+										
+										<th>去向届</th>
+										
+										<th>原始班级</th>
+										
+										<th>去向班级</th>
+										
+										<th>降跳原因</th>
+										
+										<th>降跳日期</th>
+										
+										<th>经办人</th>
+										
+										<th>操作</th>
+				
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										
+										<td ></td>										
+										<td >
+											高中2013届
+										</td>
+										
+										<td >
+											<input type="text" name="name" class="input-small" placeholder="人员单选框"/>
+										</td>
+										
+										<td >
+											2012-2013学年第二学期 
+										</td>
+										
+										<td >
+											<select id="targetGradeSnId"  class="input-small"  name="targetGradeSn">
+												<option value="BXG5408" selected>高中2014届(降)</option>
+												<option value="BXG5409">高中2015届(降)</option>
+											</select>
+										</td>
+										
+										<td >注释：此字段值在<br/>姓名选定后自动关联</td>
+										
+										<td >
+											<select id="targetClassSnId" class="input-small">
+												<option value="CP40709">高二1班</option>
+												<option value="CP40710">高二2班</option>
+												<option value="CP40711">高二4班</option>
+												<option value="CP40712">高二3班</option>
+												<option value="">未分班</option>
+											</select>
+										</td>
+										
+										<td >
+											<input type="text" name="reason" class="input-small"/>
+										</td>
+										
+										<td >
+											<input type="text" name="jtdate" class="input-small" placeholder="日期选择框"/>
+										</td>
+										
+										<td >
+											--<br/>（注释：保存后，当前<br/>操作人员默认为经办人）
+										</td>
+										
+									
+										
+										<td>
+											<button class="btn btn-mini btn-danger">
+												保存
+											</button>
+											<button class="btn btn-mini">
+												取消
+											</button>
+										</td>
+									</tr>
+									<tr>
+										
+										<td class="inCenter">
+											1
+										</td>
+										
+										<td >
+											高中2013届
+										</td>
+										
+										<td >
+											曹雨
+										</td>
+										
+										<td >
+											2012-2013学年第二学期
+										</td>
+										
+										<td >
+											高中2014届
+										</td>
+										
+										<td >
+											高三1班
+										</td>
+										
+										<td >
+											高二1班
+										</td>
+										
+										<td >
+											学分不够
+										</td>
+										
+										<td >
+											2013-07-02
+										</td>
+										
+										<td >
+											白雪飞
+										</td>
+										
+										
+										
+										<td>
+											
+											<button class="btn btn-mini btn-cancle">撤销降跳</button>
+										</td>
+									</tr>
+									
+																
+								</tbody>
+								</table>
+								</div>
+								</div>
+							
+						</div>
+					</div>
+					</div>
+					
+				
+					<div class="tab-pane " id="xiufuxue">
+							<div class="tab-pane " id="jiangtiao">
+						<div class="row-fluid">
+							<div class="span12">
+								<h4 class="inCenter">高中2013届 休学复学维护 </h4>
+							</div>
+						</div>
+						<br />
+						<div class="row-fluid">
+							<div class="span12">
+								<div class="pull-right">
+									<button class="btn btn-small btn-primary">
+										<i class="icon-plus"></i> 添加休学
+									</button>
+									<button class="btn btn-small btn-primary">
+										<i class="icon-print"></i> 打印
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span3">
+							<ul id="lTree1" class="nav">
+							<li class="treeLeaf">
+								<i class="icon-folder-open"></i><span>当前使用的届</span>
+								<ul id="lTree2" class="nav">
+									<li >
+										<i class="icon-book"></i><span><a data-bypass >    高中2015届[高一]</a> </span>
+									</li>
+									<li >
+										<i class="icon-book"></i><span> <a data-bypass >   高中2014届[高二]</a></span>
+									</li>
+									<li >
+										<i class="icon-book"></i><span><a data-bypass >    高中2013届[高三]</a></span>
+									</li>
+                                    <li >
+										<i class="icon-book"></i><span><a data-bypass >    已毕业的届</a></span>
+									</li>
+								</ul>
+							</li>
+						</ul>
+
+						</div>
+							
+							<div class="span9">
+								<div class="span12" style="overflow-x: auto;">
+								<div style="min-width: 2000px;">
+										<table class="table table-bordered table-condensed table-hover">
+								<thead>
+									
+									<tr class="headColor">
+										
+										<th class="listNum">序号</th>
+										
+										<th>届</th>
+										
+										<th>姓名</th>
+										
+										<th>休学学期</th>
+										
+										<th>休学前班级</th>
+										
+										<th>休学原因</th>
+										
+										<th>休学日期</th>
+										
+										<th>预计返校日期</th>
+										<th>休学经办人</th>
+										<th>复学学期</th>
+										<th>去向届</th>
+										<th>复学班级</th>
+										<th>复学原因</th>
+										<th>复学日期</th>
+										<th>复学经办人</th>
+										<th>操作</th>
+				
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										
+										<td ></td>										
+										<td >
+											高中2013届
+										</td>
+										
+										<td >
+											<input type="text" name="name" class="input-small" placeholder="人员单选框"/>
+										</td>
+										
+										<td >
+											2012-2013学年第二学期 
+										</td>
+										<td >注释：此字段值在<br/>姓名选定后自动关联</td>
+										
+										<td >
+											<input type="text" name="reason" class="input-small"/>
+										</td>
+										
+										<td >
+											<input type="text" name="name" class="input-small" placeholder="日期选择框"/>
+										</td>
+										<td >
+											<input type="text" name="name" class="input-small" placeholder="日期选择框"/>
+										</td>
+										<td >
+											--<br/>（注释：保存后，当前<br/>操作人员默认为经办人）
+										</td>
+                                        <td ></td>
+										<td ></td>
+										<td ></td>
+										<td ></td>
+										<td ></td>
+									   <td ></td>
+										
+										<td>
+											<button class="btn btn-mini btn-danger">
+												保存
+											</button>
+											<button class="btn btn-mini">
+												取消
+											</button>
+										</td>
+									</tr>
+									<tr>
+										
+										<td class="inCenter">
+											1
+										</td>
+										
+										<td >
+											高中2013届
+										</td>
+										
+										<td >
+											曹雨
+										</td>
+										
+										<td >
+											2012-2013学年第二学期
+										</td>
+										
+										<td >
+											高三1班
+										</td>
+										
+										<td >
+											个人原因
+										</td>
+										
+										<td class="inCenter">
+											2013-07-01
+										</td>
+										
+										<td class="inCenter">
+											2014-01-01
+										</td>
+										
+										<td >
+											白雪飞
+										</td>
+                                    	 <td >--</td>
+										<td >--</td>
+										<td >--</td>
+										<td >--</td>
+										<td >--</td>
+									   <td >--</td>
+										
+										<td>
+											
+											<button class="btn btn-mini btn-fuxue">复学</button>
+										</td>
+									</tr>
+									<tr style="display:none">
+										
+										<td class="inCenter">
+											1
+										</td>
+										
+										<td >
+											高中2013届
+										</td>
+										
+										<td >
+											曹雨
+										</td>
+										
+										<td >
+											2012-2013学年第二学期
+										</td>
+										
+										<td >
+											高三1班
+										</td>
+										
+										<td >
+											个人原因
+										</td>
+										
+										<td class="inCenter">
+											2013-07-01
+										</td>
+										
+										<td class="inCenter">
+											2014-01-01
+										</td>
+										
+										<td >
+											白雪飞
+										</td>
+                                    	 <td >2012-2013学年第二学期</td>
+										<td >
+                                         <select id="comebackGradeSnId" class="input-small" name="comebackGradeSn">
+													<option value="BXG5409">高中2015届[高一]</option>
+													<option value="BXG5408">高中2014届[高二]</option>
+													<option value="BXG5407">高中2013届[高三]</option>
+												</select>  
+                                         </td>
+										<td >
+											<select class="input-small" >
+													<option value="CP40707">高一1班</option>
+													<option value="CP40708">高一2班</option>
+													<option value="CP47001">高一3班</option>
+													<option value="CP47401">高一4班</option>
+													<option selected="" value="">未分班</option>
+												</select>
+                                        </td>
+										<td ><input type="text" name="name" class="input-small"/></td>
+										<td >
+											<input type="text" name="name" class="input-small" placeholder="日期选择框"/>
+										</td>
+										<td >
+											--<br/>（注释：保存后，当前<br/>操作人员默认为经办人）
+										</td>
+										
+										<td>
+											<button class="btn btn-mini btn-danger">
+												保存
+											</button>
+											<button class="btn btn-mini">
+												取消
+											</button>
+										</td>
+									</tr>
+																
+								</tbody>
+								</table>
+								</div>
+								</div>
+							
+						</div>
+					</div>
+					</div>
+					
+					</div>
+				
+					<div class="tab-pane " id="biye">
+						<div class="row-fluid">
+							<div class="span12">
+								<h4 class="inCenter">高中2013届毕业维护 </h4>
+							</div>
+						</div>
+						<br />
+						<div class="row-fluid">
+							<div class="span12">
+								<div class="pull-right">
+									
+									<button class="btn btn-small btn-primary">
+										<i class="icon-print"></i> 打印
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span3">
+							<ul id="lTree1" class="nav">
+							<li class="treeLeaf">
+								<i class="icon-folder-open"></i><span>当前使用的届</span>
+								<ul id="lTree2" class="nav">
+									<li >
+										<i class="icon-book"></i><span><a data-bypass >    高中2015届[高一]</a> </span>
+									</li>
+									<li >
+										<i class="icon-book"></i><span> <a data-bypass >   高中2014届[高二]</a></span>
+									</li>
+									<li >
+										<i class="icon-book"></i><span><a data-bypass >    高中2013届[高三]</a></span>
+									</li>
+
+								</ul>
+							</li>
+						</ul>
+
+						</div>
+							
+							<div class="span9">
+								<div class="span12" style="overflow-x: auto;">
+								<div style="min-width: 1300px;">
+										<table class="table table-bordered table-condensed table-hover">
+								<thead>
+									
+									<tr class="headColor">
+										
+										<th class="listNum">序号</th>
+										
+										<th>届</th>										
+										
+										<th>毕业学期</th>
+										
+										<th>班级名称</th>
+										
+										<th>班号</th>
+										
+										<th>班主任</th>
+										
+										<th>班级人数</th>
+										
+										<th>毕业状态</th>
+										<th>毕业日期</th>
+										<th>经办人</th>
+										
+										<th>操作</th>
+				
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										
+										<td class="inCenter">1</td>										
+										<td >
+											高中2013届
+										</td>
+										<td >
+											2012-2013学年第二学期 
+										</td>
+										<td >
+											高三1班 
+										</td>
+										<td >
+											
+										</td>
+																				
+										<td >
+											
+										</td>
+										<td class="inRight">
+											22
+										</td>
+										<td >
+											已毕业
+										</td>
+										<td >
+											2013-07-31
+										</td>
+										
+										<td >
+											白雪飞
+										</td>
+										
+									
+										
+										<td>
+											<button class="btn btn-mini">
+												撤销毕业
+											</button>
+											
+										</td>
+									</tr>
+									<tr>
+										
+										<td class="inCenter">
+											2
+										</td>
+										
+										<td >
+											高中2013届
+										</td>
+										<td >
+											2012-2013学年第二学期 
+										</td>
+										<td >
+											高三2班 
+										</td>
+										<td >
+											
+										</td>
+																				
+										<td >
+											
+										</td>
+										<td class="inRight">
+											19
+										</td>
+										<td >
+											未毕业
+										</td>
+										<td >
+											--
+										</td>
+										
+										<td >
+											--
+										</td>
+										<td>
+											
+											<button class="btn btn-mini btn-addgraduate">添加毕业</button>
+										</td>
+									</tr>
+									<tr style="display: none">
+										
+										<td class="inCenter">
+											2
+										</td>
+										
+										<td >
+											高中2013届
+										</td>
+										<td >
+											2012-2013学年第二学期 
+										</td>
+										<td >
+											高三2班 
+										</td>
+										<td >
+											
+										</td>
+																				
+										<td >
+											
+										</td>
+										<td class="inRight">
+											19
+										</td>
+										<td >
+											未毕业
+										</td>
+										<td >
+											<input type="text" name="jtdate" class="input-small" placeholder="日期选择框"/>
+										</td>
+										
+										<td >
+											--<br/>（注释：保存后，当前<br/>操作人员默认为经办人）
+										</td>
+										<td>
+											<button class="btn btn-mini btn-danger">
+												保存
+											</button>
+											<button class="btn btn-mini">
+												取消
+											</button>
+										</td>
+									</tr>
+																
+								</tbody>
+								</table>
+								</div>
+								</div>
+							
+						</div>
+					</div>
+					</div>
+				
+					<div class="tab-pane " id="zhuanxue">
+						<div class="row-fluid">
+							<div class="span12">
+								<h4 class="inCenter">转入转出</h4>
+							</div>
+						</div>
+						<br />
+						<div class="row-fluid">
+							<div class="span12">
+								<div class="span3 offset6">
+									<div class="pull-right">
+								选择类型：
+								<select class="input-small">
+									<option>转入</option>
+									<option>转出</option>
+								</select>
+							</div>
+								</div>
+								<div class="span3">
+									<div class="pull-right">
+									
+									<button class="btn btn-small btn-primary">
+										<i class="icon-plus"></i> 添加转入学生
+									</button>
+									<button class="btn btn-small btn-primary">
+										<i class="icon-print"></i> 打印
+									</button>
+								</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span3">
+							<ul id="lTree1" class="nav">
+							<li class="treeLeaf">
+								<i class="icon-folder-open"></i><span>当前使用的届</span>
+								<ul id="lTree2" class="nav">
+									<li >
+										<i class="icon-book"></i><span><a data-bypass >    高中2015届[高一]</a> </span>
+									</li>
+									<li >
+										<i class="icon-book"></i><span> <a data-bypass >   高中2014届[高二]</a></span>
+									</li>
+									<li >
+										<i class="icon-book"></i><span><a data-bypass >    高中2013届[高三]</a></span>
+									</li>
+
+								</ul>
+							</li>
+						</ul>
+
+						</div>
+							
+							<div class="span9">
+								<div class="span12" style="overflow-x: auto;">
+								<div style="min-width: 1300px;">
+									<table class="table table-bordered table-condensed table-hover">
+								<thead>
+									<tr class="headColor">
+										
+										<th class="listNum">序号</th>
+										
+										<th>届</th>
+										
+										<th>姓名</th>
+										
+										<th>转入学期</th>
+										
+										<th>原始学校</th>
+										
+										<th>分配班级</th>
+										
+										<th>转入原因</th>
+										
+										<th>转入日期</th>
+										
+										<th>经办人</th>
+
+										<th>操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										
+										<td ></td>										
+										<td >
+											 	高中2013届
+										</td>										
+										<td >
+											<input type="text" name="name" placeholder="人员单选框" class="input-small"/>
+										</td>										
+										<td >
+											2012-2013学年第二学期 
+										</td>
+										<td >
+											<input type="text" name="clazz" class="input-small"/>
+										</td>										
+										<td >
+											<select id="physicalClassSn" class="input-small">
+												<option value="CP40713">高二1班</option>
+												<option value="CP40714">高二2班</option>
+												<option value="">未分班</option>
+											</select>
+										</td>										
+																				
+										<td >
+											<input type="text" name="reason" class="input-small"/>
+										</td>										
+										<td >
+											<input type="text" name="jiedudate" class="input-small"placeholder="日期选择框"/>
+										</td>										
+										<td >
+											--<br/>（注释：保存后，当前<br/>操作人员默认为经办人）
+										</td>									
+										<td>
+											<button class="btn btn-mini btn-danger">
+												保存
+											</button>
+											<button class="btn btn-mini">
+												取消
+											</button>
+										</td>
+									</tr>
+									<tr>
+										
+										<td class="inCenter">1</td>										
+										<td >高中2013届 </td>										
+										<td >胡可</td>										
+										<td >2012-2013学年第二学期</td>										
+										<td >清华附中</td>
+										<td >高三1班 </td>
+										<td >换个学校</td>
+										<td class="inCenter">2013-07-01</td>
+										<td >白雪飞</td>
+										<td>
+											<button class="btn btn-mini ">删除</button>
+											
+										</td>
+									</tr>
+									
+																	
+								</tbody>
+								</table>
+								</div>
+								
+							</div>
+							</div>
+							
+						</div>
+					</div>
+				
+					<div class="tab-pane " id="kaichu">
+						<div class="row-fluid">
+							<div class="span12">
+								<h4 class="inCenter">开除</h4>
+							</div>
+						</div>
+						<br />
+						<div class="row-fluid">
+							<div class="span12">
+								<div class="pull-right">
+									<button class="btn btn-small btn-primary">
+										<i class="icon-plus"></i> 添加新条目
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span12">
+								<table class="table table-bordered table-condensed table-hover">
+								<thead>
+									<tr class="headColor">
+										
+										<th>序号</th>
+										
+										<th>操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										
+										<td >
+											<input type="text" name="No" class="input-small"/>
+										</td>
+										
+										<td>
+											<button class="btn btn-mini btn-danger">
+												保存
+											</button>
+											<button class="btn btn-mini">
+												取消
+											</button>
+										</td>
+									</tr>
+									<tr>
+										
+										<td >
+											
+										</td>
+										
+										<td>
+											<button class="btn btn-mini">
+												修改
+											</button>
+											<button class="btn btn-mini btn-delete">
+												删除
+											</button>
+										</td>
+									</tr>
+									<tr>
+										
+										<td >
+											
+										</td>
+										
+										<td>
+											<button class="btn btn-mini">
+												修改
+											</button>
+											<button class="btn btn-mini btn-delete">
+												删除
+											</button>
+										</td>
+									</tr>
+									<tr>
+										
+										<td >
+											<input type="text" name="No" class="input-small"/>
+										</td>
+										
+										<td>
+											<button class="btn btn-mini btn-danger">
+												保存
+											</button>
+											<button class="btn btn-mini">
+												取消
+											</button>
+										</td>
+									</tr>									
+								</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				
+					<div class="tab-pane " id="tuixue">
+						<div class="row-fluid">
+							<div class="span12">
+								<h4 class="inCenter">退学</h4>
+							</div>
+						</div>
+						<br />
+						<div class="row-fluid">
+							<div class="span12">
+								<div class="pull-right">
+									<button class="btn btn-small btn-primary">
+										<i class="icon-plus"></i> 添加新条目
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span12">
+								<table class="table table-bordered table-condensed table-hover">
+								<thead>
+									<tr class="headColor">
+										
+										<th>序号</th>
+										
+										<th>操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										
+										<td >
+											<input type="text" name="No" class="input-small"/>
+										</td>
+										
+										<td>
+											<button class="btn btn-mini btn-danger">
+												保存
+											</button>
+											<button class="btn btn-mini">
+												取消
+											</button>
+										</td>
+									</tr>
+									<tr>
+										
+										<td >
+											
+										</td>
+										
+										<td>
+											<button class="btn btn-mini">
+												修改
+											</button>
+											<button class="btn btn-mini btn-delete">
+												删除
+											</button>
+										</td>
+									</tr>
+									<tr>
+										
+										<td >
+											
+										</td>
+										
+										<td>
+											<button class="btn btn-mini">
+												修改
+											</button>
+											<button class="btn btn-mini btn-delete">
+												删除
+											</button>
+										</td>
+									</tr>
+									<tr>
+										
+										<td >
+											<input type="text" name="No" class="input-small"/>
+										</td>
+										
+										<td>
+											<button class="btn btn-mini btn-danger">
+												保存
+											</button>
+											<button class="btn btn-mini">
+												取消
+											</button>
+										</td>
+									</tr>									
+								</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				
+					<div class="tab-pane " id="jieye">
+						<div class="row-fluid">
+							<div class="span12">
+								<h4 class="inCenter">结业</h4>
+							</div>
+						</div>
+						<br />
+						<div class="row-fluid">
+							<div class="span12">
+								<div class="pull-right">
+									<button class="btn btn-small btn-primary">
+										<i class="icon-plus"></i> 添加新条目
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span12">
+								<table class="table table-bordered table-condensed table-hover">
+								<thead>
+									<tr class="headColor">
+										
+										<th>序号</th>
+										
+										<th>操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										
+										<td >
+											<input type="text" name="No" class="input-small"/>
+										</td>
+										
+										<td>
+											<button class="btn btn-mini btn-danger">
+												保存
+											</button>
+											<button class="btn btn-mini">
+												取消
+											</button>
+										</td>
+									</tr>
+									<tr>
+										
+										<td >
+											
+										</td>
+										
+										<td>
+											<button class="btn btn-mini">
+												修改
+											</button>
+											<button class="btn btn-mini btn-delete">
+												删除
+											</button>
+										</td>
+									</tr>
+									<tr>
+										
+										<td >
+											
+										</td>
+										
+										<td>
+											<button class="btn btn-mini">
+												修改
+											</button>
+											<button class="btn btn-mini btn-delete">
+												删除
+											</button>
+										</td>
+									</tr>
+									<tr>
+										
+										<td >
+											<input type="text" name="No" class="input-small"/>
+										</td>
+										
+										<td>
+											<button class="btn btn-mini btn-danger">
+												保存
+											</button>
+											<button class="btn btn-mini">
+												取消
+											</button>
+										</td>
+									</tr>									
+								</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				
+					<div class="tab-pane " id="xuejiadjust">
+						<div class="row-fluid">
+							<div class="span12">
+								<h4 class="inCenter">学籍调整</h4>
+							</div>
+						</div>
+						<br />
+						<div class="row-fluid">
+							<div class="span12">
+								<div class="pull-right">
+									<button class="btn btn-small btn-primary">
+										<i class="icon-plus"></i> 添加新条目
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span12">
+								<table class="table table-bordered table-condensed table-hover">
+								<thead>
+									<tr class="headColor">
+										
+										<th>序号</th>
+										
+										<th>操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										
+										<td >
+											<input type="text" name="No" class="input-small"/>
+										</td>
+										
+										<td>
+											<button class="btn btn-mini btn-danger">
+												保存
+											</button>
+											<button class="btn btn-mini">
+												取消
+											</button>
+										</td>
+									</tr>
+									<tr>
+										
+										<td >
+											
+										</td>
+										
+										<td>
+											<button class="btn btn-mini">
+												修改
+											</button>
+											<button class="btn btn-mini btn-delete">
+												删除
+											</button>
+										</td>
+									</tr>
+									<tr>
+										
+										<td >
+											
+										</td>
+										
+										<td>
+											<button class="btn btn-mini">
+												修改
+											</button>
+											<button class="btn btn-mini btn-delete">
+												删除
+											</button>
+										</td>
+									</tr>
+									<tr>
+										
+										<td >
+											<input type="text" name="No" class="input-small"/>
+										</td>
+										
+										<td>
+											<button class="btn btn-mini btn-danger">
+												保存
+											</button>
+											<button class="btn btn-mini">
+												取消
+											</button>
+										</td>
+									</tr>									
+								</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				
+			</div>
+		 
+	</div>
+</div>

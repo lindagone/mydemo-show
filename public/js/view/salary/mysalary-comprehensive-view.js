@@ -10,8 +10,7 @@ function(_, Backbone, Resthub, baseTmpl){
     
     events: {
     	'click .btn-sure':'showResults',
-    	'click .btn-reset':'resetInput',
-    	'click .closePop':'closePop'
+    	'click .btn-reset':'resetInput'
     },
     
     initialize: function(options) {
@@ -50,11 +49,6 @@ function(_, Backbone, Resthub, baseTmpl){
 		$('input[name="begintime"]').val("");
 		$('input[name="endtime"]').val("");
 		$('#comprehensiveDetail').slideUp('fast');
-	},
-	
-	closePop : function(){
-		console.log();
-		$('#accountFilter2').hide();
 	}
 	
 	

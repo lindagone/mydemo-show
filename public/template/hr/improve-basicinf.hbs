@@ -4,9 +4,9 @@
 <!-- 信息编辑 ，权限开放-->
 <div class="row-fluid">
     <div class="span3">
-        <div class="social-nav-list">
-            <ul class="nav nav-list dividers">
-                <li class="active"><a href="#global"><i class="icon-chevron-right"></i> 教工基本信息</a></li>
+        <div class="social-nav-list mynav" data-spy="affix" data-offset-top="100" style="width: 180px">
+            <ul class="nav nav-list dividers mynavbar">
+                <li><a href="#global"><i class="icon-chevron-right"></i> 教工基本信息</a></li>
                 <li><a href="#gridSystem"><i class="icon-chevron-right"></i> 工作信息</a></li>
                 <li><a href="#fluidGridSystem"><i class="icon-chevron-right"></i> 个人联系信息</a></li>
                 <li><a href="#layouts"><i class="icon-chevron-right"></i> 家庭联系信息</a></li>
@@ -16,7 +16,7 @@
     <div class="span9">
         
 
-<div id="edit">
+<div id="edit" data-spay="scroll" data-target=".mynavbar">
     <form class="form-horizontal">
         <fieldset id="global">
             <legend>
@@ -62,7 +62,7 @@
                             <td>
                             <input type="text" value="浙江上虞" class="input-small" />
                             </td>
-                            <td colspan="2" class="text-info">注意：编辑信息时，可以上传头像。</td>
+                            <td colspan="2" class="text-info"><a data-bypass class="btn btn-info">上传图片</a></td>
 
                         </tr>
                         <tr>
@@ -376,7 +376,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>家庭地址：</td>
+                            <td>家庭住址：</td>
                             <td colspan="3">
                             <input type="text" value="" class="input-large" />
                             </td>
