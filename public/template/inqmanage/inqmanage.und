@@ -5,8 +5,9 @@
 	<div class="body">
 		<div class="row-fluid">
 			<div class="span5 offset1">课题筛选：
+			    年度：
 				<select style="width: 145px">
-					<option selected>---- 全部课题 ----</option>
+					<option selected>所有年度</option>
 					<option>2007-2008学年度</option>
 					<option>2008-2009学年度</option>
 					<option>2009-2010学年度</option>
@@ -14,20 +15,28 @@
 					<option>2011-2012学年度</option>
 					<option>2012-2013学年度</option>
 				</select>
+				
+				年级：
+				<select style="width: 95px">
+                    <option selected>所有年级</option>
+                    <option>高一年级</option>
+                    <option>高二年级</option>
+                    <option>高三年级</option>
+                </select>
 			</div>
 			<div class="span1 offset4"><button class="btn btn-primary">确定</button></div>
 		</div>
 		<hr />
 		<div class="row-fluid">
 			<div class="span12">
-				<h4 class="inCenter">全部课题 课题列表</h4>
+				<h4 class="inCenter">所有年度 所有年级 课题列表</h4>
 			</div>
 		</div>
 		<br />
 		<div class="row-fluid">
 			<div class="span2">
 				<div class="control-group info inRight">
-					<span class="control-label">总计 8个课题</span>
+					<span class="control-label">总共 12个课题</span>
 				</div>
 			</div>
 			<div class="span10">
@@ -40,12 +49,13 @@
 		</div>
 		<div class="row-fluid">
 			<div class="span12" style="overflow-x:auto;">
-				<div style="min-width:1300px;">
+				<div style="min-width:1400px;">
 					<table class="table table-bordered table-condensed table-hover">
 						<thead>
 							<tr class="headColor">
 								<th class="listNum">序号</th>
 								<th width="150px">年度</th>
+								<th width="100px">年级</th>
 								<th>课题名称</th>
 								<th width="50px">指导老师</th>
 								<th width="50px">课题组长</th>
@@ -71,6 +81,11 @@
 									<option>2011-2012学年度</option>
 									<option selected>2012-2013学年度</option>
 								</select></td>
+								<td><select style="width: 95px">
+                                    <option selected>高一年级</option>
+                                    <option>高二年级</option>
+                                    <option>高三年级</option>
+                                </select></td>
 								<td><textarea type="text" name="topicName" style="width: 95%; height:60px;" placeholder="此处的高度可以随着文本的长度，自动变高，不能出滚动条"/></td>
 								<td><input type="text" name="teacher" class="input-mini" placeholder="多选人框"/></td>
 								<td><input type="text" name="groupLeader" class="input-mini" placeholder="单选人框"/></td>
@@ -83,15 +98,15 @@
 									<option>专家评定</option>
 									<option selected>已结题</option>
 								</select></td>
-								<td><input type="text" name="openingReport" style="width: 30px"/></td>
+								<td><input type="text" name="openingReport" style="width: 45px" placeholder="未评价"/></td>
 								<td><select style="width: 80px" name="openingSpeech">
 									<option>优秀</option>
 									<option>良好</option>
 									<option>及格</option>
 									<option selected>未评价</option>
 								</select></td>
-								<td><input type="text" name="practiseScore" style="width: 30px"/></td>
-								<td><input type="text" name="closingReport" style="width: 30px"/></td>
+								<td><input type="text" name="practiseScore" style="width: 45px" placeholder="未评价"/></td>
+								<td><input type="text" name="closingReport" style="width: 45px" placeholder="未评价"/></td>
 								<td><select style="width: 80px" name="closingSpeech">
 									<option>优秀</option>
 									<option>良好</option>
@@ -99,13 +114,14 @@
 									<option selected>未评价</option>
 								</select></td>
 								<td class="inRight">--</td>
-								<td class="inRight">--</td>
+								<td class="inRight"><input type="text" name="point" style="width: 45px" placeholder="未评价"/></td>
 								<td><button class="btn btn-mini btn-danger">保存</button>
 									<button class="btn btn-mini">取消</button></td>
 							</tr>
 							<tr>
 								<td class="inCenter">1</td>
 								<td>2012-2013学年度</td>
+								<td>高二年级</td>
 								<td><a data-bypass href="inqinfo.html" title="查看课题详情">股民炒股收益和操作心理现状调查报告</a></td>
 								<td>梦辉</td>
 								<td>吴英</td>
@@ -122,108 +138,186 @@
 							</tr>
 							<tr>
 								<td class="inCenter">2</td>
-								<td>2011-2012学年度</td>
+								<td>2012-2013学年度</td>
+                                <td>高二年级</td>
 								<td><a data-bypass href="" title="查看课题详情">有关食品添加剂的研究</a></td>
 								<td>徐斌</td>
 								<td>吴海</td>
-								<td>已结题</td>
-								<td class="inRight"><a data-bypass href="" title="查看开题报告">60</a></td>
-								<td class="inRight">良好</td>
-								<td class="inRight"><a data-bypass href="" title="查看活动信息">75</a></td>
-								<td class="inRight"><a data-bypass href="" title="下载结题报告">85</a></td>
-								<td class="inRight">良好</td>
-								<td class="inRight">85</td>
-								<td class="inRight">7</td>
+								<td>选题中</td>
+								<td class="inRight"><a data-bypass href="" title="查看开题报告">未评价</a></td>
+								<td class="inRight">未评价</td>
+								<td class="inRight"><a data-bypass href="" title="查看活动信息">未评价</a></td>
+								<td class="inRight"><a data-bypass href="" title="下载结题报告">未评价</a></td>
+								<td class="inRight">未评价</td>
+								<td class="inRight">--</td>
+								<td class="inRight">未评价</td>
 								<td><button class="btn btn-mini">修改</button>
 									<button class="btn btn-mini btn-delete">删除</button></td>
 							</tr>
 							<tr>
 								<td class="inCenter">3</td>
-								<td>2011-2012学年度</td>
+								<td>2012-2013学年度</td>
+                                <td>高二年级</td>
 								<td><a data-bypass href="" title="查看课题详情">咖啡因纯品的提取及咖啡因含量的测定</a></td>
 								<td>徐斌,赵凡</td>
 								<td>王子鑫</td>
-								<td>已结题</td>
-								<td class="inRight"><a data-bypass href="" title="查看开题报告">70</a></td>
-								<td class="inRight">良好</td>
-								<td class="inRight"><a data-bypass href="" title="查看活动信息">75</a></td>
-								<td class="inRight"><a data-bypass href="" title="下载结题报告">85</a></td>
-								<td class="inRight">良好</td>
-								<td class="inRight">85</td>
-								<td class="inRight">7</td>
-								<td><button class="btn btn-mini">修改</button>
-									<button class="btn btn-mini btn-delete">删除</button></td>
+								<td>专家审核</td>
+								<td class="inRight"><a data-bypass href="" title="查看开题报告">未评价</a></td>
+                                <td class="inRight">未评价</td>
+                                <td class="inRight"><a data-bypass href="" title="查看活动信息">未评价</a></td>
+                                <td class="inRight"><a data-bypass href="" title="下载结题报告">未评价</a></td>
+                                <td class="inRight">未评价</td>
+                                <td class="inRight">--</td>
+                                <td class="inRight">未评价</td>
+                                <td><button class="btn btn-mini">修改</button>
+                                    <button class="btn btn-mini btn-delete">删除</button></td>
 							</tr>
 							<tr>
 								<td class="inCenter">4</td>
 								<td>2012-2013学年度</td>
+                                <td>高二年级</td>
 								<td><a data-bypass href="" title="查看课题详情">通过运用拉班中BESS分析青少年动作与心理----以二附舞蹈课为例</a></td>
 								<td>刘彬</td>
 								<td>王子轩</td>
-								<td>已结题</td>
-								<td class="inRight"><a data-bypass href="" title="查看开题报告">80</a></td>
-								<td class="inRight">良好</td>
-								<td class="inRight"><a data-bypass href="" title="查看活动信息">75</a></td>
-								<td class="inRight"><a data-bypass href="" title="下载结题报告">85</a></td>
-								<td class="inRight">优秀</td>
-								<td class="inRight">85</td>
-								<td class="inRight">8</td>
-								<td><button class="btn btn-mini">修改</button>
-									<button class="btn btn-mini btn-delete">删除</button></td>
+								<td>开题中</td>
+								<td class="inRight"><a data-bypass href="" title="查看开题报告">85</a></td>
+                                <td class="inRight">未评价</td>
+                                <td class="inRight"><a data-bypass href="" title="查看活动信息">未评价</a></td>
+                                <td class="inRight"><a data-bypass href="" title="下载结题报告">未评价</a></td>
+                                <td class="inRight">未评价</td>
+                                <td class="inRight">--</td>
+                                <td class="inRight">未评价</td>
+                                <td><button class="btn btn-mini">修改</button>
+                                    <button class="btn btn-mini btn-delete">删除</button></td>
 							</tr>
 							<tr>
 								<td class="inCenter">5</td>
-								<td>2011-2012学年度</td>
+								<td>2012-2013学年度</td>
+                                <td>高二年级</td>
 								<td><a data-bypass href="" title="查看课题详情">轮式避障机器人设计</a></td>
 								<td>徐斌</td>
 								<td>王子岳</td>
-								<td>已结题</td>
-								<td class="inRight"><a data-bypass href="" title="查看开题报告">90</a></td>
-								<td class="inRight">良好</td>
-								<td class="inRight"><a data-bypass href="" title="查看活动信息">95</a></td>
-								<td class="inRight"><a data-bypass href="" title="下载结题报告">85</a></td>
-								<td class="inRight">优秀</td>
-								<td class="inRight">85</td>
-								<td class="inRight">7</td>
-								<td><button class="btn btn-mini">修改</button>
-									<button class="btn btn-mini btn-delete">删除</button></td>
+								<td>研究中</td>
+								<td class="inRight"><a data-bypass href="" title="查看开题报告">80</a></td>
+                                <td class="inRight">优秀</td>
+                                <td class="inRight"><a data-bypass href="" title="查看活动信息">未评价</a></td>
+                                <td class="inRight"><a data-bypass href="" title="下载结题报告">未评价</a></td>
+                                <td class="inRight">未评价</td>
+                                <td class="inRight">--</td>
+                                <td class="inRight">未评价</td>
+                                <td><button class="btn btn-mini">修改</button>
+                                    <button class="btn btn-mini btn-delete">删除</button></td>
 							</tr>
 							<tr>
 								<td class="inCenter">6</td>
-								<td>2011-2012学年度</td>
+								<td>2012-2013学年度</td>
+                                <td>高二年级</td>
 								<td><a data-bypass href="" title="查看课题详情">运用哲学知识指导生活</a></td>
 								<td>张洋</td>
 								<td>王子旬</td>
-								<td>已结题</td>
-								<td class="inRight"><a data-bypass href="" title="查看开题报告">60</a></td>
-								<td class="inRight">合格</td>
-								<td class="inRight"><a data-bypass href="" title="查看活动信息">75</a></td>
-								<td class="inRight"><a data-bypass href="" title="下载结题报告">85</a></td>
-								<td class="inRight">良好</td>
-								<td class="inRight">65</td>
-								<td class="inRight">7</td>
-								<td><button class="btn btn-mini">修改</button>
-									<button class="btn btn-mini btn-delete">删除</button></td>
+								<td>研究中</td>
+                                <td class="inRight"><a data-bypass href="" title="查看开题报告">70</a></td>
+                                <td class="inRight">良好</td>
+                                <td class="inRight"><a data-bypass href="" title="查看活动信息">78</a></td>
+                                <td class="inRight"><a data-bypass href="" title="下载结题报告">未评价</a></td>
+                                <td class="inRight">未评价</td>
+                                <td class="inRight">--</td>
+                                <td class="inRight">未评价</td>
+                                <td><button class="btn btn-mini">修改</button>
+                                    <button class="btn btn-mini btn-delete">删除</button></td>
 							</tr>
 							<tr>
 								<td class="inCenter">7</td>
-								<td>2011-2012学年度</td>
-								<td><a data-bypass href="" title="查看课题详情">电池的污染与综合利用</a></td>
+								<td>2012-2013学年度</td>
+                                <td>高二年级</td>
+								<td><a data-bypass href="" title="查看课题详情">手机的污染与综合利用</a></td>
 								<td>谢爱国</td>
 								<td>王子彦</td>
-								<td>已结题</td>
-								<td class="inRight"><a data-bypass href="" title="查看开题报告">65</a></td>
-								<td class="inRight">良好</td>
-								<td class="inRight"><a data-bypass href="" title="查看活动信息">95</a></td>
-								<td class="inRight"><a data-bypass href="" title="下载结题报告">80</a></td>
-								<td class="inRight">合格</td>
-								<td class="inRight">75</td>
-								<td class="inRight">7</td>
-								<td><button class="btn btn-mini">修改</button>
-									<button class="btn btn-mini btn-delete">删除</button></td>
+								<td>结题中</td>
+                                <td class="inRight"><a data-bypass href="" title="查看开题报告">50</a></td>
+                                <td class="inRight">合格</td>
+                                <td class="inRight"><a data-bypass href="" title="查看活动信息">75</a></td>
+                                <td class="inRight"><a data-bypass href="" title="下载结题报告">未评价</a></td>
+                                <td class="inRight">未评价</td>
+                                <td class="inRight">--</td>
+                                <td class="inRight">未评价</td>
+                                <td><button class="btn btn-mini">修改</button>
+                                    <button class="btn btn-mini btn-delete">删除</button></td>
 							</tr>
 							<tr>
-								<td class="inCenter">8</td>
+                                <td class="inCenter">8</td>
+                                <td>2012-2013学年度</td>
+                                <td>高二年级</td>
+                                <td><a data-bypass href="" title="查看课题详情">塑料的污染与综合利用</a></td>
+                                <td>谢爱国</td>
+                                <td>黄颖</td>
+                                <td>结题中</td>
+                                <td class="inRight"><a data-bypass href="" title="查看开题报告">50</a></td>
+                                <td class="inRight">合格</td>
+                                <td class="inRight"><a data-bypass href="" title="查看活动信息">75</a></td>
+                                <td class="inRight"><a data-bypass href="" title="下载结题报告">70</a></td>
+                                <td class="inRight">未评价</td>
+                                <td class="inRight">--</td>
+                                <td class="inRight">未评价</td>
+                                <td><button class="btn btn-mini">修改</button>
+                                    <button class="btn btn-mini btn-delete">删除</button></td>
+                            </tr>
+                            <tr>
+                                <td class="inCenter">9</td>
+                                <td>2012-2013学年度</td>
+                                <td>高二年级</td>
+                                <td><a data-bypass href="" title="查看课题详情">电池的污染与综合利用</a></td>
+                                <td>谢爱国</td>
+                                <td>王子彦</td>
+                                <td>结题中</td>
+                                <td class="inRight"><a data-bypass href="" title="查看开题报告">60</a></td>
+                                <td class="inRight">良好</td>
+                                <td class="inRight"><a data-bypass href="" title="查看活动信息">75</a></td>
+                                <td class="inRight"><a data-bypass href="" title="下载结题报告">85</a></td>
+                                <td class="inRight">良好</td>
+                                <td class="inRight">--</td>
+                                <td class="inRight">未评价</td>
+                                <td><button class="btn btn-mini">修改</button>
+                                    <button class="btn btn-mini btn-delete">删除</button></td>
+                            </tr>
+                            <tr>
+                                <td class="inCenter">10</td>
+                                <td>2012-2013学年度</td>
+                                <td>高二年级</td>
+                                <td><a data-bypass href="" title="查看课题详情">研究植物大战僵尸2的攻略</a></td>
+                                <td>李爱国</td>
+                                <td>王彦君</td>
+                                <td>专家评定</td>
+                                <td class="inRight"><a data-bypass href="" title="查看开题报告">50</a></td>
+                                <td class="inRight">合格</td>
+                                <td class="inRight"><a data-bypass href="" title="查看活动信息">75</a></td>
+                                <td class="inRight"><a data-bypass href="" title="下载结题报告">80</a></td>
+                                <td class="inRight">优秀</td>
+                                <td class="inRight">--</td>
+                                <td class="inRight">未评价</td>
+                                <td><button class="btn btn-mini">修改</button>
+                                    <button class="btn btn-mini btn-delete">删除</button></td>
+                            </tr>
+                            <tr>
+                                <td class="inCenter">11</td>
+                                <td>2012-2013学年度</td>
+                                <td>高二年级</td>
+                                <td><a data-bypass href="" title="查看课题详情">关于后海与三里屯的文化对比</a></td>
+                                <td>菜小菜</td>
+                                <td>胡彦君</td>
+                                <td>专家评定</td>
+                                <td class="inRight"><a data-bypass href="" title="查看开题报告">50</a></td>
+                                <td class="inRight">合格</td>
+                                <td class="inRight"><a data-bypass href="" title="查看活动信息">75</a></td>
+                                <td class="inRight"><a data-bypass href="" title="下载结题报告">80</a></td>
+                                <td class="inRight">优秀</td>
+                                <td class="inRight">85</td>
+                                <td class="inRight">未评价</td>
+                                <td><button class="btn btn-mini">修改</button>
+                                    <button class="btn btn-mini btn-delete">删除</button></td>
+                            </tr>
+							<tr>
+								<td class="inCenter">12</td>
 								<td><select style="width: 145px">
 									<option>2007-2008学年度</option>
 									<option>2008-2009学年度</option>
@@ -232,6 +326,11 @@
 									<option>2011-2012学年度</option>
 									<option selected>2012-2013学年度</option>
 								</select></td>
+								<td><select style="width: 95px">
+                                    <option selected>高一年级</option>
+                                    <option>高二年级</option>
+                                    <option>高三年级</option>
+                                </select></td>
 								<td><textarea rows=2 name="topicName" style="width: 95%; height:60px;">目前市场上的茶饮料对传统茶文化推广的影响的研究</textarea></td>
 								<td><input type="text" name="teacher" class="input-mini" placeholder="多选人框"/></td>
 								<td><input type="text" name="groupLeader" class="input-mini" placeholder="单选人框"/></td>
@@ -244,15 +343,15 @@
 									<option>专家评定</option>
 									<option>已结题</option>
 								</select></td>
-								<td><input type="text" name="openingReport" style="width: 30px" value="95"/></td>
+								<td><input type="text" name="openingReport" style="width: 45px" value="95"/></td>
 								<td><select style="width: 80px" name="openingSpeech">
 									<option selected>优秀</option>
 									<option>良好</option>
 									<option>及格</option>
 									<option>未评价</option>
 								</select></td>
-								<td><input type="text" name="practiseScore" style="width: 30px" value="85"/></td>
-								<td><input type="text" name="closingReport" style="width: 30px" value="80"/></td>
+								<td><input type="text" name="practiseScore" style="width: 45px" value="85"/></td>
+								<td><input type="text" name="closingReport" style="width: 45px" value="80"/></td>
 								<td><select style="width: 80px" name="closingSpeech">
 									<option>优秀</option>
 									<option selected>良好</option>
@@ -260,7 +359,7 @@
 									<option>未评价</option>
 								</select></td>
 								<td class="inRight">85</td>
-								<td class="inRight">8</td>
+								<td class="inRight"><input type="text" name="closingReport" style="width: 45px" value="8"/></td>
 								<td><button class="btn btn-mini btn-danger">保存</button>
 									<button class="btn btn-mini">取消</button></td>
 							</tr>

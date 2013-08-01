@@ -6,12 +6,13 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
          'view/hr/improve-teacherinf-view','view/hr/setTeacherInfo-view',
          'view/studentmanage/setting-studentstatus-view','view/studentmanage/enrollmentmaintain-view',
 		'view/studentmanage/setstudentInfo-view','view/studentmanage/look-enrollment-view',
-		'view/inqmanage/inqmanage-view', 'view/inqmanage/inqinfo-view','backbone-queryparams'], function(
+		'view/inqmanage/inqmanage-view', 'view/inqmanage/inqinfo-view', 'view/inqmanage/myinq-stu-view', 'view/inqmanage/myinq-tch-view',
+		'view/inqmanage/myinq-mng-view', 'view/inqmanage/applyinq-view', 'view/inqmanage/issueinq-view','backbone-queryparams'], function(
 		Backbone, CodeGeneratorView, DemoGeneratorView, MailBaseView, NoticeIndexView,
 		MysalaryView, SalaryManageView, SalaryInitView, AccountManageView, SalaryOverview, TestView,
 		HrIndexView,PersonViewIndexView,HrManageIndexView,TeacherSearchView,TeacherSettingView,TeaInfImproveView,MaintainIndexView,
 		StudentSettingView,EnrollmentChangeMaintainView,StudentInfoView,EnrollmentLookView,
-		InqManageView, InqInfoView) {
+		InqManageView, InqInfoView,InqStuView,InqTchView,InqAprvView,InqAplyView,InqIssView) {
 	var options = {
 		routes : {
 			'': 'anything',
@@ -36,7 +37,12 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
 			'enrollmentchange.html'         : 'enrollmentChange',
 			'maintain.html'         : 'maintainInf',
 			'inqmanage.html'        : 'inqmanage',
-			'inqinfo.html'        : 'inqinfo',
+			'inqinfo.html'          : 'inqinfo',
+			'myinq-stu.html'        : 'studentsinq',
+			'myinq-tch.html'        : 'teachersinq',
+			'myinq-mng.html'        : 'approvalinq',
+			'applyinq.html'         : 'applyinq',
+			'issueinq.html'         : 'issueinq',
 			'test.html':'gotest',
       		'*anything': 'anything'
 		},
@@ -123,7 +129,22 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
 		},
 		inqinfo : function(){
 			new InqInfoView({root:$('#bodyContainer')});
-		}
+		},
+        studentsinq : function(){
+            new InqStuView({root:$('#bodyContainer')});
+        },
+        teachersinq : function(){
+            new InqTchView({root:$('#bodyContainer')});
+        },
+        approvalinq : function(){
+            new InqAprvView({root:$('#bodyContainer')});
+        },
+        applyinq : function(){
+            new InqAplyView({root:$('#bodyContainer')});
+        },
+        issueinq : function(){
+            new InqIssView({root:$('#bodyContainer')});
+        }
 	};
 
 	var AppRouter = Backbone.Router.extend(options);

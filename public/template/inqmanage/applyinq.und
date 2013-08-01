@@ -1,0 +1,132 @@
+<div class="social-box">
+	<div class="header">
+		<h4><strong>申报课题</strong></h4>
+	</div>
+	<div class="body">
+		<div class="modal-body">
+    <form id="topicform" class="form-horizontal">
+	    <div class="span12">
+	    	<div class="span5">
+			    <div class="control-group">
+			        <label class="control-label">课题名称</label>
+			        <div class="controls">
+			            <input type="text" name="topicName" class="grd-white" value="别致_Admin_养老保险" required="">
+			        </div>
+			    </div>
+			    <div class="control-group">
+			        <label class="control-label">指导教师名称</label>
+			        <div class="controls">
+				<input type="text" pickerwidth="600px" readonly="readonly" pickerheight="618px" name="teacher" id="picker" url="/bxq/common/personSinglePicker.do?showType=1;0;0;0" value="白雪飞" size="10" refsn="sys_spsn_dutyUserSn1373444323750" callback="pickUser">
+			            <input type="hidden" value="" name="teacherid">
+			        </div>
+			    </div>
+			    <dl class="dl-horizontal"><dt>课题成员</dt>
+					<dd>
+						
+							房宇熙 <!-- <input type="button" data-set-id="setMembers" class="btn btn-primary" value="成员设置" /> -->
+						
+							纪翔华 <!-- <input type="button" data-set-id="setMembers" class="btn btn-primary" value="成员设置" /> -->
+						
+							常芯蕊 <!-- <input type="button" data-set-id="setMembers" class="btn btn-primary" value="成员设置" /> -->
+						
+							张谷霞 <!-- <input type="button" data-set-id="setMembers" class="btn btn-primary" value="成员设置" /> -->
+						
+					</dd>
+				</dl>
+			    
+			    <div class="control-group">
+			        <label class="control-label">课题组长</label>
+			        <div class="controls">
+						<select name="topicLeader" style="width: 200px">
+							
+							<option value="100635">房宇熙</option>
+							
+							<option value="100637">纪翔华</option>
+							
+							<option value="100675">常芯蕊</option>
+							
+							<option value="100901">张谷霞</option>
+							
+						</select>
+					</div>
+			   	 </div>
+			    
+		    </div>
+			<div class="span7">
+				<div class="control-group">
+			        <label class="control-label">课题类型</label>
+			        <div class="controls" style="left:20px;">
+				        <label class="radio" style="width:100px;left:20px;position:relative;">
+					        <input type="radio" name="topicType" id="topicTypeOptionsRadios1" value="TY1" data-form="uniform" checked="checked">
+					        课题方向
+				        </label>
+			        	<label class="radio" style="width:100px;left:20px;position:relative;">
+					        <input type="radio" name="topicType" id="topicTypeOptionsRadios2" value="TY2" data-form="uniform">
+				        	具体课题
+			        	</label>
+			        </div>
+			   	 </div>
+			    <div class="control-group">
+			        <label class="control-label">课题领域</label>
+			        <div class="controls" style="left:20px;">
+				        <label class="radio" style="width:100px;left:20px;position:relative;">
+					        <input type="radio" name="topicDomain" id="topicDomainOptionsRadios1" value="DO1" data-form="uniform">
+					        人与自然
+				        </label>
+			        	<label class="radio" style="width:100px;left:20px;position:relative;">
+					        <input type="radio" name="topicDomain" id="topicDomainOptionsRadios2" value="DO2" data-form="uniform">
+				        	人与社会
+			        	</label>
+			        	<label class="radio" style="width:100px;left:20px;position:relative;">
+					        <input type="radio" name="topicDomain" id="topicDomainOptionsRadios3" value="DO3" data-form="uniform">
+				        	人与自我
+			        	</label>
+			        	<label class="radio" style="width:100px;left:20px;position:relative;">
+					        <input type="radio" name="topicDomain" id="topicDomainOptionsRadios4" value="DO4" data-form="uniform">
+				        	其它
+			        	</label>
+			        </div>
+			    </div>
+			    
+			    <div class="control-group">
+				    <div class="controls">
+				      <label class="checkbox">
+				        <input name="topicStatus" type="checkbox">设置为已完成课题
+				      </label>
+				    </div>
+				</div>
+			    
+		    </div>
+		</div>
+	    <div class="span11">
+	    	<legend></legend>
+	    	<div class="control-group">
+		        <label class="control-label">课题简介</label>
+		        <div class="controls">
+		            <textarea name="topicIntroduction" rows="3" class="span8"> 课题简介
+</textarea>
+		        </div>
+		    </div>
+	    	<div class="control-group">
+		        <label class="control-label">研究背景及目的意义</label>
+		        <div class="controls">
+		            <textarea name="researchObjective" rows="3" class="span8">研究背景及目的意义</textarea>
+		        </div>
+		    </div>
+		    <div class="control-group">
+		        <label class="control-label inline">研究方案</label>
+		        <div class="controls">
+		            <textarea name="researchPlan" rows="3" class="span8"> 研究方案</textarea>
+		        </div>
+		    </div>
+		    <div class="control-group">
+		        <label class="control-label">对申报研究本课题的学生要求</label>
+		        <div class="controls">
+		            <textarea name="requireForStudents" rows="3" class="span8">对申报研究本课题的学生要求</textarea>
+		        </div>
+		    </div>
+	    </div>
+    </form>
+</div>
+	</div>
+</div>
