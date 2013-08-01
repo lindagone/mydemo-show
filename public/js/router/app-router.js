@@ -5,11 +5,13 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
          'view/hr/hrmanage-index-view','view/hr/teachersearch-view','view/hr/setting-teacherstatus-view',
          'view/hr/improve-teacherinf-view','view/hr/setTeacherInfo-view',
          'view/studentmanage/setting-studentstatus-view','view/studentmanage/enrollmentmaintain-view',
-		'backbone-queryparams'], function(
+		'view/studentmanage/setstudentInfo-view','view/studentmanage/look-enrollment-view',
+		'view/inqmanage/inqmanage-view', 'view/inqmanage/inqinfo-view','backbone-queryparams'], function(
 		Backbone, CodeGeneratorView, DemoGeneratorView, MailBaseView, NoticeIndexView,
 		MysalaryView, SalaryManageView, SalaryInitView, AccountManageView, SalaryOverview, TestView,
 		HrIndexView,PersonViewIndexView,HrManageIndexView,TeacherSearchView,TeacherSettingView,TeaInfImproveView,MaintainIndexView,
-		StudentSettingView,EnrollmentChangeMaintainView) {
+		StudentSettingView,EnrollmentChangeMaintainView,StudentInfoView,EnrollmentLookView,
+		InqManageView, InqInfoView) {
 	var options = {
 		routes : {
 			'': 'anything',
@@ -29,8 +31,12 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
 			'setting.html'          : 'teacherSetting',
 			'improve.html'          : 'infImprove',
 			'stusetting.html'       : 'studentSetting',
+			'stuinf.html'           : 'studentInf',
+			'look.html'             : 'lookstuInf',
 			'enrollmentchange.html'         : 'enrollmentChange',
 			'maintain.html'         : 'maintainInf',
+			'inqmanage.html'        : 'inqmanage',
+			'inqinfo.html'        : 'inqinfo',
 			'test.html':'gotest',
       		'*anything': 'anything'
 		},
@@ -105,6 +111,18 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
 		},
 		enrollmentChange:function(){
 			new  EnrollmentChangeMaintainView({root:$('#bodyContainer')});
+		},
+		studentInf:function(){
+			new  StudentInfoView({root:$('#bodyContainer')});
+		},
+		lookstuInf:function(){
+			new EnrollmentLookView({root:$('#bodyContainer')});
+		},
+		inqmanage : function(){
+			new InqManageView({root:$('#bodyContainer')});
+		},
+		inqinfo : function(){
+			new InqInfoView({root:$('#bodyContainer')});
 		}
 	};
 

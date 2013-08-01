@@ -1,0 +1,676 @@
+<div class="row-fluid">
+    <div class="social-box">
+        <div class="header">
+            <h4><span>学生基本信息</span></h4>
+            <div class="tools">
+                <ul id="myTab2" class="nav nav-tabs">
+                    <li class="active" id="baseinformation">
+                        <a class="baseinf" href="#baseinf1"
+                        data-toggle="tab"><i class="icon-user"></i> 基本信息</a>
+                    </li>
+                    <li id="personexp">
+                        <a href="#resume1" data-toggle="tab"><i
+                        class="icon-list-alt"></i> 简历信息</a>
+                    </li>
+                    <li id="family">
+                        <a href="#relationship1" data-toggle="tab"><i
+                        class=" icon-fullscreen" ></i> 家庭成员</a>
+                    </li>
+                    <li id="advantage">
+                        <a href="#hobby1" data-toggle="tab"><i
+                        class="icon-star" ></i> 兴趣特长</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="body">
+            <div id="myTabContent2" class="tab-content">
+                <div class="tab-pane fade in active" id="baseinf1">
+                    <div class="row-fluid">
+                    	<div class="span12" id="changebaseinf">
+                    		
+                    	  
+                    	</div> 
+                    </div>	
+                </div>
+                <div class="tab-pane fade" id="resume1">
+                	<div class="row-fluid">
+							<div class="span12">
+								<h4 class="inCenter">简历信息</h4>
+							</div>
+						</div>
+						<br />
+                    <div class="init">
+                    	
+                    	<div class="row-fluid">
+                    	<div class="span12">
+                    		<div class="pull-right">
+                    			<button type="button" class="btn btn-primary btn-small modifyinfor">
+								<i class=" icon-pencil"></i> 修改学生信息
+							</button>
+							<button type="reset" class="btn btn-small btn-primary">
+								<i class="icon-remove"></i> 删除学生信息
+							</button>
+							<button type="button" class="btn btn-small btn-primary ">
+								<i class=" icon-share-alt"></i> 返回
+							</button>
+                    		</div>
+                    		</div>
+                    		</div>
+                    	<div class="row-fluid">
+                    	<div class="span12">
+                    		<table class="table table-bordered table-condensed table-hover">
+								<thead>
+									<tr class="headColor">									
+										<th>开始日期</th>
+										<th>结束日期</th>										
+										<th>学校名称</th>										
+										<th>担任职务</th>
+										<th>证明人</th>
+										<th>内容</th>
+										<th>备注</th>																			
+										
+									</tr>
+								</thead>
+								<tbody>
+									<tr>									
+										<td class="inCenter">2013-01-31</td>										
+									    <td class="inCenter">2013-07-31</td>	
+									    <td >
+									    	北京四中
+									    </td>
+									   	<td >班长</td>
+									   <td >李长</td>
+									   <td >test</td>
+									   <td >好学生</td>
+									</tr>
+									
+													
+								</tbody>
+								</table>
+                    	</div>
+                    </div>
+                    
+                    </div>
+                    <div class="change" style="display: none">
+                    	<div class="row-fluid">
+                    	<div class="span12">
+                    		<div class="pull-right">
+                    			<button type="button" class="btn btn-primary btn-small">
+								<i class=" icon-pl"></i> 添加
+							</button>
+							
+							<button type="button" class="btn btn-small btn-primary ">
+								<i class=" icon-share-alt"></i> 返回
+							</button>
+                    		</div>
+                    		</div>
+                    		</div>
+                    	<div class="row-fluid">
+                    	<div class="span12" style="overflow-x: auto;">
+                    		<div style="min-width: 1100px;">
+                    			<table class="table table-bordered table-condensed table-hover">
+								<thead>
+									<tr class="headColor">									
+										<th>开始日期</th>
+										<th>结束日期</th>										
+										<th>学校名称</th>										
+										<th>担任职务</th>
+										<th>证明人</th>
+										<th>内容</th>
+										<th>备注</th>																			
+										<th>操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>									
+										<td class="inCenter">
+                                        <div id="datetimepicker2" class="input-append date">
+                                                    <input value="" name="birthday" placeholder="日期选择框"
+                                                    data-format="yyyy-mm-dd" type="text" class="input-small">
+                                                    <span class="add-on"> <i class="icon-calendar"></i> </span>
+                                                    
+                                                </div>
+                                        </td>										
+									    <td class="inCenter"><div id="datetimepicker2" class="input-append date">
+                                                    <input value="" name="birthday" placeholder="日期选择框"
+                                                    data-format="yyyy-mm-dd" type="text" class="input-small">
+                                                    <span class="add-on"> <i class="icon-calendar"></i> </span>
+                                                    
+                                                </div>
+                                                </td>	
+									    <td >
+									    	<input type="text" value="" class="input-small" />
+									    </td>
+									   	<td ><input type="text" value="" class="input-small" /></td>
+									   <td ><input type="text" value="" class="input-small"/></td>
+									   <td ><textarea style="height:60px" class="input-medium"></textarea></td>
+									   <td ><textarea style="height:60px" class="input-medium"></textarea></td>
+									   <td>
+											<button class="btn btn-mini btn-danger">
+												保存
+											</button>
+											<button class="btn btn-mini">
+												取消
+											</button>
+										</td>
+									</tr>
+									<tr>									
+										<td class="inCenter">
+                                        <div id="datetimepicker2" class="input-append date">
+                                                    <input value="2011-09-01" name="birthday" placeholder="日期选择框"
+                                                    data-format="yyyy-mm-dd" type="text" class="input-small">
+                                                    <span class="add-on"> <i class="icon-calendar"></i> </span>
+                                                    
+                                                </div>
+                                        </td>										
+									    <td class="inCenter"><div id="datetimepicker2" class="input-append date">
+                                                    <input value="2013-07-01" name="birthday" placeholder="日期选择框"
+                                                    data-format="yyyy-mm-dd" type="text" class="input-small">
+                                                    <span class="add-on"> <i class="icon-calendar"></i> </span>
+                                                    
+                                                </div>
+                                                </td>	
+									    <td >
+									    	<input type="text" value="北京四中" class="input-small" />
+									    </td>
+									   	<td ><input type="text" value="组长" class="input-small" /></td>
+									   <td ><input type="text" value="" class="input-small"/></td>
+									   <td ><textarea style="height:60px" class="input-medium"></textarea></td>
+									   <td ><textarea style="height:60px" class="input-medium"></textarea></td>
+									   <td>
+											<button class="btn btn-mini btn-danger">
+												保存
+											</button>
+											<button class="btn btn-mini">
+												取消
+											</button>
+										</td>
+									</tr>
+									<tr>									
+										<td class="inCenter">2013-01-31</td>										
+									    <td class="inCenter">2013-07-31</td>	
+									    <td >
+									    	北京四中
+									    </td>
+									   	<td >班长</td>
+									   <td >李长</td>
+									   <td >test</td>
+									   <td >好学生</td>
+									   <td>
+											<button class="btn btn-mini ">
+												修改
+											</button>
+											<button class="btn btn-mini">
+												删除
+											</button>
+										</td>
+									</tr>
+									
+													
+								</tbody>
+								</table>
+                    		</div>
+                    	</div>
+                    </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="relationship1">
+                    <div class="row-fluid">
+							<div class="span12">
+								<h4 class="inCenter">家庭成员</h4>
+							</div>
+						</div>
+						<br />
+                    <div class="init1">
+                    	
+                    	<div class="row-fluid">
+                    	<div class="span12">
+                    		<div class="pull-right">
+                    			<button type="button" class="btn btn-primary btn-small modifyinfor1">
+								<i class=" icon-pencil"></i> 修改学生信息
+							</button>
+							<button type="reset" class="btn btn-small btn-primary">
+								<i class="icon-remove"></i> 删除学生信息
+							</button>
+							<button type="button" class="btn btn-small btn-primary ">
+								<i class=" icon-share-alt"></i> 返回
+							</button>
+                    		</div>
+                    		</div>
+                    		</div>
+                    	<div class="row-fluid">
+                    	<div class="span12" style="overflow-x: auto;">
+                    		<div style="min-width: 1100px;">
+                    			<table class="table table-bordered table-condensed table-hover">
+								<thead>
+									<tr class="headColor">									
+										<th>监护人</th>
+										<th>生活在一起</th>										
+										<th>关系</th>										
+										<th>姓名</th>
+										<th>学历</th>
+										<th>单位名称</th>
+										<th>职业</th>
+										<th>专业技术职务</th>
+										<th>职务级别</th>
+										<th>政治面貌</th>
+										<th>联系电话</th>
+										<th>婚姻状况 </th>
+										<th>侨居地</th>
+										<th>电子邮件</th>
+										<th>备注</th>																			
+										
+									</tr>
+								</thead>
+								<tbody>
+									<tr>									
+										<td class="inCenter">
+                                         <input type="checkbox" checked disabled />
+                                        </td>										
+									    <td class="inCenter"> <input type="checkbox" disabled /></td>	
+									    <td >
+									    	户主
+									    </td>
+									   	<td >李长</td>
+									   <td >研究生</td>
+									   <td >研究室</td>
+									   <td >技术研究员</td>
+									   <td >研究室</td>
+									   <td >副科级</td>
+									   <td >共产党</td>
+									   <td >1233121</td>
+									   <td >已婚</td>
+									   <td ></td>
+									   <td ></td>
+									   <td ></td>
+									  
+									</tr>
+									
+													
+								</tbody>
+								</table>
+                    		</div>
+                    	</div>
+                    </div>
+                    
+                    </div>
+                    <div class="change1" style="display: none">
+                    	<div class="row-fluid">
+                    	<div class="span12">
+                    		<div class="pull-right">
+                    			<button type="button" class="btn btn-primary btn-small">
+								<i class=" icon-pl"></i> 添加
+							</button>
+							
+							<button type="button" class="btn btn-small btn-primary ">
+								<i class=" icon-share-alt"></i> 返回
+							</button>
+                    		</div>
+                    		</div>
+                    		</div>
+                    	<div class="row-fluid">
+                    	<div class="span12" style="overflow-x: auto;">
+                    		<div style="min-width: 1800px;">
+                    			<table class="table table-bordered table-condensed table-hover">
+								<thead>
+									<tr class="headColor">									
+										<th>监护人</th>
+										<th>生活在一起</th>										
+										<th>关系</th>										
+										<th>姓名</th>
+										<th>学历</th>
+										<th>单位名称</th>
+										<th>职业</th>
+										<th>专业技术职务</th>
+										<th>职务级别</th>
+										<th>政治面貌</th>
+										<th>联系电话</th>
+										<th>婚姻状况 </th>
+										<th>侨居地</th>
+										<th>电子邮件</th>
+										<th>备注</th>																			
+										<th>操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>									
+										<td class="inCenter">
+                                         <input type="checkbox"  />
+                                        </td>										
+									    <td class="inCenter"> <input type="checkbox"  /></td>	
+									    <td >
+									    	<select class="input-small">
+													<option value="-1"></option>
+													<option value="1">本人</option>
+													<option  value="2">户主</option>
+													<option value="3">小集体户户主</option>
+													<option value="4">未知</option>
+													<option value="5">配偶</option>
+													<option value="6">夫</option>
+													<option value="7">妻</option>
+													<option value="8">子</option>
+												</select>
+									    </td>
+									   	<td ><input type="text" value="" class="input-small"/></td>
+									   <td >
+                                        <select class="input-small">
+                                        	<option value="-1"></option>
+													<option value="1">研究生</option>
+													<option value="2">研究生毕业</option>
+													<option value="3">研究生肄业</option>
+													<option value="4">大学本科</option>
+                                        </select>
+                                       </td>
+									   <td ><input type="text" value="" class="input-small"/></td>
+									   <td ><input type="text" value="" class="input-small"/></td>
+									   <td ><input type="text" value="" class="input-small"/></td>
+									   <td >
+                                  <select class="input-small">
+                                  	<option value="-1"></option>
+													<option value="5">司、局、地、厅级</option>
+													<option value="6">副司、副局、副地、副厅级</option>
+													<option value="7">县、处级</option>
+													<option value="8">副县、副处级</option>
+													<option value="9">正科级</option>
+													<option  value="10">副科级</option>
+												</select>
+                                     </td>
+									   <td > <select class="input-medium">
+									   	<option value="-1"></option>
+													<option value="2">中国共产主义青年团团员</option>
+													<option value="3">中国共产预备党员</option>
+													<option  value="4">中国共产党员</option>
+													<option value="5">中国国民党革命委员会会会员</option>
+												</select>
+									   </td>
+									   <td ><input type="text" value="" class="input-small"/></td>
+									   <td ><select class="input-small">
+									   	<option value="-1"></option>
+													<option value="1">未婚</option>
+													<option  value="2">已婚</option>
+													<option value="3">丧偶</option>
+													<option value="4">离婚</option>
+													<option value="5">其他</option>
+									   </select></td>
+									   <td ><input type="text" value="" class="input-small"/></td>
+									   <td ><input type="text" value="" class="input-small"/></td>
+									   <td ><textarea style="height:60px" class="input-medium"></textarea></td>
+									   <td>
+											<button class="btn btn-mini btn-danger">
+												保存
+											</button>
+											<button class="btn btn-mini">
+												取消
+											</button>
+										</td>
+									</tr>
+									<tr>									
+										<td class="inCenter">
+                                         <input type="checkbox" checked  />
+                                        </td>										
+									    <td class="inCenter"> <input type="checkbox"  /></td>	
+									    <td >
+									    	<select class="input-small">
+													<option value="-1"></option>
+													<option value="1">本人</option>
+													<option selected value="2">户主</option>
+													<option value="3">小集体户户主</option>
+													<option value="4">未知</option>
+													<option value="5">配偶</option>
+													<option value="6">夫</option>
+													<option value="7">妻</option>
+													<option value="8">子</option>
+												</select>
+									    </td>
+									   	<td ><input type="text" value="李张" class="input-small"/></td>
+									   <td >
+                                        <select class="input-small">
+                                        	<option value="-1"></option>
+													<option selected="" value="1">研究生</option>
+													<option value="2">研究生毕业</option>
+													<option value="3">研究生肄业</option>
+													<option value="4">大学本科</option>
+                                        </select>
+                                       </td>
+									   <td ><input type="text" value="研究室" class="input-small"/></td>
+									   <td ><input type="text" value="技术研究员" class="input-small"/></td>
+									   <td ><input type="text" value="研究室" class="input-small"/></td>
+									   <td >
+                                  <select class="input-small">
+                                  	<option value="-1"></option>
+													<option value="5">司、局、地、厅级</option>
+													<option value="6">副司、副局、副地、副厅级</option>
+													<option value="7">县、处级</option>
+													<option value="8">副县、副处级</option>
+													<option value="9">正科级</option>
+													<option selected="" value="10">副科级</option>
+												</select>
+                                     </td>
+									   <td > <select class="input-medium">
+									   	<option value="-1"></option>
+													<option value="2">中国共产主义青年团团员</option>
+													<option value="3">中国共产预备党员</option>
+													<option selected="" value="4">中国共产党员</option>
+													<option value="5">中国国民党革命委员会会会员</option>
+												</select>
+									   </td>
+									   <td ><input type="text" class="input-small" value="1233121"/></td>
+									   <td ><select class="input-small">
+									   	<option value="-1"></option>
+									   	
+													<option value="1">未婚</option>
+													<option selected="" value="2">已婚</option>
+													<option value="3">丧偶</option>
+													<option value="4">离婚</option>
+													<option value="5">其他</option>
+									   </select></td>
+									   <td ><input type="text" value="" class="input-small"/></td>
+									   <td ><input type="text" value="" class="input-small"/></td>
+									   <td ><textarea style="height:60px" class="input-medium"></textarea></td>
+									   <td>
+											<button class="btn btn-mini btn-danger">
+												保存
+											</button>
+											<button class="btn btn-mini">
+												取消
+											</button>
+										</td>
+									</tr>
+									<tr>									
+										<td class="inCenter">
+                                         <input type="checkbox" checked disabled />
+                                        </td>										
+									    <td class="inCenter"> <input type="checkbox" disabled /></td>	
+									    <td >
+									    	户主
+									    </td>
+									   	<td >李长</td>
+									   <td >研究生</td>
+									   <td >研究室</td>
+									   <td >技术研究员</td>
+									   <td >研究室</td>
+									   <td >副科级</td>
+									   <td >共产党</td>
+									   <td >1233121</td>
+									   <td >已婚</td>
+									   <td ></td>
+									   <td ></td>
+									   <td ></td>
+									   <td>
+											<button class="btn btn-mini btn-danger">
+												修改
+											</button>
+											<button class="btn btn-mini">
+												删除
+											</button>
+										</td>
+									</tr>
+									
+													
+								</tbody>
+								</table>
+                    		</div>
+                    	</div>
+                    </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="hobby1">
+                    	<div class="row-fluid">
+							<div class="span12">
+								<h4 class="inCenter">兴趣特长</h4>
+							</div>
+						</div>
+						<br />
+                    <div class="init2">
+                    	
+                    	<div class="row-fluid">
+                    	<div class="span12">
+                    		<div class="pull-right">
+                    			<button type="button" class="btn btn-primary btn-small modifyinfor2">
+								<i class=" icon-pencil"></i> 修改学生信息
+							</button>
+							<button type="reset" class="btn btn-small btn-primary">
+								<i class="icon-remove"></i> 删除学生信息
+							</button>
+							<button type="button" class="btn btn-small btn-primary ">
+								<i class=" icon-share-alt"></i> 返回
+							</button>
+                    		</div>
+                    		</div>
+                    		</div>
+                    	<div class="row-fluid">
+                    	<div class="span12">
+                    		<table class="table table-bordered table-condensed table-hover">
+								<thead>
+									<tr class="headColor">									
+										<th>爱好</th>
+										<th>水平</th>										
+										<th>备注</th>																			
+										
+									</tr>
+								</thead>
+								<tbody>
+									<tr>															
+									   <td >唱歌</td>
+									   <td >一般</td>
+									   <td >好学生</td>
+									</tr>						
+								</tbody>
+								</table>
+                    	</div>
+                    </div>
+                    
+                    </div>
+                    <div class="change2" style="display: none">
+                    	<div class="row-fluid">
+                    	<div class="span12">
+                    		<div class="pull-right">
+                    			<button type="button" class="btn btn-primary btn-small">
+								<i class=" icon-pl"></i> 添加
+							</button>
+							
+							<button type="button" class="btn btn-small btn-primary ">
+								<i class=" icon-share-alt"></i> 返回
+							</button>
+                    		</div>
+                    		</div>
+                    		</div>
+                    	<div class="row-fluid">
+                    	<div class="span12" style="overflow-x: auto;">
+                    		<div style="min-width: 500px;">
+                    			<table class="table table-bordered table-condensed table-hover">
+								<thead>
+									<tr class="headColor">									
+										<th>爱好</th>
+										<th>水平</th>										
+										<th>备注</th>																			
+										<th>操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>									
+										
+									  	<td >
+												<select class="input-small">
+													<option value="69">电脑</option>
+													<option value="70">音乐</option>
+													<option value="71">绘画</option>
+													<option value="72">篮球</option>
+												</select></td>
+												<td >
+												<select class="input-small">
+													<option value="89">未知</option>
+													<option  value="90">一般</option>
+													<option value="91">熟练</option>
+													<option value="92">精通</option>
+												</select>
+													</td>
+									   <td ><textarea style="height:60px" class="input-medium"></textarea></td>
+									   <td>
+											<button class="btn btn-mini btn-danger">
+												保存
+											</button>
+											<button class="btn btn-mini">
+												取消
+											</button>
+										</td>
+									</tr>
+									<tr>									
+										
+									  	<td >
+												<select class="input-small">
+													<option value="69">电脑</option>
+													<option value="70">音乐</option>
+													<option value="71" selected="">绘画</option>
+													<option value="72">篮球</option>
+												</select></td>
+												<td >
+												<select class="input-small">
+													<option value="89">未知</option>
+													<option  value="90">一般</option>
+													<option value="91" selected="">熟练</option>
+													<option value="92">精通</option>
+												</select>
+													</td>
+									   <td ><textarea style="height:60px" class="input-medium"></textarea></td>
+									   <td>
+											<button class="btn btn-mini btn-danger">
+												保存
+											</button>
+											<button class="btn btn-mini">
+												取消
+											</button>
+										</td>
+									</tr>
+									
+									<tr>									
+									
+									    <td >
+									    	绘画
+									    </td>
+									   	<td >熟练</td>
+									   <td ></td>
+									   
+									   <td>
+											<button class="btn btn-mini ">
+												修改
+											</button>
+											<button class="btn btn-mini">
+												删除
+											</button>
+										</td>
+									</tr>
+									
+													
+								</tbody>
+								</table>
+                    		</div>
+                    	</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

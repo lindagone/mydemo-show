@@ -76,13 +76,13 @@
 								<i class="icon-folder-open"></i><span>当前使用的届</span>
 								<ul id="lTree2" class="nav">
 									<li >
-										<i class="icon-book"></i><span><a data-bypass >    高中2015届[高一]</a> </span>
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2015届[高一]</a> </span>
 									</li>
 									<li >
-										<i class="icon-book"></i><span> <a data-bypass >   高中2014届[高二]</a></span>
+										&nbsp;&nbsp;<i class="icon-book"></i><span> <a data-bypass >   高中2014届[高二]</a></span>
 									</li>
 									<li >
-										<i class="icon-book"></i><span><a data-bypass >    高中2013届[高三]</a></span>
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2013届[高三]</a></span>
 									</li>
 
 								</ul>
@@ -215,13 +215,13 @@
 								<i class="icon-folder-open"></i><span>当前使用的届</span>
 								<ul id="lTree2" class="nav">
 									<li >
-										<i class="icon-book"></i><span><a data-bypass >    高中2015届[高一]</a> </span>
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2015届[高一]</a> </span>
 									</li>
 									<li >
-										<i class="icon-book"></i><span> <a data-bypass >   高中2014届[高二]</a></span>
+										&nbsp;&nbsp;<i class="icon-book"></i><span> <a data-bypass >   高中2014届[高二]</a></span>
 									</li>
 									<li >
-										<i class="icon-book"></i><span><a data-bypass >    高中2013届[高三]</a></span>
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2013届[高三]</a></span>
 									</li>
 
 								</ul>
@@ -408,16 +408,16 @@
 								<i class="icon-folder-open"></i><span>当前使用的届</span>
 								<ul id="lTree2" class="nav">
 									<li >
-										<i class="icon-book"></i><span><a data-bypass >    高中2015届[高一]</a> </span>
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2015届[高一]</a> </span>
 									</li>
 									<li >
-										<i class="icon-book"></i><span> <a data-bypass >   高中2014届[高二]</a></span>
+										&nbsp;&nbsp;<i class="icon-book"></i><span> <a data-bypass >   高中2014届[高二]</a></span>
 									</li>
 									<li >
-										<i class="icon-book"></i><span><a data-bypass >    高中2013届[高三]</a></span>
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2013届[高三]</a></span>
 									</li>
                                     <li >
-										<i class="icon-book"></i><span><a data-bypass >    已毕业的届</a></span>
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    已毕业的届</a></span>
 									</li>
 								</ul>
 							</li>
@@ -661,13 +661,13 @@
 								<i class="icon-folder-open"></i><span>当前使用的届</span>
 								<ul id="lTree2" class="nav">
 									<li >
-										<i class="icon-book"></i><span><a data-bypass >    高中2015届[高一]</a> </span>
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2015届[高一]</a> </span>
 									</li>
 									<li >
-										<i class="icon-book"></i><span> <a data-bypass >   高中2014届[高二]</a></span>
+										&nbsp;&nbsp;<i class="icon-book"></i><span> <a data-bypass >   高中2014届[高二]</a></span>
 									</li>
 									<li >
-										<i class="icon-book"></i><span><a data-bypass >    高中2013届[高三]</a></span>
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2013届[高三]</a></span>
 									</li>
 
 								</ul>
@@ -732,7 +732,7 @@
 										<td >
 											已毕业
 										</td>
-										<td >
+										<td class="inCenter">
 											2013-07-31
 										</td>
 										
@@ -777,7 +777,7 @@
 										<td >
 											未毕业
 										</td>
-										<td >
+										<td class="inCenter">
 											--
 										</td>
 										
@@ -882,13 +882,13 @@
 								<i class="icon-folder-open"></i><span>当前使用的届</span>
 								<ul id="lTree2" class="nav">
 									<li >
-										<i class="icon-book"></i><span><a data-bypass >    高中2015届[高一]</a> </span>
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2015届[高一]</a> </span>
 									</li>
 									<li >
-										<i class="icon-book"></i><span> <a data-bypass >   高中2014届[高二]</a></span>
+										&nbsp;&nbsp;<i class="icon-book"></i><span> <a data-bypass >   高中2014届[高二]</a></span>
 									</li>
 									<li >
-										<i class="icon-book"></i><span><a data-bypass >    高中2013届[高三]</a></span>
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2013届[高三]</a></span>
 									</li>
 
 								</ul>
@@ -1107,13 +1107,13 @@
 								<i class="icon-folder-open"></i><span>当前使用的届</span>
 								<ul id="lTree2" class="nav">
 									<li >
-										<i class="icon-book"></i><span><a data-bypass >    高中2015届[高一]</a> </span>
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2015届[高一]</a> </span>
 									</li>
 									<li >
-										<i class="icon-book"></i><span> <a data-bypass >   高中2014届[高二]</a></span>
+										&nbsp;&nbsp;<i class="icon-book"></i><span> <a data-bypass >   高中2014届[高二]</a></span>
 									</li>
 									<li >
-										<i class="icon-book"></i><span><a data-bypass >    高中2013届[高三]</a></span>
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2013届[高三]</a></span>
 									</li>
 
 								</ul>
@@ -1229,13 +1229,13 @@
 								<i class="icon-folder-open"></i><span>当前使用的届</span>
 								<ul id="lTree2" class="nav">
 									<li >
-										<i class="icon-book"></i><span><a data-bypass >    高中2015届[高一]</a> </span>
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2015届[高一]</a> </span>
 									</li>
 									<li >
-										<i class="icon-book"></i><span> <a data-bypass >   高中2014届[高二]</a></span>
+										&nbsp;&nbsp;<i class="icon-book"></i><span> <a data-bypass >   高中2014届[高二]</a></span>
 									</li>
 									<li >
-										<i class="icon-book"></i><span><a data-bypass >    高中2013届[高三]</a></span>
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2013届[高三]</a></span>
 									</li>
 
 								</ul>
@@ -1351,13 +1351,13 @@
 								<i class="icon-folder-open"></i><span>当前使用的届</span>
 								<ul id="lTree2" class="nav">
 									<li >
-										<i class="icon-book"></i><span><a data-bypass >    高中2015届[高一]</a> </span>
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2015届[高一]</a> </span>
 									</li>
 									<li >
-										<i class="icon-book"></i><span> <a data-bypass >   高中2014届[高二]</a></span>
+										&nbsp;&nbsp;<i class="icon-book"></i><span> <a data-bypass >   高中2014届[高二]</a></span>
 									</li>
 									<li >
-										<i class="icon-book"></i><span><a data-bypass >    高中2013届[高三]</a></span>
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2013届[高三]</a></span>
 									</li>
 
 								</ul>

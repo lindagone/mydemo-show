@@ -16,7 +16,7 @@ td.inRight {
 	text-align:right;
 }
 
-th.listNum {
+th.listNum, td.listNum {
 	width:40px;
 }
 input.aligntop {

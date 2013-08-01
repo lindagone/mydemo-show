@@ -1,0 +1,1330 @@
+<div class="social-box">
+	<div class="header">
+		<h4><strong>学籍异动查看</strong></h4>
+		
+		<div class="tools">
+			
+		    <ul id="myTab" class="nav nav-tabs">
+			    <li class="active" >
+					<a data-bypass href="#allinf" data-toggle="tab"> <i class="icon-list"></i> 全部学籍异动</a>
+				</li>
+				<li  >
+					<a data-bypass href="#jiedu" data-toggle="tab"> <i class="icon-list"></i> 借读</a>
+				</li>
+			
+				<li  >
+					<a data-bypass href="#jiangtiao" data-toggle="tab"> <i class="icon-list"></i> 降跳</a>
+				</li>
+			
+				<li  >
+					<a data-bypass href="#xiufuxue" data-toggle="tab"> <i class="icon-list"></i> 休学复学</a>
+				</li>
+			
+				<li  >
+					<a data-bypass href="#biye" data-toggle="tab"> <i class="icon-list"></i> 毕业</a>
+				</li>
+			
+				<li  >
+					<a data-bypass href="#zhuanxue" data-toggle="tab"> <i class="icon-list"></i> 转入转出</a>
+				</li>
+			
+				<li  >
+					<a data-bypass href="#kaichu" data-toggle="tab"> <i class="icon-list"></i> 开除</a>
+				</li>
+			
+				<li  >
+					<a data-bypass href="#tuixue" data-toggle="tab"> <i class="icon-list"></i> 退学</a>
+				</li>
+			
+				<li  >
+					<a data-bypass href="#jieye" data-toggle="tab"> <i class="icon-list"></i> 结业</a>
+				</li>
+			
+				<li  >
+					<a data-bypass href="#xuejiadjust" data-toggle="tab"> <i class="icon-list"></i> 学籍调整</a>
+				</li>
+			
+			</ul> 
+		</div>
+		
+	</div>
+	<div class="body">
+		
+			<div class="tab-content">
+			  <div class="tab-pane active" id="allinf">
+				<div class="row-fluid">
+					<div class="span12">
+						<h4 class="inCenter">学籍异动查看 </h4>
+					</div>
+				</div>
+                <br/>
+                <div class="row-fluid">
+					<div class="span10 offset1">
+						<div class="span5">学期：
+							<select>
+								<option value="BXT5425">2013-2014学年第二学期</option>
+								<option value="BXT5424">2013-2014学年第一学期</option>
+								<option value="BXT5422">2012-2013学年第一学期</option>
+								<option selected="" value="BXT5423">2012-2013学年第二学期[当前]</option>
+								<option value="BXT5421">2011-2012学年第二学期</option>
+							</select>
+						</div>
+						<div class="span5">届：
+							<select class="input-medium">
+								<option value="all">全部</option>
+								<option value="BXG5409">高中2015届[高一]</option>
+								<option value="BXG5408">高中2014届[高二]</option>
+								<option value="BXG5407">高中2013届[高三]</option><option value="all">全部</option>
+								<option value="BXG5409">高中2015届[高一]</option>
+								<option value="BXG5408">高中2014届[高二]</option>
+								<option value="BXG5407">高中2013届[高三]</option>
+							</select>
+						</div>
+						<div class="span2">
+							<div class="pull-right">
+									
+									<button class="btn btn-small btn-primary">
+										<i class="icon-print"></i> 打印
+									</button>
+								</div>
+						</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span10 offset1">
+						<table class="table table-bordered table-condensed table-hover">
+								<thead>
+									<tr class="headColor">
+										
+										<th class="listNum">序号</th>
+										<th>姓名</th>
+										
+										<th>学号</th>
+										
+										<th>届班</th>
+										
+										<th>异动类型</th>
+								
+										<th>操作</th>
+	
+									</tr>
+								</thead>
+								<tbody>									
+									<tr>										
+										<td class="inCenter">1</td>										
+										<td >胡可 </td>										
+										<td >20113021</td>										
+										<td >高中2013届(高三1班)</td>										
+										<td >退学</td>									
+										<td >
+										 <button class="btn btn-mini zhuanru">
+										转入
+									</button>	
+                                        </td>										
+									</tr>
+									<tr>										
+										<td class="inCenter">2</td>										
+										<td >王可 </td>										
+										<td >20113021</td>										
+										<td >高中2013届(高三1班)</td>										
+										<td >开除</td>									
+										<td >
+										 <button class="btn btn-mini">
+										转入
+									</button>	
+                                        </td>										
+									</tr>
+									<tr>										
+										<td class="inCenter">3</td>										
+										<td >李可 </td>										
+										<td >20113021</td>										
+										<td >高中2013届(高三1班)</td>										
+										<td >转出</td>									
+										<td >
+										 <button class="btn btn-mini">
+										转入
+									</button>	
+                                        </td>										
+									</tr>
+										<tr>										
+										<td class="inCenter">4</td>										
+										<td >孙可 </td>										
+										<td >20113021</td>										
+										<td >高中2013届(高三1班)</td>										
+										<td >借读</td>									
+										<td >
+										 <button class="btn btn-mini">
+										转入
+									</button>	
+                                        </td>										
+									</tr>							
+								</tbody>
+								</table>
+					</div>
+				</div>
+			   </div>
+					<div class="tab-pane " id="jiedu">
+						<div class="row-fluid">
+							<div class="span12">
+								<h4 class="inCenter">高中2013届 借读查看 </h4>
+							</div>
+						</div>
+						<br />
+						<div class="row-fluid">
+							<div class="span12">
+								<div class="pull-right">
+									
+									<button class="btn btn-small btn-primary">
+										<i class="icon-print"></i> 打印
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span3">
+							<ul id="lTree1" class="nav">
+							<li class="treeLeaf">
+								<i class="icon-folder-open"></i><span>当前使用的届</span>
+								<ul id="lTree2" class="nav">
+									<li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2015届[高一]</a> </span>
+									</li>
+									<li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span> <a data-bypass >   高中2014届[高二]</a></span>
+									</li>
+									<li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2013届[高三]</a></span>
+									</li>
+
+								</ul>
+							</li>
+							<li class="treeLeaf">
+								<i class="icon-folder-open"></i><span>全部届</span>
+								<ul id="lTree2" class="nav">
+									<li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass > 2001-2002学年</a></span>
+										<ul  class="nav">
+											<li >
+												&nbsp;&nbsp;&nbsp; <i class=" icon-hand-right"></i><span><a data-bypass > 第一学期</a></span>
+
+											</li>
+											<li >
+												&nbsp;&nbsp;&nbsp; <i class=" icon-hand-right"></i><span><a data-bypass > 第二学期</a></span>
+
+											</li>
+										</ul>
+									</li>
+                                   <li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass > 2002-2003学年</a></span>
+										<ul  class="nav">
+											<li >
+												&nbsp;&nbsp;&nbsp; <i class=" icon-hand-right"></i><span><a data-bypass > 第一学期</a></span>
+
+											</li>
+											<li >
+												&nbsp;&nbsp;&nbsp; <i class=" icon-hand-right"></i><span><a data-bypass > 第二学期</a></span>
+
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+
+						</div>
+							
+							<div class="span9">
+								<div class="span12" style="overflow-x: auto;">
+								<div style="min-width: 1300px;">
+									<table class="table table-bordered table-condensed table-hover">
+								<thead>
+									<tr class="headColor">
+										
+										<th class="listNum">序号</th>
+										
+										<th>届</th>
+										
+										<th>姓名</th>
+										
+										<th>借读学期</th>
+										
+										<th>来源学校</th>
+										
+										<th>分配班级</th>
+										
+										<th>借读原因</th>
+										
+										<th>借读日期</th>
+										
+										<th>经办人</th>
+	
+									</tr>
+								</thead>
+								<tbody>
+									
+									<tr>
+										
+										<td class="inCenter">1</td>										
+										<td >高中2013届 </td>										
+										<td >胡可</td>										
+										<td >2012-2013学年第二学期</td>										
+										<td >清华附中</td>
+										<td >高三1班 </td>
+										<td >换个学校</td>
+										<td class="inCenter">2013-07-01</td>
+										<td >白雪飞</td>
+										
+									</tr>
+									
+																	
+								</tbody>
+								</table>
+								</div>
+								
+							</div>
+							</div>
+							
+						</div>
+					</div>
+				
+					<div class="tab-pane " id="jiangtiao">
+						<div class="row-fluid">
+							<div class="span12">
+								<h4 class="inCenter">高中2014届 升留降跳查看 </h4>
+							</div>
+						</div>
+						<br />
+						<div class="row-fluid">
+							<div class="span9 offset3">
+								<div class="span5">
+								选择升留降跳类型:
+								<select class="input-small jiangtiao">
+									<option value="J">降级</option>
+									<option value="T">跳级</option>
+									<option value="S">升级</option>
+									<option value="L">留级</option>									
+									
+								</select>
+							</div>
+							<div class="span2 offset5">
+							  <div class="pull-right">
+							  	<button class="btn btn-small btn-primary">
+										<i class="icon-print"></i> 打印
+									</button>
+							  </div>	
+									
+								</div>
+								</div>
+							</div>
+						
+						<div class="row-fluid">
+							<div class="span3">
+							<ul id="lTree1" class="nav">
+							<li class="treeLeaf">
+								<i class="icon-folder-open"></i><span>当前使用的届</span>
+								<ul id="lTree2" class="nav">
+									<li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2015届[高一]</a> </span>
+									</li>
+									<li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span> <a data-bypass >   高中2014届[高二]</a></span>
+									</li>
+									<li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2013届[高三]</a></span>
+									</li>
+
+								</ul>
+							</li>
+							<li class="treeLeaf">
+								<i class="icon-folder-open"></i><span>全部届</span>
+								<ul id="lTree2" class="nav">
+									<li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass > 2001-2002学年</a></span>
+										<ul  class="nav">
+											<li >
+												&nbsp;&nbsp;&nbsp; <i class=" icon-hand-right"></i><span><a data-bypass > 第一学期</a></span>
+
+											</li>
+											<li >
+												&nbsp;&nbsp;&nbsp; <i class=" icon-hand-right"></i><span><a data-bypass > 第二学期</a></span>
+
+											</li>
+										</ul>
+									</li>
+                                   <li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass > 2002-2003学年</a></span>
+										<ul  class="nav">
+											<li >
+												&nbsp;&nbsp;&nbsp; <i class=" icon-hand-right"></i><span><a data-bypass > 第一学期</a></span>
+
+											</li>
+											<li >
+												&nbsp;&nbsp;&nbsp; <i class=" icon-hand-right"></i><span><a data-bypass > 第二学期</a></span>
+
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+
+						</div>
+							
+							<div class="span9">
+								<div class="span12" style="overflow-x: auto;">
+								<div style="min-width: 1300px;">
+										<table class="table table-bordered table-condensed table-hover">
+								<thead>
+									
+									<tr class="headColor">
+										
+										<th class="listNum">序号</th>
+										
+										<th>届</th>
+										<th>学号</th>
+										<th>姓名</th>
+										
+										<th>学期</th>
+										<th>类型</th>
+										<th>去向届</th>
+										
+										<th>原始班级</th>
+										
+										<th>去向班级</th>
+										
+										<th>降跳原因</th>
+										
+										<th>降跳日期</th>
+										
+										<th>经办人</th>						
+				
+									</tr>
+								</thead>
+								<tbody>
+									
+									<tr>
+										
+										<td class="inCenter">
+											1
+										</td>
+										
+										<td >
+											高中2014届
+										</td>
+										<td >
+											20113021
+										</td>
+										<td >
+											曹雨
+										</td>
+										
+										<td >
+											2012-2013学年第二学期
+										</td>
+										<td >
+											降级
+										</td>
+										<td >
+											高中2015届
+										</td>
+										
+										<td >
+											高二1班
+										</td>
+										
+										<td >
+											高一1班
+										</td>
+										
+										<td >
+											学分不够
+										</td>
+										
+										<td >
+											2013-07-02
+										</td>
+										
+										<td >
+											白雪飞
+										</td>
+						
+									</tr>
+									<tr style="display: none">
+										
+										<td class="inCenter">
+											1
+										</td>
+										
+										<td >
+											高中2014届
+										</td>
+										<td >
+											20113021
+										</td>
+										<td >
+											曹雨
+										</td>
+										
+										<td >
+											2012-2013学年第二学期
+										</td>
+										<td >
+											跳级
+										</td>
+										<td >
+											高中2013届
+										</td>
+										
+										<td >
+											高二1班
+										</td>
+										
+										<td >
+											高三1班
+										</td>
+										
+										<td >
+											成绩优异
+										</td>
+										
+										<td >
+											2013-07-02
+										</td>
+										
+										<td >
+											白雪飞
+										</td>
+						
+									</tr>
+														
+								</tbody>
+								</table>
+								</div>
+								</div>
+							
+						   </div>
+					
+					</div>
+					
+			</div>
+					<div class="tab-pane " id="xiufuxue">
+							<div class="tab-pane " id="jiangtiao">
+						<div class="row-fluid">
+							<div class="span12">
+								<h4 class="inCenter">高中2013届 休学复学查看 </h4>
+							</div>
+						</div>
+						<br />
+						<div class="row-fluid">
+							<div class="span12">
+								<div class="pull-right">
+									
+									<button class="btn btn-small btn-primary">
+										<i class="icon-print"></i> 打印
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span3">
+							<ul id="lTree1" class="nav">
+							<li class="treeLeaf">
+								<i class="icon-folder-open"></i><span>当前使用的届</span>
+								<ul id="lTree2" class="nav">
+									<li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2015届[高一]</a> </span>
+									</li>
+									<li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span> <a data-bypass >   高中2014届[高二]</a></span>
+									</li>
+									<li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2013届[高三]</a></span>
+									</li>
+
+								</ul>
+							</li>
+							<li class="treeLeaf">
+								<i class="icon-folder-open"></i><span>全部届</span>
+								<ul id="lTree2" class="nav">
+									<li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass > 2001-2002学年</a></span>
+										<ul  class="nav">
+											<li >
+												&nbsp;&nbsp;&nbsp; <i class=" icon-hand-right"></i><span><a data-bypass > 第一学期</a></span>
+
+											</li>
+											<li >
+												&nbsp;&nbsp;&nbsp; <i class=" icon-hand-right"></i><span><a data-bypass > 第二学期</a></span>
+
+											</li>
+										</ul>
+									</li>
+                                   <li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass > 2002-2003学年</a></span>
+										<ul  class="nav">
+											<li >
+												&nbsp;&nbsp;&nbsp; <i class=" icon-hand-right"></i><span><a data-bypass > 第一学期</a></span>
+
+											</li>
+											<li >
+												&nbsp;&nbsp;&nbsp; <i class=" icon-hand-right"></i><span><a data-bypass > 第二学期</a></span>
+
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+
+						</div>
+							
+							<div class="span9">
+								<div class="span12" style="overflow-x: auto;">
+								<div style="min-width: 2000px;">
+										<table class="table table-bordered table-condensed table-hover">
+								<thead>
+									
+									<tr class="headColor">
+										
+										<th class="listNum">序号</th>
+										
+										<th>届</th>
+										<th>学号</th>
+										<th>姓名</th>
+										
+										<th>休学学期</th>
+										
+										<th>休学前班级</th>
+										
+										<th>休学原因</th>
+										
+										<th>休学日期</th>
+										
+										<th>预计返校日期</th>
+										<th>休学经办人</th>
+										<th>复学学期</th>
+										
+										<th>复学班级</th>
+										<th>复学原因</th>
+										<th>复学日期</th>
+										<th>复学经办人</th>
+										
+				
+									</tr>
+								</thead>
+								<tbody>
+									
+									<tr>
+										
+										<td class="inCenter">
+											1
+										</td>
+										
+										<td >
+											高中2013届
+										</td>
+										<td >
+											 20113014
+										</td>
+										<td >
+											李雨
+										</td>
+										
+										<td >
+											2012-2013学年第二学期
+										</td>
+										
+										<td >
+											高三1班
+										</td>
+										
+										<td >
+											个人原因
+										</td>
+										
+										<td class="inCenter">
+											2013-07-01
+										</td>
+										
+										<td class="inCenter">
+											2014-01-01
+										</td>
+										
+										<td >
+											白雪飞
+										</td>
+                                    	
+										<td >--</td>
+										<td >--</td>
+										<td >--</td>
+										<td >--</td>
+									   <td >--</td>
+										
+									</tr>
+									<tr>
+										
+										<td class="inCenter">
+											1
+										</td>
+										
+										<td >
+											高中2013届
+										</td>
+										<td >
+											 20113014
+										</td>
+										<td >
+											曹雨
+										</td>
+										
+										<td >
+											2012-2013学年第二学期
+										</td>
+										
+										<td >
+											高三1班
+										</td>
+										
+										<td >
+											个人原因
+										</td>
+										
+										<td class="inCenter">
+											2013-07-01
+										</td>
+										
+										<td class="inCenter">
+											2014-01-01
+										</td>
+										
+										<td >
+											白雪飞
+										</td>
+                                    	 <td >2012-2013学年第二学期</td>
+                                    	 
+										<td >高三3班</td>
+										<td ></td>
+										<td >2014-01-01</td>
+										
+									   <td >
+											白雪飞
+										</td>
+										
+									</tr>
+																
+								</tbody>
+								</table>
+								</div>
+								</div>
+							
+						</div>
+					</div>
+					</div>
+					
+					</div>
+				
+					<div class="tab-pane " id="biye">
+						<div class="row-fluid">
+							<div class="span12">
+								<h4 class="inCenter">高中2013届毕业查看 </h4>
+							</div>
+						</div>
+						<br />
+						<div class="row-fluid">
+							<div class="span12">
+								<div class="pull-right">
+									
+									<button class="btn btn-small btn-primary">
+										<i class="icon-print"></i> 打印
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span3">
+							<ul id="lTree1" class="nav">
+							<li class="treeLeaf">
+								<i class="icon-folder-open"></i><span>当前使用的届</span>
+								<ul id="lTree2" class="nav">
+									<li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2015届[高一]</a> </span>
+									</li>
+									<li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span> <a data-bypass >   高中2014届[高二]</a></span>
+									</li>
+									<li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2013届[高三]</a></span>
+									</li>
+
+								</ul>
+							</li>
+							<li class="treeLeaf">
+								<i class="icon-folder-open"></i><span>全部届</span>
+								<ul id="lTree2" class="nav">
+									<li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass > 2001-2002学年</a></span>
+										<ul  class="nav">
+											<li >
+												&nbsp;&nbsp;&nbsp; <i class=" icon-hand-right"></i><span><a data-bypass > 第一学期</a></span>
+
+											</li>
+											<li >
+												&nbsp;&nbsp;&nbsp; <i class=" icon-hand-right"></i><span><a data-bypass > 第二学期</a></span>
+
+											</li>
+										</ul>
+									</li>
+                                   <li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass > 2002-2003学年</a></span>
+										<ul  class="nav">
+											<li >
+												&nbsp;&nbsp;&nbsp; <i class=" icon-hand-right"></i><span><a data-bypass > 第一学期</a></span>
+
+											</li>
+											<li >
+												&nbsp;&nbsp;&nbsp; <i class=" icon-hand-right"></i><span><a data-bypass > 第二学期</a></span>
+
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+
+						</div>
+							<div class="span9">
+								<div class="span12" style="overflow-x: auto;">
+								<div style="min-width: 1300px;">
+										<table class="table table-bordered table-condensed table-hover">
+								<thead>
+									
+									<tr class="headColor">
+										
+										<th class="listNum">序号</th>
+										
+										<th>届</th>										
+										
+										<th>毕业学期</th>
+										
+										<th>班级名称</th>
+										
+										<th>班号</th>
+										
+										<th>班主任</th>
+										
+										<th>班级人数</th>
+										
+										<th>毕业状态</th>
+										<th>毕业日期</th>
+										<th>经办人</th>
+										
+										
+				
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										
+										<td class="inCenter">1</td>										
+										<td >
+											高中2013届
+										</td>
+										<td >
+											2012-2013学年第二学期 
+										</td>
+										<td >
+											高三1班 
+										</td>
+										<td >
+											
+										</td>
+																				
+										<td >
+											
+										</td>
+										<td class="inRight">
+											22
+										</td>
+										<td >
+											已毕业
+										</td>
+										<td class="inCenter">
+											2013-07-31
+										</td>
+										
+										<td >
+											白雪飞
+										</td>
+
+									</tr>
+									<tr>
+										
+										<td class="inCenter">
+											2
+										</td>
+										
+										<td >
+											高中2013届
+										</td>
+										<td >
+											2012-2013学年第二学期 
+										</td>
+										<td >
+											高三2班 
+										</td>
+										<td >
+											
+										</td>
+																				
+										<td >
+											
+										</td>
+										<td class="inRight">
+											19
+										</td>
+										<td >
+											未毕业
+										</td>
+										<td class="inCenter">
+											--
+										</td>
+										
+										<td >
+											--
+										</td>
+										
+									</tr>
+									
+																
+								</tbody>
+								</table>
+								</div>
+								</div>
+							
+						</div>
+					</div>
+					</div>
+				
+					<div class="tab-pane " id="zhuanxue">
+						<div class="row-fluid">
+							<div class="span12">
+								<h4 class="inCenter">转入转出</h4>
+							</div>
+						</div>
+						<br />
+						<div class="row-fluid">
+							<div class="span9 offset3">
+								<div class="span5">
+									<div >
+								选择类型：
+								<select class="input-small" id="inorout" name="inorout">
+									<option value="0">转入</option>
+									<option value="1">转出</option>
+								</select>
+							</div>
+								</div>
+								<div class="span2 offset5">
+									<div class="pull-right">									
+									<button class="btn btn-small btn-primary">
+										<i class="icon-print"></i> 打印
+									</button>
+								</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span3">
+							<ul id="lTree1" class="nav">
+							<li class="treeLeaf">
+								<i class="icon-folder-open"></i><span>当前使用的届</span>
+								<ul id="lTree2" class="nav">
+									<li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2015届[高一]</a> </span>
+									</li>
+									<li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span> <a data-bypass >   高中2014届[高二]</a></span>
+									</li>
+									<li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2013届[高三]</a></span>
+									</li>
+
+								</ul>
+							</li>
+							<li class="treeLeaf">
+								<i class="icon-folder-open"></i><span>全部届</span>
+								<ul id="lTree2" class="nav">
+									<li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass > 2001-2002学年</a></span>
+										<ul  class="nav">
+											<li >
+												&nbsp;&nbsp;&nbsp; <i class=" icon-hand-right"></i><span><a data-bypass > 第一学期</a></span>
+
+											</li>
+											<li >
+												&nbsp;&nbsp;&nbsp; <i class=" icon-hand-right"></i><span><a data-bypass > 第二学期</a></span>
+
+											</li>
+										</ul>
+									</li>
+                                   <li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass > 2002-2003学年</a></span>
+										<ul  class="nav">
+											<li >
+												&nbsp;&nbsp;&nbsp; <i class=" icon-hand-right"></i><span><a data-bypass > 第一学期</a></span>
+
+											</li>
+											<li >
+												&nbsp;&nbsp;&nbsp; <i class=" icon-hand-right"></i><span><a data-bypass > 第二学期</a></span>
+
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+
+						</div>
+							<div class="span9">
+								<div class="row-fluid" id="goouters" style="display:none">
+							<div class="span12" style="overflow-x: auto;">
+								<div style="min-width: 1300px;">
+									<table class="table table-bordered table-condensed table-hover">
+										<thead>
+											<tr class="headColor">
+
+												<th class="listNum">序号</th>
+
+												<th>届</th>
+
+												<th>姓名</th>
+
+												<th>转出学期</th>
+                                                <th>我校班级</th>
+												<th>去向学校</th>
+												<th>转出原因</th>
+
+												<th>转出日期</th>
+
+												<th>经办人</th>
+
+											</tr>
+										</thead>
+										<tbody>
+											
+											<tr>
+
+												<td class="inCenter">1</td>
+												<td >高中2013届 </td>
+												<td >胡可</td>
+												<td >2012-2013学年第二学期</td>
+												<td >高三1班 </td>
+												<td >清华附中</td>												
+												<td >换个学校</td>
+												<td class="inCenter">2013-07-01</td>
+												<td >白雪飞</td>
+												 
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+
+							</div>
+						</div>
+						
+						<div class="row-fluid" id="goinners">
+							<div class="span12" style="overflow-x: auto;">
+								<div style="min-width: 1300px;">
+									<table class="table table-bordered table-condensed table-hover">
+								<thead>
+									<tr class="headColor">
+										
+										<th class="listNum">序号</th>
+										
+										<th>届</th>
+										
+										<th>姓名</th>
+										
+										<th>转入学期</th>
+										
+										<th>原始学校</th>
+										
+										<th>分配班级</th>
+										
+										<th>转入原因</th>
+										
+										<th>转入日期</th>
+										
+										<th>经办人</th>
+
+									</tr>
+								</thead>
+								<tbody>
+									
+									<tr>
+										
+										<td class="inCenter">1</td>										
+										<td >高中2013届 </td>										
+										<td >胡可</td>										
+										<td >2012-2013学年第二学期</td>										
+										<td >清华附中</td>
+										<td >高三1班 </td>
+										<td >换个学校</td>
+										<td class="inCenter">2013-07-01</td>
+										<td >白雪飞</td>
+										
+									</tr>
+									
+																	
+								</tbody>
+								</table>
+								</div>
+								
+							</div>
+						</div>
+							</div>
+							
+						</div>
+					</div>
+				
+					<div class="tab-pane " id="kaichu">
+						<div class="row-fluid">
+							<div class="span12">
+								<h4 class="inCenter">高中2013届 开除学生查看 </h4>
+							</div>
+						</div>
+						<br />
+						<div class="row-fluid">
+							<div class="span12">
+								<div class="pull-right">
+									
+									<button class="btn btn-small btn-primary">
+										<i class="icon-print"></i> 打印
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span3">
+							<ul id="lTree1" class="nav">
+							<li class="treeLeaf">
+								<i class="icon-folder-open"></i><span>当前使用的届</span>
+								<ul id="lTree2" class="nav">
+									<li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2015届[高一]</a> </span>
+									</li>
+									<li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span> <a data-bypass >   高中2014届[高二]</a></span>
+									</li>
+									<li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2013届[高三]</a></span>
+									</li>
+
+								</ul>
+							</li>
+							<li class="treeLeaf">
+								<i class="icon-folder-open"></i><span>全部届</span>
+								<ul id="lTree2" class="nav">
+									<li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass > 2001-2002学年</a></span>
+										<ul  class="nav">
+											<li >
+												&nbsp;&nbsp;&nbsp; <i class=" icon-hand-right"></i><span><a data-bypass > 第一学期</a></span>
+
+											</li>
+											<li >
+												&nbsp;&nbsp;&nbsp; <i class=" icon-hand-right"></i><span><a data-bypass > 第二学期</a></span>
+
+											</li>
+										</ul>
+									</li>
+                                   <li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass > 2002-2003学年</a></span>
+										<ul  class="nav">
+											<li >
+												&nbsp;&nbsp;&nbsp; <i class=" icon-hand-right"></i><span><a data-bypass > 第一学期</a></span>
+
+											</li>
+											<li >
+												&nbsp;&nbsp;&nbsp; <i class=" icon-hand-right"></i><span><a data-bypass > 第二学期</a></span>
+
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+
+						</div>
+							
+							<div class="span9">
+								<div class="span12" style="overflow-x: auto;">
+								<div style="min-width: 1300px;">
+									<table class="table table-bordered table-condensed table-hover">
+								<thead>
+									<tr class="headColor">
+										
+										<th class="listNum">序号</th>
+										
+										<th>届</th>
+										
+										<th>姓名</th>										
+										<th>开除学期</th>
+										<th>开除前班级</th>										
+										<th>开除原因</th>										
+										<th>开除日期</th>										
+										<th>经办人</th>
+										
+									</tr>
+								</thead>
+								<tbody>
+									
+									<tr>
+										
+										<td class="inCenter">1</td>										
+										<td >高中2013届 </td>										
+										<td >胡可</td>										
+										<td >2012-2013学年第二学期</td>										
+										<td >高三1班 </td>
+										<td >换个学校</td>
+										<td class="inCenter">2013-07-01</td>
+										<td >白雪飞</td>
+										
+									</tr>
+									
+																	
+								</tbody>
+								</table>
+								</div>
+								
+							</div>
+							</div>
+							
+						</div>
+					</div>
+				
+					<div class="tab-pane " id="tuixue">
+						<div class="row-fluid">
+							<div class="span12">
+								<h4 class="inCenter">退学 </h4>
+							</div>
+						</div>
+						<br />
+						<div class="row-fluid">
+							<div class="span12">
+								<div class="pull-right">
+									
+									<button class="btn btn-small btn-primary">
+										<i class="icon-print"></i> 打印
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span3">
+							<ul id="lTree1" class="nav">
+							<li class="treeLeaf">
+								<i class="icon-folder-open"></i><span>当前使用的届</span>
+								<ul id="lTree2" class="nav">
+									<li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2015届[高一]</a> </span>
+									</li>
+									<li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span> <a data-bypass >   高中2014届[高二]</a></span>
+									</li>
+									<li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass >    高中2013届[高三]</a></span>
+									</li>
+
+								</ul>
+							</li>
+							<li class="treeLeaf">
+								<i class="icon-folder-open"></i><span>全部届</span>
+								<ul id="lTree2" class="nav">
+									<li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass > 2001-2002学年</a></span>
+										<ul  class="nav">
+											<li >
+												&nbsp;&nbsp;&nbsp; <i class=" icon-hand-right"></i><span><a data-bypass > 第一学期</a></span>
+
+											</li>
+											<li >
+												&nbsp;&nbsp;&nbsp; <i class=" icon-hand-right"></i><span><a data-bypass > 第二学期</a></span>
+
+											</li>
+										</ul>
+									</li>
+                                   <li >
+										&nbsp;&nbsp;<i class="icon-book"></i><span><a data-bypass > 2002-2003学年</a></span>
+										<ul  class="nav">
+											<li >
+												&nbsp;&nbsp;&nbsp; <i class=" icon-hand-right"></i><span><a data-bypass > 第一学期</a></span>
+
+											</li>
+											<li >
+												&nbsp;&nbsp;&nbsp; <i class=" icon-hand-right"></i><span><a data-bypass > 第二学期</a></span>
+
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+
+						</div>
+							
+							<div class="span9">
+								<div class="span12" style="overflow-x: auto;">
+								<div style="min-width: 1300px;">
+									<table class="table table-bordered table-condensed table-hover">
+								<thead>
+									<tr class="headColor">
+										
+										<th class="listNum">序号</th>
+										
+										<th>届</th>
+										
+										<th>姓名</th>										
+										<th>退学学期</th>
+										<th>所在班级</th>										
+										<th>退学原因</th>										
+										<th>退学日期</th>										
+										<th>经办人</th>
+										
+									</tr>
+								</thead>
+								<tbody>
+									
+									<tr>
+										
+										<td class="inCenter">1</td>										
+										<td >高中2013届 </td>										
+										<td >胡可</td>										
+										<td >2012-2013学年第二学期</td>										
+										<td >高三1班 </td>
+										<td >换个学校</td>
+										<td class="inCenter">2013-07-01</td>
+										<td >白雪飞</td>
+										
+									</tr>
+									
+																	
+								</tbody>
+								</table>
+								</div>
+								
+							</div>
+							</div>
+							
+						</div>
+					</div>
+				
+					
+				
+					
+				
+			</div>
+		 
+	</div>
+</div>
