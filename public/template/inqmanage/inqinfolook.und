@@ -423,6 +423,9 @@
                     </div>
                 </fieldset>
                 <fieldset>
+                    <legend>活动评价</legend>
+                </fieldset>
+                <fieldset>
                     <legend>
                         结题评价
                     </legend>
@@ -477,6 +480,9 @@
                             </tbody>
                         </table>
                     </div>
+                </fieldset>
+                 <fieldset>
+                    <legend>学分认定</legend>
                 </fieldset>
 			</div>
 		</div>
