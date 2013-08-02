@@ -1,4 +1,4 @@
-define(['underscore', 'resthub', 'und!template/inqmanage/applyinq'], 
+define(['underscore', 'resthub', 'und!template/inqmanage/showinq'], 
 function(_, Resthub, template) {
 	var ModuleView = Resthub.View.extend({
 		
