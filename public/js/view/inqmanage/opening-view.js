@@ -5,7 +5,10 @@ function(_, Resthub, template) {
 		template : template,
 		
 		events : {
-			
+			'click .editOpening' : 'editOpening',
+			'click .returnOpening' : 'returneditOpening',
+			'click .editOpeningScore' : 'editOpeningScore',
+            'click .returnOpeningScore' : 'returnOpeningScore'
 		},
 
 		initialize : function(options) {
@@ -18,6 +21,26 @@ function(_, Resthub, template) {
 			
 			_self.$el.html(_self.template());
 			return _self;
+		},
+		
+		editOpening : function(){
+		    $('#showOpening').hide();
+		    $('#editOpening').show();
+		},
+		
+		returneditOpening : function(){
+		    $('#showOpening').show();
+            $('#editOpening').hide();
+		},
+		
+		editOpeningScore : function(){
+		    $('#showOpeningScore').hide();
+            $('#editOpeningScore').show();  
+		},
+		
+		returnOpeningScore : function(){
+		    $('#editOpeningScore').hide();
+            $('#showOpeningScore').show();
 		}
 		
 	});
