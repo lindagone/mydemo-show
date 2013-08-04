@@ -70,7 +70,7 @@
 								<td>邓欢</td>
 								<td class="inRight">4</td>
 								<td>专家审核</td>
-								<td><button class="btn btn-mini">进入评审</button></td>
+								<td><a data-bypass href="inqinfolook.html" class="btn btn-mini">进入评审</a></td>
 							</tr>
 							<tr>
 								<td class="inCenter">2</td>

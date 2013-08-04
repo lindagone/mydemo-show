@@ -5,7 +5,8 @@ function(_, Resthub, template) {
 		template : template,
 		
 		events : {
-			
+			'click .editBasicInfo' : 'editBasicInfo',
+			'click .returnBasicInfo' : 'returnBasicInfo'
 		},
 
 		initialize : function(options) {
@@ -18,6 +19,16 @@ function(_, Resthub, template) {
 			
 			_self.$el.html(_self.template());
 			return _self;
+		},
+		
+		editBasicInfo : function(){
+		    $('#showBasic').hide();
+		    $('#editBasic').show();
+		},
+		
+		returnBasicInfo : function(){
+		    $('#showBasic').show();
+            $('#editBasic').hide();
 		}
 		
 	});

@@ -7,13 +7,17 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
          'view/studentmanage/setting-studentstatus-view','view/studentmanage/enrollmentmaintain-view',
 		'view/studentmanage/setstudentInfo-view','view/studentmanage/look-enrollment-view',
 		'view/inqmanage/inqmanage-view', 'view/inqmanage/inqinfo-view', 'view/inqmanage/myinq-stu-view', 'view/inqmanage/myinq-tch-view',
-		'view/inqmanage/myinq-mng-view', 'view/inqmanage/applyinq-view', 'view/inqmanage/issueinq-view', 'view/inqmanage/showinq-view',
+		'view/inqmanage/myinq-mng-view', 
+		'view/inqmanage/opening-view', 
+		'view/inqmanage/issueinq-view', 'view/inqmanage/showinq-view',
 		'view/inqmanage/inqinfolook-view', 'backbone-queryparams'], function(
 		Backbone, CodeGeneratorView, DemoGeneratorView, MailBaseView, NoticeIndexView,
 		MysalaryView, SalaryManageView, SalaryInitView, AccountManageView, SalaryOverview, TestView,
 		HrIndexView,PersonViewIndexView,HrManageIndexView,TeacherSearchView,TeacherSettingView,TeaInfImproveView,MaintainIndexView,
 		StudentSettingView,EnrollmentChangeMaintainView,StudentInfoView,EnrollmentLookView,
-		InqManageView, InqInfoView,InqStuView,InqTchView,InqAprvView,InqAplyView,InqIssView,InqShowView,InqInfoLookView) {
+		InqManageView, InqInfoView,InqStuView,InqTchView,InqAprvView,
+		InqOpeningView,
+		InqIssView,InqShowView,InqInfoLookView) {
 	var options = {
 		routes : {
 			'': 'anything',
@@ -42,7 +46,7 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
 			'myinq-stu.html'        : 'studentsinq',
 			'myinq-tch.html'        : 'teachersinq',
 			'myinq-mng.html'        : 'approvalinq',
-			'applyinq.html'         : 'applyinq',
+			'InqOpeningView.html'         : 'InqOpening',
 			'issueinq.html'         : 'issueinq',
 			'inqshow.html'          : 'inqshow',
 			'inqinfolook.html'      : 'inqinfolook',
@@ -142,8 +146,8 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
         approvalinq : function(){
             new InqAprvView({root:$('#bodyContainer')});
         },
-        applyinq : function(){
-            new InqAplyView({root:$('#bodyContainer')});
+        InqOpening : function(){
+            new InqOpeningView({root:$('#bodyContainer')});
         },
         issueinq : function(){
             new InqIssView({root:$('#bodyContainer')});
