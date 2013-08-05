@@ -1,182 +1,95 @@
 <div class="social-box">
 	<div class="header">
 		<h4><strong>课题展示</strong></h4>
-		<div class="tools">
-			<ul id="myTab" class="nav nav-tabs">
-				<li class="active" >
-					<a data-bypass href="#tab1" data-toggle="tab"> <i class="icon-list"></i> 老师意向课题</a>
-				</li>
-				<li  >
-					<a data-bypass href="#tab2" data-toggle="tab"> <i class="icon-list"></i> 学生意向课题</a>
-				</li>
-			</ul>
-		</div>
+
 	</div>
 	<div class="body">
-		<div class="tab-content">
-			<div class="tab-pane active" id="tab1">
-				<div class="row-fluid">
-					<div class="span12">
-						<h4 class="inCenter">老师意向课题展示</h4>
-					</div>
-				</div>
-				<br />
-				<div class="row-fluid">
-					<div class="span12">
-						<div class="pull-right">
-							<a class="btn btn-small btn-primary" data-bypass="" href="issueinq.html"> <i class="icon-plus"></i> 发布意向课题 </a>
-						</div>
-					</div>
-				</div>
-				<div class="row-fluid">
-					<div class="span12">
-						<table class="table table-bordered table-condensed table-hover">
-							<thead>
-								<tr class="headColor">
-									<th class="listNum">序号</th>
-									<th>课题名称</th>
-									<th width="70px">相关学科</th>
-									<th width="70px">课题领域</th>
-									<th width="70px">指导老师</th>
-									<th width="70px">课题组长</th>
-									<th width="70px">课题状态</th>
-									<th width="70px">小组人数</th>
-									<th width="100px">创建时间</th>
-									<th width="70px">操作</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td class="inCenter">1</td>
-									<td ><a data-bypass href="inqinfolook.html">高中历史教材有效阅读方法的探索</a></td>
-									<td >历史</td>
-									<td >人与自我</td>
-									<td >李杰</td>
-									<td >吴晓斌</td>
-									<td>开题中</td>
-									<td class="inRight">5/5</td>
-									<td class="inCenter">2013-04-06</td>
-									<td>
-									<button class="btn btn-mini" onclick="alert('小组人数已满，请加入其他小组。')">
-										申请加入
-									</button></td>
-								</tr>
-								<tr>
-									<td class="inCenter">2</td>
-									<td >盐类水解原理的应用</td>
-									<td >化学</td>
-									<td >人与自我</td>
-									<td >李杰</td>
-									<td >吴晓斌</td>
-									<td>开题评审</td>
-									<td class="inRight">1/5</td>
-									<td class="inCenter">2013-04-06</td>
-									<td>
-									<button class="btn btn-mini">
-										申请加入
-									</button></td>
-								</tr>
-								<tr>
-									<td class="inCenter">3</td>
-									<td >益智游戏中的数学</td>
-									<td >数学</td>
-									<td >人与自我</td>
-									<td >李杰</td>
-									<td >吴晓斌</td>
-									<td>研究中</td>
-									<td class="inRight">1/5</td>
-									<td class="inCenter">2013-04-06</td>
-									<td>
-									<button class="btn btn-mini">
-										申请加入
-									</button></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
+		<div class="row-fluid">
+			<div class="span12">
+				<h4 class="inCenter">全部 意向课题展示</h4>
+			</div>
+		</div>
+		<br />
+		<div class="row-fluid">
+			<div class="span4">
+				<span class="text-info">当前意向：
+				<select class="input-medium">
+					<option>全部</option>
+					<option>老师</option>
+					<option>学生</option>
+				</select></span>
+			</div>
+			<div class="span8">
+				<div class="pull-right">
+					<a class="btn btn-small btn-primary" data-bypass="" href="issueinq.html" onclick="alert('该按钮只有在【课题维护】中设置了可以发送意向时，才可见。');"> <i class="icon-plus"></i> 发布意向课题 </a>
 				</div>
 			</div>
-			<div class="tab-pane" id="tab2">
-				<div class="row-fluid">
-					<div class="span12">
-						<h4 class="inCenter">学生意向课题展示</h4>
-					</div>
-				</div>
-				<br />
-				<div class="row-fluid">
-					<div class="span12">
-						<div class="pull-right">
-							<a class="btn btn-small btn-primary" data-bypass="" href="issueinq.html"> <i class="icon-plus"></i> 发布意向课题 </a>
-						</div>
-					</div>
-				</div>
-				<div class="row-fluid">
-					<div class="span12">
-						<table class="table table-bordered table-condensed table-hover">
-							<thead>
-								<tr class="headColor">
-									<th class="listNum">序号</th>
-									<th>课题名称</th>
-									<th width="70px">相关学科</th>
-									<th width="70px">课题领域</th>
-									<th width="70px">指导老师</th>
-									<th width="70px">课题组长</th>
-									<th width="70px">课题状态</th>
-									<th width="70px">小组人数</th>
-									<th width="100px">创建时间</th>
-									<th width="70px">操作</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td class="inCenter">1</td>
-									<td >高中历史教材有效阅读方法的探索</td>
-									<td >历史</td>
-									<td >人与自我</td>
-									<td >李杰</td>
-									<td >吴晓斌</td>
-									<td>开题中</td>
-									<td class="inRight">1/5</td>
-									<td class="inCenter">2013-04-06</td>
-									<td>
-									<button class="btn btn-mini">
-										申请加入
-									</button></td>
-								</tr>
-								<tr>
-									<td class="inCenter">2</td>
-									<td >盐类水解原理的应用</td>
-									<td >化学</td>
-									<td >人与自我</td>
-									<td >李杰</td>
-									<td >吴晓斌</td>
-									<td>开题评审</td>
-									<td class="inRight">1/5</td>
-									<td class="inCenter">2013-04-06</td>
-									<td>
-									<button class="btn btn-mini">
-										申请加入
-									</button></td>
-								</tr>
-								<tr>
-									<td class="inCenter">3</td>
-									<td >益智游戏中的数学</td>
-									<td >数学</td>
-									<td >人与自我</td>
-									<td >李杰</td>
-									<td >吴晓斌</td>
-									<td>研究中</td>
-									<td class="inRight">1/5</td>
-									<td class="inCenter">2013-04-06</td>
-									<td>
-									<button class="btn btn-mini">
-										申请加入
-									</button></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span12">
+				<table class="table table-bordered table-condensed table-hover">
+					<thead>
+						<tr class="headColor">
+							<th class="listNum">序号</th>
+							<th>课题名称</th>
+							<th width="70px">相关学科</th>
+							<th width="70px">课题领域</th>
+							<th width="70px">指导老师</th>
+							<th width="70px">课题组长</th>
+							<th width="70px">课题状态</th>
+							<th width="70px">小组人数</th>
+							<th width="100px">创建时间</th>
+							<th width="70px">操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="inCenter">1</td>
+							<td ><a data-bypass href="inqinfo2.html" title="查看课题信息">高中历史教材有效阅读方法的探索</a></td>
+							<td >历史</td>
+							<td >人与自我</td>
+							<td >李杰</td>
+							<td >吴晓斌</td>
+							<td>开题中</td>
+							<td class="inRight">5/5</td>
+							<td class="inCenter">2013-04-06</td>
+							<td>
+							<button class="btn btn-mini" onclick="alert('你的申请已发送给该课题组长和指导老师。（该按钮可以被所有人看见，但是如果该学生已经有了课题，且达到维护中设置的上限，如2个，则提示不能加入。当该课题人满时也不能加入。）')">
+								申请加入
+							</button></td>
+						</tr>
+						<tr>
+							<td class="inCenter">2</td>
+							<td >盐类水解原理的应用</td>
+							<td >化学</td>
+							<td >人与自我</td>
+							<td >李杰</td>
+							<td >吴晓斌</td>
+							<td>开题评审</td>
+							<td class="inRight">1/5</td>
+							<td class="inCenter">2013-04-06</td>
+							<td>
+							<button class="btn btn-mini">
+								申请加入
+							</button></td>
+						</tr>
+						<tr>
+							<td class="inCenter">3</td>
+							<td >益智游戏中的数学</td>
+							<td >数学</td>
+							<td >人与自我</td>
+							<td >李杰</td>
+							<td >吴晓斌</td>
+							<td>研究中</td>
+							<td class="inRight">1/5</td>
+							<td class="inCenter">2013-04-06</td>
+							<td>
+							<button class="btn btn-mini">
+								申请加入
+							</button></td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
 	</div>

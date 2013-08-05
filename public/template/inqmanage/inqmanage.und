@@ -9,6 +9,9 @@
 				<li  >
 					<a data-bypass href="#tab2" data-toggle="tab"> <i class="icon-list"></i> 状态设置</a>
 				</li>
+				<li  >
+					<a data-bypass href="#tab3" data-toggle="tab"> <i class="icon-list"></i> 报告设置</a>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -58,7 +61,7 @@
 					</div>
 					<div class="span10">
 						<div class="pull-right">
-							<a class="btn btn-small btn-primary" data-bypass href="inqinfo.html"> <i class="icon-plus"></i> 添加新课题 </a>
+							<a class="btn btn-small btn-primary" data-bypass href="inqinfolook.html.html"> <i class="icon-plus"></i> 添加新课题 </a>
 						</div>
 					</div>
 				</div>
@@ -85,14 +88,16 @@
 										<td class="inCenter">1</td>
 										<td>2012-2013学年度</td>
 										<td>高二年级</td>
-										<td><a data-bypass href="inqinfo.html" title="查看课题详情">股民炒股收益和操作心理现状调查报告</a></td>
+										<td><a data-bypass href="inqinfolook.html" title="查看课题详情">股民炒股收益和操作心理现状调查报告</a></td>
 										<td>梦辉</td>
 										<td>吴英</td>
 										<td>已结题</td>
 										<td class="inRight">95</td>
 										<td class="inRight">8</td>
-										<td><a data-bypass href="inqinfo.html" class="btn btn-mini">修改课题详情</a>
-											<button class="btn btn-mini btn-delete">删除</button></td>
+										<td><a data-bypass href="inqinfolook.html" class="btn btn-mini">查看课题详情</a>
+										<button class="btn btn-mini btn-delete">
+											删除
+										</button></td>
 									</tr>
 									<tr>
 										<td class="inCenter">2</td>
@@ -104,8 +109,10 @@
 										<td>选题中</td>
 										<td class="inRight">--</td>
 										<td class="inRight">--</td>
-										<td><a data-bypass href="inqinfo.html" class="btn btn-mini">修改课题详情</a>
-											<button class="btn btn-mini btn-delete">删除</button></td>
+										<td><a data-bypass href="inqinfolook.html" class="btn btn-mini">查看课题详情</a>
+										<button class="btn btn-mini btn-delete">
+											删除
+										</button></td>
 									</tr>
 									<tr>
 										<td class="inCenter">3</td>
@@ -117,8 +124,10 @@
 										<td>专家审核</td>
 										<td class="inRight">--</td>
 										<td class="inRight">--</td>
-										<td><a data-bypass href="inqinfo.html" class="btn btn-mini">修改课题详情</a>
-											<button class="btn btn-mini btn-delete">删除</button></td>
+										<td><a data-bypass href="inqinfolook.html" class="btn btn-mini">查看课题详情</a>
+										<button class="btn btn-mini btn-delete">
+											删除
+										</button></td>
 									</tr>
 									<tr>
 										<td class="inCenter">4</td>
@@ -130,8 +139,10 @@
 										<td>开题中</td>
 										<td class="inRight">--</td>
 										<td class="inRight">--</td>
-										<td><a data-bypass href="inqinfo.html" class="btn btn-mini">修改课题详情</a>
-											<button class="btn btn-mini btn-delete">删除</button></td>
+										<td><a data-bypass href="inqinfolook.html" class="btn btn-mini">查看课题详情</a>
+										<button class="btn btn-mini btn-delete">
+											删除
+										</button></td>
 									</tr>
 									<tr>
 										<td class="inCenter">5</td>
@@ -143,8 +154,10 @@
 										<td>研究中</td>
 										<td class="inRight">--</td>
 										<td class="inRight">--</td>
-										<td><a data-bypass href="inqinfo.html" class="btn btn-mini">修改课题详情</a>
-											<button class="btn btn-mini btn-delete">删除</button></td>
+										<td><a data-bypass href="inqinfolook.html" class="btn btn-mini">查看课题详情</a>
+										<button class="btn btn-mini btn-delete">
+											删除
+										</button></td>
 									</tr>
 									<tr>
 										<td class="inCenter">6</td>
@@ -156,8 +169,10 @@
 										<td>研究中</td>
 										<td class="inRight">--</td>
 										<td class="inRight">--</td>
-										<td><a data-bypass href="inqinfo.html" class="btn btn-mini">修改课题详情</a>
-											<button class="btn btn-mini btn-delete">删除</button></td>
+										<td><a data-bypass href="inqinfolook.html" class="btn btn-mini">查看课题详情</a>
+										<button class="btn btn-mini btn-delete">
+											删除
+										</button></td>
 									</tr>
 									<tr>
 										<td class="inCenter">7</td>
@@ -169,8 +184,10 @@
 										<td>结题中</td>
 										<td class="inRight">--</td>
 										<td class="inRight">--</td>
-										<td><a data-bypass href="inqinfo.html" class="btn btn-mini">修改课题详情</a>
-											<button class="btn btn-mini btn-delete">删除</button></td>
+										<td><a data-bypass href="inqinfolook.html" class="btn btn-mini">查看课题详情</a>
+										<button class="btn btn-mini btn-delete">
+											删除
+										</button></td>
 									</tr>
 									<tr>
 										<td class="inCenter">8</td>
@@ -182,8 +199,10 @@
 										<td>结题中</td>
 										<td class="inRight">--</td>
 										<td class="inRight">--</td>
-										<td><a data-bypass href="inqinfo.html" class="btn btn-mini">修改课题详情</a>
-											<button class="btn btn-mini btn-delete">删除</button></td>
+										<td><a data-bypass href="inqinfolook.html" class="btn btn-mini">查看课题详情</a>
+										<button class="btn btn-mini btn-delete">
+											删除
+										</button></td>
 									</tr>
 									<tr>
 										<td class="inCenter">9</td>
@@ -195,8 +214,10 @@
 										<td>结题中</td>
 										<td class="inRight">--</td>
 										<td class="inRight">--</td>
-										<td><a data-bypass href="inqinfo.html" class="btn btn-mini">修改课题详情</a>
-											<button class="btn btn-mini btn-delete">删除</button></td>
+										<td><a data-bypass href="inqinfolook.html" class="btn btn-mini">查看课题详情</a>
+										<button class="btn btn-mini btn-delete">
+											删除
+										</button></td>
 									</tr>
 									<tr>
 										<td class="inCenter">10</td>
@@ -208,8 +229,10 @@
 										<td>专家评定</td>
 										<td class="inRight">--</td>
 										<td class="inRight">--</td>
-										<td><a data-bypass href="inqinfo.html" class="btn btn-mini">修改课题详情</a>
-											<button class="btn btn-mini btn-delete">删除</button></td>
+										<td><a data-bypass href="inqinfolook.html" class="btn btn-mini">查看课题详情</a>
+										<button class="btn btn-mini btn-delete">
+											删除
+										</button></td>
 									</tr>
 									<tr>
 										<td class="inCenter">11</td>
@@ -221,8 +244,10 @@
 										<td>专家评定</td>
 										<td class="inRight">85</td>
 										<td class="inRight">--</td>
-										<td><a data-bypass href="inqinfo.html" class="btn btn-mini">修改课题详情</a>
-											<button class="btn btn-mini btn-delete">删除</button></td>
+										<td><a data-bypass href="inqinfolook.html" class="btn btn-mini">查看课题详情</a>
+										<button class="btn btn-mini btn-delete">
+											删除
+										</button></td>
 									</tr>
 								</tbody>
 							</table>
@@ -233,38 +258,153 @@
 
 			<div class="tab-pane " id="tab2">
 				<fieldset>
-					<legend>老师设置</legend>
+					<legend>
+						老师设置
+					</legend>
 					<dl class="dl-horizontal">
-						<dt>允许发布课题意向</dt>
-						<dd><label class="radio inline">
-                            <input type="radio" value="1" name="working" checked>
-                            是 </label><label class="radio inline">
-                            <input type="radio" value="0" name="working">
-                            否 </label></dd></dl>
+						<dt>
+							允许发布课题意向
+						</dt>
+						<dd>
+							<label class="radio inline">
+								<input type="radio" value="1" name="working" checked>
+								是 </label><label class="radio inline">
+								<input type="radio" value="0" name="working">
+								否 </label>
+						</dd>
+					</dl>
 				</fieldset>
 				<fieldset>
-					<legend>学生设置</legend>
+					<legend>
+						学生设置
+					</legend>
 					<dl class="dl-horizontal">
-						<dt>允许发布课题意向</dt>
-						<dd><label class="radio inline">
-                            <input type="radio" value="1" name="working1" checked>
-                            是 </label><label class="radio inline">
-                            <input type="radio" value="0" name="working1">
-                            否 </label></dd></dl>
-                    <dl class="dl-horizontal">
-						<dt>同时进行的课题个数</dt>
-						<dd><input type="text" style="width: 70px" value="1"></dd></dl>
-                    <dl class="dl-horizontal">
-						<dt>允许小组成员提交报告</dt>
-						<dd><label class="radio inline">
-                            <input type="radio" value="1" name="working3" checked>
-                            是 </label><label class="radio inline">
-                            <input type="radio" value="0" name="working3">
-                            否 </label></dd>
-                    </dl>
+						<dt>
+							允许发布课题意向
+						</dt>
+						<dd>
+							<label class="radio inline">
+								<input type="radio" value="1" name="working1" checked>
+								是 </label><label class="radio inline">
+								<input type="radio" value="0" name="working1">
+								否 </label>
+						</dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>
+							同时进行的课题个数
+						</dt>
+						<dd>
+							<input type="text" style="width: 70px" value="1">
+						</dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>
+							允许小组成员提交报告
+						</dt>
+						<dd>
+							<label class="radio inline">
+								<input type="radio" value="1" name="working3" >
+								是 </label><label class="radio inline">
+								<input type="radio" value="0" name="working3" checked>
+								否 </label>
+						</dd>
+					</dl>
+				</fieldset>
 				<div class="form-actions">
-					<button class="btn btn-primary">确定</button>
-					<button class="btn btn-primary">取消</button>
+					<button class="btn btn-primary">
+						确定
+					</button>
+					<button class="btn btn-primary">
+						取消
+					</button>
+				</div>
+			</div>
+			<div class="tab-pane " id="tab3">
+				<table >
+					<thead>
+						<tr class="headColor">
+							<th width="100px">课题阶段</th>
+							<th width="200px">权重</th>
+							<th>报告类型</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>开题评价</td>
+							<td><input type="text" class="input-small" value="20" />%</td>
+							<td><select>
+								<option>二附中定制表格</option>
+								<option>清华附中定制表格</option>
+							</select></td>
+						</tr>
+						<tr>
+							<td>实践活动评价</td>
+							<td><input type="text" class="input-small" value="50" />%</td>
+							<td><select>
+								<option>二附中定制表格</option>
+								<option>清华附中定制表格</option>
+							</select></td>
+						</tr>
+						<tr>
+							<td>结题评价</td>
+							<td><input type="text" class="input-small" value="30" />%</td>
+							<td><select>
+								<option>二附中定制表格</option>
+								<option>清华附中定制表格</option>
+							</select></td>
+						</tr>
+					</tbody>
+				</table>
+				<hr />
+				实践活动是否有不同类型：<input type="checkbox" checked>
+				<table >
+					<thead>
+						<tr class="headColor">
+							<th width="100px">实践活动类型</th>
+							<th width="200px">权重</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>资料查阅活动</td>
+							<td><input type="text" class="input-small" value="1.0" /></td>
+						</tr>
+						<tr>
+							<td>调查记录活动</td>
+							<td><input type="text" class="input-small" value="1.0" /></td>
+						</tr>
+						<tr>
+							<td>实验记录活动</td>
+							<td><input type="text" class="input-small" value="1.2" /></td>
+						</tr>
+						<tr>
+							<td>访谈记录活动</td>
+							<td><input type="text" class="input-small" value="1.0" /></td>
+						</tr>
+						<tr>
+							<td>小组讨论活动</td>
+							<td><input type="text" class="input-small" value="0.8" /></td>
+						</tr>
+						<tr>
+							<td>其他类型活动</td>
+							<td><input type="text" class="input-small" value="0.8" /></td>
+						</tr>
+						<tr>
+							<td>读书记录活动</td>
+							<td><input type="text" class="input-small" value="1.0" /></td>
+						</tr>
+					</tbody>
+				</table>
+				<hr />
+				结题宣讲后是否填写小组评价表：<input type="checkbox">
+				<div class="form-actions">
+					<button class="btn btn-primary">
+						确定
+					</button>
+					<button class="btn btn-primary">
+						取消
+					</button>
 				</div>
 			</div>
 		</div>

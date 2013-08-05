@@ -1,0 +1,136 @@
+<div class="social-box">
+	<div class="header">
+		<h4><strong>小组评价表</strong></h4>
+	</div>
+	<div class="body">
+		<fieldset id="showOpeningScore">
+			<legend>
+				研究性学习小组评价表
+			</legend>
+			<div class="box corner-all">
+				<table class="table table-condensed table-bordered inCenter" style="width: 800px;margin-left: auto;margin-right: auto;">
+					<tbody>
+						<tr>
+							<td class="inCenter" width="200px">课题名称</td>
+							<td colspan="3"></td>
+						</tr>
+						<tr>
+							<td class="inCenter">指导老师</td>
+							<td colspan="3"></td>
+						</tr>
+						<tr>
+							<td class="inCenter">成员</td>
+							<td class="inCenter" width="200px">班级</td>
+							<td class="inCenter" width="200px">姓名</td>
+							<td class="inCenter">个人综合等级系数</td>
+						</tr>
+						<tr>
+							<td class="inCenter">组长</td>
+							<td class="inCenter" width="200px"></td>
+							<td class="inCenter" width="200px"></td>
+							<td class="inCenter"></td>
+						</tr>
+						<tr>
+							<td class="inCenter">组员1</td>
+							<td class="inCenter" width="200px"></td>
+							<td class="inCenter" width="200px"></td>
+							<td class="inCenter"></td>
+						</tr>
+						<tr>
+							<td class="inCenter">组员2</td>
+							<td class="inCenter" width="200px"></td>
+							<td class="inCenter" width="200px"></td>
+							<td class="inCenter"></td>
+						</tr>
+						<tr>
+							<td class="inCenter" style="vertical-align: middle;" rowspan="7">评价内容</td>
+							<td colspan="3">1. 活动的参与情况。</td>
+						</tr>
+						<tr><td colspan="3">2. 发现问题和解决问题的能力。</td></tr>
+						<tr><td colspan="3">3. 完成分工工作情况。</td></tr>
+						<tr><td colspan="3">4. 与他人协作工作情况。</td></tr>
+						<tr><td colspan="3">5. 研究设计有无新意。</td></tr>
+						<tr><td colspan="3">6. 运用科学的研究方法进行研究的能力。</td></tr>
+						<tr><td colspan="3">7. 活动中是否能积极表达和交流。</td></tr>
+						<tr>
+							<td class="inCenter" style="vertical-align: middle;">综合评价(评语)</td>
+							<td style="height:100px" colspan="3"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="inCenter">
+				<button class="btn btn-primary editOpeningScore">
+					编辑
+				</button>
+			</div>
+		</fieldset>
+		<fieldset id="editOpeningScore" style="display: none;">
+			<legend>
+				研究性学习小组评价表
+			</legend>
+			<div class="box corner-all">
+				<table class="table table-condensed table-bordered inCenter" style="width: 800px;margin-left: auto;margin-right: auto;">
+					<tbody>
+						<tr>
+							<td class="inCenter" width="200px">课题名称</td>
+							<td colspan="3"><input type="text" style="width: 95%" /></td>
+						</tr>
+						<tr>
+							<td class="inCenter">指导老师</td>
+							<td colspan="3"><input type="text" style="width: 95%" /></td>
+						</tr>
+						<tr>
+							<td class="inCenter">成员</td>
+							<td class="inCenter" width="200px">班级</td>
+							<td class="inCenter" width="200px">姓名</td>
+							<td class="inCenter">个人综合等级系数</td>
+						</tr>
+						<tr>
+							<td class="inCenter">组长</td>
+							<td class="inCenter" width="200px"><input type="text" style="width: 95%" /></td>
+							<td class="inCenter" width="200px"><input type="text" style="width: 95%" /></td>
+							<td class="inCenter"><input type="text" style="width: 95%" /></td>
+						</tr>
+						<tr>
+							<td class="inCenter">组员1</td>
+							<td class="inCenter" width="200px"><input type="text" style="width: 95%" /></td>
+							<td class="inCenter" width="200px"><input type="text" style="width: 95%" /></td>
+							<td class="inCenter"><input type="text" style="width: 95%" /></td>
+						</tr>
+						<tr>
+							<td class="inCenter">组员2</td>
+							<td class="inCenter" width="200px"><input type="text" style="width: 95%" /></td>
+							<td class="inCenter" width="200px"><input type="text" style="width: 95%" /></td>
+							<td class="inCenter"><input type="text" style="width: 95%" /></td>
+						</tr>
+						<tr>
+							<td class="inCenter" style="vertical-align: middle;" rowspan="7">评价内容</td>
+							<td colspan="3">1. 活动的参与情况。</td>
+						</tr>
+						<tr><td colspan="3">2. 发现问题和解决问题的能力。</td></tr>
+						<tr><td colspan="3">3. 完成分工工作情况。</td></tr>
+						<tr><td colspan="3">4. 与他人协作工作情况。</td></tr>
+						<tr><td colspan="3">5. 研究设计有无新意。</td></tr>
+						<tr><td colspan="3">6. 运用科学的研究方法进行研究的能力。</td></tr>
+						<tr><td colspan="3">7. 活动中是否能积极表达和交流。</td></tr>
+						<tr>
+							<td class="inCenter" style="vertical-align: middle;">综合评价(评语)</td>
+							<td colspan="3">
+								<textarea type="text" name="docsTitleBySelf" class="grd-white" style="height:150px; width: 95%" ></textarea>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			<div class="inCenter">
+				说明：请小组长根据评价内容，对本组成员进行ABCD系数评价，A—1.2，B—1.0，C—0.8，D—0.6.
+				<button class="btn btn-primary">
+					确定
+				</button>
+				<button class="btn btn-primary returnOpeningScore">
+					取消
+				</button>
+			</div>
+		</fieldset>
+	</div>
+</div>

@@ -3,148 +3,254 @@
 		<h4><strong>我的课题 | 教师</strong></h4>
 	</div>
 	<div class="body">
-	   <div class="row-fluid">
-	       <div class="span12">
-	           <div class="well well-small">
-	               你现在没有进行中的课题，你可以 <a data-bypass href="inqshow.html">加入已有的课题</a>。或者 <a data-bypass href="issueinq.html">发布意向课题</a>。
-	           </div>
-	       </div>
-	   </div>
-       <div class="row-fluid">
-           <div class="span12">
-               <table class="table table-condensed table-bordered table-hover">
-                   <caption>我的消息(说明：10条，分页，按时间逆序)</caption>
-                   <thead>
-                        <tr class="headColor">
-                            <th class="listNum">序号</th>
-                            <th>消息</th>
-                            <th width="80px">时间</th>
-                            <th width="150px">操作</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="inCenter">1</td>
-                            <td>王子玉同学请你做他们课题的指导教师。</td>
-                            <td>2012-4-20</td>
-                            <td><button class="btn btn-mini">同意</button>
-                            	<button class="btn btn-mini">不同意</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="inCenter">2</td>
-                            <td>王学彬老师请你做他们课题的指导教师。</td>
-                            <td>2012-3-16</td>
-                            <td><button class="btn btn-mini">删除</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="inCenter">3</td>
-                            <td>黄海风申请加入你的课题《关于李连杰电影的研究》。</td>
-                            <td>2012-2-16</td>
-                            <td><button class="btn btn-mini">同意</button>
-                            	<button class="btn btn-mini">不同意</button>
-                            </td>
-                        </tr>
-                    </tbody>
-               </table>
-           </div>
-       </div>
-       <br />
-       <hr />
-       <br />
-	   <div class="row-fluid">
-           <div class="span12" style="overflow-x:auto;">
-               <div style="min-width:900px;">
-               <table class="table table-condensed table-bordered table-hover">
-                   <caption>我的课题(说明：10条，分页，按时间逆序)</caption>
-                   <thead>
-                        <tr class="headColor">
-                            <th class="listNum">序号</th>
-                            <th>课题名称</th>
-                            <th width="70px">指导老师</th>
-                            <th width="70px">课题组长</th>
-                            <th width="70px">小组人数</th>
-                            <th width="70px">课题状态</th>
-                            <th width="50px">待评价任务数</th>
-                            <th width="120px">操作</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="inCenter">1</td>
-                            <td><a data-bypass href="" title="查看课题详情">关于李连杰电影的研究</a></td>
-                            <td>蓝雨涵</td>
-                            <td>邓欢</td>
-                            <td class="inRight">4</td>
-                            <td>选题中</td>
-                            <td class="inRight">0</td>
-                            <td><a class="btn btn-mini" data-bypass href="reportTch.html">进行课题指导</a></td>
-                        </tr>
-                        <tr>
-                            <td class="inCenter">2</td>
-                            <td><a data-bypass href="" title="查看课题详情">关于李连杰电影的研究</a></td>
-                            <td>蓝雨涵</td>
-                            <td>邓欢</td>
-                            <td class="inRight">4</td>
-                            <td>专家审核</td>
-                            <td class="inRight">0</td>
-                            <td><a class="btn btn-mini" data-bypass href="reportTch.html">进行课题指导</a></td>
-                        </tr>
-                        <tr>
-                            <td class="inCenter">3</td>
-                            <td><a data-bypass href="" title="查看课题详情">关于李连杰电影的研究</a></td>
-                            <td>蓝雨涵</td>
-                            <td>邓欢</td>
-                            <td class="inRight">4</td>
-                            <td>开题中</td>
-                            <td class="inRight">2</td>
-                            <td><a class="btn btn-mini" data-bypass href="reportTch.html">进行课题指导</a></td>
-                        </tr>
-                        <tr>
-                            <td class="inCenter">4</td>
-                            <td><a data-bypass href="" title="查看课题详情">关于李连杰电影的研究</a></td>
-                            <td>蓝雨涵</td>
-                            <td>邓欢</td>
-                            <td class="inRight">4</td>
-                            <td>研究中</td>
-                            <td class="inRight">4</td>
-                            <td><a class="btn btn-mini" data-bypass href="reportTch.html">进行课题指导</a></td>
-                        </tr>
-                        <tr>
-                            <td class="inCenter">5</td>
-                            <td><a data-bypass href="" title="查看课题详情">关于李连杰电影的研究</a></td>
-                            <td>蓝雨涵</td>
-                            <td>邓欢</td>
-                            <td class="inRight">4</td>
-                            <td>结题中</td>
-                            <td class="inRight">2</td>
-                            <td><a class="btn btn-mini" data-bypass href="reportTch.html">进行课题指导</a></td>
-                        </tr>
-                        <tr>
-                            <td class="inCenter">6</td>
-                            <td><a data-bypass href="" title="查看课题详情">关于李连杰电影的研究</a></td>
-                            <td>蓝雨涵</td>
-                            <td>邓欢</td>
-                            <td class="inRight">4</td>
-                            <td>专家评定</td>
-                            <td class="inRight">0</td>
-                            <td><a class="btn btn-mini" data-bypass href="reportTch.html">进行课题指导</a></td>
-                        </tr>
-                        <tr>
-                            <td class="inCenter">7</td>
-                            <td><a data-bypass href="" title="查看课题详情">关于夜市摆摊的研究</a></td>
-                            <td>陈三凤</td>
-                            <td>张玄</td>
-                            <td class="inRight">4</td>
-                            <td>已结题</td>
-                            <td class="inRight">0</td>
-                            <td><a class="btn btn-mini" data-bypass href="reportTch.html">进行课题指导</a></td>
-                        </tr>
-                    </tbody>
-               </table>
-               </div>
-           </div>
-       </div>
+		<div class="row-fluid">
+			<div class="span12">
+				<div class="well well-small">
+					你现在没有进行中的课题，你可以 <a data-bypass href="inqshow.html">加入已有的课题</a>。或者 <a data-bypass href="issueinq.html">发布意向课题</a>。
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span12">
+				<table class="table table-condensed table-bordered table-hover">
+					<caption>
+						我的消息(说明：10条，分页，按时间逆序)
+					</caption>
+					<thead>
+						<tr class="headColor">
+							<th class="listNum">序号</th>
+							<th>消息</th>
+							<th width="80px">时间</th>
+							<th width="150px">操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="inCenter">1</td>
+							<td>王子玉同学请你做他们课题的指导教师。</td>
+							<td>2012-4-20</td>
+							<td>
+							<button class="btn btn-mini">
+								同意
+							</button>
+							<button class="btn btn-mini">
+								不同意
+							</button></td>
+						</tr>
+						<tr>
+							<td class="inCenter">2</td>
+							<td>王学彬老师请你做他们课题的指导教师。</td>
+							<td>2012-3-16</td>
+							<td>
+							<button class="btn btn-mini">
+								删除
+							</button></td>
+						</tr>
+						<tr>
+							<td class="inCenter">3</td>
+							<td>黄海风申请加入你的课题《关于李连杰电影的研究》。</td>
+							<td>2012-2-16</td>
+							<td>
+							<button class="btn btn-mini">
+								同意
+							</button>
+							<button class="btn btn-mini">
+								不同意
+							</button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<br />
+		<hr />
+		<br />
+		<div class="row-fluid">
+			<ul class="nav nav-tabs nav-tabs-blue">
+				<li class="active">
+					<a href="#runningSub" data-toggle="tab"><i class="icon-bookmark"></i> 进行中的课题</a>
+				</li>
+				<li>
+					<a href="#finishiedSub" data-toggle="tab"><i class="icon-bookmark"></i> 已结题的课题</a>
+				</li>
+			</ul>
+			<div class="tab-content">
+				<div class="tab-pane active" id="runningSub">
+					<div class="span12" style="overflow-x:auto;">
+						<div style="min-width:1200px;">
+							<table class="table table-condensed table-bordered table-hover">
+								<caption>
+									我的课题
+								</caption>
+								<thead>
+									<tr class="headColor">
+										<th class="listNum">序号</th>
+										<th width="120px">年度</th>
+										<th width="70px">年级</th>
+										<th>课题名称</th>
+										<th width="70px">指导老师</th>
+										<th width="70px">课题组长</th>
+										<th width="70px">课题状态</th>
+										<th width="70px">综合成绩</th>
+										<th width="70px">学分</th>
+										<th width="100px">操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="inCenter">1</td>
+										<td>2012-2013年度</td>
+										<td>高二年级</td>
+										<td><a data-bypass href="" title="查看课题详情">关于李连杰电影的研究</a></td>
+										<td>蓝雨涵</td>
+										<td>邓欢</td>
+										<td>选题中</td>
+										<td class="inRight">--</td>
+										<td class="inRight">--</td>
+										<td>
+										<button class="btn btn-mini">
+											进行课题指导
+										</button></td>
+									</tr>
+									<tr>
+										<td class="inCenter">2</td>
+										<td>2012-2013年度</td>
+										<td>高二年级</td>
+										<td><a data-bypass href="" title="查看课题详情">关于李连杰电影的研究</a></td>
+										<td>蓝雨涵</td>
+										<td>邓欢</td>
+										<td>专家审核</td>
+										<td class="inRight">--</td>
+										<td class="inRight">--</td>
+										<td>
+										<button class="btn btn-mini">
+											进行课题指导
+										</button></td>
+									</tr>
+									<tr>
+										<td class="inCenter">3</td>
+										<td>2012-2013年度</td>
+										<td>高二年级</td>
+										<td><a data-bypass href="" title="查看课题详情">关于李连杰电影的研究</a></td>
+										<td>蓝雨涵</td>
+										<td>邓欢</td>
+										<td>开题中</td>
+										<td class="inRight">--</td>
+										<td class="inRight">--</td>
+										<td>
+										<button class="btn btn-mini">
+											进行课题指导
+										</button></td>
+									</tr>
+									<tr>
+										<td class="inCenter">4</td>
+										<td>2012-2013年度</td>
+										<td>高二年级</td>
+										<td><a data-bypass href="" title="查看课题详情">关于李连杰电影的研究</a></td>
+										<td>蓝雨涵</td>
+										<td>邓欢</td>
+										<td>研究中</td>
+										<td class="inRight">--</td>
+										<td class="inRight">--</td>
+										<td>
+										<button class="btn btn-mini">
+											进行课题指导
+										</button></td>
+									</tr>
+									<tr>
+										<td class="inCenter">5</td>
+										<td>2012-2013年度</td>
+										<td>高二年级</td>
+										<td><a data-bypass href="" title="查看课题详情">关于李连杰电影的研究</a></td>
+										<td>蓝雨涵</td>
+										<td>邓欢</td>
+										<td>结题中</td>
+										<td class="inRight">--</td>
+										<td class="inRight">--</td>
+										<td>
+										<button class="btn btn-mini">
+											进行课题指导
+										</button></td>
+									</tr>
+									<tr>
+										<td class="inCenter">6</td>
+										<td>2012-2013年度</td>
+										<td>高二年级</td>
+										<td><a data-bypass href="" title="查看课题详情">关于李连杰电影的研究</a></td>
+										<td>蓝雨涵</td>
+										<td>邓欢</td>
+										<td>结题中</td>
+										<td class="inRight">--</td>
+										<td class="inRight">--</td>
+										<td>
+										<button class="btn btn-mini">
+											进行课题指导
+										</button></td>
+									</tr>
+									<tr>
+										<td class="inCenter">7</td>
+										<td>2012-2013年度</td>
+										<td>高二年级</td>
+										<td><a data-bypass href="" title="查看课题详情">关于李连杰电影的研究</a></td>
+										<td>蓝雨涵</td>
+										<td>邓欢</td>
+										<td>专家评定</td>
+										<td class="inRight">--</td>
+										<td class="inRight">--</td>
+										<td>
+										<button class="btn btn-mini">
+											进行课题指导
+										</button></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane" id="finishiedSub">
+					<div class="span12" style="overflow-x:auto;">
+						<div style="min-width:1200px;">
+							<table class="table table-condensed table-bordered table-hover">
+								<caption>
+									我的课题
+								</caption>
+								<thead>
+									<tr class="headColor">
+										<th class="listNum">序号</th>
+										<th width="120px">年度</th>
+										<th width="70px">年级</th>
+										<th>课题名称</th>
+										<th width="70px">指导老师</th>
+										<th width="70px">课题组长</th>
+										<th width="70px">课题状态</th>
+										<th width="70px">综合成绩</th>
+										<th width="70px">学分</th>
+										<th width="100px">操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="inCenter">1</td>
+										<td>2011-2012年度</td>
+										<td>高一年级</td>
+										<td><a data-bypass href="" title="查看课题详情">关于夜市摆摊的研究</a></td>
+										<td>陈三凤</td>
+										<td>张玄</td>
+										<td>已结题</td>
+										<td class="inRight">93</td>
+										<td class="inRight">8</td>
+										<td>
+										<button class="btn btn-mini">
+											查看课题详情
+										</button></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
 	</div>
 </div>

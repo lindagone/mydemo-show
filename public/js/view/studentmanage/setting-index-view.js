@@ -29,7 +29,7 @@ function (_, Resthub,indexTmpl,NewInfView) {
     		return this;
     	},
     	notShow:function(){
-    		alert('请先填写信息');
+    		alert('请先填写基本信息');
     		return false;
     	}
     	

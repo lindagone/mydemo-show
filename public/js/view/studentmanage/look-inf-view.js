@@ -1,14 +1,16 @@
-define([ 'underscore', 'resthub','hbs!template/studentmanage/namelist'],
+define([ 'underscore', 'resthub','hbs!template/studentmanage/look-inf'],
 function (_, Resthub,Tmpl) {
     
-    var NameListView = Resthub.View.extend({       
+    var LookInfView = Resthub.View.extend({       
     	//对应的模板
         template: Tmpl,
         
         //事件：编辑book和删除book
         events: {
-           'click .btn-batch':'addByBatch',
-           'click .btn-sure':'Sure'
+           'click .btn-detail,a.stu ':'showInf',
+           'click .btn-showinf':'showResult',
+           'click .btn-back':'beBack'
+          
         },
         
        
@@ -75,22 +77,19 @@ function (_, Resthub,Tmpl) {
 				$('#noclazz').show();
 			}
 		},
-		addByBatch:function(){
-			alert('请注意：此处使用全局的导入，参考200上的实现！');
+		
+		showInf:function(){
+			alert('显示学生的详细信息，包括基本信息，简历，爱好等');
 		},
-		Sure:function(){
-			var y=confirm('确认要把选中的学生分配到班级中吗？');
-			if(y){
-				window.globalNotify({
-					type:'success',
-					 htmlContent:"添加成功！"
-                  
-				});
-			}
-		}
-    	
-    	
+    	showResult:function(){
+			$('.search').hide();
+			$('.resultlist').show();
+		},
+    	beBack:function(){
+			$('.resultlist').hide();
+			$('.search').show();
+		},
 
     });
-    return NameListView;
+    return LookInfView;
 });

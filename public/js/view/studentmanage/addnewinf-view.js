@@ -7,7 +7,8 @@ function (_, Resthub,stuTmpl) {
         
         //事件：编辑book和删除book
         events: {
-           'click .changeinf':'modifyInf'
+           'click .changeinf':'modifyInf',
+           'click .btn-addbybatch':'addByBatch'
         },
         
        
@@ -37,6 +38,9 @@ function (_, Resthub,stuTmpl) {
     	modifyInf:function(){
     	$('.beforechange').hide();
     	$('.afterchange').show();
+    	},
+    	addByBatch:function(){
+    		alert('请注意：此处使用全局的导入，参考200上的实现！');
     	}
     	
     	

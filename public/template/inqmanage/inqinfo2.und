@@ -1,132 +1,264 @@
 <div class="social-box">
 	<div class="header">
-		<h4><strong>课题详情</strong></h4>
+		<h4><strong>意向课题信息</strong></h4>
+		<div class="tools">
+			<button class="btn btn-primary" onclick="alert('你的申请已发送给该课题组长和指导老师。（该按钮可以被所有人看见，但是如果该学生已经有了课题，且达到维护中设置的上限，如2个，则提示不能加入。当该课题人满时也不能加入。）')">申请加入</button>
+		</div>
 	</div>
 	<div class="body">
-		<div class="modal-body">
-    <form id="topicform" class="form-horizontal">
-	    <div class="span12">
-	    	<div class="span5">
-			    <div class="control-group">
-			        <label class="control-label">课题名称</label>
-			        <div class="controls">
-			            <input type="text" name="topicName" class="grd-white" value="别致_Admin_养老保险" required="">
-			        </div>
-			    </div>
-			    <div class="control-group">
-			        <label class="control-label">指导教师名称</label>
-			        <div class="controls">
-				<input type="text" pickerwidth="600px" readonly="readonly" pickerheight="618px" name="teacher" id="picker" url="/bxq/common/personSinglePicker.do?showType=1;0;0;0" value="白雪飞" size="10" refsn="sys_spsn_dutyUserSn1373444323750" callback="pickUser">
-			            <input type="hidden" value="" name="teacherid">
-			        </div>
-			    </div>
-			    <dl class="dl-horizontal"><dt>课题成员</dt>
-					<dd>
-						
-							房宇熙 <!-- <input type="button" data-set-id="setMembers" class="btn btn-primary" value="成员设置" /> -->
-						
-							纪翔华 <!-- <input type="button" data-set-id="setMembers" class="btn btn-primary" value="成员设置" /> -->
-						
-							常芯蕊 <!-- <input type="button" data-set-id="setMembers" class="btn btn-primary" value="成员设置" /> -->
-						
-							张谷霞 <!-- <input type="button" data-set-id="setMembers" class="btn btn-primary" value="成员设置" /> -->
-						
-					</dd>
-				</dl>
-			    
-			    <div class="control-group">
-			        <label class="control-label">课题组长</label>
-			        <div class="controls">
-						<select name="topicLeader" style="width: 200px">
-							
-							<option value="100635">房宇熙</option>
-							
-							<option value="100637">纪翔华</option>
-							
-							<option value="100675">常芯蕊</option>
-							
-							<option value="100901">张谷霞</option>
-							
-						</select>
-					</div>
-			   	 </div>
-			    
-		    </div>
-			<div class="span7">
-				<div class="control-group">
-			        <label class="control-label">课题类型</label>
-			        <div class="controls" style="left:20px;">
-				        <label class="radio" style="width:100px;left:20px;position:relative;">
-					        <input type="radio" name="topicType" id="topicTypeOptionsRadios1" value="TY1" data-form="uniform" checked="checked">
-					        课题方向
-				        </label>
-			        	<label class="radio" style="width:100px;left:20px;position:relative;">
-					        <input type="radio" name="topicType" id="topicTypeOptionsRadios2" value="TY2" data-form="uniform">
-				        	具体课题
-			        	</label>
-			        </div>
-			   	 </div>
-			    <div class="control-group">
-			        <label class="control-label">课题领域</label>
-			        <div class="controls" style="left:20px;">
-				        <label class="radio" style="width:100px;left:20px;position:relative;">
-					        <input type="radio" name="topicDomain" id="topicDomainOptionsRadios1" value="DO1" data-form="uniform">
-					        人与自然
-				        </label>
-			        	<label class="radio" style="width:100px;left:20px;position:relative;">
-					        <input type="radio" name="topicDomain" id="topicDomainOptionsRadios2" value="DO2" data-form="uniform">
-				        	人与社会
-			        	</label>
-			        	<label class="radio" style="width:100px;left:20px;position:relative;">
-					        <input type="radio" name="topicDomain" id="topicDomainOptionsRadios3" value="DO3" data-form="uniform">
-				        	人与自我
-			        	</label>
-			        	<label class="radio" style="width:100px;left:20px;position:relative;">
-					        <input type="radio" name="topicDomain" id="topicDomainOptionsRadios4" value="DO4" data-form="uniform">
-				        	其它
-			        	</label>
-			        </div>
-			    </div>
-			    
-			    <div class="control-group">
-				    <div class="controls">
-				      <label class="checkbox">
-				        <input name="topicStatus" type="checkbox">设置为已完成课题
-				      </label>
-				    </div>
+		<div id="showBasic">
+			<div class="row-fluid">
+				<div class="span12 inCenter">
+					<h4>基本信息表</h4>
 				</div>
-			    
-		    </div>
+			</div>
+			<div class="row-fluid">
+				<div class="span12" style="vertical-align: middle">
+					<table class="table table-bordered table-condensed inCenter" style="width: 900px;margin-left: auto;margin-right: auto;">
+						<tbody>
+							<tr>
+								<td class="inCenter" width="100px">学年</td>
+								<td colspan="5">2012-2013学年</td>
+							</tr>
+							<tr>
+								<td class="inCenter" width="100px">指导教师</td>
+								<td width="200px">白飞飞</td>
+								<td class="inCenter" width="100px">教学科目</td>
+								<td width="200px">数学</td>
+								<td class="inCenter" width="100px">所在届</td>
+								<td width="200px">高二年级</td>
+							</tr>
+							<tr>
+								<td class="inCenter" width="100px">指导教师</td>
+								<td width="200px">红飞飞</td>
+								<td class="inCenter" width="100px">教学科目</td>
+								<td width="200px">数学</td>
+								<td class="inCenter" width="100px">所在届</td>
+								<td width="200px">高二年级</td>
+							</tr>
+							<tr>
+								<td class="inCenter" style="vertical-align: middle;">课题组长</td>
+								<td >蔡祥</td>
+								<td class="inCenter">班级</td>
+								<td>高二 1 班</td>
+								<td class="inCenter">小组成员数</td>
+								<td>4/5</td>
+							</tr>
+							<tr>
+								<td class="inCenter" width="100px" style="vertical-align: middle;">课题成员</td>
+								<td colspan="5">
+								<div class="row-fluid">
+									<div class="span2 inCenter">
+										纪翔华
+									</div>
+									<div class="span2 inCenter">
+										高二 1 班
+									</div>
+								</div>
+								<div class="row-fluid">
+									<div class="span2 inCenter">
+										苏一晨
+									</div>
+									<div class="span2 inCenter">
+										高二 2 班
+									</div>
+								</div>
+								<div class="row-fluid">
+									<div class="span2 inCenter">
+										徐文霞
+									</div>
+									<div class="span2 inCenter">
+										高二 1 班
+									</div>
+								</div></td>
+							</tr>
+							<tr>
+								<td class="inCenter">课题名称</td>
+								<td colspan="5">盐类水解原理的应用</td>
+							</tr>
+							<tr>
+								<td class="inCenter">课题类型</td>
+								<td width="200px" colspan="5">课题方向</td>
+							</tr>
+							<tr>
+								<td class="inCenter">课题领域</td>
+								<td colspan="5">人与自然</td>
+							</tr>
+							<tr>
+								<td class="inCenter" style="vertical-align: middle;">课题简介</td>
+								<td colspan="5" style="height: 100px;">(请简要介绍研究内容并提供至少1篇相关的文献)</td>
+							</tr>
+							<tr>
+								<td class="inCenter" style="vertical-align: middle;">对申报研究本课题的学生要求</td>
+								<td colspan="5" style="height: 100px;"></td>
+							</tr>
+							<tr>
+								<td class="inCenter" style="vertical-align: middle;">其他(请注明)</td>
+								<td colspan="5" style="height: 100px;"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="inCenter">
+				<button class="btn btn-primary editBasicInfo">
+					编辑
+				</button>
+			</div>
 		</div>
-	    <div class="span11">
-	    	<legend></legend>
-	    	<div class="control-group">
-		        <label class="control-label">课题简介</label>
-		        <div class="controls">
-		            <textarea name="topicIntroduction" rows="3" class="span8"> 课题简介
-</textarea>
-		        </div>
-		    </div>
-	    	<div class="control-group">
-		        <label class="control-label">研究背景及目的意义</label>
-		        <div class="controls">
-		            <textarea name="researchObjective" rows="3" class="span8">研究背景及目的意义</textarea>
-		        </div>
-		    </div>
-		    <div class="control-group">
-		        <label class="control-label inline">研究方案</label>
-		        <div class="controls">
-		            <textarea name="researchPlan" rows="3" class="span8"> 研究方案</textarea>
-		        </div>
-		    </div>
-		    <div class="control-group">
-		        <label class="control-label">对申报研究本课题的学生要求</label>
-		        <div class="controls">
-		            <textarea name="requireForStudents" rows="3" class="span8">对申报研究本课题的学生要求</textarea>
-		        </div>
-		    </div>
-	    </div>
-    </form>
-</div>
+		<div id="editBasic" style="display:none;">
+			<div class="row-fluid">
+				<div class="span12 inCenter">
+					<h4>基本信息表</h4>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span12" style="vertical-align: middle">
+					<table class="table table-bordered table-condensed inCenter" style="width: 900px;margin-left: auto;margin-right: auto;">
+						<tbody>
+							<tr>
+	                            <td class="inCenter" width="100px" style="vertical-align: middle;">学年</td>
+	                            <td colspan="5">
+	                            	<select style="width: 200px">
+	                            		<option>2012-2013学年</option>
+	                            		<option>2011-2012学年</option>
+	                            		<option>2010-2011学年</option>
+	                            		<option>2009-2010学年</option>
+	                            		<option>2008-2009学年</option>
+	                            		<option>2007-2008学年</option>
+	                            	</select>
+	                            </td>
+	                        </tr>
+							<tr>
+								<td class="inCenter" width="100px" rowspan="3" style="vertical-align: middle;">指导教师</td>
+								<td colspan="5">
+								<input type="text" name="teacher" class="grd-white" value="" required="" placeholder="多人选人框">
+								<button class="btn btn-mini pull-right">
+									确定
+								</button></td>
+							</tr>
+							<tr>
+								<td width="200px"> 老师1 </td>
+								<td class="inCenter" width="100px">教学科目</td>
+								<td width="200px">
+								<select style="width:100px;">
+									<option>请选择</option>
+									<option>语文</option>
+									<option>数学</option>
+									<option>……</option>
+								</select></td>
+								<td class="inCenter" width="100px">所在届</td>
+								<td width="200px">
+								<select style="width:100px;">
+									<option>请选择</option>
+									<option>高一年级</option>
+									<option>高二年级</option>
+									<option>高三年级</option>
+								</select>
+								<button class="btn btn-mini pull-right">
+									删除
+								</button></td>
+							</tr>
+							<tr>
+								<td width="200px"> 老师2 </td>
+								<td class="inCenter" width="100px">教学科目</td>
+								<td width="200px">
+								<select style="width:100px;">
+									<option>请选择</option>
+									<option>语文</option>
+									<option>数学</option>
+									<option>……</option>
+								</select></td>
+								<td class="inCenter" width="100px">所在届</td>
+								<td width="200px">
+								<select style="width:100px;">
+									<option>请选择</option>
+									<option>高一年级</option>
+									<option>高二年级</option>
+									<option>高三年级</option>
+								</select>
+								<button class="btn btn-mini pull-right">
+									删除
+								</button></td>
+							</tr>
+							<tr>
+								<td class="inCenter" style="vertical-align: middle;">课题组长</td>
+								<td >
+								<input type="text" name="teacher" class="grd-white" value="" required="" placeholder="单选人框，学生发布，默认本人">
+								</td>
+								<td class="inCenter">班级</td>
+								<td>--</td>
+								<td class="inCenter">小组成员数(限制)</td>
+								<td>
+								<input type="text" name="teacher" class="grd-white" value="" required="">
+								</td>
+							</tr>
+							<tr>
+								<td class="inCenter" width="100px" style="vertical-align: middle;">课题成员</td>
+								<td colspan="5">
+								<input type="text" name="teacher" class="grd-white" value="" required="" placeholder="多人选人框">
+								</td>
+							</tr>
+							<tr>
+								<td class="inCenter">课题名称</td>
+								<td colspan="5">
+								<input type="text" name="topicName" class="grd-white" value="" required="" style="width:95%;">
+								</td>
+							</tr>
+							<tr>
+								<td class="inCenter" style="vertical-align: middle;">课题类型</td>
+								<td width="200px" colspan="5">
+								<div class="controls inline" style="left: 20px;">
+									<label class="radio" style="width: 100px; left: 20px; position: relative;">
+										<input type="radio" name="topicType" id="optionsRadios1" value="1" data-form="uniform">
+										课题方向 </label><label class="radio" style="width: 100px; left: 20px; position: relative;">
+										<input type="radio" name="topicType" id="optionsRadios2" value="2" data-form="uniform">
+										具体课题 </label>
+
+								</div></td>
+							</tr>
+							<tr>
+								<td class="inCenter" style="vertical-align: middle;">课题领域</td>
+								<td colspan="5">
+								<div class="controls" style="left: 20px;">
+									<label class="radio" style="width: 100px; left: 20px; position: relative;">
+										<input type="radio" name="topicType" id="optionsRadios1" value="1" data-form="uniform">
+										人与自然 </label><label class="radio" style="width: 100px; left: 20px; position: relative;">
+										<input type="radio" name="topicType" id="optionsRadios2" value="2" data-form="uniform">
+										人与社会 </label><label class="radio" style="width: 100px; left: 20px; position: relative;">
+										<input type="radio" name="topicType" id="optionsRadios2" value="2" data-form="uniform">
+										人与自我 </label><label class="radio" style="width: 100px; left: 20px; position: relative;">
+										<input type="radio" name="topicType" id="optionsRadios2" value="2" data-form="uniform">
+										其他 </label>
+
+								</div></td>
+							</tr>
+							<tr>
+								<td class="inCenter" style="vertical-align: middle;">课题简介</td>
+								<td colspan="5" style="height: 100px;">								<textarea name="topicIntroduction" rows="3" style="height: 100px; width:95%;"
+                                        placeholder="(请简要介绍研究内容，并至少提供1篇相关文档。)"></textarea></td>
+							</tr>
+							<tr>
+								<td class="inCenter" style="vertical-align: middle;">对申报研究本课题的学生要求</td>
+								<td colspan="5" style="height: 100px;">								<textarea name="requireForStudents" rows="3" style="height: 100px; width:95%;"></textarea></td>
+							</tr>
+							<tr>
+								<td class="inCenter" style="vertical-align: middle;">其他(请注明)</td>
+								<td colspan="5" style="height: 100px;">								<textarea name="requireForStudents" rows="3" style="height: 100px; width:95%;"></textarea></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<hr />
+			<div class="inCenter">
+				<button class="btn btn-primary">
+					确定
+				</button>
+				<button class="btn btn-primary returnBasicInfo">
+					取消
+				</button>
+			</div>
+		</div>
 	</div>
 </div>

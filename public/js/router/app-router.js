@@ -5,22 +5,28 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
          'view/hr/hrmanage-index-view','view/hr/teachersearch-view','view/hr/setting-teacherstatus-view',
          'view/hr/improve-teacherinf-view','view/hr/setTeacherInfo-view',
          'view/studentmanage/setting-studentstatus-view','view/studentmanage/enrollmentmaintain-view',
-		'view/studentmanage/setstudentInfo-view','view/studentmanage/look-enrollment-view',
-		'view/inqmanage/inqmanage-view', 'view/inqmanage/inqinfo-view', 'view/inqmanage/myinq-stu-view', 'view/inqmanage/myinq-tch-view',
+		'view/studentmanage/setstudentInfo-view','view/studentmanage/look-enrollment-view','view/studentmanage/namelist-view',
+		'view/studentmanage/look-inf-view','view/studentmanage/improve-inf-view',
+		'view/inqmanage/inqmanage-view', 'view/inqmanage/inqinfo-view', 'view/inqmanage/inqinfo2-view',
+		'view/inqmanage/myinq-stu-view', 'view/inqmanage/myinq-tch-view',
 		'view/inqmanage/myinq-mng-view', 
 		'view/inqmanage/opening-view', 'view/inqmanage/closing-view','view/inqmanage/report1-view', 'view/inqmanage/report2-view',
 		'view/inqmanage/report3-view', 'view/inqmanage/report4-view', 'view/inqmanage/report5-view', 'view/inqmanage/report6-view', 
-		'view/inqmanage/report7-view', 'view/inqmanage/report-tch-view',  
+		'view/inqmanage/report7-view', 'view/inqmanage/report-tch-view', 'view/inqmanage/QHopening-view', 'view/inqmanage/QHclosing-view', 
+		'view/inqmanage/QHreport1-view', 'view/inqmanage/QHgroup-view',   
 		'view/inqmanage/issueinq-view', 'view/inqmanage/showinq-view',
-		'view/inqmanage/inqinfolook-view', 'backbone-queryparams'], function(
+		'view/inqmanage/inqinfolook-view', 'view/inqmanage/inqinfolook-tch-view','view/inqmanage/inqinfolook-yxb-view',
+		 'backbone-queryparams'], function(
 		Backbone, CodeGeneratorView, DemoGeneratorView, MailBaseView, NoticeIndexView,
 		MysalaryView, SalaryManageView, SalaryInitView, AccountManageView, SalaryOverview, TestView,
 		HrIndexView,PersonViewIndexView,HrManageIndexView,TeacherSearchView,TeacherSettingView,TeaInfImproveView,MaintainIndexView,
 		StudentSettingView,EnrollmentChangeMaintainView,StudentInfoView,EnrollmentLookView,
-		InqManageView, InqInfoView,InqStuView,InqTchView,InqAprvView,
+		NameListView,LookInfView,ImproveInfoView,
+		InqManageView, InqInfoView, InqInfo2View, InqStuView,InqTchView,InqAprvView,
 		InqOpeningView, InqClosingView, InqReport1View, InqReport2View, InqReport3View, InqReport4View, InqReport5View, InqReport6View, InqReport7View,
-		InqReportTchView,
-		InqIssView,InqShowView,InqInfoLookView) {
+		InqReportTchView, QHopeningView, QHclosingView, QHactivityView, QHgroupView,
+		InqIssView,InqShowView,InqInfoLookView,InqInfoLookTchView,InqInfoLookYxbView) {
+	
 	var options = {
 		routes : {
 			'': 'anything',
@@ -42,10 +48,14 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
 			'stusetting.html'       : 'studentSetting',
 			'stuinf.html'           : 'studentInf',
 			'look.html'             : 'lookstuInf',
+			'namelist.html'         : 'nameList',
+			'lookinf.html'          : 'lookInf',
+			'stuimprove.html'       : 'stuImproveInf',
 			'enrollmentchange.html'         : 'enrollmentChange',
 			'maintain.html'         : 'maintainInf',
 			'inqmanage.html'        : 'inqmanage',
 			'inqinfo.html'          : 'inqinfo',
+			'inqinfo2.html'          : 'inqinfo2',
 			'myinq-stu.html'        : 'studentsinq',
 			'myinq-tch.html'        : 'teachersinq',
 			'myinq-mng.html'        : 'approvalinq',
@@ -62,6 +72,12 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
 			'issueinq.html'         : 'issueinq',
 			'inqshow.html'          : 'inqshow',
 			'inqinfolook.html'      : 'inqinfolook',
+			'inqinfolooktch.html'      : 'inqinfolooktch',
+			'inqinfolookyxb.html'      : 'inqinfolookyxb',
+			'QHopening.html'       : 'QHopening',
+			'QHclosing.html'       : 'QHclosing',
+			'QHactivity.html'       : 'QHactivity',
+			'QHgroup.html'       : 'QHgroup',
 			'test.html':'gotest',
       		'*anything': 'anything'
 		},
@@ -142,12 +158,23 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
 		},
 		lookstuInf:function(){
 			new EnrollmentLookView({root:$('#bodyContainer')});
+
+		},
+		nameList:function(){
+			new NameListView({root:$('#bodyContainer')});
+
+		},
+		lookInf:function(){
+			new LookInfView({root:$('#bodyContainer')});
 		},
 		inqmanage : function(){
 			new InqManageView({root:$('#bodyContainer')});
 		},
 		inqinfo : function(){
 			new InqInfoView({root:$('#bodyContainer')});
+		},
+		inqinfo2 : function(){
+			new InqInfo2View({root:$('#bodyContainer')});
 		},
         studentsinq : function(){
             new InqStuView({root:$('#bodyContainer')});
@@ -196,7 +223,28 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
         },
         inqinfolook : function(){
         	new InqInfoLookView({root:$('#bodyContainer')});
-        }
+        },
+        inqinfolooktch : function(){
+        	new InqInfoLookTchView({root:$('#bodyContainer')});
+        },
+        inqinfolookyxb : function(){
+        	new InqInfoLookYxbView({root:$('#bodyContainer')});
+        },
+        QHopening : function(){
+        	new QHopeningView({root:$('#bodyContainer')});
+        },
+        QHclosing : function(){
+        	new QHclosingView({root:$('#bodyContainer')});
+        },
+        QHactivity : function(){
+        	new QHactivityView({root:$('#bodyContainer')});
+        },
+        QHgroup : function(){
+        	new QHgroupView({root:$('#bodyContainer')});
+        },
+		stuImproveInf:function(){
+			new ImproveInfoView({root:$('#bodyContainer')});
+		}
 	};
 
 	var AppRouter = Backbone.Router.extend(options);

@@ -25,7 +25,7 @@ function (_, Resthub,stuTmpl,NewInfView) {
     	render: function() {
     	
     		this.$el.html(this.template());
-    		  	new NewInfView({root:$('#changebaseinf'),type:'modifyinf'});  	
+    		new NewInfView({root:$('#changebaseinf')});  	
     		return this;
     	},
     	modifyInfor:function(e){   		
