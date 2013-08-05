@@ -159,9 +159,9 @@
 										<td class="inRight">--</td>
 										<td class="inRight">--</td>
 										<td>
-										<button class="btn btn-mini">
+										<a class="btn btn-mini" data-bypass href="inqinfolook.html" >
 											进入课题详情
-										</button></td>
+										</a></td>
 									</tr>
 									<tr>
 										<td class="inCenter">2</td>

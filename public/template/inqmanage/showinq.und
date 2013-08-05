@@ -8,6 +8,7 @@
 			<div class="span12">
 				<h4 class="inCenter">全部 意向课题展示</h4>
 			</div>
+			(说明：所有人都可以进来看进行中的课题，但是只有指导老师 和 木有课题或课题有余额的学生可以加入。发布课题的权限由管理员设置。)
 		</div>
 		<br />
 		<div class="row-fluid">

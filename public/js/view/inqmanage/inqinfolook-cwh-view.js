@@ -1,4 +1,4 @@
-define(['underscore', 'resthub', 'und!template/inqmanage/inqinfolook-tch'], 
+define(['underscore', 'resthub', 'und!template/inqmanage/inqinfolook-cwh'], 
 function(_, Resthub, template) {
 	var ModuleView = Resthub.View.extend({
 		

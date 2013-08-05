@@ -1,4 +1,4 @@
-define(['underscore', 'resthub', 'und!template/inqmanage/inqinfolook-tch'], 
+define(['underscore', 'resthub', 'und!template/inqmanage/inqinfoyxb'], 
 function(_, Resthub, template) {
 	var ModuleView = Resthub.View.extend({
 		
@@ -22,6 +22,7 @@ function(_, Resthub, template) {
 		},
 		
 		editBasicInfo : function(){
+			alert("该按钮只有该课题的指导老师和组长可以看见。（超级管理员也可以看见，普通学生、普通老师、研学办的老师都看不见。）");
 		    $('#showBasic').hide();
 		    $('#editBasic').show();
 		},

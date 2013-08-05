@@ -7,7 +7,7 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
          'view/studentmanage/setting-studentstatus-view','view/studentmanage/enrollmentmaintain-view',
 		'view/studentmanage/setstudentInfo-view','view/studentmanage/look-enrollment-view','view/studentmanage/namelist-view',
 		'view/studentmanage/look-inf-view','view/studentmanage/improve-inf-view',
-		'view/inqmanage/inqmanage-view', 'view/inqmanage/inqinfo-view', 'view/inqmanage/inqinfo2-view',
+		'view/inqmanage/inqmanage-view', 'view/inqmanage/inqinfo-view', 'view/inqmanage/inqinfo2-view','view/inqmanage/inqinfo-yxb-view',
 		'view/inqmanage/myinq-stu-view', 'view/inqmanage/myinq-tch-view',
 		'view/inqmanage/myinq-mng-view', 
 		'view/inqmanage/opening-view', 'view/inqmanage/closing-view','view/inqmanage/report1-view', 'view/inqmanage/report2-view',
@@ -15,17 +15,17 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
 		'view/inqmanage/report7-view', 'view/inqmanage/report-tch-view', 'view/inqmanage/QHopening-view', 'view/inqmanage/QHclosing-view', 
 		'view/inqmanage/QHreport1-view', 'view/inqmanage/QHgroup-view',   
 		'view/inqmanage/issueinq-view', 'view/inqmanage/showinq-view',
-		'view/inqmanage/inqinfolook-view', 'view/inqmanage/inqinfolook-tch-view','view/inqmanage/inqinfolook-yxb-view',
+		'view/inqmanage/inqinfolook-view', 'view/inqmanage/inqinfolook-tch-view','view/inqmanage/inqinfolook-yxb-view','view/inqmanage/inqinfolook-cwh-view',
 		 'backbone-queryparams'], function(
 		Backbone, CodeGeneratorView, DemoGeneratorView, MailBaseView, NoticeIndexView,
 		MysalaryView, SalaryManageView, SalaryInitView, AccountManageView, SalaryOverview, TestView,
 		HrIndexView,PersonViewIndexView,HrManageIndexView,TeacherSearchView,TeacherSettingView,TeaInfImproveView,MaintainIndexView,
 		StudentSettingView,EnrollmentChangeMaintainView,StudentInfoView,EnrollmentLookView,
 		NameListView,LookInfView,ImproveInfoView,
-		InqManageView, InqInfoView, InqInfo2View, InqStuView,InqTchView,InqAprvView,
+		InqManageView, InqInfoView, InqInfo2View, InqInfoYxbView, InqStuView,InqTchView,InqAprvView,
 		InqOpeningView, InqClosingView, InqReport1View, InqReport2View, InqReport3View, InqReport4View, InqReport5View, InqReport6View, InqReport7View,
 		InqReportTchView, QHopeningView, QHclosingView, QHactivityView, QHgroupView,
-		InqIssView,InqShowView,InqInfoLookView,InqInfoLookTchView,InqInfoLookYxbView) {
+		InqIssView,InqShowView,InqInfoLookView,InqInfoLookTchView,InqInfoLookYxbView,InqInfoLookCwhView) {
 	
 	var options = {
 		routes : {
@@ -56,6 +56,7 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
 			'inqmanage.html'        : 'inqmanage',
 			'inqinfo.html'          : 'inqinfo',
 			'inqinfo2.html'          : 'inqinfo2',
+            'inqinfoyxb.html'          : 'inqinfoyxb',
 			'myinq-stu.html'        : 'studentsinq',
 			'myinq-tch.html'        : 'teachersinq',
 			'myinq-mng.html'        : 'approvalinq',
@@ -74,6 +75,7 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
 			'inqinfolook.html'      : 'inqinfolook',
 			'inqinfolooktch.html'      : 'inqinfolooktch',
 			'inqinfolookyxb.html'      : 'inqinfolookyxb',
+			'inqinfolookcwh.html'  : 'inqinfolookcwh',
 			'QHopening.html'       : 'QHopening',
 			'QHclosing.html'       : 'QHclosing',
 			'QHactivity.html'       : 'QHactivity',
@@ -176,6 +178,9 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
 		inqinfo2 : function(){
 			new InqInfo2View({root:$('#bodyContainer')});
 		},
+		inqinfoyxb : function(){
+		    new InqInfoYxbView({root:$('#bodyContainer')});
+		},
         studentsinq : function(){
             new InqStuView({root:$('#bodyContainer')});
         },
@@ -229,6 +234,9 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
         },
         inqinfolookyxb : function(){
         	new InqInfoLookYxbView({root:$('#bodyContainer')});
+        },
+        inqinfolookcwh : function(){
+            new InqInfoLookCwhView({root:$('#bodyContainer')});
         },
         QHopening : function(){
         	new QHopeningView({root:$('#bodyContainer')});

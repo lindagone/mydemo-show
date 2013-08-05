@@ -1,4 +1,4 @@
-define(['underscore', 'resthub', 'und!template/inqmanage/inqinfolook'], 
+define(['underscore', 'resthub', 'und!template/inqmanage/inqinfolook-yxb'], 
 function(_, Resthub, template) {
 	var ModuleView = Resthub.View.extend({
 		

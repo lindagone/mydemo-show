@@ -37,10 +37,10 @@
 				</div>
 			</div>
 			<div class="inCenter">
-				<button class="btn btn-primary editOpening">
+				<button class="btn btn-primary editOpening" onclick="alert('(该按钮只有课题组长和超级管理员才有。)');">
 					编辑
 				</button>
-				<button class="btn btn-primary" onclick="alert('请确认小组讨论记录表已经填报完毕。');">
+				<button class="btn btn-primary" onclick="alert('请确认小组讨论记录表已经填报完毕。(该按钮只有课题组长才有。)');">
 					申请评价
 				</button>
 			</div>
@@ -140,7 +140,7 @@
 				</table>
 			</div>
 			<div class="inCenter">
-				<button class="btn btn-primary editOpeningScore">
+				<button class="btn btn-primary editOpeningScore" onclick="alert('该按钮只有指导老师和超级管理员才有。');">
 					编辑
 				</button>
 			</div>

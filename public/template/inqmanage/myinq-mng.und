@@ -5,13 +5,6 @@
 	<div class="body">
 		<div class="row-fluid">
 			<div class="span12">
-				<div class="well well-small">
-					现在没有待审核的课题，你可以查看 <a data-bypass href="inqshow.html">进行中的课题</a>。
-				</div>
-			</div>
-		</div>
-		<div class="row-fluid">
-			<div class="span12">
 				<table class="table table-condensed table-bordered table-hover">
 					<caption>
 						我的消息(说明：10条，分页，按时间逆序)
@@ -65,21 +58,21 @@
 						<tbody>
 							<tr>
 								<td class="inCenter">1</td>
-								<td><a data-bypass href="" title="查看课题详情">轮式避障机器人设计</a></td>
+								<td><a data-bypass href="inqinfolookyxb.html" title="查看课题详情">轮式避障机器人设计</a></td>
 								<td>蓝雨涵</td>
 								<td>邓欢</td>
 								<td class="inRight">4</td>
 								<td>专家审核</td>
-								<td><a data-bypass href="inqinfolook.html" class="btn btn-mini">进入评审</a></td>
+								<td><a data-bypass href="inqinfoyxb.html" class="btn btn-mini">进入评审</a></td>
 							</tr>
 							<tr>
 								<td class="inCenter">2</td>
-								<td><a data-bypass href="" title="查看课题详情">研究植物大战僵尸2的攻略</a></td>
+								<td><a data-bypass href="inqinfolookyxb.html" title="查看课题详情">研究植物大战僵尸2的攻略</a></td>
 								<td>蓝雨涵</td>
 								<td>邓欢</td>
 								<td class="inRight">4</td>
 								<td>专家评定</td>
-								<td><button class="btn btn-mini">进入评审</button></td>
+								<td><a class="btn btn-mini" data-bypass href="inqinfolookyxb.html" >进入评审</a></td>
 							</tr>
 						</tbody>
 					</table>
