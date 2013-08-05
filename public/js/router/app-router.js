@@ -8,7 +8,9 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
 		'view/studentmanage/setstudentInfo-view','view/studentmanage/look-enrollment-view',
 		'view/inqmanage/inqmanage-view', 'view/inqmanage/inqinfo-view', 'view/inqmanage/myinq-stu-view', 'view/inqmanage/myinq-tch-view',
 		'view/inqmanage/myinq-mng-view', 
-		'view/inqmanage/opening-view', 
+		'view/inqmanage/opening-view', 'view/inqmanage/closing-view','view/inqmanage/report1-view', 'view/inqmanage/report2-view',
+		'view/inqmanage/report3-view', 'view/inqmanage/report4-view', 'view/inqmanage/report5-view', 'view/inqmanage/report6-view', 
+		'view/inqmanage/report7-view', 'view/inqmanage/report-tch-view',  
 		'view/inqmanage/issueinq-view', 'view/inqmanage/showinq-view',
 		'view/inqmanage/inqinfolook-view', 'backbone-queryparams'], function(
 		Backbone, CodeGeneratorView, DemoGeneratorView, MailBaseView, NoticeIndexView,
@@ -16,7 +18,8 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
 		HrIndexView,PersonViewIndexView,HrManageIndexView,TeacherSearchView,TeacherSettingView,TeaInfImproveView,MaintainIndexView,
 		StudentSettingView,EnrollmentChangeMaintainView,StudentInfoView,EnrollmentLookView,
 		InqManageView, InqInfoView,InqStuView,InqTchView,InqAprvView,
-		InqOpeningView,
+		InqOpeningView, InqClosingView, InqReport1View, InqReport2View, InqReport3View, InqReport4View, InqReport5View, InqReport6View, InqReport7View,
+		InqReportTchView,
 		InqIssView,InqShowView,InqInfoLookView) {
 	var options = {
 		routes : {
@@ -47,6 +50,15 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
 			'myinq-tch.html'        : 'teachersinq',
 			'myinq-mng.html'        : 'approvalinq',
 			'InqOpeningView.html'         : 'InqOpening',
+			'InqClosingView.html'         : 'InqClosing',
+			'report1.html'         : 'report1',
+			'report2.html'         : 'report2',
+			'report3.html'         : 'report3',
+			'report4.html'         : 'report4',
+			'report5.html'         : 'report5',
+			'report6.html'         : 'report6',
+			'report7.html'         : 'report7',
+			'reportTch.html'       : 'reportTch',
 			'issueinq.html'         : 'issueinq',
 			'inqshow.html'          : 'inqshow',
 			'inqinfolook.html'      : 'inqinfolook',
@@ -148,6 +160,33 @@ define([ 'backbone', 'view/codeGena/codeGenerator-view', 'view/codeGena/demoGene
         },
         InqOpening : function(){
             new InqOpeningView({root:$('#bodyContainer')});
+        },
+        InqClosing : function(){
+            new InqClosingView({root:$('#bodyContainer')});
+        },
+        report1 : function(){
+        	new InqReport1View({root:$('#bodyContainer')});
+        },
+        report2 : function(){
+        	new InqReport2View({root:$('#bodyContainer')});
+        },
+        report3 : function(){
+        	new InqReport3View({root:$('#bodyContainer')});
+        },
+        report4 : function(){
+        	new InqReport4View({root:$('#bodyContainer')});
+        },
+        report5 : function(){
+        	new InqReport5View({root:$('#bodyContainer')});
+        },
+        report6 : function(){
+        	new InqReport6View({root:$('#bodyContainer')});
+        },
+        report7 : function(){
+        	new InqReport7View({root:$('#bodyContainer')});
+        },
+        reportTch : function(){
+        	new InqReportTchView({root:$('#bodyContainer')});
         },
         issueinq : function(){
             new InqIssView({root:$('#bodyContainer')});

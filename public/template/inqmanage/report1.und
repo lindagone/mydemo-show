@@ -1,0 +1,257 @@
+<div class="social-box">
+	<div class="header">
+		<h4><strong>资料查阅活动</strong></h4>
+		<div class="tools">
+			<a class="btn btn-primary" data-bypass href="inqinfolook.html"><i class="icon-reply"></i> 返回活动列表</a>
+		</div>
+	</div>
+	<div class="body">
+		<fieldset >
+			<legend>
+				资料查阅记录表
+			</legend>
+			<div class="row-fluid">
+				<div class="span10">
+					<div class="pull-right">
+						<button class="btn btn-small btn-primary">
+							<i class="icon-plus"></i> 添加新记录
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span12" style="vertical-align: middle">
+					<table class="table table-bordered table-condensed inCenter" style="width: 900px;margin-left: auto;margin-right: auto;">
+						<thead>
+							<tr class="headColor">
+								<th width=150px>拟查阅问题(序号)</th>
+								<th width=250px>资料来源(请注明题目、作者、出版社、网址、出版时间、页码等)</th>
+								<th>内容摘要</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td >
+								<textarea name="requireForStudents" rows="3" style="height: 150px; width:95%;"></textarea>
+								</td>
+								<td >
+								<textarea name="requireForStudents" rows="3" style="height: 150px; width:95%;"></textarea>
+								</td>
+								<td >
+								<textarea name="requireForStudents" rows="3" style="height: 150px; width:95%;"></textarea>
+								</td>
+								<td>
+								<button class="btn btn-mini btn-danger">
+									保存
+								</button>
+								<button class="btn btn-mini">
+									取消
+								</button></td>
+							</tr>
+							<tr>
+								<td >问题1：调查小组成员的兴趣来源。</td>
+								<td >互联网</td>
+								<td ></td>
+								<td>
+								<button class="btn btn-mini">
+									修改
+								</button>
+								<button class="btn btn-mini btn-delete">
+									删除
+								</button></td>
+							</tr>
+							<tr>
+								<td >问题2：化学这门课程的历史。</td>
+								<td ></td>
+								<td ></td>
+								<td>
+								<button class="btn btn-mini">
+									修改
+								</button>
+								<button class="btn btn-mini btn-delete">
+									删除
+								</button></td>
+							</tr>
+							<tr>
+								<td >
+									<textarea name="requireForStudents" rows="3" style="height: 150px; width:95%;">问题3：高中化学的学习情况。</textarea>
+								</td>
+								<td >
+									<textarea name="requireForStudents" rows="3" style="height: 150px; width:95%;">华南师范大学附属中学高二级学生化学学习情况调查报告</textarea>
+								</td>
+								<td >
+									<textarea name="requireForStudents" rows="3" style="height: 150px; width:95%;">摘要：高中化学是一门学生普遍感到难学的科目，学生的学习态度和学习方法 直接参与了学生的学习过程，影响着学习的效果。本文根据调查结果分析了高二学生在学习态度和方法方面存在的问题，并提出相应的解决办法。</textarea>
+								</td>
+								<td>
+								<button class="btn btn-mini btn-danger">
+									保存
+								</button>
+								<button class="btn btn-mini">
+									取消
+								</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="inCenter">
+				<button class="btn btn-primary" onclick="alert('请确认记录表已经填写完毕。');">
+					申请评价
+				</button>
+			</div>
+		</fieldset>
+		<fieldset id="showOpeningScore">
+			<legend>
+				资料查阅评价表
+			</legend>
+			<div class="box corner-all">
+				<table class="table table-condensed table-bordered inCenter" style="width: 600px;margin-left: auto;margin-right: auto;">
+					<thead>
+						<tr class="headColor">
+							<th width=100px>评价内容</th>
+							<th>得分</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="inCenter">出勤</td>
+							<td class="inRight">--</td>
+						</tr>
+						<tr>
+							<td class="inCenter">查阅资料针对性</td>
+							<td class="inRight">--</td>
+						</tr>
+						<tr>
+							<td class="inCenter">资料记录完整性</td>
+							<td class="inRight">--</td>
+						</tr>
+						<tr>
+							<td class="inCenter">活动实效性</td>
+							<td class="inRight">--</td>
+						</tr>
+						<tr>
+							<td class="inCenter"总计</td>
+							<td class="inRight">-- 分</td>
+						</tr>
+						<tr>
+							<td class="inCenter">实际得分</td>
+							<td class="inRight">-- 分</td>
+						</tr>
+						<tr>
+							<td class="inCenter">导师评语</td>
+							<td style="height:100px"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="inCenter">
+				<button class="btn btn-primary editOpeningScore">
+					编辑
+				</button>
+			</div>
+		</fieldset>
+		<fieldset id="editOpeningScore" style="display: none;">
+			<legend>
+				编辑资料查阅评价
+			</legend>
+			<div class="box corner-all">
+				<table class="table table-condensed table-bordered inCenter" style="width: 800px;margin-left: auto;margin-right: auto;">
+					<thead>
+						<tr class="headColor">
+							<th width=150px>评价内容</th>
+							<th colspan="4">评价</th>
+							<th width=50px>得分</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="inCenter">出勤</td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								A</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								B</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								C</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								D</label></td>
+							<td class="inRight">--</td>
+						</tr>
+						<tr>
+							<td class="inCenter">查阅资料针对性</td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								A</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								B</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								C</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								D</label></td>
+							<td class="inRight">--</td>
+						</tr>
+						<tr>
+							<td class="inCenter">资料记录完整性</td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								A</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								B</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								C</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								D</label></td>
+							<td class="inRight">--</td>
+						</tr>
+						<tr>
+							<td class="inCenter">活动实效性</td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								A</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								B</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								C</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								D</label></td>
+							<td class="inRight">--</td>
+						</tr>
+						<tr>
+							<td class="inCenter">总计</td>
+							<td colspan="6" class="inRight">-- 分</td>
+						</tr>
+						<tr>
+							<td class="inCenter">实际得分</td>
+							<td colspan="6" class="inRight">-- 分</td>
+						</tr>
+						<tr>
+							<td rowspan="2" style="vertical-align: middle;" class="inCenter">导师评语</td>
+							<td colspan="6" style="height:100px">							<textarea name="requireForStudents" rows="3" style="height: 100px; width:95%;"></textarea></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="inCenter">
+				<button class="btn btn-primary">
+					确定
+				</button>
+				<button class="btn btn-primary returnOpeningScore">
+					取消
+				</button>
+			</div>
+		</fieldset>
+	</div>
+</div>

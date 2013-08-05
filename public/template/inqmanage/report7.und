@@ -1,0 +1,219 @@
+<div class="social-box">
+	<div class="header">
+		<h4><strong>读书记录活动</strong></h4>
+		<div class="tools">
+			<a class="btn btn-primary" data-bypass href="inqinfolook.html"><i class="icon-reply"></i> 返回活动列表</a>
+		</div>
+	</div>
+	<div class="body">
+		<fieldset id="showOpening">
+			<legend>
+				读书记录表
+			</legend>
+			<div class="row-fluid">
+				<div class="span12" style="vertical-align: middle">
+					<table class="table table-bordered table-condensed inCenter" style="width: 800px;margin-left: auto;margin-right: auto;">
+						<tbody>
+							<tr>
+								<td width="100px" class="inCenter">书名</td>
+								<td colspan="3"></td>
+							</tr>
+							<tr>
+								<td width="100px" class="inCenter">作者</td>
+								<td width="300px"></td>
+								<td class="inCenter" width="100px">页数</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td width="100px" class="inCenter">出版社</td>
+								<td width="300px"></td>
+								<td class="inCenter" width="100px">出版时间</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="inCenter" style="vertical-align: middle;">内容概要</td>
+								<td colspan="3" height="150px">(用300-500字阐述技术中的主要观点，并简要加以论述。)</td>
+							</tr>
+							<tr>
+								<td class="inCenter" style="vertical-align: middle;">读书心得</td>
+								<td colspan="3" height="150px">
+									(不少于600字，可另加附页)
+									
+									此部分内容重在阐述以下几个方面的内容：
+									
+									(1)解决了你研究中的哪些问题
+									(2)对你的研究提供了哪些有帮助的思路或方法
+									(3)本书对于你的课题研究提出了哪些新的观点
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="inCenter">
+				<button class="btn btn-primary editOpening">
+					编辑
+				</button>
+				<button class="btn btn-primary" onclick="alert('请确认读书记录表已经填报完毕。');">
+					申请评价
+				</button>
+			</div>
+		</fieldset>
+		<fieldset id="editOpening" style="display: none;">
+			<legend>
+				读书记录评价表
+			</legend>
+			<div class="row-fluid">
+				<div class="span12" style="vertical-align: middle">
+					<table class="table table-bordered table-condensed inCenter" style="width: 900px;margin-left: auto;margin-right: auto;">
+						<tbody>
+							<tr>
+								<td width="100px" class="inCenter">书名</td>
+								<td colspan="3">
+									<input type="text" style="width:95%;" />
+								</td>
+							</tr>
+							<tr>
+								<td width="100px" class="inCenter">作者</td>
+								<td width="300px">
+									<input type="text" style="width:95%;" />
+								</td>
+								<td class="inCenter" width="100px">页数</td>
+								<td>
+									<input type="text" style="width:95%;" />
+								</td>
+							</tr>
+							<tr>
+								<td width="100px" class="inCenter">出版社</td>
+								<td width="300px">
+									<input type="text" style="width:95%;" />
+								</td>
+								<td class="inCenter" width="100px">出版时间</td>
+								<td>
+									<input type="text" style="width:95%;" />
+								</td>
+							</tr>
+							<tr>
+								<td class="inCenter" style="vertical-align: middle;">内容概要</td>
+								<td colspan="3" height="200px">
+									<textarea name="requireForStudents" rows="3" style="height: 150px; width:95%;">(用300-500字阐述技术中的主要观点，并简要加以论述。)</textarea>
+								</td>
+							</tr>
+							<tr>
+								<td class="inCenter" style="vertical-align: middle;">读书心得</td>
+								<td colspan="3" height="200px">
+									<textarea name="requireForStudents" rows="3" style="height: 180px; width:95%;">(不少于600字，可另加附页) 
+									
+									此部分内容重在阐述以下几个方面的内容：
+									
+									(1)解决了你研究中的哪些问题
+									(2)对你的研究提供了哪些有帮助的思路或方法
+									(3)本书对于你的课题研究提出了哪些新的观点
+									</textarea>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="inCenter">
+				<button class="btn btn-primary">
+					确定
+				</button>
+				<button class="btn btn-primary returnOpening">
+					取消
+				</button>
+			</div>
+		</fieldset>
+		<br />
+		<fieldset id="showOpeningScore">
+			<legend>
+				读书记录评价表
+			</legend>
+			<div class="box corner-all">
+				<table class="table table-condensed table-bordered inCenter" style="width: 600px;margin-left: auto;margin-right: auto;">
+					<thead>
+						<tr class="headColor">
+							<th width=100px>评价内容</th>
+							<th>得分</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="inCenter">评价等级</td>
+							<td class="inRight">--</td>
+						</tr>
+						<tr>
+							<td class="inCenter">总计</td>
+							<td class="inRight">-- 分</td>
+						</tr>
+						<tr>
+							<td class="inCenter">实际得分</td>
+							<td class="inRight">-- 分</td>
+						</tr>
+						<tr>
+							<td style="vertical-align: middle;" class="inCenter">导师评语</td>
+							<td style="height:100px"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="inCenter">
+				<button class="btn btn-primary editOpeningScore">
+					编辑
+				</button>
+			</div>
+		</fieldset>
+		<fieldset id="editOpeningScore" style="display: none;">
+			<legend>
+				编辑读书记录评价
+			</legend>
+			<div class="box corner-all">
+				<table class="table table-condensed table-bordered inCenter" style="width: 800px;margin-left: auto;margin-right: auto;">
+					<thead>
+						<tr class="headColor">
+							<th width=150px>评价内容</th>
+							<th colspan="3">评价</th>
+							<th width=50px>得分</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="inCenter">评价等级</td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								优秀</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								良好</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								及格</label></td>
+							<td class="inRight">--</td>
+						</tr>
+						<tr>
+							<td class="inCenter">总计</td>
+							<td colspan="4" class="inRight">-- 分</td>
+						</tr>
+						<tr>
+							<td class="inCenter">实际得分</td>
+							<td colspan="4" class="inRight">-- 分</td>
+						</tr>
+						<tr>
+							<td rowspan="2" style="vertical-align: middle;" class="inCenter">导师评语</td>
+							<td colspan="4" style="height:100px"><textarea name="requireForStudents" rows="3" style="height: 100px; width:95%;"></textarea></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="inCenter">
+				<button class="btn btn-primary">
+					确定
+				</button>
+				<button class="btn btn-primary returnOpeningScore">
+					取消
+				</button>
+			</div>
+		</fieldset>
+	</div>
+</div>

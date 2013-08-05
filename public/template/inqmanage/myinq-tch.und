@@ -6,7 +6,7 @@
 	   <div class="row-fluid">
 	       <div class="span12">
 	           <div class="well well-small">
-	               现在没有进行中的课题，你可以 <a data-bypass href="issueinq.html">发布意向课题</a>，或者 <a data-bypass href="inqshow.html">加入已有的课题</a>。
+	               你现在没有进行中的课题，你可以 <a data-bypass href="inqshow.html">加入已有的课题</a>。或者 <a data-bypass href="issueinq.html">发布意向课题</a>。
 	           </div>
 	       </div>
 	   </div>
@@ -79,7 +79,7 @@
                             <td class="inRight">4</td>
                             <td>选题中</td>
                             <td class="inRight">0</td>
-                            <td><button class="btn btn-mini">进入课题指导中心</button></td>
+                            <td><a class="btn btn-mini" data-bypass href="reportTch.html">进行课题指导</a></td>
                         </tr>
                         <tr>
                             <td class="inCenter">2</td>
@@ -89,7 +89,7 @@
                             <td class="inRight">4</td>
                             <td>专家审核</td>
                             <td class="inRight">0</td>
-                            <td><button class="btn btn-mini">进入课题指导中心</button></td>
+                            <td><a class="btn btn-mini" data-bypass href="reportTch.html">进行课题指导</a></td>
                         </tr>
                         <tr>
                             <td class="inCenter">3</td>
@@ -99,7 +99,7 @@
                             <td class="inRight">4</td>
                             <td>开题中</td>
                             <td class="inRight">2</td>
-                            <td><button class="btn btn-mini">进入课题指导中心</button></td>
+                            <td><a class="btn btn-mini" data-bypass href="reportTch.html">进行课题指导</a></td>
                         </tr>
                         <tr>
                             <td class="inCenter">4</td>
@@ -109,7 +109,7 @@
                             <td class="inRight">4</td>
                             <td>研究中</td>
                             <td class="inRight">4</td>
-                            <td><button class="btn btn-mini">进入课题指导中心</button></td>
+                            <td><a class="btn btn-mini" data-bypass href="reportTch.html">进行课题指导</a></td>
                         </tr>
                         <tr>
                             <td class="inCenter">5</td>
@@ -119,7 +119,7 @@
                             <td class="inRight">4</td>
                             <td>结题中</td>
                             <td class="inRight">2</td>
-                            <td><button class="btn btn-mini">进入课题指导中心</button></td>
+                            <td><a class="btn btn-mini" data-bypass href="reportTch.html">进行课题指导</a></td>
                         </tr>
                         <tr>
                             <td class="inCenter">6</td>
@@ -129,7 +129,7 @@
                             <td class="inRight">4</td>
                             <td>专家评定</td>
                             <td class="inRight">0</td>
-                            <td><button class="btn btn-mini">进入课题指导中心</button></td>
+                            <td><a class="btn btn-mini" data-bypass href="reportTch.html">进行课题指导</a></td>
                         </tr>
                         <tr>
                             <td class="inCenter">7</td>
@@ -139,7 +139,7 @@
                             <td class="inRight">4</td>
                             <td>已结题</td>
                             <td class="inRight">0</td>
-                            <td><button class="btn btn-mini">进入课题指导中心</button></td>
+                            <td><a class="btn btn-mini" data-bypass href="reportTch.html">进行课题指导</a></td>
                         </tr>
                     </tbody>
                </table>

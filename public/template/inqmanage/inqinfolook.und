@@ -1,6 +1,6 @@
 <div class="social-box">
     <div class="header">
-        <h4><strong>课题详情 | 查看</strong></h4>
+        <h4><strong>课题详情</strong></h4>
         <div class="tools">
             <ul id="myTab" class="nav nav-tabs">
                 <li class="active" >
@@ -16,7 +16,10 @@
                     <a data-bypass href="#tab3" data-toggle="tab"> <i class="icon-list"></i> 结题信息</a>
                 </li>
                 <li  >
-                    <a data-bypass href="#tab4" data-toggle="tab"> <i class="icon-list"></i> 课题成绩</a>
+                    <a data-bypass href="#tab4" data-toggle="tab"> <i class="icon-list"></i> 学分认定</a>
+                </li>
+                <li  >
+                    <a data-bypass href="#tab6" data-toggle="tab"> <i class="icon-list"></i> 课题评论</a>
                 </li>
             </ul>
         </div>
@@ -25,6 +28,18 @@
         <div class="tab-content">
             <div class="tab-pane active" id="tab1">
                 <div id="showBasic">
+            	 <div class="row-fluid">
+                        <div class="span12">
+                            <div class="well well-small">
+                                课题《盐类水解原理的应用》请你进行学分认定。
+                                <div class="pull-right">
+                                    <button class="btn btn-primary btn-small">
+                                        同意认定
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row-fluid">
                         <div class="span12">
                             <div class="well well-small">
@@ -478,6 +493,15 @@
                 </div>
                 <br />
                 <div class="row-fluid">
+					<div class="span10">
+						<div class="pull-right">
+							<button class="btn btn-small btn-primary" onclick="alert('请选择活动类型')">
+								<i class="icon-plus"></i> 添加新活动
+							</button>
+						</div>
+					</div>
+				</div>
+                <div class="row-fluid">
                     <div class="span12 inCenter">
                         <table class="table table-condensed table-bordered" style="width: 800px;margin-left: auto;margin-right: auto;">
                             <thead>
@@ -486,7 +510,7 @@
                                     <th>活动内容</th>
                                     <th width=70px>创建人</th>
                                     <th width=100px>时间</th>
-                                    <th width=50px>评价</th>
+                                    <th width=50px>得分</th>
                                     <th width=150px>操作</th>
                                 </tr>
                             </thead>
@@ -496,8 +520,73 @@
                                     <td>开题报告</td>
                                     <td>蔡祥</td>
                                     <td class="inCenter">2012-12-12</td>
-                                    <td  class="inRight">8</td>
-                                    <td><a href="InqOpeningView.html" data-bypass class="btn btn-mini">进入评价</a> <button class="btn btn-mini">删除</button></td>
+                                    <td  class="inRight">87</td>
+                                    <td><a href="InqOpeningView.html" data-bypass class="btn btn-mini">进入评价</a> </td>
+                                </tr>
+                                <tr>
+                                    <td class="inCenter">2</td>
+                                    <td>结题报告</td>
+                                    <td>--</td>
+                                    <td class="inCenter">--</td>
+                                    <td  class="inRight">--</td>
+                                    <td><a href="InqClosingView.html" data-bypass class="btn btn-mini">进入评价</a> </td>
+                                </tr>
+                                <tr>
+                                    <td class="inCenter">3</td>
+                                    <td>资料查阅活动</td>
+                                    <td>蔡祥</td>
+                                    <td class="inCenter">2013-3-12</td>
+                                    <td  class="inRight">80</td>
+                                    <td><a href="report1.html" data-bypass class="btn btn-mini">进入评价</a> 
+                                    	<button class="btn btn-mini" onclick="alert('该课题已被导师评价，不能删除。');">删除</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="inCenter">4</td>
+                                    <td>调查记录活动</td>
+                                    <td>蔡祥</td>
+                                    <td class="inCenter">2013-3-12</td>
+                                    <td  class="inRight">80</td>
+                                    <td><a href="report2.html" data-bypass class="btn btn-mini">进入评价</a> <button class="btn btn-mini">删除</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="inCenter">5</td>
+                                    <td>实验记录活动</td>
+                                    <td>蔡祥</td>
+                                    <td class="inCenter">2013-3-12</td>
+                                    <td  class="inRight">80</td>
+                                    <td><a href="report3.html" data-bypass class="btn btn-mini">进入评价</a> <button class="btn btn-mini">删除</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="inCenter">6</td>
+                                    <td>访谈记录活动</td>
+                                    <td>蔡祥</td>
+                                    <td class="inCenter">2013-3-12</td>
+                                    <td  class="inRight">80</td>
+                                    <td><a href="report4.html" data-bypass class="btn btn-mini">进入评价</a> <button class="btn btn-mini">删除</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="inCenter">7</td>
+                                    <td>小组讨论活动</td>
+                                    <td>蔡祥</td>
+                                    <td class="inCenter">2013-3-12</td>
+                                    <td  class="inRight">80</td>
+                                    <td><a href="report5.html" data-bypass class="btn btn-mini">进入评价</a> <button class="btn btn-mini">删除</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="inCenter">8</td>
+                                    <td>其他类型活动</td>
+                                    <td>蔡祥</td>
+                                    <td class="inCenter">2013-3-12</td>
+                                    <td  class="inRight">80</td>
+                                    <td><a href="report6.html" data-bypass class="btn btn-mini">进入评价</a> <button class="btn btn-mini">删除</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="inCenter">9</td>
+                                    <td>读书记录活动</td>
+                                    <td>蔡祥</td>
+                                    <td class="inCenter">2013-3-12</td>
+                                    <td  class="inRight">80</td>
+                                    <td><a href="report7.html" data-bypass class="btn btn-mini">进入评价</a> <button class="btn btn-mini">删除</button></td>
                                 </tr>
                             </tbody>
                         </table>                     
@@ -580,131 +669,103 @@
                 </fieldset>
             </div>
             <div class="tab-pane " id="tab4">
-                <fieldset>
-                    <legend>
-                        开题评价
-                    </legend>
-                    <div class="box corner-all">
-                        <table class="table table-condensed table-bordered inCenter" style="width: 800px;margin-left: auto;margin-right: auto;">
+                <div class="row-fluid">
+                    <div class="span12 inCenter">
+                        <h4>课题成绩</h4>
+                    </div>
+                </div>
+                <br />
+                <div class="row-fluid">
+                    <div class="span12 inCenter">
+                        <table class="table table-condensed table-bordered" style="width: 800px;margin-left: auto;margin-right: auto;">
                             <thead>
                                 <tr class="headColor">
-                                    <th>评价项目</th>
-                                    <th>评价内容</th>
-                                    <th>评价要点</th>
-                                    <th>得分</th>
+                                    <th class="listNum">序号</th>
+                                    <th>项目</th>
+                                    <th width=50px>得分</th>
+                                    <th width=150px>操作</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td rowspan="5" style="vertical-align: middle;">开题报告</td>
-                                    <td>1．选题来源</td>
-                                    <td>①自选; ②科普报表启发; ③前期报告启发; ④导师推荐; ⑤其他</td>
-                                    <td class="inRight">A</td>
+                                    <td class="inCenter">1</td>
+                                    <td>开题报告</td>
+                                    <td  class="inRight">87</td>
+                                    <td><a href="InqOpeningView.html" data-bypass class="btn btn-mini">进入评价</a> </td>
                                 </tr>
                                 <tr>
-                                    <td>2．选题价值</td>
-                                    <td>①学术价值; ②社会价值; ③自我价值</td>
-                                    <td class="inRight">B</td>
+                                    <td class="inCenter">2</td>
+                                    <td>结题报告</td>
+                                    <td  class="inRight">--</td>
+                                    <td><a href="InqClosingView.html" data-bypass class="btn btn-mini">进入评价</a> </td>
                                 </tr>
                                 <tr>
-                                    <td>3．文献综述</td>
-                                    <td>①对文件有评述; ②文献有针对性; ③文献丰富</td>
-                                    <td class="inRight">B</td>
+                                    <td class="inCenter">3</td>
+                                    <td>资料查阅活动</td>
+                                    <td  class="inRight">87</td>
+                                    <td><a href="report1.html" data-bypass class="btn btn-mini">进入评价</a> </td>
                                 </tr>
                                 <tr>
-                                    <td>4．研究方案</td>
-                                    <td>①合理; ②可行; ③预期成果合适</td>
-                                    <td class="inRight">B</td>
+                                    <td class="inCenter">4</td>
+                                    <td>调查记录活动</td>
+                                    <td  class="inRight">87</td>
+                                    <td><a href="report2.html" data-bypass class="btn btn-mini">进入评价</a> </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">总计</td>
-                                    <td class="inRight">37</td>
+                                    <td class="inCenter">5</td>
+                                    <td>实验记录活动</td>
+                                    <td  class="inRight">87</td>
+                                    <td><a href="report3.html" data-bypass class="btn btn-mini">进入评价</a> </td>
                                 </tr>
                                 <tr>
-                                    <td>开题宣讲</td>
-                                    <td colspan="3" class="inRight">优秀</td>
+                                    <td class="inCenter">6</td>
+                                    <td>访谈记录活动</td>
+                                    <td  class="inRight">87</td>
+                                    <td><a href="report4.html" data-bypass class="btn btn-mini">进入评价</a> </td>
                                 </tr>
                                 <tr>
-                                    <td>总计</td>
-                                    <td colspan="3" class="inRight">87</td>
+                                    <td class="inCenter">7</td>
+                                    <td>小组讨论活动</td>
+                                    <td  class="inRight">87</td>
+                                    <td><a href="report5.html" data-bypass class="btn btn-mini">进入评价</a> </td>
                                 </tr>
                                 <tr>
-                                    <td rowspan="2">导师意见</td>
-                                    <td colspan="3">导师同意该课题进入正式研究阶段</td>
+                                    <td class="inCenter">8</td>
+                                    <td>其他类型活动</td>
+                                    <td  class="inRight">87</td>
+                                    <td><a href="report6.html" data-bypass class="btn btn-mini">进入评价</a> </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="3" style="height:100px">导师对研究方案的意见和建议：</td>
+                                    <td class="inCenter">9</td>
+                                    <td>读书记录活动</td>
+                                    <td  class="inRight">87</td>
+                                    <td><a href="report7.html" data-bypass class="btn btn-mini">进入评价</a> </td>
+                                </tr>
+                                <tr>
+                                    <td class="inCenter">10</td>
+                                    <td>实践活动总分</td>
+                                    <td  class="inRight">87</td>
+                                    <td><a href="inqinfolook.html" data-bypass class="btn btn-mini"> 计算总分</a> </td>
+                                </tr>
+                                <tr>
+                                    <td class="inCenter">11</td>
+                                    <td>课题总分</td>
+                                    <td  class="inRight">--</td>
+                                    <td><a href="inqinfolook.html" data-bypass class="btn btn-mini">计算总分</a> </td>
+                                </tr>
+                                <tr>
+                                    <td class="inCenter">12</td>
+                                    <td>学分</td>
+                                    <td  class="inRight">--</td>
+                                    <td><a href="inqinfolook.html" data-bypass class="btn btn-mini">设置</a> </td>
                                 </tr>
                             </tbody>
-                        </table>
+                        </table>                     
                     </div>
-                </fieldset>
-                <fieldset>
-                    <legend>
-                        活动评价
-                    </legend>
-                </fieldset>
-                <fieldset>
-                    <legend>
-                        结题评价
-                    </legend>
-                    <div class="box corner-all">
-                        <table class="table table-condensed table-bordered inCenter" style="width: 800px;margin-left: auto;margin-right: auto;">
-                            <thead>
-                                <tr class="headColor">
-                                    <th>评价项目</th>
-                                    <th>评价内容</th>
-                                    <th>评价要点</th>
-                                    <th>得分</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td rowspan="5" style="vertical-align: middle;">结题报告</td>
-                                    <td>1．结构</td>
-                                    <td>①完整</td>
-                                    <td class="inRight">A</td>
-                                </tr>
-                                <tr>
-                                    <td>2．研究方案</td>
-                                    <td>①逻辑性; ②严谨性</td>
-                                    <td class="inRight">B</td>
-                                </tr>
-                                <tr>
-                                    <td>3．方法与过程</td>
-                                    <td>①科学; ②合理; ③资料丰富</td>
-                                    <td class="inRight">B</td>
-                                </tr>
-                                <tr>
-                                    <td>4．研究成果</td>
-                                    <td>①可信; ②有价值</td>
-                                    <td class="inRight">B</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">总计</td>
-                                    <td class="inRight">37</td>
-                                </tr>
-                                <tr>
-                                    <td>结题宣讲</td>
-                                    <td colspan="3" class="inRight">优秀</td>
-                                </tr>
-                                <tr>
-                                    <td>总计</td>
-                                    <td colspan="3" class="inRight">87</td>
-                                </tr>
-                                <tr>
-                                    <td>导师意见</td>
-                                    <td colspan="3" class="inRight" style="height: 100px;"></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>
-                        学分认定
-                    </legend>
-                </fieldset>
+                </div>
+            </div>
+            <div class="tab-pane " id="tab6">
+            	留言
             </div>
         </div>
     </div>

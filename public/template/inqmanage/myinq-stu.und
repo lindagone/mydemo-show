@@ -6,7 +6,7 @@
 	   <div class="row-fluid">
 	       <div class="span12">
 	           <div class="well well-small">
-	               现在没有进行中的课题，你可以 <a data-bypass href="issueinq.html">发布意向课题</a>，或者 <a data-bypass href="inqshow.html">加入已有的课题</a>。
+	               你现在没有进行中的课题，你可以 <a data-bypass href="inqshow.html">加入已有的课题</a>。或者 <a data-bypass href="issueinq.html">发布意向课题</a>。
 	           </div>
 	       </div>
 	   </div>

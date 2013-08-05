@@ -6,7 +6,7 @@
 		<div class="row-fluid">
 			<div class="span12">
 				<div class="well well-small">
-					现在没有待审核的课题，你可以查看 <a data-bypass href="">进行中的课题</a>。
+					现在没有待审核的课题，你可以查看 <a data-bypass href="inqshow.html">进行中的课题</a>。
 				</div>
 			</div>
 		</div>

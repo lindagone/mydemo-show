@@ -1,0 +1,58 @@
+<div class="social-box">
+	<div class="header">
+		<h4><strong>课题指导</strong></h4>
+		<div class="tools">
+			<a class="btn btn-primary" data-bypass href="myinq-tch.html"><i class="icon-reply"></i> 返回我的课题</a>
+		</div>
+	</div>
+	<div class="body">
+		<div class="row-fluid">
+			<div class="span12 inCenter">
+				<h4>课题《关于李连杰电影的研究》 待指导的活动列表</h4>
+			</div>
+		</div>
+		<br />
+		<div class="row-fluid">
+			<div class="span12 inCenter">
+				<table class="table table-condensed table-bordered" style="width: 800px;margin-left: auto;margin-right: auto;">
+					<thead>
+						<tr class="headColor">
+							<th class="listNum">序号</th>
+							<th>活动内容</th>
+							<th width=70px>创建人</th>
+							<th width=100px>时间</th>
+							<th width=50px>得分</th>
+							<th width=150px>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="inCenter">1</td>
+							<td>开题报告</td>
+							<td>蔡祥</td>
+							<td class="inCenter">2012-12-12</td>
+							<td  class="inRight">87</td>
+							<td><a href="InqOpeningView.html" data-bypass class="btn btn-mini">进入评价</a></td>
+						</tr>
+						<tr>
+							<td class="inCenter">2</td>
+							<td>资料查阅活动</td>
+							<td>蔡祥</td>
+							<td class="inCenter">2013-3-12</td>
+							<td  class="inRight">80</td>
+							<td><a href="report1.html" data-bypass class="btn btn-mini">进入评价</a></td>
+						</tr>
+						<tr>
+							<td class="inCenter">3</td>
+							<td>调查记录活动</td>
+							<td>蔡祥</td>
+							<td class="inCenter">2013-3-12</td>
+							<td  class="inRight">80</td>
+							<td><a href="report2.html" data-bypass class="btn btn-mini">进入评价</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
