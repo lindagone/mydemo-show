@@ -7,7 +7,8 @@ function (_, Resthub,indexTmpl,NewInfView) {
         
         //事件：编辑book和删除book
         events: {
-           'click #personexp,#family,#advantage':'notShow'
+           //'click #personexp,#family,#advantage':'notShow'
+           'click .btn-addbybatch':'addByBatch'
         },
         
        
@@ -24,15 +25,17 @@ function (_, Resthub,indexTmpl,NewInfView) {
     	render: function() {
     	    var _self=this;
     		this.$el.html(this.template());
-    		new NewInfView({root:$('#newbaseinf'),type:'baseinf'});
+    		//new NewInfView({root:$('#newbaseinf'),type:'baseinf'});
     			
     		return this;
     	},
     	notShow:function(){
     		alert('请先填写基本信息');
     		return false;
+    	},
+    	addByBatch:function(){
+    		alert('请注意：此处使用全局的导入，参考200上的实现！');
     	}
-    	
     	
 
     });

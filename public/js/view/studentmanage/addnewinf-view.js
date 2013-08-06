@@ -28,6 +28,7 @@ function (_, Resthub,stuTmpl) {
     		if(_self.type=='baseinf'){
     			$('.beforechange').hide();
     			$('.afterchange').show();
+    			$('#help').hide();
     		}else{
     			
     			$('.afterchange').hide();
