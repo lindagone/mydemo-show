@@ -1,16 +1,16 @@
 define([ 'backbone', 'view/mail/mail-base-view', 'view/notice/notice-index-view', 'view/mytest/mytest-view',		     
            'router/studentmanage-router','router/hr-router',
-		 'router/demogena-router','router/salary-router','router/inq-router','router/lcj-router','router/inqlearn-router',
+		 'router/demogena-router','router/salary-router','router/inq-router','router/inqlearn-router',
 		 'backbone-queryparams'], function(
 		Backbone, MailBaseView, NoticeIndexView,TestView,				
-		StuManageRouter,HrRouter,GenaRouter, SalaryRouter, InqRouter,LcjRouter,InqLearnRouter) {
+		StuManageRouter,HrRouter,GenaRouter, SalaryRouter, InqRouter,InqLearnRouter) {
 	
 	var routes = _.extend(
 		StuManageRouter.localoptions,
 		   HrRouter.localoptions,
 			GenaRouter.localoptions,
 			SalaryRouter.localoptions,
-			InqRouter.localoptions,LcjRouter.localoptions,
+			InqRouter.localoptions,
 			InqLearnRouter.localoptions,
 			
 			{
@@ -27,7 +27,7 @@ define([ 'backbone', 'view/mail/mail-base-view', 'view/notice/notice-index-view'
 		    HrRouter.localmethod,
 			GenaRouter.localmethod,
 			SalaryRouter.localmethod,
-			InqRouter.localmethod,LcjRouter.localmethod,
+			InqRouter.localmethod,
 			InqLearnRouter.localmethod,
 			
 			{

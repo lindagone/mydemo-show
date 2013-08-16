@@ -77,7 +77,8 @@ function(_, Resthub, template,xuantiBaseView) {
 			}else  if(str=='5'){
 				$('.btn-student').hide();
 				$('.bianji').show();
-				$('.addactivity').show();
+				
+				$('.addactivity').hide();
 				$('.btn-shanchu').show();
 			}
 			
