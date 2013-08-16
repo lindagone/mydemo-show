@@ -1,0 +1,15 @@
+<div class="social-box">
+	<div class="header">
+		<h4><strong>Demo说明</strong></h4>
+		
+	</div>
+	<div class="body">
+		<div class="row-fluid">
+			<div class="span12">
+				<h4 class="text-error">本页面是对Demo的说明，实际开发中没有此页面</h4>
+			</div>
+		</div>
+		<hr/>
+		1.我的研学
+	</div>
+</div>

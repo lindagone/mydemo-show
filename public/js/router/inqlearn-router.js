@@ -7,11 +7,11 @@ define(['view/inqLearn/student/stu-index-view','view/inqLearn/student/stu-xuanti
         'view/inqLearn/yanxueban/modify-view','view/inqLearn/yanxueban/guide-teacher-view','view/inqLearn/yanxueban/setting-stu-view',
         'view/inqLearn/yanxueban/notchoosekt-view','view/inqLearn/yanxueban/quanzhong-view','view/inqLearn/yanxueban/issue-resource-view',
         'view/inqLearn/yanxueban/ktresource-view','view/inqLearn/yanxueban/ktdetail-view','view/inqLearn/yanxueban/look-resource-view',
-        'view/inqLearn/yanxueban/yxbbase-view'], 
+        'view/inqLearn/yanxueban/yxbbase-view','view/inqLearn/shuoming-view'], 
         function(StuIndexView,xuantiBaseView,EditBaseView,KetiListView,KaitiDetailView,CommentView,KaitiBaogaoView,JietiBaogaoView
 ,ZiLiaoView,DiaoChaView,TeaIndexView,YXIndexView,KaitiSHView,JietiSHView,JietiIndexView,KaiTiScoreView,JieTiScoreView,
 ShanChuView,ModifyView,GuideTeaView,StuSettingView,NotChooseKTView,QuanZhongView,IssueResourceView,ktResourceView,ktLookDetailView,LookResourceView,
-YXBBaseView) {
+YXBBaseView,ShuoMingView) {
 	
 	var localoptions = {
 		'stuindex.html'     : 'stuIndex',
@@ -41,7 +41,8 @@ YXBBaseView) {
 		'ktresource.html':'ktResource',
 		'lookdetail.html':'lookdetail',
 		'lookresource.html':'lookresource',
-		'yxbbase.html':'yxbBase'
+		'yxbbase.html':'yxbBase',
+		'shuoming.html':'shuoming'
 	}
 	var localmethod = {
 		stuIndex : function(){    	
@@ -167,6 +168,9 @@ YXBBaseView) {
 		},
 		lookresource:function(){    	
 			new LookResourceView({root:"#bodyContainer"});
+		},
+		shuoming:function(){    	
+			new ShuoMingView({root:"#bodyContainer"});
 		},
 	}
 	return {localoptions:localoptions,localmethod:localmethod};
