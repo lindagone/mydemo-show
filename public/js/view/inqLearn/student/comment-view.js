@@ -5,7 +5,8 @@ function(_, Resthub, template) {
 		template : template,
 		currentuser:null,
 		events : {
-			'click .btn-replay':'replay'
+			'click .btn-replay':'replay',
+			'click div input[type=radio]':'changeUser'
 			
 		},
 
@@ -31,6 +32,18 @@ function(_, Resthub, template) {
 		replay:function(){
 			$('#replaylk').show();
 			$('#tongyong').hide();
+		},
+		changeUser:function(e){
+			var str=$(e.target).val();
+			if(str=='1'){
+			
+				$('.btn-shanchu').show();
+			}else  if(str=='2'){
+				
+				$('.btn-shanchu').hide();
+			}
+			
+			
 		}
 		
 		

@@ -5,7 +5,8 @@ function(_, Resthub, template,xuantiBaseView) {
 		template : template,
 		currentuser:null,
 		events : {
-			'click .btn-cancle':'cancle'
+			'click .btn-cancle':'cancle',
+			'click div input[type=radio]':'changeUser'
 			
 		},
 
@@ -47,6 +48,40 @@ function(_, Resthub, template,xuantiBaseView) {
 		},
 		cancle:function(){
 			$('.addactivity').popover('hide')
+		},
+		changeUser:function(e){
+			var str=$(e.target).val();
+			if(str=='1'){
+				$('.bianji').show();
+				$('.btn-student').hide();
+				$('.addactivity').show();
+				$('.btn-shanchu').show();
+			}else  if(str=='2'){
+				$('.btn-student').show();
+				$('.bianji').hide();
+				$('.addactivity').hide();
+				$('.btn-shanchu').hide();
+			}else  if(str=='3'){
+				$('.btn-student').hide();
+				$('.bianji').hide();
+				$('.addactivity').hide();
+				$('.btn-shanchu').hide();
+			
+			}else  if(str=='4'){
+				$('.btn-student').hide();
+				$('.bianji').hide();
+				$('.addactivity').show();
+				$('.btn-shanchu').hide();
+				$('.btn-shanchu:eq(2)').show();
+				$('.btn-own').show();
+			}else  if(str=='5'){
+				$('.btn-student').hide();
+				$('.bianji').show();
+				$('.addactivity').show();
+				$('.btn-shanchu').show();
+			}
+			
+			
 		}
 		
 		

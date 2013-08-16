@@ -1,6 +1,13 @@
 <div class="alert">
-  
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <label class="radio inline"><input type="radio" name="user" checked value="1"/>我需要加入课题</label>
+  <label class="radio inline"><input type="radio" name="user"  value="2"/>新建课题成功待审核</label>
+  <label class="radio inline"><input type="radio" name="user" value="3"/>正式课题</label>
+  <label class="radio inline"><input type="radio" name="user" value="4"/>加入正式课题，待批</label>
+  <label class="radio inline"><input type="radio" name="user" value="5"/>加入课题，成为组员</label>
 </div>
+
+
 <div class="social-box">
 	<div class="header">
 		<h4><strong>我的研学</strong></h4>
@@ -13,29 +20,29 @@
 		<div class="row-fluid" style="height:200px">
 			<div class="span10 offset2">
 				<div class="span3">
-					<a class="btn btn-primary" data-bypass href="editbase.html?type=newone">
+					<a class="btn btn-primary xinjian"  href="editbase.html?type=newone" target="_blank">
                             <i class="icon-plus"></i> 创建新课题
                     </a>
 					
 				</div>
 				<div class="span3">
-					<a class="btn btn-primary " href="ketilist.html">
+					<a class="btn btn-primary jiaru"  href="ketilist.html" target="_blank">
                          <i class="icon-plus-sign"></i> 加入现有课题
                     </a>
 					
 				</div>
-				<div class="span3">
+				<div class="span3 myketi">
 					<button class="btn btn-primary btn-asktoadd"><i class="icon-info-sign"></i> 2个同学申请加入</button>
-				     <br/>(普通组员看不到此按钮)
+				    
 				</div>
 			</div>
 		</div>
-		<fieldset>
+		<fieldset id="myketi">
 			<legend>我的课题</legend>
-		</fieldset>
+		
 		<div class="row-fluid" >
 			<div class="span12">
-				<table class="table table-bordered table-condensed">
+				<table class="table table-bordered table-condensed keti">
 					<thead>
 						<tr class="headColor">
 							<th class="listNum">编号</th>
@@ -52,24 +59,24 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
+						<tr class="status1">
 							<td class="inCenter">1</td>
 							<td>鲁迅研究</td>
 							<td>陈敏</td>
 							<td>王玉</td>
 							<td>2014届3班</td>
 							<td class="inRight">4/5</td>
-							<td>选题中</td>
+							<td>专家审核</td>
 							<td class="inRight">-</td>
 							<td class="inRight">-</td>
 							<td>组长</td>
 							<td>
-							<a class="btn btn-mini" href="xuantibase.html">进入</a>	
+								<a class="btn btn-mini" target="_blank" href="xuantibase.html?type=student">进入</a>	
 							</td>
 						</tr>
-						<tr>
-							<td class="inCenter">2</td>
-							<td>化石研究</td>
+						<tr class="status2">
+							<td class="inCenter">1</td>
+							<td>鲁迅研究</td>
 							<td>王敏</td>
 							<td>李玉</td>
 							<td>2014届1班</td>
@@ -79,13 +86,44 @@
 							<td class="inRight">-</td>
 							<td>组长</td>
 							<td>
-							<a class="btn btn-mini" href="kaitiabove.html?type=student">进入</a>	
+							<a class="btn btn-mini" href="kaitiabove.html?type=student" target="_blank">进入</a>	
+							</td>
+						</tr>
+						<tr class="status3">
+							<td class="inCenter">1</td>
+							<td>鲁迅研究</td>
+							<td>王敏</td>
+							<td>李玉</td>
+							<td>2014届1班</td>
+							<td class="inRight">2/5</td>
+							<td>待批准</td>
+							<td class="inRight">-</td>
+							<td class="inRight">-</td>
+							<td>组长</td>
+							<td>
+							<a class="btn btn-mini" href="kaitiabove.html?type=student" target="_blank">进入</a>	
+							</td>
+						</tr>
+						<tr class="status4">
+							<td class="inCenter">1</td>
+							<td>鲁迅研究</td>
+							<td>陈敏</td>
+							<td>王玉</td>
+							<td>2014届3班</td>
+							<td class="inRight">4/5</td>
+							<td>专家审核</td>
+							<td class="inRight">-</td>
+							<td class="inRight">-</td>
+							<td>组员</td>
+							<td>
+								<a class="btn btn-mini" href="xuantibase.html?type=student" target="_blank">进入</a>	
 							</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 			</div>
+			</fieldset>
     </div>
     
     

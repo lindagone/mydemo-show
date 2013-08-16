@@ -1,3 +1,12 @@
+<div class="alert">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <label class="radio inline"><input type="radio" name="user" checked value="1"/>组长</label>
+  <label class="radio inline"><input type="radio" name="user"  value="2"/>无关学生</label>
+  <label class="radio inline"><input type="radio" name="user" value="3"/>无关人员</label>
+   <label class="radio inline"><input type="radio" name="user" value="4"/>组员</label>
+   <label class="radio inline"><input type="radio" name="user" value="5"/>教师</label>
+</div>
+
 <div class="social-box">
 	<div class="header">
 		<h4><strong>课题详情 </strong></h4>
@@ -25,17 +34,15 @@
                         </div>
                     </div>
                     <br/>
-		<!--		<div class="row-fluid btn-student">
+		<div class="row-fluid btn-student" style="display: none">
                     	<div class="span4 offset7">
                     		 <div class="pull-right">
 			<button class="btn btn-primary">申请加入</button>
-			<br/>
-			(只有组长能看到)
+			
 		</div>
                     	</div>
-                    	
-                 </div>-->
-                    
+                  </div>
+                    <br/>
                     <div class="row-fluid">
                         <div class="span12" style="vertical-align: middle">
                             <table class="table table-bordered table-condensed inCenter" style="width: 900px;margin-left: auto;margin-right: auto;">
@@ -115,10 +122,10 @@
 			<div class="row-fluid">
         	<div class="span12">
         		<div class="inCenter">
-                        <a class="btn btn-primary " data-bypass href="editbase.html?type=kaiti">
+                        <a class="btn btn-primary bianji" data-bypass href="editbase.html?type=kaiti">
                             编辑
                         </a>
-                       <button class="btn btn-primary">返回</button>
+                      
                     </div>
                     <br/>         
         	</div>
@@ -132,12 +139,12 @@
 					</div>
 				</div>
 				<div class="row-fluid">
-					<div class="span12 ">
+					<div class="span10 offset1 ">
 						<div class="pull-right">
 							<a class="btn btn-primary addactivity" data-bypass data-toggle="popover" data-placement="left">
                             <i class="icon-plus"></i> 添加活动记录表
                     </a>
-                    <button class="btn btn-primary" type="button"><i class="icon-reply"></i> 返回</button>
+                    
 						</div>
 					</div>
 				</div>
@@ -164,7 +171,7 @@
 				</div>
 				<div id="teacherview" style="display:none">
 					<div class="row-fluid" >
-					<div class="span12">
+					<div class="span10 offset1">
 						<table class="table table-bordered table-condensed">
 							<thead>
 								<tr class="headColor">
@@ -185,16 +192,19 @@
 									<td >开题报告</td>
 									<td>王玉</td>
 									<td class="inCenter">2013-1-1</td>
-									<td>已评</td>
+									<td class="inCenter">已评</td>
 									<td class="inRight">49</td>
-									<td><a class="btn btn-mini " data-bypass href="kaitibaogao.html?type=teacher"> 进入 </a></td>
+									<td>
+										<a class="btn btn-mini " target="_blank" href="kaitibaogao.html?type=teacher"> 进入 </a>
+										
+										</td>
 								</tr>
 								<tr>
 
 									<td >开题宣讲</td>
 									<td>-</td>
 									<td class="inCenter">-</td>
-									<td>-</td>
+									<td class="inCenter">-</td>
 									<td  class="inRight">-</td>
 									<td></td>
 								</tr>
@@ -211,16 +221,18 @@
 									<td >结题报告</td>
 									<td>王玉</td>
 									<td class="inCenter">2013-1-1</td>
-									<td>已评</td>
-									<td class="inRight">47</td>
-									<td><a class="btn btn-mini " data-bypass href="jietibaogao.html?type=teacher"> 进入 </a></td>
+									<td class="inCenter">-</td>
+									<td class="inRight">-</td>
+									<td><a class="btn btn-mini " target="_blank" href="jietibaogao.html?type=teacher"> 进入 </a>
+										<button class="btn btn-mini btn-shanchu" >删除</button>
+									</td>
 								</tr>
 								<tr>
 
 									<td >结题宣讲</td>
 									<td>-</td>
 									<td class="inCenter">-</td>
-									<td>-</td>
+									<td class="inCenter">-</td>
 									<td  class="inRight">-</td>
 									<td></td>
 								</tr>
@@ -232,48 +244,30 @@
 
 								</tr>
 								<tr>
-									<td class="inCenter" rowspan="5" style="vertical-align:middle;">3</td>
-									<td rowspan="5" style="vertical-align:middle;">研究</td>
-									<td >实践记录表</td>
-									<td>李玉</td>
-									<td class="inCenter">2013-1-1</td>
-									<td>已评</td>
-									<td class="inRight">90</td>
-									<td><a class="btn btn-mini " data-bypass href="#"> 进入 </a></td>
-								</tr>
-								<tr>
-								
+									<td class="inCenter" rowspan="3" style="vertical-align:middle;">3</td>
+									<td rowspan="3" style="vertical-align:middle;">研究</td>
 									<td >资料查阅记录表</td>
 									<td>王红</td>
 									<td class="inCenter">2013-5-1</td>
-									<td>已评</td>
-									<td class="inRight">90</td>
-									<td><a class="btn btn-mini " data-bypass href="ziliao.html?type=teacher"> 进入 </a>
-										
+									<td class="inCenter">-</td>
+									<td class="inRight">-</td>
+									<td><a class="btn btn-mini " target="_blank" href="ziliao.html"> 进入 </a>
+										<button class="btn btn-mini btn-shanchu btn-own" >删除</button>
 									</td>
 								</tr>
+								
 								<tr>
 								
 									<td >调查记录表</td>
 									<td>王红</td>
 									<td class="inCenter">2013-5-1</td>
-									<td>已评</td>
-									<td class="inRight">90</td>
-									<td><a class="btn btn-mini " data-bypass href="diaocha.html?type=teacher"> 进入 </a>
-										
+									<td class="inCenter">-</td>
+									<td class="inRight">-</td>
+									<td><a class="btn btn-mini " target="_blank" href="diaocha.html?type=teacher"> 进入 </a>
+										<button class="btn btn-mini btn-shanchu" >删除</button>
 									</td>
 								</tr>
-								<tr>
 								
-									<td >访谈记录表</td>
-									<td>李西书</td>
-									<td class="inCenter">2013-3-1</td>
-									<td>已评</td>
-									<td class="inRight">90</td>
-									<td><a class="btn btn-mini " data-bypass href="#"> 进入 </a>
-										<button class="btn btn-mini">删除</button>
-									</td>
-								</tr>
 								
 								<tr>
 
@@ -303,7 +297,7 @@
 				</div>
 				<div id="studentview">
 					 <div class="row-fluid" >
-					<div class="span12">
+					<div class="span10 offset1">
 						<table class="table table-bordered table-condensed">
 							<thead>
 								<tr class="headColor">
@@ -324,16 +318,19 @@
 									<td >开题报告</td>
 									<td>王玉</td>
 									<td class="inCenter">2013-1-1</td>
-									<td>已评</td>
+									<td class="inCenter">已评</td>
 									<td class="inRight">49</td>
-									<td><a class="btn btn-mini " data-bypass href="kaitibaogao.html?type=student"> 进入 </a></td>
+									<td>
+										<a class="btn btn-mini " target="_blank" href="kaitibaogao.html?type=student"> 进入 </a>
+										
+										</td>
 								</tr>
 								<tr>
 
 									<td >开题宣讲</td>
 									<td>-</td>
 									<td class="inCenter">-</td>
-									<td>-</td>
+									<td class="inCenter">-</td>
 									<td  class="inRight">-</td>
 									<td></td>
 								</tr>
@@ -350,16 +347,18 @@
 									<td >结题报告</td>
 									<td>王玉</td>
 									<td class="inCenter">2013-1-1</td>
-									<td>已评</td>
-									<td class="inRight">47</td>
-									<td><a class="btn btn-mini " data-bypass href="jietibaogao.html?type=student"> 进入 </a></td>
+									<td class="inCenter">-</td>
+									<td class="inRight">-</td>
+									<td><a class="btn btn-mini " target="_blank" href="jietibaogao.html?type=student"> 进入 </a>
+										<button class="btn btn-mini btn-shanchu" >删除</button>
+									</td>
 								</tr>
 								<tr>
 
 									<td >结题宣讲</td>
 									<td>-</td>
 									<td class="inCenter">-</td>
-									<td>-</td>
+									<td class="inCenter">-</td>
 									<td  class="inRight">-</td>
 									<td></td>
 								</tr>
@@ -371,48 +370,30 @@
 
 								</tr>
 								<tr>
-									<td class="inCenter" rowspan="5" style="vertical-align:middle;">3</td>
-									<td rowspan="5" style="vertical-align:middle;">研究</td>
-									<td >实践记录表</td>
-									<td>李玉</td>
-									<td class="inCenter">2013-1-1</td>
-									<td>已评</td>
-									<td class="inRight">90</td>
-									<td><a class="btn btn-mini " data-bypass href="#"> 进入 </a></td>
-								</tr>
-								<tr>
-								
+									<td class="inCenter" rowspan="3" style="vertical-align:middle;">3</td>
+									<td rowspan="3" style="vertical-align:middle;">研究</td>
 									<td >资料查阅记录表</td>
 									<td>王红</td>
 									<td class="inCenter">2013-5-1</td>
-									<td>已评</td>
-									<td class="inRight">90</td>
-									<td><a class="btn btn-mini " data-bypass href="ziliao.html"> 进入 </a>
-										
+									<td class="inCenter">-</td>
+									<td class="inRight">-</td>
+									<td><a class="btn btn-mini " target="_blank" href="ziliao.html"> 进入 </a>
+										<button class="btn btn-mini btn-shanchu btn-own" >删除</button>
 									</td>
 								</tr>
+								
 								<tr>
 								
 									<td >调查记录表</td>
 									<td>王红</td>
 									<td class="inCenter">2013-5-1</td>
-									<td>已评</td>
-									<td class="inRight">90</td>
-									<td><a class="btn btn-mini " data-bypass href="diaocha.html?type=student"> 进入 </a>
-										
+									<td class="inCenter">-</td>
+									<td class="inRight">-</td>
+									<td><a class="btn btn-mini " target="_blank" href="diaocha.html?type=student"> 进入 </a>
+										<button class="btn btn-mini btn-shanchu" >删除</button>
 									</td>
 								</tr>
-								<tr>
 								
-									<td >访谈记录表</td>
-									<td>李西书</td>
-									<td class="inCenter">2013-3-1</td>
-									<td>已评</td>
-									<td class="inRight">90</td>
-									<td><a class="btn btn-mini " data-bypass href="#"> 进入 </a>
-										<button class="btn btn-mini">删除</button>
-									</td>
-								</tr>
 								
 								<tr>
 
@@ -446,14 +427,7 @@
 						<h4 class="inCenter">课题讨论</h4>
 					</div>
 				</div>
-				<div class="row-fluid">
-					<div class="span8 offset2">
-						<div class="pull-right">
-							
-                    <button class="btn btn-primary" type="button"><i class="icon-reply"></i> 返回</button>
-						</div>
-					</div>
-				</div>
+				
 				<br/>
 				<div class="row-fluid" style="height: 500px">
 					<div class="span8 offset2 inCenter" >
@@ -472,7 +446,7 @@
 							<td class="inCenter">1</td>
 							<td>
 								<i class="icon-star-empty"></i>
-								<a href="comment.html?type=student">实践活动注意的事项</a>
+								<a href="comment.html?type=student" target="_blank">实践活动注意的事项</a>
 							</td>
 							<td>陈敏</td>
 							<td class="inCenter">8：30</td>
@@ -480,7 +454,7 @@
 					   <tr>
 							<td class="inCenter">2</td>
 							<td>								
-                           <a href="comment.html?type=student">实践活动遇到的问题</a>
+                           <a href="comment.html?type=student" target="_blank">实践活动遇到的问题</a>
 							</td>
 							<td>王可</td>
 							<td class="inCenter">2013-03-01</td>
@@ -488,7 +462,7 @@
 					   <tr>
 							<td class="inCenter">3</td>
 							<td>								
-                           <a href="comment.html?type=student">实践活动遇到的问题</a>
+                           <a href="comment.html?type=student" target="_blank">实践活动遇到的问题</a>
 							</td>
 							<td>王可</td>
 							<td class="inCenter">2013-03-01</td>
@@ -496,7 +470,7 @@
 					   <tr>
 							<td class="inCenter">4</td>
 							<td>								
-                           <a href="comment.html?type=student">实践活动遇到的问题</a>
+                           <a href="comment.html?type=student" target="_blank">实践活动遇到的问题</a>
 							</td>
 							<td>王可</td>
 							<td class="inCenter">2013-03-01</td>
@@ -504,7 +478,7 @@
 					   <tr>
 							<td class="inCenter">5</td>
 							<td>								
-                           <a href="comment.html?type=student">实践活动遇到的问题</a>
+                           <a href="comment.html?type=student" target="_blank">实践活动遇到的问题</a>
 							</td>
 							<td>王可</td>
 							<td class="inCenter">2013-03-01</td>
@@ -512,7 +486,7 @@
 					   <tr>
 							<td class="inCenter">6</td>
 							<td>								
-                           <a href="comment.html?type=student">实践活动遇到的问题</a>
+                           <a href="comment.html?type=student" target="_blank">实践活动遇到的问题</a>
 							</td>
 							<td>王可</td>
 							<td class="inCenter">2013-03-01</td>
@@ -524,7 +498,7 @@
 							<td class="inCenter">1</td>
 							<td>
 								<i class="icon-star-empty"></i><i class="icon-lock"></i>
-								<a href="comment.html?type=teacher">实践活动注意的事项</a>
+								<a href="comment.html?type=teacher" target="_blank">实践活动注意的事项</a>
 							</td>
 							<td>陈敏</td>
 							<td class="inCenter">8：30</td>
@@ -532,7 +506,7 @@
 					   <tr>
 							<td class="inCenter">2</td>
 							<td>								
-                           <a href="comment.html?type=teacher">实践活动遇到的问题</a>
+                           <a href="comment.html?type=teacher" target="_blank">实践活动遇到的问题</a>
 							</td>
 							<td>王可</td>
 							<td class="inCenter">2013-03-01</td>
@@ -540,7 +514,7 @@
 					   <tr>
 							<td class="inCenter">3</td>
 							<td>								
-                           <a href="comment.html?type=teacher">实践活动遇到的问题</a>
+                           <a href="comment.html?type=teacher" target="_blank">实践活动遇到的问题</a>
 							</td>
 							<td>王可</td>
 							<td class="inCenter">2013-03-01</td>
@@ -548,7 +522,7 @@
 					   <tr>
 							<td class="inCenter">4</td>
 							<td>								
-                           <a href="comment.html?type=teacher">实践活动遇到的问题</a>
+                           <a href="comment.html?type=teacher" target="_blank">实践活动遇到的问题</a>
 							</td>
 							<td>王可</td>
 							<td class="inCenter">2013-03-01</td>
@@ -556,7 +530,7 @@
 					   <tr>
 							<td class="inCenter">5</td>
 							<td>								
-                           <a href="comment.html?type=teacher">实践活动遇到的问题</a>
+                           <a href="comment.html?type=teacher" target="_blank">实践活动遇到的问题</a>
 							</td>
 							<td>王可</td>
 							<td class="inCenter">2013-03-01</td>
@@ -564,7 +538,7 @@
 					   <tr>
 							<td class="inCenter">6</td>
 							<td>								
-                           <a href="comment.html?type=teacher">实践活动遇到的问题</a>
+                           <a href="comment.html?type=teacher" target="_blank">实践活动遇到的问题</a>
 							</td>
 							<td>王可</td>
 							<td class="inCenter">2013-03-01</td>

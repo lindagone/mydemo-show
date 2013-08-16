@@ -5,7 +5,7 @@ function(_, Resthub, template) {
 		template : template,
 		currentuser:null,
 		events : {
-			
+			'click div input[type=radio]':'changeUser'
 			
 		},
 
@@ -36,11 +36,26 @@ function(_, Resthub, template) {
          	// $('.btn-student').hide();
          	// $('.btn-yxb').show();
          // }
-           
+           $('.bianji').show();
+				$('.btn-student').hide();
 			return _self;
 		},
 		
-		
+		changeUser:function(e){
+			var str=$(e.target).val();
+			if(str=='1'){
+				$('.bianji').show();
+				$('.btn-student').hide();
+			}else  if(str=='2'){
+				$('.btn-student').show();
+				$('.bianji').hide();
+			}else  if(str=='3'){
+				$('.btn-student').hide();
+				$('.bianji').hide();
+			}
+			
+			
+		}
 		
 		
 		

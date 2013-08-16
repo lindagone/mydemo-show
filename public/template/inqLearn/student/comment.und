@@ -1,23 +1,38 @@
+<div class="alert">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <label class="radio inline"><input type="radio" name="user" checked value="1"/>主题发起人</label>
+  <label class="radio inline"><input type="radio" name="user"  value="2"/>其他人</label>
+  
+</div>
+
 <div class="social-box">
 	<div class="body"> 
 		<div class="row-fluid">
-					<div class="span12">
-						<div class="pull-right">
+					<div class="span10 offset1">
+						<div class="span3" >
+                        	共1页 &nbsp;&nbsp;  回复数:3
+                        </div>
+						<div class="span4 offset5">
+							<div class="pull-right">
+							<button class="btn btn-small btn-shanchu btn-primary">
+								<i class="icon-remove"></i> 删除主题
+							</button>
 							<button class="btn btn-small btn-primary">
 								<i class="icon-reply"></i> 返回主题列表
 							</button>
 						</div>
+						</div>
 					</div>
-				</div>  
+					
+				</div> 
+				<br/> 
      <div class="row-fluid">
-                    <div class="span12" style="vertical-align: middle">
+                    <div class="span10 offset1" style="vertical-align: middle">
                         <div class="span8">
-                        	<strong><i class="icon-star-empty"></i>
-								实践活动注意的事项</strong>
+                        	<h4><strong><i class="icon-star-empty"></i>
+								实践活动注意的事项</strong></h4>
                         </div>
-                        <div class="span4" >
-                        	共1页 &nbsp;&nbsp;  回复数:3
-                        </div>
+                        
                     </div>
                 </div>
                 <hr />
