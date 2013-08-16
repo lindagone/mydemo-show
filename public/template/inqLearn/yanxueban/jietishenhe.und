@@ -114,7 +114,7 @@
 			<div class="row-fluid">
         	<div class="span12">
         		<div class="inCenter">
-                        <a class="btn btn-primary " data-bypass href="editbase.html?type=kaiti">
+                        <a class="btn btn-primary "  href="editbase.html?type=kaiti">
                             编辑
                         </a>
                     </div>
@@ -132,7 +132,7 @@
 				<div class="row-fluid">
 					<div class="span12 ">
 						<div class="pull-right">
-							<a class="btn btn-primary addactivity" data-bypass data-toggle="popover" data-placement="left">
+							<a class="btn btn-primary addactivity"  data-toggle="popover" data-placement="left">
                             <i class="icon-plus"></i> 添加活动记录表
                     </a>
 						</div>
@@ -183,16 +183,19 @@
 									<td >开题报告</td>
 									<td>王玉</td>
 									<td class="inCenter">2013-1-1</td>
-									<td>已评</td>
+									<td class="inCenter">已评</td>
 									<td class="inRight">49</td>
-									<td><a class="btn btn-mini " data-bypass href="kaitibaogao.html?type=yxb"> 进入 </a></td>
+									<td>
+										<a class="btn btn-mini " target="_blank" href="kaitibaogao.html?type=yxb"> 进入 </a>
+										
+										</td>
 								</tr>
 								<tr>
 
 									<td >开题宣讲</td>
 									<td>-</td>
 									<td class="inCenter">-</td>
-									<td>-</td>
+									<td class="inCenter">-</td>
 									<td  class="inRight">-</td>
 									<td></td>
 								</tr>
@@ -209,16 +212,18 @@
 									<td >结题报告</td>
 									<td>王玉</td>
 									<td class="inCenter">2013-1-1</td>
-									<td>已评</td>
-									<td class="inRight">47</td>
-									<td><a class="btn btn-mini " data-bypass href="jietibaogao.html?type=yxb"> 进入 </a></td>
+									<td class="inCenter">-</td>
+									<td class="inRight">-</td>
+									<td><a class="btn btn-mini " target="_blank" href="jietibaogao.html?type=yxb"> 进入 </a>
+										<button class="btn btn-mini btn-shanchu" >删除</button>
+									</td>
 								</tr>
 								<tr>
 
 									<td >结题宣讲</td>
 									<td>-</td>
 									<td class="inCenter">-</td>
-									<td>-</td>
+									<td class="inCenter">-</td>
 									<td  class="inRight">-</td>
 									<td></td>
 								</tr>
@@ -230,48 +235,30 @@
 
 								</tr>
 								<tr>
-									<td class="inCenter" rowspan="5" style="vertical-align:middle;">3</td>
-									<td rowspan="5" style="vertical-align:middle;">研究</td>
-									<td >实践记录表</td>
-									<td>李玉</td>
-									<td class="inCenter">2013-1-1</td>
-									<td>已评</td>
-									<td class="inRight">90</td>
-									<td><a class="btn btn-mini " data-bypass href="#"> 进入 </a></td>
-								</tr>
-								<tr>
-								
+									<td class="inCenter" rowspan="3" style="vertical-align:middle;">3</td>
+									<td rowspan="3" style="vertical-align:middle;">研究</td>
 									<td >资料查阅记录表</td>
 									<td>王红</td>
 									<td class="inCenter">2013-5-1</td>
-									<td>已评</td>
-									<td class="inRight">90</td>
-									<td><a class="btn btn-mini " data-bypass href="ziliao.html?type=yxb"> 进入 </a>
-										
+									<td class="inCenter">-</td>
+									<td class="inRight">-</td>
+									<td><a class="btn btn-mini " target="_blank" href="ziliao.html?type=yxb"> 进入 </a>
+										<button class="btn btn-mini btn-shanchu btn-own" >删除</button>
 									</td>
 								</tr>
+								
 								<tr>
 								
 									<td >调查记录表</td>
 									<td>王红</td>
 									<td class="inCenter">2013-5-1</td>
-									<td>已评</td>
-									<td class="inRight">90</td>
-									<td><a class="btn btn-mini " data-bypass href="diaocha.html?type=yxb"> 进入 </a>
-										
+									<td class="inCenter">-</td>
+									<td class="inRight">-</td>
+									<td><a class="btn btn-mini " target="_blank" href="diaocha.html?type=yxb"> 进入 </a>
+										<button class="btn btn-mini btn-shanchu" >删除</button>
 									</td>
 								</tr>
-								<tr>
 								
-									<td >访谈记录表</td>
-									<td>李西书</td>
-									<td class="inCenter">2013-3-1</td>
-									<td>已评</td>
-									<td class="inRight">90</td>
-									<td><a class="btn btn-mini " data-bypass href="#"> 进入 </a>
-										<button class="btn btn-mini">删除</button>
-									</td>
-								</tr>
 								
 								<tr>
 
@@ -290,7 +277,7 @@
 								<tr>
                                     <td class="inCenter" >5</td>
 									<td colspan="5">学分</td>
-									<td  class="inRight" id="xuefen">15</td>
+									<td  class="inRight">-</td>
 									<td></td>
 
 								</tr>
@@ -328,7 +315,7 @@
 						<tr>
 							<td class="inCenter">1</td>
 							<td>
-								<i class="icon-star-empty"></i><i class="icon-lock"></i>
+								<i class="icon-star-empty"></i>
 								<a href="comment.html?type=shenhe">实践活动注意的事项</a>
 							</td>
 							<td>陈敏</td>

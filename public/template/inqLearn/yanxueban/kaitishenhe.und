@@ -80,7 +80,7 @@
 							<td class="inRight">4/5</td>
 							<td>选题中</td>
 							<td>
-								<a class="btn btn-mini" href="xuantibase.html?type=yxb" data-bypass>进入</a>		
+								<a class="btn btn-mini" href="yxbbase.html" target="_blank">进入</a>		
 							</td>
 						</tr>
 					</tbody>

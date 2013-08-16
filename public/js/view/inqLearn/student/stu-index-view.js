@@ -54,7 +54,8 @@ function(_, Resthub, template) {
 			}else if(str=='2') {
 				$("#myketi").show();
 				$(".myketi").show();
-				$(".keti tr:gt(1)").hide();
+				$(".status1").show();
+				$(".status2,.status3,.status4").hide();
 				$(".xinjian").click(function(){
 					alert('已达到课题数上限，不能继续创建课题');
 					return false;

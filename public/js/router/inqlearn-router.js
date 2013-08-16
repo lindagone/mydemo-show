@@ -6,10 +6,12 @@ define(['view/inqLearn/student/stu-index-view','view/inqLearn/student/stu-xuanti
         'view/inqLearn/yanxueban/kaiti-score-view','view/inqLearn/yanxueban/jieti-score-view','view/inqLearn/yanxueban/delete-wuxiao-view',
         'view/inqLearn/yanxueban/modify-view','view/inqLearn/yanxueban/guide-teacher-view','view/inqLearn/yanxueban/setting-stu-view',
         'view/inqLearn/yanxueban/notchoosekt-view','view/inqLearn/yanxueban/quanzhong-view','view/inqLearn/yanxueban/issue-resource-view',
-        'view/inqLearn/yanxueban/ktresource-view','view/inqLearn/yanxueban/ktdetail-view','view/inqLearn/yanxueban/look-resource-view'], 
+        'view/inqLearn/yanxueban/ktresource-view','view/inqLearn/yanxueban/ktdetail-view','view/inqLearn/yanxueban/look-resource-view',
+        'view/inqLearn/yanxueban/yxbbase-view'], 
         function(StuIndexView,xuantiBaseView,EditBaseView,KetiListView,KaitiDetailView,CommentView,KaitiBaogaoView,JietiBaogaoView
 ,ZiLiaoView,DiaoChaView,TeaIndexView,YXIndexView,KaitiSHView,JietiSHView,JietiIndexView,KaiTiScoreView,JieTiScoreView,
-ShanChuView,ModifyView,GuideTeaView,StuSettingView,NotChooseKTView,QuanZhongView,IssueResourceView,ktResourceView,ktLookDetailView,LookResourceView) {
+ShanChuView,ModifyView,GuideTeaView,StuSettingView,NotChooseKTView,QuanZhongView,IssueResourceView,ktResourceView,ktLookDetailView,LookResourceView,
+YXBBaseView) {
 	
 	var localoptions = {
 		'stuindex.html'     : 'stuIndex',
@@ -38,18 +40,18 @@ ShanChuView,ModifyView,GuideTeaView,StuSettingView,NotChooseKTView,QuanZhongView
 		'resource.html':'issueResource',
 		'ktresource.html':'ktResource',
 		'lookdetail.html':'lookdetail',
-		'lookresource.html':'lookresource'
+		'lookresource.html':'lookresource',
+		'yxbbase.html':'yxbBase'
 	}
 	var localmethod = {
 		stuIndex : function(){    	
 			new StuIndexView({root:"#bodyContainer"});
 		},
 		xuantiBase:function(params){
-			// if(!params  &&  location.search){
-				// params = parseQueryString(window.location.search.substring(1));
-			// }
-			// new xuantiBaseView({root:"#bodyContainer",'currentuser':params.type});
-			 new xuantiBaseView({root:"#bodyContainer"});
+			if(!params  &&  location.search){
+				params = parseQueryString(window.location.search.substring(1));
+			}
+			new xuantiBaseView({root:"#bodyContainer",'currentuser':params.type});
 		},
 		editBase:function(params){
 			if(!params  &&  location.search){
@@ -111,6 +113,9 @@ ShanChuView,ModifyView,GuideTeaView,StuSettingView,NotChooseKTView,QuanZhongView
 		},
 		yxIndex: function(){    	
 			new YXIndexView({root:"#bodyContainer"});
+		},
+		yxbBase: function(){    	
+			new YXBBaseView({root:"#bodyContainer"});
 		},
 		kaitishenhe: function(){    	
 			new KaitiSHView({root:"#bodyContainer"});

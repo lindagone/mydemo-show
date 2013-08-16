@@ -111,12 +111,12 @@
 							<td>王玉</td>
 							<td>2014届3班</td>
 							<td class="inRight">4/5</td>
-							<td>专家审核</td>
+							<td>研究中</td>
 							<td class="inRight">-</td>
 							<td class="inRight">-</td>
 							<td>组员</td>
 							<td>
-								<a class="btn btn-mini" href="xuantibase.html?type=student" target="_blank">进入</a>	
+							<a class="btn btn-mini" href="kaitiabove.html?type=student" target="_blank">进入</a>	
 							</td>
 						</tr>
 					</tbody>

@@ -14,29 +14,29 @@
 			<div class="span10 offset1 ">
 				<table class="table table-condensed">
 					<tr>
-						<td class="inLeft"><a data-bypass href="kaitishenhe.html">25个课题待开题审核</a></td>
-						<td class="inLeft" colspan="2"><a data-bypass href="jietiindex.html">35个课题待结题审核</a></td>
+						<td class="inLeft"><a target="_blank" href="kaitishenhe.html">25个课题待开题审核</a></td>
+						<td class="inLeft" colspan="2"><a target="_blank" href="jietiindex.html">35个课题待结题审核</a></td>
 					</tr>
 					<tr>
-						<td class="inLeft"><a data-bypass href="kaitiscore.html">开题成绩录入</a></td>
-						<td class="inLeft" colspan="2"><a data-bypass href="jietiscore.html">结题成绩录入</a></td>
+						<td class="inLeft"><a target="_blank" href="kaitiscore.html">开题成绩录入</a></td>
+						<td class="inLeft" colspan="2"><a target="_blank" href="jietiscore.html">结题成绩录入</a></td>
 					</tr>
 					<tr>
-						<td class="inLeft"><a data-bypass href="editbase.html?type=newone">新建课题</a></td>
-						<td class="inLeft"><a data-bypass href="shanchu.html">删除无效课题</a></td>
-						<td class="inLeft"><a data-bypass href="modify.html">修改课题信息</a></td>
+						<td class="inLeft"><a target="_blank" href="editbase.html?type=newone">新建课题</a></td>
+						<td class="inLeft"><a target="_blank" href="shanchu.html">删除无效课题</a></td>
+						<td class="inLeft"><a target="_blank" href="modify.html">修改课题信息</a></td>
 					</tr>
 					<tr>
-						<td class="inLeft"><a data-bypass href="guideteacher.html">指导老师设置</a></td>
-						<td class="inLeft"><a data-bypass href="studentsetting.html">学生设置</a></td>
-						<td class="inLeft"><a data-bypass href="notchoose.html">查看未选课的学生</a></td>
+						<td class="inLeft"><a target="_blank" href="guideteacher.html">指导老师设置</a></td>
+						<td class="inLeft"><a target="_blank" href="studentsetting.html">学生设置</a></td>
+						<td class="inLeft"><a target="_blank" href="notchoose.html">查看未选课的学生</a></td>
 					</tr>
 					<tr>
-						<td class="inLeft" colspan="3"><a data-bypass href="quanzhong.html">权重设置</a></td>
+						<td class="inLeft" colspan="3"><a target="_blank" href="quanzhong.html">权重设置</a></td>
 						
 					</tr>
 					<tr>
-						<td class="inLeft" colspan="3"><a data-bypass href="resource.html">发布研学资源</a></td>
+						<td class="inLeft" colspan="3"><a target="_blank" href="resource.html">发布研学资源</a></td>
 						
 					</tr>
 
