@@ -37,19 +37,19 @@ function (_, Resthub,Tmpl) {
 					}
 			};
 			var zNodes=[
-           {name: "高中2015届[高一]",open:true, children: [
+           {name: "高中2015届[高一](73)",open:true, children: [
                   		{name: "高一1班(20)"},
                   		{name: "高一2班(30)"},
                   		{name: "高一3班(21)"},
                   		{name: "未分班的学生(2)"}
                   	]},
-			  {name: "高中2014届[高二]", children: [
+			  {name: "高中2014届[高二](73)", children: [
                   		{name: "高二1班(20)"},
                   		{name: "高二2班(30)"},
                   		{name: "高二3班(21)"},
                   		{name: "未分班的学生(2)"}
                   	]},
-			    {name: "高中2013届[高三]", children: [
+			    {name: "高中2013届[高三](73)", children: [
                   		{name: "高三1班(20)"},
                   		{name: "高三2班(30)"},                 	
                   		{name: "未分班的学生(2)"}

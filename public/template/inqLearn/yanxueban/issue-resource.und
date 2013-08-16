@@ -1,0 +1,86 @@
+<div class="social-box">
+	<div class="header">
+		<h4><strong>发布研学资源</strong></h4>
+  <div class="tools">
+			<button class="btn btn-primary" ><i class="icon-reply"></i> 返回</button>
+		</div>
+	</div>
+	<div class="body">
+		<div id="upload">
+			<div class="row-fluid">
+			<div class="span12">
+				<h4 class="inCenter">研学资源</h4>
+			</div>
+		</div>
+		<br/>
+		<div class="row-fluid">
+			<div class="span6 offset4">
+				资源名称：<input type="text"/>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span6 offset4">
+				附件：暂无 &nbsp;<button class="btn btn-primary btn-small">上传附件</button>
+			</div>
+		</div>
+		<br/>
+		<div class="row-fluid">
+			<div class="span12 inCenter">
+              <button class="btn btn-primary btn-fabu" type="button">确定</button>
+               <button class="btn btn-primary" type="reset">重置</button>
+			</div>
+		</div>
+		</div>
+		
+		<div id="list" style="display: none">
+			<div class="row-fluid">
+			<div class="span12">
+				<h4 class="inCenter">研学资源列表</h4>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span8 offset2">
+              <div class="pull-right">
+              	<button class="btn btn-primary issueresource"><i class=" icon-tag"> 发布研学资源</i></button>
+              </div>
+              
+			</div>
+		</div>
+		<br/>
+		<div class="row-fluid">
+			<div class="span8 offset2">
+					<table class="table table-bordered table-condensed">
+						<thead>
+							<tr class="headColor">
+                               <th class="listNum">序号</th>
+								<th>资源名称</th>
+								<th>上传时间</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="inCenter">1</td>
+								<td > 活动记录表 </td>
+								<td class="inCenter">2013-01-02</td>
+								<td > 
+                          <button class="btn btn-mini">下载附件</button>
+               <button class="btn btn-mini">删除</button>
+                              </td>
+							</tr>
+							<tr>
+								<td class="inCenter">2</td>
+								<td > 读书活动记录表 </td>
+								<td class="inCenter">2012-01-02</td>
+								<td > 
+                          <button class="btn btn-mini">下载附件</button>
+               <button class="btn btn-mini">删除</button>
+                              </td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				</div>
+		</div>
+	</div>
+	</div>

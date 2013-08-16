@@ -127,7 +127,7 @@
 											 	高中2013届
 										</td>										
 										<td >
-											<input type="text" name="name" placeholder="人员单选框" class="input-small"/>
+											<input type="text" name="name" required="required" placeholder="人员单选框" class="input-small"/>
 										</td>										
 										<td >
 											2012-2013学年第二学期 
@@ -147,7 +147,7 @@
 											<input type="text" name="reason" class="input-small"/>
 										</td>										
 										<td >
-											<input type="text" name="jiedudate" class="input-small"placeholder="日期选择框"/>
+											<input type="text" name="jiedudate" required="required" class="input-small"placeholder="日期选择框"/>
 										</td>										
 										<td >
 											--<br/>（注释：保存后，当前<br/>操作人员默认为经办人）
@@ -271,7 +271,7 @@
 										</td>
 										
 										<td >
-											<input type="text" name="name" class="input-small" placeholder="人员单选框"/>
+											<input type="text" name="name" required="required" class="input-small" placeholder="人员单选框"/>
 										</td>
 										
 										<td >
@@ -302,7 +302,7 @@
 										</td>
 										
 										<td >
-											<input type="text" name="jtdate" class="input-small" placeholder="日期选择框"/>
+											<input type="text" name="jtdate" class="input-small" required="required" placeholder="日期选择框"/>
 										</td>
 										
 										<td >
@@ -468,7 +468,7 @@
 										</td>
 										
 										<td >
-											<input type="text" name="name" class="input-small" placeholder="人员单选框"/>
+											<input type="text" name="name" required="required" class="input-small" placeholder="人员单选框"/>
 										</td>
 										
 										<td >
@@ -481,10 +481,10 @@
 										</td>
 										
 										<td >
-											<input type="text" name="name" class="input-small" placeholder="日期选择框"/>
+											<input type="text" name="name" required="required" class="input-small" placeholder="日期选择框"/>
 										</td>
 										<td >
-											<input type="text" name="name" class="input-small" placeholder="日期选择框"/>
+											<input type="text" name="name" required="required" class="input-small" placeholder="日期选择框"/>
 										</td>
 										<td >
 											--<br/>（注释：保存后，当前<br/>操作人员默认为经办人）
@@ -929,7 +929,7 @@
 												<td ></td>
 												<td > 高中2013届 </td>
 												<td >
-												<input type="text" name="name" placeholder="人员单选框" class="input-small"/>
+												<input type="text" name="name" required="required" placeholder="人员单选框" class="input-small"/>
 												</td>
 												<td > 2012-2013学年第二学期 </td>
 												<td >
@@ -943,7 +943,7 @@
 												<input type="text" name="reason" class="input-small"/>
 												</td>
 												<td >
-												<input type="text" name="jiedudate" class="input-small"placeholder="日期选择框"/>
+												<input type="text" name="jiedudate" required="required" class="input-small"placeholder="日期选择框"/>
 												</td>
 												<td > --
 												<br/>
@@ -1018,7 +1018,7 @@
 											 	高中2013届
 										</td>										
 										<td >
-											<input type="text" name="name" placeholder="人员单选框" class="input-small"/>
+											<input type="text" name="name" required="required" placeholder="人员单选框" class="input-small"/>
 										</td>										
 										<td >
 											2012-2013学年第二学期 
@@ -1038,7 +1038,7 @@
 											<input type="text" name="reason" class="input-small"/>
 										</td>										
 										<td >
-											<input type="text" name="jiedudate" class="input-small"placeholder="日期选择框"/>
+											<input type="text" name="jiedudate" required="required" class="input-small"placeholder="日期选择框"/>
 										</td>										
 										<td >
 											--<br/>（注释：保存后，当前<br/>操作人员默认为经办人）
@@ -1150,7 +1150,7 @@
 											 	高中2013届
 										</td>										
 										<td >
-											<input type="text" name="name" placeholder="人员单选框" class="input-small"/>
+											<input type="text" name="name" required="required" placeholder="人员单选框" class="input-small"/>
 										</td>										
 										<td >
 											2012-2013学年第二学期 
@@ -1162,7 +1162,7 @@
 											<input type="text" name="reason" class="input-small"/>
 										</td>										
 										<td >
-											<input type="text" name="jiedudate" class="input-small"placeholder="日期选择框"/>
+											<input type="text" name="jiedudate" required="required" class="input-small"placeholder="日期选择框"/>
 										</td>										
 										<td >
 											--<br/>（注释：保存后，当前<br/>操作人员默认为经办人）
@@ -1272,7 +1272,7 @@
 											 	高中2013届
 										</td>										
 										<td >
-											<input type="text" name="name" placeholder="人员单选框" class="input-small"/>
+											<input type="text" name="name" required="required" placeholder="人员单选框" class="input-small"/>
 										</td>										
 										<td >
 											2012-2013学年第二学期 
@@ -1284,7 +1284,7 @@
 											<input type="text" name="reason" class="input-small"/>
 										</td>										
 										<td >
-											<input type="text" name="jiedudate" class="input-small"placeholder="日期选择框"/>
+											<input type="text" name="jiedudate" required="required" class="input-small"placeholder="日期选择框"/>
 										</td>										
 										<td >
 											--<br/>（注释：保存后，当前<br/>操作人员默认为经办人）
@@ -1393,7 +1393,7 @@
 											 	高中2013届
 										</td>										
 										<td >
-											<input type="text" name="name" placeholder="人员单选框" class="input-small"/>
+											<input type="text" name="name" required="required" placeholder="人员单选框" class="input-small"/>
 										</td>										
 										<td >
 											2012-2013学年第二学期 
@@ -1403,7 +1403,7 @@
 										</td>																																																	
 																			
 										<td >
-											<input type="text" name="jiedudate" class="input-small"placeholder="日期选择框"/>
+											<input type="text" name="jiedudate" required="required" class="input-small"placeholder="日期选择框"/>
 										</td>										
 										<td >
 											--<br/>（注释：保存后，当前<br/>操作人员默认为经办人）

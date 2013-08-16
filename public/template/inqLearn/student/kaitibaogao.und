@@ -1,0 +1,357 @@
+<div class="social-box">
+	<div class="header">
+		<h4><strong>开题报告</strong></h4>
+		<div class="tools">
+			<button class="btn btn-primary" ><i class="icon-reply"></i> 返回活动列表</button>
+		</div>
+	</div>
+	<div class="body">
+		<fieldset id="showOpening">
+			<legend>
+				开题报告表
+			</legend>
+			<div class="row-fluid">
+				<div class="span12" style="vertical-align: middle">
+					<table class="table table-bordered table-condensed inCenter" style="width: 900px;margin-left: auto;margin-right: auto;">
+						<tbody>
+							<tr>
+								<td width="100px" class="inCenter">课题名称</td>
+								<td colspan="6">盐类水解原理的应用</td>
+							</tr>
+							<tr>
+								<td class="inCenter">课题组长</td>
+								<td width="200px">蔡祥</td>
+								<td class="inCenter" width="100px">指导教师</td>
+								<td >白飞飞</td>
+								<td class="inCenter" width="100px">班级</td>
+								<td width="200px" colspan="2">2013届(高二 1 班)</td>
+							</tr>
+							<tr>
+								<td class="inCenter" rowspan="3" style="vertical-align: middle;">课题领域</td>
+								<td style="vertical-align: middle;" rowspan="3">人与自然</td>
+								<td class="inCenter" style="vertical-align: middle;" rowspan="3">课题成员</td>
+								<td  class="inCenter">姓名</td><td  class="inCenter">班级</td><td  class="inCenter">学号</td><td  class="inCenter">身份</td>
+							</tr>
+							<tr>
+								<td>蔡祥</td><td>2013届1班</td><td class="inRight">001</td><td>组长</td>
+							</tr>
+							<tr>
+								<td>李可</td><td>2013届2班</td><td class="inRight">021</td><td>组员</td>
+							</tr>
+							<tr>
+								<td rowspan="2" class="inCenter" style="vertical-align: middle;">文献名称</td>
+								<td  style="vertical-align: middle;">指导教师所提供的文献题目</td>
+								<td colspan="5" class="inCenter" style="vertical-align: middle; height: 30px;"></td>
+							</tr>
+							<tr>
+								<td  style="vertical-align: middle;">自己阅读的文献题目</td>
+								<td colspan="5" class="inCenter" style="vertical-align: middle; height: 30px;"></td>
+							</tr>
+							<tr>
+								<td class="inCenter" style="vertical-align: middle;">研究背景及目的意义</td>
+								<td colspan="6" style="height: 100px;">(请详细阐述课题研究的必要性和可行性)</td>
+							</tr>
+							<tr>
+								<td  class="inCenter" style="vertical-align: middle;">研究方案</td>
+								<td colspan="6" style="height: 100px; ">(请简单阐述所研究课题的研究内容、研究方法、研究步骤、预期成果，研究条件以及需要获得的外界支持等。)</td>
+							</tr>
+							<tr>
+								<td class="inCenter" style="vertical-align: middle;">附件</td>
+								<td colspan="6" height="100px">暂无附件</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="inCenter btn-student">
+				<button class="btn btn-primary editOpening" >
+					编辑
+				</button>
+				<button class="btn btn-primary btn-submit" >
+					提交
+				</button>
+			</div>
+		</fieldset>
+		<fieldset id="editOpening" style="display: none;">
+			<legend>
+				开题报告表
+			</legend>
+			<div class="row-fluid">
+				<div class="span12" style="vertical-align: middle">
+					<table class="table table-bordered table-condensed inCenter" style="width: 900px;margin-left: auto;margin-right: auto;">
+						<tbody>
+							<tr>
+								<td width="100px" class="inCenter">课题名称</td>
+								<td colspan="5">
+								<input type="text" name="topicName" class="grd-white" value="盐类水解原理的应用" style="width: 98%">
+								</td>
+							</tr>
+							<tr>
+								<td class="inCenter">课题组长</td>
+								<td width="200px">
+								<select class="input-medium">
+									<option></option>
+									<option>蔡祥</option>
+									<option>李可</option>
+									<option>王红</option>
+								</select></td>
+								<td class="inCenter" width="100px">指导教师</td>
+								<td width="200px"> 白飞飞 </td>
+								<td class="inCenter" width="100px">班级</td>
+								<td width="200px"> - </td>
+							</tr>
+							<tr>
+								<td class="inCenter" style="vertical-align: middle;">课题领域</td>
+								<td><label class="radio" style="width:100px;left:20px;position:relative;">
+									<input type="radio" name="topicDomain" id="openreport-TopicDomainOptionsRadios1" value="DO1" data-form="uniform">
+									人与自然 </label><label class="radio" style="width:100px;left:20px;position:relative;">
+									<input type="radio" name="topicDomain" id="openreport-TopicDomainOptionsRadios2" value="DO2" data-form="uniform">
+									人与社会 </label><label class="radio" style="width:100px;left:20px;position:relative;">
+									<input type="radio" name="topicDomain" id="openreport-TopicDomainOptionsRadios3" value="DO3" data-form="uniform">
+									人与自我 </label><label class="radio" style="width:100px;left:20px;position:relative;">
+									<input type="radio" name="topicDomain" id="openreport-TopicDomainOptionsRadios4" value="DO4" data-form="uniform">
+									人与其它 </label></td>
+								<td class="inCenter">课题组成员</td>
+								<td colspan="3">
+								<input type="text" name="teacherClass" class="grd-white" style="width: 90%" value="" placeholder="多人选择框">
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="2" class="inCenter" style="vertical-align: middle;">文献名称</td>
+								<td class="inCenter" style="vertical-align: middle;">指导教师所提供的文献题目</td>
+								<td colspan="4" class="inCenter" style="vertical-align: middle;">						
+											<textarea type="text" name="docsTitleBySelf" class="grd-white" style="height:70px; width: 90%" ></textarea></td>
+							</tr>
+							<tr>
+								<td class="inCenter" style="vertical-align: middle;">自己阅读的文献题目</td>
+								<td colspan="4" class="inCenter" style="vertical-align: middle;">				
+													<textarea type="text" name="docsTitleBySelf" class="grd-white" style="height:70px; width: 90%" ></textarea></td>
+							</tr>
+							<tr>
+								<td class="inCenter" style="vertical-align: middle;">研究背景及目的意义</td>
+								<td colspan="5">							
+										<textarea name="requireForStudents" rows="10" style="height: 200px; width:95%"
+                                    placeholder="(请详细阐述课题研究的必要性和可行性)"></textarea></td>
+							</tr>
+							<tr>
+								<td  class="inCenter" style="vertical-align: middle;">研究方案</td>
+								<td colspan="5">								<textarea name="requireForStudents" rows="10" style="height: 200px; width:95%"
+                                    placeholder="(请简单阐述所研究课题的研究内容、研究方法、研究步骤、预期成果，研究条件以及需要获得的外界支持等。)"></textarea></td>
+							</tr>
+							<tr>
+								<td class="inCenter">附件：</td>
+								<td colspan="4">开题讨论的照片.zip</td><td><i class="icon-remove"></i></td>
+							</tr>
+							<tr>
+								<td class="inCenter" colspan="6">
+									<button class="btn btn-primary">上传附件</button></td>
+								
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="inCenter">
+				<button class="btn btn-primary returnOpening">
+					保存
+				</button>
+				<button class="btn btn-primary returnOpening">
+					取消
+				</button>
+			</div>
+		</fieldset>
+		<br />
+		<fieldset id="showOpeningScore">
+			<legend>
+				开题报告评审表
+			</legend>
+			<div class="box corner-all">
+				<table class="table table-condensed table-bordered inCenter" style="width: 900px;margin-left: auto;margin-right: auto;">
+					<thead>
+						<tr class="headColor">
+
+							<th>评价内容</th>
+							<th>评价要点</th>
+							<th>得分</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+
+							<td>1．选题来源</td>
+							<td>①自选; ②科普报表启发; ③前期报告启发; ④导师推荐; ⑤其他</td>
+							<td class="inRight">--分</td>
+						</tr>
+						<tr>
+							<td>2．选题价值</td>
+							<td>①学术价值; ②社会价值; ③自我价值</td>
+							<td class="inRight">--分</td>
+						</tr>
+						<tr>
+							<td>3．文献综述</td>
+							<td>①对文件有评述; ②文献有针对性; ③文献丰富</td>
+							<td class="inRight">--分</td>
+						</tr>
+						<tr>
+							<td>4．研究方案</td>
+							<td>①合理; ②可行; ③预期成果合适</td>
+							<td class="inRight">--分</td>
+						</tr>
+						<tr>
+							<td colspan="2">总计</td>
+							<td class="inRight">--分</td>
+						</tr>
+
+						<tr>
+							<td rowspan="2">导师意见</td>
+							<td >导师同意该课题进入正式研究阶段</td>
+							<td class="inRight">--分</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="height:100px">导师对研究方案的意见和建议：</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="inCenter toremark" style="display: none">
+			<button class="btn btn-primary editOpeningScore">
+			编辑
+			</button>
+			</div>
+		</fieldset>
+		<fieldset id="editOpeningScore" style="display: none;">
+			<legend>
+				编辑开题评价
+			</legend>
+			<div class="box corner-all">
+				<table class="table table-condensed table-bordered inCenter" style="width: 900px;margin-left: auto;margin-right: auto;">
+					<thead>
+						<tr class="headColor">
+							
+							<th >评价内容</th>
+							<th>评价要点</th>
+							<th >A</th>
+							<th >B</th>
+							<th >C</th>
+							<th >D</th>
+							<th >E</th>
+							<th >得分</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							
+							<td>1．选题来源</td>
+							<td>①自选; ②科普报表启发; ③前期报告启发; ④导师推荐; ⑤其他</td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								10</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								8</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								6</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								4</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								2</label></td>
+							<td class="inRight">分</td>
+						</tr>
+						<tr>
+							<td>2．选题价值</td>
+							<td>①学术价值; ②社会价值; ③自我价值</td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								10</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								8</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								6</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								4</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								2</label></td>
+							<td class="inRight">分</td>
+						</tr>
+						<tr>
+							<td>3．文献综述</td>
+							<td>①对文件有评述; ②文献有针对性; ③文献丰富</td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								20</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								16</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								12</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								8</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								4</label></td>
+							<td class="inRight">分</td>
+						</tr>
+						<tr>
+							<td>4．研究方案</td>
+							<td>①合理; ②可行; ③预期成果合适</td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								10</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								8</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								6</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								4</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								2</label></td>
+							<td class="inRight">分</td>
+						</tr>
+						
+						<tr>
+							<td>总计</td>
+							<td colspan="8" class="inRight">分</td>
+						</tr>
+						<tr>
+							<td rowspan="2" style="vertical-align: middle;">导师意见</td>
+							<td >导师是否同意该课题进入正式研究阶段</td>
+							<td colspan="6"><label class="radio inline">
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								是</label>
+								<label  class="radio inline">
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">
+								否</label></td>
+							
+						</tr>
+						<tr>
+							<td colspan="8" style="height:130px">
+                            <textarea style="height: 120px;width: 90%"></textarea>
+                            </td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="inCenter">
+				<button class="btn btn-primary returnOpeningScore">
+					保存
+				</button>
+				<button class="btn btn-primary returnOpeningScore">
+					取消
+				</button>
+			</div>
+		</fieldset>
+	</div>
+</div>

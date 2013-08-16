@@ -28,16 +28,16 @@
 							<h4>基本信息表</h4>
 						</div>
 					</div>
-					<div class="row-fluid">
-						<div class="span12 inCenter">
-							<h5>( 2012 - 2013 学年 )</h5>
-						</div>
-					</div>
+					
 					<br />
 					<div class="row-fluid">
 						<div class="span12" style="vertical-align: middle">
 							<table class="table table-bordered table-condensed inCenter" style="width: 900px;margin-left: auto;margin-right: auto;">
 								<tbody>
+									<tr>
+                                		<td class="inCenter">学年</td><td  colspan="3">2012 - 2013 学年 </td>
+                                		<td class="inCenter">课题状态</td><td>选题中 </td>
+                                	</tr>
 									<tr>
 										<td class="inCenter" width="100px">指导教师</td>
 										<td width="200px">白飞飞</td>
@@ -122,16 +122,38 @@
 							<h4>基本信息表</h4>
 						</div>
 					</div>
-					<div class="row-fluid">
-						<div class="span12 inCenter">
-							<h5>( 2012 - 2013 学年 )</h5>
-						</div>
-					</div>
+					
 					<br />
 					<div class="row-fluid">
 						<div class="span12" style="vertical-align: middle">
 							<table class="table table-bordered table-condensed inCenter" style="width: 900px;margin-left: auto;margin-right: auto;">
 								<tbody>
+									<tr>
+                            <td class="inCenter" width="100px" style="vertical-align: middle;">学年</td>
+                            <td colspan="3">
+                            	<select style="width: 200px">
+                            		<option>2012-2013学年</option>
+                            		<option>2011-2012学年</option>
+                            		<option>2010-2011学年</option>
+                            		<option>2009-2010学年</option>
+                            		<option>2008-2009学年</option>
+                            		<option>2007-2008学年</option>
+                            	</select>
+                            </td>
+                             <td class="inCenter" width="100px" style="vertical-align: middle;">课题状态</td>
+                             <td style="vertical-align: middle;">
+                               <select class="input-small">
+                               	 <option>已结题</option>
+                               	 <option>选题中</option>
+                               	 <option>专家审核</option>
+                               	 <option>开题中</option>
+                               	  <option>研究中</option>
+                               	 <option>专家评定</option>
+                               	  <option>选题失败</option>
+                               	 <option>结题中</option>
+                               </select>
+                             </td>
+                        </tr>
 									<tr>
 										<td class="inCenter" width="100px" rowspan="3" style="vertical-align: middle;">指导教师</td>
 										<td colspan="5">
@@ -271,94 +293,105 @@
 						<h4>课题活动列表</h4>
 					</div>
 				</div>
+				<br />
+                <div class="row-fluid">
+					<div class="span10">
+						<div class="pull-right">
+							<button class="btn btn-small btn-primary" onclick="alert('请选择活动类型')">
+								<i class="icon-plus"></i> 添加新活动
+							</button>
+						</div>
+					</div>
+				</div>
 				<div class="row-fluid">
 					<div class="span12 inCenter">
 						<table class="table table-condensed table-bordered" style="width: 800px;margin-left: auto;margin-right: auto;">
-							<thead>
-								<tr class="headColor">
-									<th class="listNum">序号</th>
-									<th>活动内容</th>
-									<th width=70px>创建人</th>
-									<th width=100px>时间</th>
-									<th width=50px>得分</th>
-									<th width=100px>操作</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td class="inCenter">1</td>
-									<td>开题报告</td>
-									<td>蔡祥</td>
-									<td class="inCenter">2012-12-12</td>
-									<td  class="inRight">87</td>
-									<td><a href="InqOpeningView.html" data-bypass class="btn btn-mini">进入评价</a></td>
-								</tr>
-								<tr>
-									<td class="inCenter">2</td>
-									<td>结题报告</td>
-									<td>--</td>
-									<td class="inCenter">--</td>
-									<td  class="inRight">--</td>
-									<td><a href="InqClosingView.html" data-bypass class="btn btn-mini">进入评价</a></td>
-								</tr>
-								<tr>
-									<td class="inCenter">3</td>
-									<td>资料查阅活动</td>
-									<td>蔡祥</td>
-									<td class="inCenter">2013-3-12</td>
-									<td  class="inRight">80</td>
-									<td><a href="report1.html" data-bypass class="btn btn-mini">进入评价</a></td>
-								</tr>
-								<tr>
-									<td class="inCenter">4</td>
-									<td>调查记录活动</td>
-									<td>蔡祥</td>
-									<td class="inCenter">2013-3-12</td>
-									<td  class="inRight">80</td>
-									<td><a href="report2.html" data-bypass class="btn btn-mini">进入评价</a></td>
-								</tr>
-								<tr>
-									<td class="inCenter">5</td>
-									<td>实验记录活动</td>
-									<td>蔡祥</td>
-									<td class="inCenter">2013-3-12</td>
-									<td  class="inRight">80</td>
-									<td><a href="report3.html" data-bypass class="btn btn-mini">进入评价</a></td>
-								</tr>
-								<tr>
-									<td class="inCenter">6</td>
-									<td>访谈记录活动</td>
-									<td>蔡祥</td>
-									<td class="inCenter">2013-3-12</td>
-									<td  class="inRight">80</td>
-									<td><a href="report4.html" data-bypass class="btn btn-mini">进入评价</a></td>
-								</tr>
-								<tr>
-									<td class="inCenter">7</td>
-									<td>小组讨论活动</td>
-									<td>蔡祥</td>
-									<td class="inCenter">2013-3-12</td>
-									<td  class="inRight">80</td>
-									<td><a href="report5.html" data-bypass class="btn btn-mini">进入评价</a></td>
-								</tr>
-								<tr>
-									<td class="inCenter">8</td>
-									<td>其他类型活动</td>
-									<td>蔡祥</td>
-									<td class="inCenter">2013-3-12</td>
-									<td  class="inRight">80</td>
-									<td><a href="report6.html" data-bypass class="btn btn-mini">进入评价</a></td>
-								</tr>
-								<tr>
-									<td class="inCenter">9</td>
-									<td>读书记录活动</td>
-									<td>蔡祥</td>
-									<td class="inCenter">2013-3-12</td>
-									<td  class="inRight">80</td>
-									<td><a href="report7.html" data-bypass class="btn btn-mini">进入评价</a></td>
-								</tr>
-							</tbody>
-						</table>
+                            <thead>
+                                <tr class="headColor">
+                                    <th class="listNum">序号</th>
+                                    <th>活动内容</th>
+                                    <th width=70px>创建人</th>
+                                    <th width=100px>时间</th>
+                                    <th width=50px>得分</th>
+                                    <th width=150px>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="inCenter">1</td>
+                                    <td>开题报告</td>
+                                    <td>蔡祥</td>
+                                    <td class="inCenter">2012-12-12</td>
+                                    <td  class="inRight">87</td>
+                                    <td><a href="InqOpeningView.html?type=admin" data-bypass class="btn btn-mini">进入</a> </td>
+                                </tr>
+                                <tr>
+                                    <td class="inCenter">2</td>
+                                    <td>结题报告</td>
+                                    <td>--</td>
+                                    <td class="inCenter">--</td>
+                                    <td  class="inRight">--</td>
+                                    <td><a href="InqClosingView.html" data-bypass class="btn btn-mini">进入</a> </td>
+                                </tr>
+                                <tr>
+                                    <td class="inCenter">3</td>
+                                    <td>资料查阅活动</td>
+                                    <td>蔡祥</td>
+                                    <td class="inCenter">2013-3-12</td>
+                                    <td  class="inRight">80</td>
+                                    <td><a href="report1.html" data-bypass class="btn btn-mini">进入</a> 
+                                    	<button class="btn btn-mini" onclick="alert('该课题已被导师评价，不能删除。');">删除</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="inCenter">4</td>
+                                    <td>调查记录活动</td>
+                                    <td>蔡祥</td>
+                                    <td class="inCenter">2013-3-12</td>
+                                    <td  class="inRight">80</td>
+                                    <td><a href="report2.html" data-bypass class="btn btn-mini">进入</a> <button class="btn btn-mini">删除</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="inCenter">5</td>
+                                    <td>实验记录活动</td>
+                                    <td>蔡祥</td>
+                                    <td class="inCenter">2013-3-12</td>
+                                    <td  class="inRight">80</td>
+                                    <td><a href="report3.html" data-bypass class="btn btn-mini">进入</a> <button class="btn btn-mini">删除</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="inCenter">6</td>
+                                    <td>访谈记录活动</td>
+                                    <td>蔡祥</td>
+                                    <td class="inCenter">2013-3-12</td>
+                                    <td  class="inRight">80</td>
+                                    <td><a href="report4.html" data-bypass class="btn btn-mini">进入</a> <button class="btn btn-mini">删除</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="inCenter">7</td>
+                                    <td>小组讨论活动</td>
+                                    <td>蔡祥</td>
+                                    <td class="inCenter">2013-3-12</td>
+                                    <td  class="inRight">80</td>
+                                    <td><a href="report5.html" data-bypass class="btn btn-mini">进入</a> <button class="btn btn-mini">删除</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="inCenter">8</td>
+                                    <td>其他类型活动</td>
+                                    <td>蔡祥</td>
+                                    <td class="inCenter">2013-3-12</td>
+                                    <td  class="inRight">80</td>
+                                    <td><a href="report6.html" data-bypass class="btn btn-mini">进入</a> <button class="btn btn-mini">删除</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="inCenter">9</td>
+                                    <td>读书记录活动</td>
+                                    <td>蔡祥</td>
+                                    <td class="inCenter">2013-3-12</td>
+                                    <td  class="inRight">80</td>
+                                    <td><a href="report7.html" data-bypass class="btn btn-mini">进入</a> <button class="btn btn-mini">删除</button></td>
+                                </tr>
+                            </tbody>
+                        </table>   
 					</div>
 				</div>
 			</div>
@@ -385,7 +418,7 @@
 									<td class="inCenter">1</td>
 									<td colspan="2">开题报告</td>
 									<td  class="inRight">
-									<input type="text" value="87" class="input-small"/>
+									87
 									</td>
 								</tr>
 								<tr>
@@ -398,43 +431,43 @@
 									<td rowspan=8  style="vertical-align: middle;" width="100px">实践活动</td>
 									<td>资料查阅活动</td>
 									<td  class="inRight">
-									<input type="text" value="87" class="input-small"/>
+									87
 									</td>
 								</tr>
 								<tr>
 									<td>调查记录活动</td>
 									<td  class="inRight">
-									<input type="text" value="87" class="input-small"/>
+									87
 									</td>
 								</tr>
 								<tr>
 									<td>实验记录活动</td>
 									<td  class="inRight">
-									<input type="text" value="87" class="input-small"/>
+									87
 									</td>
 								</tr>
 								<tr>
 									<td>访谈记录活动</td>
 									<td  class="inRight">
-									<input type="text" value="87" class="input-small"/>
+								87
 									</td>
 								</tr>
 								<tr>
 									<td>小组讨论活动</td>
 									<td  class="inRight">
-									<input type="text" value="87" class="input-small"/>
+									87
 									</td>
 								</tr>
 								<tr>
 									<td>其他类型活动</td>
 									<td  class="inRight">
-									<input type="text" value="87" class="input-small"/>
+									87
 									</td>
 								</tr>
 								<tr>
 									<td>读书记录活动</td>
 									<td  class="inRight">
-									<input type="text" value="87" class="input-small"/>
+									87
 									</td>
 								</tr>
 								<tr>
@@ -457,7 +490,7 @@
 					<div class="inCenter">
 						（说明：这个按钮只有 研学办 和 超级管理员有权限，可以看到。）
 						<button class="btn btn-primary">
-							计算总分
+							保存
 						</button>
 					</div>
 				</div>
@@ -472,32 +505,35 @@
 							<div class="row-fluid">
 								<div class="span10 offset1">
 									<div class="chat-message">
-								<div class="chat-message-avatar">
-									<img width="55" height="55" src="/img/avatar-55.png" alt="Friend">
-								</div>
-								<div class="chat-message-body">
-									<div class="chat-message-body-header">
-										王老师 <small>2013-07-01 23:00</small>
-									</div>
-									<div class="chat-message-body-content">
-										李可的课题报告写的不错，提出表扬，大家多多学习。
-										<div class="row-fluid">
-											<div class="span12">
-												<div class="pull-right">
-													<button class="btn btn-success chat-sender btn-mini" type="button">
+										<div class="chat-message-avatar">
+											<img width="55" height="55" src="/img/avatar-55.png" alt="Friend">
+										</div>
+										<div class="chat-message-body">
+											<div class="chat-message-body-header">
+												王老师 <small>2013-07-01 23:00</small>
+											</div>
+											<div class="chat-message-body-content">
+												李可的课题报告写的不错，提出表扬，大家多多学习。
+												<div class="row-fluid">
+													<div class="span12">
+														<div class="pull-right">
+															<button class="btn btn-success chat-sender btn-mini" type="button">
 																回复
 															</button>
+															<button class="btn btn-success chat-sender btn-mini" type="button">
+																删除
+															</button>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-								</div>
-							</div>
 							<!-- END CHAT MESSAGE -->
 							<!-- BEGIN CHAT MESSAGE -->
-							<div class="row-fluid">
+							<div class="row-fluid" >
 								<div class="span8 offset2">
 									<div class="chat-message pull-right">
 										<div class="chat-message-avatar">
@@ -510,154 +546,238 @@
 											<div class="chat-message-body-content">
 												谢谢老师的夸奖……
 												<div class="row-fluid">
-											<div class="span12">
-												<div class="pull-right">
-													<button class="btn btn-success chat-sender btn-mini" type="button">
+													<div class="span12">
+														<div class="pull-right">
+															<button class="btn btn-success chat-sender btn-mini btn-replay" type="button">
 																回复
 															</button>
+															<button class="btn btn-success chat-sender btn-mini" type="button">
+																删除
+															</button>
+														</div>
+													</div>
+
 												</div>
 											</div>
+
 										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span8 offset2">
+								<div class="chat-message pull-right">
+									<div class="chat-message-avatar">
+										<img width="55" height="55" src="/img/avatar-55.png" alt="Julio Marquez">
+									</div>
+									<div class="chat-message-body">
+										<div class="chat-message-body-header" style="width:500px">
+											张雪 <small>2013-07-02 15:00</small>
+										</div>
+										<div class="chat-message-body-content">
+											向李可学习……
+											<div class="row-fluid">
+												<div class="span12">
+													<div class="pull-right">
+														<button class="btn btn-success chat-sender btn-mini" type="button">
+															回复
+														</button>
+														<button class="btn btn-success chat-sender btn-mini" type="button">
+																删除
+														</button>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="row-fluid">
-								<div class="span8 offset2">
-									<div class="chat-message pull-right">
-										<div class="chat-message-avatar">
-											<img width="55" height="55" src="/img/avatar-55.png" alt="Julio Marquez">
+						</div>
+						<div class="row-fluid">
+							<div class="span8 offset2">
+								<div class="chat-message pull-right">
+									<div class="chat-message-avatar">
+										<img width="55" height="55" src="/img/avatar-55.png" alt="Julio Marquez">
+									</div>
+									<div class="chat-message-body">
+										<div class="chat-message-body-header" style="width:500px">
+											李雪 <small>2013-07-02 15:00</small>
 										</div>
-										<div class="chat-message-body">
-											<div class="chat-message-body-header" style="width:500px">
-												张雪 <small>2013-07-02 15:00</small>
-											</div>
-											<div class="chat-message-body-content">
-												向李可学习……
-												<div class="row-fluid">
-											<div class="span12">
-												<div class="pull-right">
-													<button class="btn btn-success chat-sender btn-mini" type="button">
-																回复
+										<div class="chat-message-body-content">
+											回复张雪：<br/><br/>
+											我也要向李可学习……
+											<div class="row-fluid">
+												<div class="span12">
+													<div class="pull-right">
+														<button class="btn btn-success chat-sender btn-mini" type="button">
+															回复
+														</button>
+														<button class="btn btn-success chat-sender btn-mini" type="button">
+																删除
 															</button>
+													</div>
 												</div>
-											</div>
-										</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<!-- END CHAT MESSAGE -->
-							<!-- BEGIN CHAT MESSAGE -->
-							<div class="row-fluid">
-								<div class="span10 offset1">
-									<div class="chat-message">
-								<div class="chat-message-avatar">
-									<img width="55" height="55" src="/img/avatar-55.png" alt="Friend">
-								</div>
-								<div class="chat-message-body">
-									<div class="chat-message-body-header">
-										胡老师 <small>2013-07-01 23:00</small>
+						</div>
+						<div class="row-fluid" id="replaylk" style="display:none">
+							<div class="span8 offset2">
+								<div class="chat-message pull-right">
+									<div class="chat-message-avatar">
+										<button class="btn btn-primary" type="button">
+											发表回复
+										</button>
 									</div>
 									<div class="chat-message-body-content">
-										<div class="row-fluid">
-											<div class="span12">
-												论文提交时间快到了，大家抓紧时间提交，过期不侯
-											</div>
-										</div>
-										<div class="row-fluid">
-											<div class="span12">
-												<div class="pull-right">
-													<button class="btn btn-success chat-sender btn-mini" type="button">
-																回复
-															</button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-								</div>
-							</div>
-							<!-- END CHAT MESSAGE -->
-							<!-- BEGIN CHAT MESSAGE -->
-							<div class="row-fluid">
-								<div class="span8 offset2">
-									<div class="chat-message pull-right">
-										<div class="chat-message-avatar">
-											<img width="55" height="55" src="/img/avatar-55.png" alt="Julio Marquez">
-										</div>
-										<div class="chat-message-body">
-											<div class="chat-message-body-header" style="width:500px">
-												王可 <small>2013-07-02 13:00</small>
-											</div>
-											<div class="chat-message-body-content">
-												<div class="row-fluid">
-											<div class="span12">
-												老师，再等等吧
-												</div>
-												</div>
-												<div class="row-fluid">
-											<div class="span12">
-												<div class="pull-right">
-													<button class="btn btn-success chat-sender btn-mini" type="button">
-																回复
-															</button>
-												</div>
-											</div>
-										</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="row-fluid">
-								<div class="span8 offset2">
-									<div class="chat-message pull-right">
-										<div class="chat-message-avatar">
-											<img width="55" height="55" src="/img/avatar-55.png" alt="Julio Marquez">
-										</div>
-										<div class="chat-message-body">
-											<div class="chat-message-body-header" style="width:500px">
-												张雪 <small>2013-07-02 15:00</small>
-											</div>
-											<div class="chat-message-body-content">
-												马上……
-												<div class="row-fluid">
-											<div class="span12">
-												<div class="pull-right">
-													<button class="btn btn-success chat-sender btn-mini" type="button">
-																回复
-															</button>
-												</div>
-											</div>
-										</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- END CHAT MESSAGES LIST -->
-					<!-- BEGIN CHAT COMPOSER -->
-					<div class="chat-composer">
-						<div class="chat-form">
-							<div class="chat-input">
-								<textarea placeholder="输入你的评价信息" style="width:800px;height:70px"></textarea>
-							</div>
-							<button class="btn btn-primary chat-sender" type="button">
-								发表评论
-							</button>
-						</div>
-					</div>
-					<!-- END CHAT COMPOSER -->
-				</div>
-				<!-- END CHAT WINDOW -->
-			</div>
 
+										<div class="span12 replay">
+											<div class="pull-right">
+												<div class="chat-form">
+													<div class="span6">
+														<textarea placeholder="回复李可：" style="width:500px;height:70px"></textarea>
+													</div>
+													<div class="span2">
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- END CHAT MESSAGE -->
+						<!-- BEGIN CHAT MESSAGE -->
+						<div class="row-fluid">
+							<div class="span10 offset1">
+								<div class="chat-message">
+									<div class="chat-message-avatar">
+										<img width="55" height="55" src="/img/avatar-55.png" alt="Friend">
+									</div>
+									<div class="chat-message-body">
+										<div class="chat-message-body-header">
+											胡老师 <small>2013-07-01 23:00</small>
+										</div>
+										<div class="chat-message-body-content">
+											<div class="row-fluid">
+												<div class="span12">
+													论文提交时间快到了，大家抓紧时间提交，过期不侯
+												</div>
+											</div>
+											<div class="row-fluid">
+												<div class="span12">
+													<div class="pull-right">
+														<button class="btn btn-success chat-sender btn-mini" type="button">
+															回复
+														</button>
+														<button class="btn btn-success chat-sender btn-mini" type="button">
+																删除
+															</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- END CHAT MESSAGE -->
+						<!-- BEGIN CHAT MESSAGE -->
+						<div class="row-fluid">
+							<div class="span8 offset2">
+								<div class="chat-message pull-right">
+									<div class="chat-message-avatar">
+										<img width="55" height="55" src="/img/avatar-55.png" alt="Julio Marquez">
+									</div>
+									<div class="chat-message-body">
+										<div class="chat-message-body-header" style="width:500px">
+											王可 <small>2013-07-02 13:00</small>
+										</div>
+										<div class="chat-message-body-content">
+											<div class="row-fluid">
+												<div class="span12">
+													老师，再等等吧
+												</div>
+											</div>
+											<div class="row-fluid">
+												<div class="span12">
+													<div class="pull-right">
+														<button class="btn btn-success chat-sender btn-mini" type="button">
+															回复
+														</button>
+														<button class="btn btn-success chat-sender btn-mini" type="button">
+																删除
+															</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span8 offset2">
+								<div class="chat-message pull-right">
+									<div class="chat-message-avatar">
+										<img width="55" height="55" src="/img/avatar-55.png" alt="Julio Marquez">
+									</div>
+									<div class="chat-message-body">
+										<div class="chat-message-body-header" style="width:500px">
+											张雪 <small>2013-07-02 15:00</small>
+										</div>
+										<div class="chat-message-body-content">
+											马上……
+											<div class="row-fluid">
+												<div class="span12">
+													<div class="pull-right">
+														<button class="btn btn-success chat-sender btn-mini" type="button">
+															回复
+														</button>
+														<button class="btn btn-success chat-sender btn-mini" type="button">
+																删除
+															</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END CHAT MESSAGES LIST -->
+				<!-- BEGIN CHAT COMPOSER -->
+				<div class="chat-composer">
+					<div class="chat-form">
+						<div class="row-fluid">
+							<div class="span10 offset1">
+								<div class="chat-input">
+							<textarea placeholder="输入你的评价信息" style="width:800px;height:70px"></textarea>
+						</div>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span10 offset1">
+								<button class="btn btn-primary chat-sender" type="button">
+							发表评论
+						</button>
+							</div>
+						</div>
+						
+						
+					</div>
+				</div>
+				<!-- END CHAT COMPOSER -->
+			</div>
+			<!-- END CHAT WINDOW -->
 		</div>
+
 	</div>
+</div>
 </div>

@@ -74,7 +74,7 @@
 								<option value="all">全部</option>
 								<option value="BXG5409">高中2015届[高一]</option>
 								<option value="BXG5408">高中2014届[高二]</option>
-								<option value="BXG5407">高中2013届[高三]</option><option value="all">全部</option>
+								<option value="BXG5407">高中2013届[高三]</option>
 								<option value="BXG5409">高中2015届[高一]</option>
 								<option value="BXG5408">高中2014届[高二]</option>
 								<option value="BXG5407">高中2013届[高三]</option>
@@ -129,7 +129,7 @@
 										<td >高中2013届(高三1班)</td>										
 										<td >开除</td>									
 										<td >
-										 <button class="btn btn-mini">
+										 <button class="btn btn-mini" onclick="alert('跳转到学籍异动维护的开除模块');">
 										转入
 									</button>	
                                         </td>										
@@ -141,7 +141,7 @@
 										<td >高中2013届(高三1班)</td>										
 										<td >转出</td>									
 										<td >
-										 <button class="btn btn-mini">
+										 <button class="btn btn-mini" onclick="alert('跳转到学籍异动维护的转入转出模块');">
 										转入
 									</button>	
                                         </td>										
@@ -153,7 +153,7 @@
 										<td >高中2013届(高三1班)</td>										
 										<td >借读</td>									
 										<td >
-										 <button class="btn btn-mini">
+										 <button class="btn btn-mini" onclick="alert('跳转到学籍异动维护的借读模块');">
 										转入
 									</button>	
                                         </td>										

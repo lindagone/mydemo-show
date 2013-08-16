@@ -6,7 +6,8 @@ function(_, Resthub, template) {
 		
 		events : {
 			'click .editBasicInfo' : 'editBasicInfo',
-			'click .returnBasicInfo' : 'returnBasicInfo'
+			'click .returnBasicInfo' : 'returnBasicInfo',
+			'click .btn-replay':'replay'
 		},
 
 		initialize : function(options) {
@@ -29,6 +30,9 @@ function(_, Resthub, template) {
 		returnBasicInfo : function(){
 		    $('#showBasic').show();
             $('#editBasic').hide();
+		},
+		replay:function(){
+			$('#replaylk').show();
 		}
 		
 	});

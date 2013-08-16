@@ -326,38 +326,27 @@
 						<tr class="headColor">
 							<th width="100px">课题阶段</th>
 							<th width="200px">权重</th>
-							<th>报告类型</th>
+							
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td>开题评价</td>
 							<td><input type="text" class="input-small" value="20" />%</td>
-							<td><select>
-								<option>二附中定制表格</option>
-								<option>清华附中定制表格</option>
-							</select></td>
+							
 						</tr>
 						<tr>
 							<td>实践活动评价</td>
 							<td><input type="text" class="input-small" value="50" />%</td>
-							<td><select>
-								<option>二附中定制表格</option>
-								<option>清华附中定制表格</option>
-							</select></td>
+							
 						</tr>
 						<tr>
 							<td>结题评价</td>
 							<td><input type="text" class="input-small" value="30" />%</td>
-							<td><select>
-								<option>二附中定制表格</option>
-								<option>清华附中定制表格</option>
-							</select></td>
+				
 						</tr>
 					</tbody>
 				</table>
-				<hr />
-				实践活动是否有不同类型：<input type="checkbox" checked>
 				<table >
 					<thead>
 						<tr class="headColor">
@@ -396,8 +385,6 @@
 						</tr>
 					</tbody>
 				</table>
-				<hr />
-				结题宣讲后是否填写小组评价表：<input type="checkbox">
 				<div class="form-actions">
 					<button class="btn btn-primary">
 						确定

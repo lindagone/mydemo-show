@@ -1,0 +1,175 @@
+<div class="social-box">
+	<div class="header">
+		<h4><strong>结题报告</strong></h4>
+		<div class="tools">
+			<a class="btn btn-primary" data-bypass href="inqinfolook.html"><i class="icon-reply"></i> 返回活动列表</a>
+		</div>
+	</div>
+	<div class="body">
+		<fieldset id="showOpening">
+			<legend>
+	            结题报告
+	        </legend>
+	        <div class="row-fluid">
+	           附件为结题报告：<span>暂无附件</span>    
+	        </div>
+			<div class="inCenter">
+				<button class="btn btn-primary editOpening"  onclick="alert('(该按钮只有课题组长和超级管理员才有。)');">
+					上传附件
+				</button>
+				<button class="btn btn-primary" onclick="alert('请确认结题报告已经填报完毕。(该按钮只有课题组长才有。)');">
+					申请评价
+				</button>
+			</div>
+		</fieldset>
+		<fieldset id="showOpeningScore">
+			<legend>
+				结题评价
+			</legend>
+			<div class="box corner-all">
+				<table class="table table-condensed table-bordered inCenter" style="width: 900px;margin-left: auto;margin-right: auto;">
+					<thead>
+						<tr class="headColor">
+							<th>评价项目</th>
+							<th>评价内容</th>
+							<th>评价要点</th>
+							<th>得分</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="5" style="vertical-align: middle;">结题报告</td>
+							<td>1．结构</td>
+							<td>①完整</td>
+							<td class="inRight">--</td>
+						</tr>
+						<tr>
+							<td>2．研究方案</td>
+							<td>①逻辑性; ②严谨性</td>
+							<td class="inRight">--</td>
+						</tr>
+						<tr>
+							<td>3．方法与过程</td>
+							<td>①科学; ②合理; ③资料丰富</td>
+							<td class="inRight">--</td>
+						</tr>
+						<tr>
+							<td>4．研究成果</td>
+							<td>①可信; ②有价值</td>
+							<td class="inRight">--</td>
+						</tr>
+						<tr>
+							<td colspan="2">总计</td>
+							<td class="inRight">--</td>
+						</tr>
+						<tr>
+							<td>结题宣讲</td>
+							<td colspan="3" class="inRight">--</td>
+						</tr>
+						<tr>
+							<td>总计</td>
+							<td colspan="3" class="inRight">--</td>
+						</tr>
+						<tr>
+							<td rowspan="2">导师评语</td>
+							<td colspan="3" style="height:100px">导师对研究方案的意见和建议：</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="inCenter">
+				<button class="btn btn-primary editOpeningScore" onclick="alert('该按钮只有指导老师和超级管理员才有。');">
+					编辑
+				</button>
+			</div>
+		</fieldset>
+		<fieldset id="editOpeningScore" style="display: none;">
+			<legend>
+				编辑开题评价
+			</legend>
+			<div class="box corner-all">
+				<table class="table table-condensed table-bordered inCenter" style="width: 900px;margin-left: auto;margin-right: auto;">
+					<thead>
+						<tr class="headColor">
+							<th width=60px>评价项目</th>
+							<th width=100px>评价内容</th>
+							<th>评价要点</th>
+							<th colspan="5" width=400px>评价</th>
+							<th width=50px>得分</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="5" style="vertical-align: middle;">结题报告</td>
+							<td>1．结构</td>
+							<td>①完整</td>
+							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">A</label></td>
+							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">B</label></td>
+							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">C</label></td>
+							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">D</label></td>
+							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">E</label></td>
+							<td class="inRight">--</td>
+						</tr>
+						<tr>
+							<td>2．研究方案</td>
+							<td>①逻辑性; ②严谨性</td>
+							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">A</label></td>
+							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">B</label></td>
+							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">C</label></td>
+							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">D</label></td>
+							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">E</label></td>
+							<td class="inRight">--</td>
+						</tr>
+						<tr>
+							<td>3．方法与过程</td>
+							<td>①科学; ②合理; ③资料丰富</td>
+							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">A</label></td>
+							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">B</label></td>
+							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">C</label></td>
+							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">D</label></td>
+							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">E</label></td>
+							<td class="inRight">--</td>
+						</tr>
+						<tr>
+							<td>4．研究成果</td>
+							<td>①可信; ②有价值</td>
+							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">A</label></td>
+							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">B</label></td>
+							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">C</label></td>
+							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">D</label></td>
+							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">E</label></td>
+							<td class="inRight">--</td>
+						</tr>
+						<tr>
+							<td colspan="7">总计</td>
+							<td class="inRight">--</td>
+						</tr>
+						<tr>
+							<td colspan="3">结题宣讲</td>
+							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">优秀</label></td>
+							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">良好</label></td>
+							<td colspan="3"><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">及格</label></td>
+							<td class="inRight">--</td>
+						</tr>
+						<tr>
+							<td>总计</td>
+							<td colspan="8" class="inRight">--</td>
+						</tr>
+						<tr>
+							<td rowspan="2" style="vertical-align: middle;">导师评语</td>
+							<td colspan="8" style="height:100px">导师对研究方案的意见和建议：</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="inCenter">
+				<button class="btn btn-primary">
+					确定
+				</button>
+				<button class="btn btn-primary returnOpeningScore">
+					取消
+				</button>
+			</div>
+		</fieldset>
+	</div>
+</div>

@@ -1,0 +1,116 @@
+<div class="alert">
+  
+</div>
+<div class="social-box">
+	<div class="header">
+		<h4><strong>我的研学</strong></h4>
+		
+	</div>
+	<div class="body">
+		<fieldset>
+			<legend>申报课题</legend>
+		</fieldset>
+		<div class="row-fluid" style="height:200px">
+			<div class="span10 offset2">
+				<div class="span3">
+					<a class="btn btn-primary" data-bypass href="editbase.html?type=newone">
+                            <i class="icon-plus"></i> 创建新课题
+                    </a>
+					
+				</div>
+				<div class="span3">
+					<a class="btn btn-primary " href="ketilist.html">
+                         <i class="icon-plus-sign"></i> 加入现有课题
+                    </a>
+					
+				</div>
+				<div class="span3">
+					<button class="btn btn-primary btn-asktoadd"><i class="icon-info-sign"></i> 2个同学申请加入</button>
+				     <br/>(普通组员看不到此按钮)
+				</div>
+			</div>
+		</div>
+		<fieldset>
+			<legend>我的课题</legend>
+		</fieldset>
+		<div class="row-fluid" >
+			<div class="span12">
+				<table class="table table-bordered table-condensed">
+					<thead>
+						<tr class="headColor">
+							<th class="listNum">编号</th>
+							<th>课题名称</th>
+							<th>指导老师</th>
+							<th>组长</th>
+							<th>班级</th>
+							<th>现有人数/人数上限</th>
+							<th>课题状态</th>
+							<th>综合成绩</th>
+							<th>学分</th>
+							<th>我的身份</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="inCenter">1</td>
+							<td>鲁迅研究</td>
+							<td>陈敏</td>
+							<td>王玉</td>
+							<td>2014届3班</td>
+							<td class="inRight">4/5</td>
+							<td>选题中</td>
+							<td class="inRight">-</td>
+							<td class="inRight">-</td>
+							<td>组长</td>
+							<td>
+							<a class="btn btn-mini" href="xuantibase.html">进入</a>	
+							</td>
+						</tr>
+						<tr>
+							<td class="inCenter">2</td>
+							<td>化石研究</td>
+							<td>王敏</td>
+							<td>李玉</td>
+							<td>2014届1班</td>
+							<td class="inRight">2/5</td>
+							<td>开题中</td>
+							<td class="inRight">-</td>
+							<td class="inRight">-</td>
+							<td>组长</td>
+							<td>
+							<a class="btn btn-mini" href="kaitiabove.html?type=student">进入</a>	
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			</div>
+    </div>
+    
+    
+    
+    <!--  申请加入情况查看 -->
+ <div id="addstatus-message" title="课题申请加入信息" style="display: none">
+ <table class="table table-bordered">
+    <tbody>
+    	<tr>
+    		<td style="width: 250px">王红同学申请加入课题</td>
+    		<td style="width: 150px">
+       <button class="btn btn-mini btn-agree">同意</button>	
+       <button class="btn btn-mini btn-not-agree">不同意</button>	
+            </td>
+    	</tr>
+    	<tr>
+    		<td style="width: 250px">李西书同学申请加入课题</td>
+    		<td style="width: 150px">
+        <button class="btn btn-mini btn-agree">同意</button>	
+       <button class="btn btn-mini btn-not-agree">不同意</button>
+            </td>
+    	</tr>
+    </tbody>
+ </table>
+</div>
+</div>
+
+

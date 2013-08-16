@@ -1,0 +1,91 @@
+<div class="social-box">
+	<div class="header">
+		<h4><strong>成绩评定表</strong></h4>
+		<div class="tools">
+			<a class="btn btn-primary" data-bypass href="inqinfolook.html"><i class="icon-reply"></i> 返回活动列表</a>
+		</div>
+	</div>
+	<div class="body">
+		<fieldset id="showOpening">
+			<legend>
+				研究性学习课题组学分成绩评定表
+			</legend>
+			<div class="row-fluid">
+				<div class="span12" style="vertical-align: middle">
+					<table class="table table-bordered table-condensed inCenter" style="widtd: 600px;margin-left: auto;margin-right: auto;">
+						<tbody>
+							<tr>
+								<td widtd="100px" class="inCenter">课题名称</td>
+								<td colspan="3"></td>
+								
+							</tr>
+							<tr>
+								<td widtd="100px" class="inCenter">指导教师</td>
+								<td  colspan="3"></td>
+							</tr>
+							<tr>
+								<td widtd="100px" class="inCenter" style="vertical-align: middle">课题组成员</td>
+								<td  colspan="3">
+									<div class="row-fluid">
+										<div class="span12">
+											
+										</div>
+									</div>
+									<div class="pull-right">
+										<div class="row-fluid">
+										<div class="span12">
+											课题：
+										</div>
+									</div>
+									<div class="row-fluid">
+										<div class="span12">
+											开始研究日期：____年____月____日<br/>
+											结束研究日期：____年____月____日
+										</div>
+									</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="inCenter" style="vertical-align: middle">课题相关学科：</td>
+								<td colspan="3"  > <div style="height:150px"></div></td>
+							</tr>
+							<tr>
+								<td  class="inCenter">成绩组成部分</td>
+								<td  class="inCenter">分项成绩</td>
+								<td  class="inCenter">权重(wi)</td>
+								<td  class="inCenter">加权成绩:Qi=Pi*Wi</td>
+							</tr>
+							<tr>
+								<td  class="inCenter">1.课题开题成绩</td>
+								<td></td>
+								<td  class="inCenter">wi=0.2</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td  class="inCenter">2.课题实施成绩</td>
+								<td></td>
+								<td  class="inCenter">wi=0.5</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td  class="inCenter">3.课题结题成绩</td>
+								<td></td>
+								<td  class="inCenter">wi=0.3</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td colspan="3"   style="vertical-align: middle">课题组课程成绩(Q)：Q=Q<sub>1</sub>+Q<sub>2</sub>+Q<sub>3</sub>
+								
+									</td>
+									<td class="inCenter">
+									成绩(Q):_________
+									</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</fieldset>
+	</div>
+	</div>	
+</div>	

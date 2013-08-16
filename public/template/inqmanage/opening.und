@@ -1,8 +1,11 @@
 <div class="social-box">
 	<div class="header">
 		<h4><strong>开题报告</strong></h4>
-		<div class="tools">
+		<div class="tools backtoactivity">
 			<a class="btn btn-primary" data-bypass href="inqinfolook.html"><i class="icon-reply"></i> 返回活动列表</a>
+		</div>
+		<div class="tools backtoremark" style="display: none">
+			<a class="btn btn-primary" data-bypass href="reportTch.html"><i class="icon-reply"></i> 返回评价列表</a>
 		</div>
 	</div>
 	<div class="body">
@@ -85,7 +88,7 @@
 				<button class="btn btn-primary editOpening"  onclick="alert('(该按钮只有课题组长和超级管理员才有。)');">
 					编辑
 				</button>
-				<button class="btn btn-primary" onclick="alert('请确认开题报告已经填报完毕。(该按钮只有课题组长才有。)');">
+				<button class="btn btn-primary btn-remark" onclick="alert('请确认开题报告已经填报完毕。(该按钮只有课题组长才有。)');">
 					申请评价
 				</button>
 			</div>

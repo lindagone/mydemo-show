@@ -1,0 +1,138 @@
+<div class="social-box">
+    <div class="header">
+        <h4><strong>课题基本信息</strong></h4>
+       <div class="tools">
+			<button class="btn btn-primary" ><i class="icon-reply"></i> 返回</button>
+		</div>
+        </div>
+        <div class="body">
+       
+        <div id="editBasic">
+                    <div class="row-fluid">
+                    <div class="span12 inCenter">
+                        <h4>编辑基本信息表</h4>
+                    </div>
+                </div>
+               
+                <br />
+                <div class="row-fluid">
+                    <div class="span12" style="vertical-align: middle">
+                        <table class="table table-bordered table-condensed inCenter" style="width: 900px;margin-left: auto;margin-right: auto;">
+                            <tbody>
+                            	 <tr>
+                            <td class="inCenter" width="100px" style="vertical-align: middle;">学年<span class="text-error">*</span></td>
+                            <td colspan="3">
+                            	<select style="width: 200px">
+                            		<option>2020-2021学年</option>
+                            		<option>2019-2020学年</option>
+                            		<option>2018-2019学年</option>
+                            		<option>2017-2018学年</option>
+                            		<option>2016-2017学年</option>
+                            		<option>2015-2016学年</option>
+                            		<option>2014-2015学年</option>
+                            		<option selected="true">2013-2014学年</option>
+                            		<option>2012-2013学年</option>
+                            		<option>2011-2012学年</option>
+                            		<option>2010-2011学年</option>
+                            		<option>2009-2010学年</option>
+                            		<option>2008-2009学年</option>
+                            		<option>2007-2008学年</option>
+                            	</select>
+                            </td>
+                             <td class="inCenter" width="100px" style="vertical-align: middle;">课题状态</td>
+                             <td style="vertical-align: middle;">选题中</td>
+                        </tr>
+                                <tr>
+                                    <td class="inCenter" width="100px"  style="vertical-align: middle;">指导教师<span class="text-error">*</span></td>
+                                    <td colspan="5">
+                                        <input type="text" name="teacher" class="grd-white" value="" required="" placeholder="多人选人框">
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                                                      
+                                </tr>
+                                <tr>
+                                    <td class="inCenter" style="vertical-align: middle;">课题组长</td>
+                                    <td >
+                                        <input type="text" name="teacher" class="grd-white" value="" required="" placeholder="单选人框，学生发布，默认本人">
+                                    </td>
+                                    <td class="inCenter">班级</td>
+                                    <td>--</td>
+                                    <td class="inCenter">小组成员数上限</td>
+                                    <td>
+                                        <input type="text" name="teacher" class="input-small" value="" required="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="inCenter" width="100px" style="vertical-align: middle;">课题组成员</td>
+                                    <td colspan="5">
+                                        <input type="text" name="teacher" class="grd-white" value="" required="" placeholder="多人选人框">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="inCenter">课题名称<span class="text-error">*</span></td>
+                                    <td colspan="5"><input type="text" name="topicName" class="grd-white" value="" required="" style="width:95%;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="inCenter" style="vertical-align: middle;">课题类型<span class="text-error">*</span></td>
+                                    <td width="200px" colspan="5">
+                                        <div class="controls inline" style="left: 20px;">
+                                            <label class="radio inline" style="width: 100px; left: 20px; position: relative;">
+                                                <input type="radio" name="topicType" id="optionsRadios1" value="1" data-form="uniform">
+                                                课题方向 </label><label class="radio inline" style="width: 100px; left: 20px; position: relative;">
+                                                <input type="radio" name="topicType" id="optionsRadios2" value="2" data-form="uniform">
+                                                具体课题 </label>
+                        
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="inCenter" style="vertical-align: middle;">课题领域<span class="text-error">*</span></td>
+                                    <td colspan="5">
+                                        <div class="controls" style="left: 20px;">
+                                            <label class="radio inline" style="width: 100px; left: 20px; position: relative;">
+                                                <input type="radio" name="topicType" id="optionsRadios1" value="1" data-form="uniform">
+                                                人与自然 </label><label class="radio  inline" style="width: 100px; left: 20px; position: relative;">
+                                                <input type="radio" name="topicType" id="optionsRadios2" value="2" data-form="uniform">
+                                                人与社会 </label><label class="radio  inline" style="width: 100px; left: 20px; position: relative;">
+                                                <input type="radio" name="topicType" id="optionsRadios2" value="2" data-form="uniform">
+                                                人与自我 </label><label class="radio  inline" style="width: 100px; left: 20px; position: relative;">
+                                                <input type="radio" name="topicType" id="optionsRadios2" value="2" data-form="uniform">
+                                                其他 </label>
+                        
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="inCenter" style="vertical-align: middle;">课题简介<span class="text-error">*</span></td>
+                                    <td colspan="5" style="height: 230px;">
+                                        <textarea name="topicIntroduction" rows="10" style="height: 200px; width:95%;"
+                                        placeholder="(请简要介绍研究内容，并至少提供1篇相关文档。)"></textarea>
+                                        <div>附件：暂无  <button class="btn btn-small" type="file">上传附件</button></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="inCenter" style="vertical-align: middle;">对申报研究本课题的学生要求<span class="text-error">*</span></td>
+                                    <td colspan="5" style="height: 100px;">
+                                        <textarea name="requireForStudents" rows="10" style="height: 200px; width:95%;"></textarea>
+                                    </td>
+                                </tr>
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <hr />
+                <div class="inCenter">
+                    <button class="btn btn-primary btn-sure">
+                        确定
+                    </button>
+                    <button class="btn btn-primary btn-sure">
+                        取消
+                    </button>
+                </div>
+                </div>
+        </div>
+        
+      </div>

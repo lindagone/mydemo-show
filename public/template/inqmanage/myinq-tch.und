@@ -93,7 +93,8 @@
 										<th width="70px">课题状态</th>
 										<th width="70px">综合成绩</th>
 										<th width="70px">学分</th>
-										<th width="100px">操作</th>
+										<th width="90px">待指导任务数</th>
+										<th width="200px">操作</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -107,10 +108,13 @@
 										<td>选题中</td>
 										<td class="inRight">--</td>
 										<td class="inRight">--</td>
+										<td class="inRight">5</td>
 										<td>
-										<button class="btn btn-mini">
+										<a href="reportTch.html" class="btn btn-mini">
 											进行课题指导
-										</button></td>
+										</a>
+										<a class="btn btn-mini" data-bypass href="inqinfolooktch.html" >查看详情</a>
+										</td>
 									</tr>
 									<tr>
 										<td class="inCenter">2</td>
@@ -122,10 +126,13 @@
 										<td>专家审核</td>
 										<td class="inRight">--</td>
 										<td class="inRight">--</td>
+										<td class="inRight">1</td>
 										<td>
-										<button class="btn btn-mini">
+										<a href="reportTch.html" class="btn btn-mini">
 											进行课题指导
-										</button></td>
+										</a>
+										<a class="btn btn-mini" data-bypass href="inqinfolooktch.html" >查看详情</a>
+										</td>
 									</tr>
 									<tr>
 										<td class="inCenter">3</td>
@@ -137,10 +144,13 @@
 										<td>开题中</td>
 										<td class="inRight">--</td>
 										<td class="inRight">--</td>
+										<td class="inRight">2</td>
 										<td>
-										<button class="btn btn-mini">
+										<a href="reportTch.html" class="btn btn-mini">
 											进行课题指导
-										</button></td>
+										</a>
+										<a class="btn btn-mini" data-bypass href="inqinfolooktch.html" >查看详情</a>
+										</td>
 									</tr>
 									<tr>
 										<td class="inCenter">4</td>
@@ -152,10 +162,13 @@
 										<td>研究中</td>
 										<td class="inRight">--</td>
 										<td class="inRight">--</td>
+										<td class="inRight">2</td>
 										<td>
-										<button class="btn btn-mini">
+										<a href="reportTch.html" class="btn btn-mini">
 											进行课题指导
-										</button></td>
+										</a>
+										<a class="btn btn-mini" data-bypass href="inqinfolooktch.html" >查看详情</a>
+										</td>
 									</tr>
 									<tr>
 										<td class="inCenter">5</td>
@@ -167,10 +180,13 @@
 										<td>结题中</td>
 										<td class="inRight">--</td>
 										<td class="inRight">--</td>
+										<td class="inRight">5</td>
 										<td>
-										<button class="btn btn-mini">
+										<a href="reportTch.html" class="btn btn-mini">
 											进行课题指导
-										</button></td>
+										</a>
+										<a class="btn btn-mini" data-bypass href="inqinfolooktch.html" >查看详情</a>
+										</td>
 									</tr>
 									<tr>
 										<td class="inCenter">6</td>
@@ -182,10 +198,13 @@
 										<td>结题中</td>
 										<td class="inRight">--</td>
 										<td class="inRight">--</td>
+										<td class="inRight">5</td>
 										<td>
-										<button class="btn btn-mini">
+										<a href="reportTch.html" class="btn btn-mini">
 											进行课题指导
-										</button></td>
+										</a>
+										<a class="btn btn-mini" data-bypass href="inqinfolooktch.html" >查看详情</a>
+										</td>
 									</tr>
 									<tr>
 										<td class="inCenter">7</td>
@@ -197,10 +216,13 @@
 										<td>专家评定</td>
 										<td class="inRight">--</td>
 										<td class="inRight">--</td>
+										<td class="inRight">2</td>
 										<td>
-										<button class="btn btn-mini">
+										<a href="reportTch.html" class="btn btn-mini">
 											进行课题指导
-										</button></td>
+										</a>
+										<a class="btn btn-mini" data-bypass href="inqinfolooktch.html" >查看详情</a>
+										</td>
 									</tr>
 								</tbody>
 							</table>

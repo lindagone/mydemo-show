@@ -1,0 +1,34 @@
+<div class="social-box">
+	<div class="header">
+		<h4><strong>研学管理</strong></h4>
+		<div class="tools">
+			<ul id="myTab" class="nav nav-tabs">
+				<li class="active" >
+					<a data-bypass href="#tab1" data-toggle="tab"> <i class="icon-list"></i> 报告设置</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="body">
+		<div class="tab-content">
+			
+			<div class="tab-pane active" id="tab1">
+				选择表格模板：
+				<label class="radio inline"><input type="radio" checked="" name="working" value="1">二附中定制表格</label>
+				<label class="radio inline"><input type="radio" checked="" name="working" value="1">清华附中定制表格</label>
+				<hr/>
+				实践活动是否有不同类型：<input type="checkbox" checked>
+				<hr/>
+				结题宣讲后是否填写小组评价表：<input type="checkbox">
+				<div class="form-actions">
+					<button class="btn btn-primary">
+						确定
+					</button>
+					<button class="btn btn-primary">
+						取消
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

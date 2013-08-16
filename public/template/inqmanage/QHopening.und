@@ -21,7 +21,7 @@
 								<td ></td>
 							</tr>
 							<tr>
-								<td class="inCenter" rowspan="5">小组成员情况</td>
+								<td class="inCenter" rowspan="5" style="vertical-align: middle">小组成员情况</td>
 								<td width="200px" class="inCenter">成员</td>
 								<td width="200px" class="inCenter">所在班级</td>
 								<td class="inCenter" width="100px">成员</td>
@@ -83,7 +83,7 @@
 								<td ></td>
 							</tr>
 							<tr>
-								<td class="inCenter" rowspan="5">小组成员情况</td>
+								<td class="inCenter" rowspan="5" style="vertical-align: middle">小组成员情况</td>
 								<td width="200px" class="inCenter">成员</td>
 								<td width="200px" class="inCenter">所在班级</td>
 								<td class="inCenter" width="100px">成员</td>
@@ -137,55 +137,91 @@
 			</legend>
 			<div class="box corner-all">
 				<table class="table table-condensed table-bordered inCenter" style="width: 900px;margin-left: auto;margin-right: auto;">
-					<thead>
-						<tr class="headColor">
-							<th>评价项目</th>
-							<th>评价内容</th>
-							<th>评价要点</th>
-							<th>得分</th>
-						</tr>
-					</thead>
+					
 					<tbody>
 						<tr>
-							<td rowspan="5" style="vertical-align: middle;">开题报告</td>
-							<td>1．选题来源</td>
-							<td>①自选; ②科普报表启发; ③前期报告启发; ④导师推荐; ⑤其他</td>
-							<td class="inRight">--</td>
+							<td  class="inCenter">课题名称</td>
+							<td>软件破密技术的研究</td>
+							<td class="inCenter">指导教师</td>
+							<td >雪飞</td>
 						</tr>
 						<tr>
-							<td>2．选题价值</td>
-							<td>①学术价值; ②社会价值; ③自我价值</td>
-							<td class="inRight">--</td>
+							<td colspan="4" class="inCenter">评审内容</td>
+							
 						</tr>
 						<tr>
-							<td>3．文献综述</td>
-							<td>①对文件有评述; ②文献有针对性; ③文献丰富</td>
-							<td class="inRight">--</td>
+							<td style="width: 200px" class="inCenter">课题的科学性</td>
+							<td style="width: 200px">
+								好
+                            </td>
+							<td style="width: 200px" class="inCenter">课题的可行性</td>
+							<td style="width: 200px">
+                         较好
+                          </td>
 						</tr>
 						<tr>
-							<td>4．研究方案</td>
-							<td>①合理; ②可行; ③预期成果合适</td>
-							<td class="inRight">--</td>
+							<td class="inCenter">报告表述</td>
+							<td>
+								清楚
+                            </td>
+							<td class="inCenter">任务分工</td>
+							<td >
+                           明确
+                          </td>
 						</tr>
 						<tr>
-							<td colspan="2">总计</td>
-							<td class="inRight">--</td>
+							<td class="inCenter">活动计划内容</td>
+							<td>
+								一般
+
+                            </td>
+							<td class="inCenter">计划进度</td>
+							<td >
+                           一般
+                          </td>
 						</tr>
 						<tr>
-							<td>开题宣讲</td>
-							<td colspan="3" class="inRight">--</td>
+							<td class="inCenter">预期成果</td>
+							<td>
+								一般
+                            </td>
+							<td class="inCenter">语态仪表</td>
+							<td >
+                          较好
+                          </td>
 						</tr>
 						<tr>
-							<td>总计</td>
-							<td colspan="3" class="inRight">--</td>
+							<td class="inCenter">小组合作性</td>
+							<td>
+								较好 
+                            </td>
+							<td class="inCenter">应答能力</td>
+							<td >
+                           较高 
+                          </td>
 						</tr>
 						<tr>
-							<td rowspan="2">导师意见</td>
-							<td colspan="3">导师同意该课题进入正式研究阶段</td>
-						</tr>
-						<tr>
-							<td colspan="3" style="height:100px">导师对研究方案的意见和建议：</td>
-						</tr>
+							
+							<td colspan="4">
+								开题报告评审成绩： 
+								<div class="row-fluid">
+									<div class="span6 offset3">B（90）</div>
+								</div>
+							</td>
+							</tr>
+							<tr>
+							<td style="height:200px;vertical-align: middle" class="inCenter">综合评价(报告是否通过，提出修改建议)：</td>
+							<td colspan="3">
+								
+								
+							</td>
+							</tr>
+							<tr>
+							<td class="inCenter" style="height:70px;vertical-align: middle" >备注：</td>
+							<td colspan="3">
+								
+							</td>
+							</tr>
 					</tbody>
 				</table>
 			</div>
@@ -201,81 +237,223 @@
 			</legend>
 			<div class="box corner-all">
 				<table class="table table-condensed table-bordered inCenter" style="width: 900px;margin-left: auto;margin-right: auto;">
-					<thead>
-						<tr class="headColor">
-							<th width=60px>评价项目</th>
-							<th width=100px>评价内容</th>
-							<th>评价要点</th>
-							<th colspan="5" width=400px>评价</th>
-							<th width=50px>得分</th>
-						</tr>
-					</thead>
+					
 					<tbody>
 						<tr>
-							<td rowspan="5" style="vertical-align: middle;">开题报告</td>
-							<td>1．选题来源</td>
-							<td>①自选; ②科普报表启发; ③前期报告启发; ④导师推荐; ⑤其他</td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">A</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">B</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">C</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">D</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">E</label></td>
-							<td class="inRight">--</td>
+							<td  class="inCenter">课题名称</td>
+							<td>软件破密技术的研究</td>
+							<td class="inCenter">指导教师</td>
+							<td >雪飞</td>
 						</tr>
 						<tr>
-							<td>2．选题价值</td>
-							<td>①学术价值; ②社会价值; ③自我价值</td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">A</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">B</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">C</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">D</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">E</label></td>
-							<td class="inRight">--</td>
+							<td colspan="4" class="inCenter">评审内容</td>
+							
 						</tr>
 						<tr>
-							<td>3．文献综述</td>
-							<td>①对文件有评述; ②文献有针对性; ③文献丰富</td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">A</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">B</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">C</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">D</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">E</label></td>
-							<td class="inRight">--</td>
+							<td class="inCenter">课题的科学性</td>
+							<td>
+							 <div class="controls" >
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option1">
+									好 </label>
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option2">
+									较好 </label>
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option3">
+									一般 </label>
+
+							</div>
+                            </td>
+							<td class="inCenter">课题的可行性</td>
+							<td >
+                           <div class="controls" >
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option1">
+									好 </label>
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option2">
+									较好 </label>
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option3">
+									一般 </label>
+
+							</div>
+                          </td>
 						</tr>
 						<tr>
-							<td>4．研究方案</td>
-							<td>①合理; ②可行; ③预期成果合适</td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">A</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">B</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">C</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">D</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">E</label></td>
-							<td class="inRight">--</td>
+							<td class="inCenter">报告表述</td>
+							<td>
+								<div class="controls" >
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option1">
+									清楚 </label>
+								
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option3">
+									一般 </label>
+                         <label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option2">
+									不清楚 </label>
+							</div>
+
+                            </td>
+							<td class="inCenter">任务分工</td>
+							<td >
+                           <div class="controls" >
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option1">
+									明确 </label>
+								
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option3">
+									一般 </label>
+                              <label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option2">
+									不明确 </label>
+							</div>
+                          </td>
 						</tr>
 						<tr>
-							<td colspan="7">总计</td>
-							<td class="inRight">--</td>
+							<td class="inCenter">活动计划内容</td>
+							<td>
+								<div class="controls" >
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option1">
+									完整 </label>
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option2">
+									一般 </label>
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option3">
+									不完整 </label>
+
+							</div>
+
+                            </td>
+							<td class="inCenter">计划进度</td>
+							<td >
+                           <div class="controls" >
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option1">
+									合适 </label>
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option2">
+									一般 </label>
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option3">
+									不合适 </label>
+
+							</div>
+                          </td>
 						</tr>
 						<tr>
-							<td colspan="3">开题宣讲</td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">优秀</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">良好</label></td>
-							<td colspan="3"><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">及格</label></td>
-							<td class="inRight">--</td>
+							<td class="inCenter">预期成果</td>
+							<td>
+								<div class="controls" >
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option1">
+									合适 </label>
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option2">
+									一般 </label>
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option3">
+									不合适 </label>
+
+							</div>
+
+                            </td>
+							<td class="inCenter">语态仪表</td>
+							<td >
+                           <div class="controls" >
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option1">
+									好 </label>
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option2">
+									较好 </label>
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option3">
+									一般 </label>
+
+							</div>
+                          </td>
 						</tr>
 						<tr>
-							<td>总计</td>
-							<td colspan="8" class="inRight">--</td>
+							<td class="inCenter">小组合作性</td>
+							<td>
+								<div class="controls" >
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option1">
+									好 </label>
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option2">
+									较好 </label>
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option3">
+									一般 </label>
+
+							</div>
+
+                            </td>
+							<td class="inCenter">应答能力</td>
+							<td >
+								 
+                           <div class="controls" >
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option1">
+									高 </label>
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option2">
+									较高 </label>
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option3">
+									一般 </label>
+
+							</div>
+                          </td>
 						</tr>
 						<tr>
-							<td rowspan="2" style="vertical-align: middle;">导师意见</td>
-							<td colspan="2">导师是否同意该课题进入正式研究阶段</td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">是</label></td>
-							<td colspan="5"><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">否</label></td>
-						</tr>
-						<tr>
-							<td colspan="8" style="height:100px">导师对研究方案的意见和建议：</td>
-						</tr>
+							
+							<td colspan="4">
+								<div class="control-group  ">
+									<label class="control-label" for="noticeCanReader">开题报告评审成绩：</label>
+							   </div>
+							   <div class="controls" >
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option1">
+									A（100） </label>
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option2">
+									B（90） </label>
+								<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option3">
+									C（80） </label>
+									<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option3">
+									D（70） </label>
+									<label class="checkbox inline">
+									<input type="radio" data-form="uniform" name="inputCheckbox"  value="option3">
+									E（60） </label>
+
+							</div>
+								  
+							</td>
+							</tr>
+							<tr>
+							<td class="inCenter" style="vertical-align: middle">综合评价(报告是否通过，提出修改建议)：</td>
+							<td colspan="3">
+								<textarea style="height:100px;width:500px"></textarea>
+								
+							</td>
+							</tr>
+							<tr>
+							<td class="inCenter">备注：</td>
+							<td colspan="3">
+								<textarea style="height:60px;width:500px"></textarea>
+							</td>
+							</tr>
 					</tbody>
 				</table>
 			</div>

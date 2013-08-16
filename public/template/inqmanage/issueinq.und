@@ -14,7 +14,7 @@
                     <tbody>
                         <tr>
                             <td class="inCenter" width="100px" style="vertical-align: middle;">学年</td>
-                            <td colspan="5">
+                            <td colspan="3">
                             	<select style="width: 200px">
                             		<option>2012-2013学年</option>
                             		<option>2011-2012学年</option>
@@ -24,6 +24,8 @@
                             		<option>2007-2008学年</option>
                             	</select>
                             </td>
+                             <td class="inCenter" width="100px" style="vertical-align: middle;">课题状态</td>
+                             <td style="vertical-align: middle;">选题中</td>
                         </tr>
                         <tr>
                             <td class="inCenter" width="100px" rowspan="3" style="vertical-align: middle;">指导教师</td>

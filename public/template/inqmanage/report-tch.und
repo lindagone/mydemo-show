@@ -18,27 +18,31 @@
 					<thead>
 						<tr class="headColor">
 							<th class="listNum">序号</th>
-							<th>活动内容</th>
+							<th>项目</th>
 							<th width=70px>创建人</th>
-							<th width=100px>时间</th>
-							<th width=50px>得分</th>
+							<th width=100px>创建时间</th>
+							<th width=70px>评价状态</th>
+							<th width=50px>成绩</th>
 							<th width=150px>操作</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td class="inCenter">1</td>
+							
 							<td>开题报告</td>
 							<td>蔡祥</td>
 							<td class="inCenter">2012-12-12</td>
+							<td>--</td>
 							<td  class="inRight">87</td>
-							<td><a href="InqOpeningView.html" data-bypass class="btn btn-mini">进入评价</a></td>
+							<td><a href="InqOpeningView.html?type=tchpj" data-bypass class="btn btn-mini">进入评价</a></td>
 						</tr>
 						<tr>
 							<td class="inCenter">2</td>
 							<td>资料查阅活动</td>
 							<td>蔡祥</td>
 							<td class="inCenter">2013-3-12</td>
+							<td>--</td>
 							<td  class="inRight">80</td>
 							<td><a href="report1.html" data-bypass class="btn btn-mini">进入评价</a></td>
 						</tr>
@@ -47,8 +51,46 @@
 							<td>调查记录活动</td>
 							<td>蔡祥</td>
 							<td class="inCenter">2013-3-12</td>
+							<td>--</td>
 							<td  class="inRight">80</td>
 							<td><a href="report2.html" data-bypass class="btn btn-mini">进入评价</a></td>
+						</tr>
+						<tr>
+							<td class="inCenter">4</td>
+							<td>实验记录活动</td>
+							<td>蔡祥</td>
+							<td class="inCenter">2013-3-12</td>
+							<td>--</td>
+							<td  class="inRight">80</td>
+							<td><a href="report3.html" data-bypass class="btn btn-mini">进入评价</a></td>
+						</tr>
+						<tr>
+							<td class="inCenter">5</td>
+							<td>访谈记录活动</td>
+							<td>蔡祥</td>
+							<td class="inCenter">2013-3-12</td>
+							<td>已评价</td>
+							<td  class="inRight">80</td>
+							<td><a href="report4.html" data-bypass class="btn btn-mini">进入评价</a></td>
+						</tr>
+						
+						<tr>
+							<td class="inCenter">6</td>
+							<td>小组讨论活动</td>
+							<td>蔡祥</td>
+							<td class="inCenter">2013-3-12</td>
+							<td>已评价</td>
+							<td  class="inRight">80</td>
+							<td><a href="report5.html" data-bypass class="btn btn-mini">进入评价</a></td>
+						</tr>
+						<tr>
+							<td class="inCenter">7</td>
+							<td>其他类型活动</td>
+							<td>蔡祥</td>
+							<td class="inCenter">2013-3-12</td>
+							<td>已评价</td>
+							<td  class="inRight">80</td>
+							<td><a href="report6.html" data-bypass class="btn btn-mini">进入评价</a></td>
 						</tr>
 					</tbody>
 				</table>

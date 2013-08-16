@@ -1,0 +1,48 @@
+<div class="social-box">
+	<div class="header">
+		<h4><strong>未选课的学生</strong></h4>
+<div class="tools">
+			<button class="btn btn-primary" ><i class="icon-reply"></i> 返回</button>
+		</div>
+	</div>
+	<div class="body">
+		<div class="row-fluid">
+			<div class="span12">
+				<h4 class="inCenter">未选课的学生列表</h4>
+			</div>
+			</div>
+		<div class="row-fluid">
+			<div class="span6 offset3">
+				<table class="table table-bordered table-condensed">
+					<thead>
+						<tr class="headColor">
+
+							<th>姓名</th>
+							<th>性别</th>
+							<th>年级</th>
+							<th>班级</th>
+							<th>学号</th>
+
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>蔡祥</td>
+							<td>男</td>
+							<td>2014届</td>
+							<td>高二2班</td>
+							<td class="inRight">20140303</td>
+						</tr>
+						<tr>
+							<td>李雪</td>
+							<td>女</td>
+							<td>2014届</td>
+							<td>高二1班</td>
+							<td class="inRight">20140303</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

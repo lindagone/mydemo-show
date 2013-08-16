@@ -3,7 +3,7 @@ define(['view/inqmanage/report1-view',        'view/inqmanage/report2-view',    
          'view/inqmanage/inqinfo-yxb-view',    'view/inqmanage/myinq-stu-view',  'view/inqmanage/myinq-tch-view', 'view/inqmanage/myinq-mng-view',   'view/inqmanage/opening-view', 
          'view/inqmanage/closing-view',        'view/inqmanage/report-tch-view', 'view/inqmanage/QHopening-view', 'view/inqmanage/QHclosing-view',   'view/inqmanage/QHreport1-view', 
          'view/inqmanage/QHgroup-view',        'view/inqmanage/issueinq-view',   'view/inqmanage/showinq-view',   'view/inqmanage/inqinfolook-view', 'view/inqmanage/inqinfolook-tch-view',
-         'view/inqmanage/inqinfolook-yxb-view','view/inqmanage/inqinfolook-cwh-view', 'view/inqmanage/inqinfolook-admin-view'
+         'view/inqmanage/inqinfolook-yxb-view','view/inqmanage/inqinfolook-cwh-view', 'view/inqmanage/inqinfolook-admin-view', 'view/inqmanage/ismanage-view','view/inqmanage/QHscore-view'
         ], function(
         	
 			 InqReport1View, InqReport2View,   InqReport3View, InqReport4View,  InqReport5View,
@@ -11,10 +11,11 @@ define(['view/inqmanage/report1-view',        'view/inqmanage/report2-view',    
 			 InqInfoYxbView, InqStuView,       InqTchView,     InqAprvView,     InqOpeningView, 
 			 InqClosingView, InqReportTchView, QHopeningView,  QHclosingView,   QHactivityView,
 			 QHgroupView,    InqIssView,       InqShowView,    InqInfoLookView, InqInfoLookTchView, 
-			 InqInfoLookYxbView, InqInfoLookCwhView, InqInfoLookAdminView
+			 InqInfoLookYxbView, InqInfoLookCwhView, InqInfoLookAdminView,IsManageView,QHscoreView
 		) {
 	
 	var localoptions = {
+		 'ismanage.html' : 'ismanage',
 		 'report1.html' : 'report1',
 		 'report2.html' : 'report2',
 		 'report3.html' : 'report3',
@@ -42,9 +43,13 @@ define(['view/inqmanage/report1-view',        'view/inqmanage/report2-view',    
 		 'QHopening.html'        : 'QHopening',
 		 'QHclosing.html'        : 'QHclosing',
 		 'QHactivity.html'       : 'QHactivity',
-		 'QHgroup.html'          : 'QHgroup'
+		 'QHgroup.html'          : 'QHgroup',
+		 'QHscore.html'          : 'QHscore'
 	}
 	var localmethod = {
+		ismanage : function(){
+        	new IsManageView({root:$('#bodyContainer')});
+        },
 		report1 : function(){
         	new InqReport1View({root:$('#bodyContainer')});
         },
@@ -87,9 +92,15 @@ define(['view/inqmanage/report1-view',        'view/inqmanage/report2-view',    
         approvalinq : function(){
             new InqAprvView({root:$('#bodyContainer')});
         },
-        InqOpening : function(){
-            new InqOpeningView({root:$('#bodyContainer')});
+        InqOpening : function(params){
+        	
+        	if(!params  &&  location.search){
+				params = parseQueryString(window.location.search.substring(1));
+			}
+			console.info("params is " + JSON.stringify(params));
+            new InqOpeningView({root:$('#bodyContainer'),'currentuser':params.type});
         },
+       
         InqClosing : function(){
             new InqClosingView({root:$('#bodyContainer')});
         },
@@ -128,7 +139,10 @@ define(['view/inqmanage/report1-view',        'view/inqmanage/report2-view',    
         },
         QHgroup : function(){
         	new QHgroupView({root:$('#bodyContainer')});
-        }
+        },
+        QHscore : function(){
+        	new QHscoreView({root:$('#bodyContainer')});
+        },
 	}
 	return {localoptions:localoptions,localmethod:localmethod};
 })

@@ -1,0 +1,50 @@
+<div class="social-box">
+	<div class="header">
+		<h4><strong>学生设置</strong></h4>
+<div class="tools">
+			<button class="btn btn-primary" ><i class="icon-reply"></i> 返回</button>
+		</div>
+	</div>
+	<div class="body">
+		
+		<div class="row-fluid">
+			<div class="span8 offset2">
+				<form class="form-horizontal">
+			<div class="control-group">
+				<label class="control-label" style="width: 200px"> 研学课题参与学生：</label>
+				<div class="controls">
+					<label class="checkbox inline"><input type="checkbox" name="tea"/>全部</label>
+			<label class="checkbox inline"><input type="checkbox" name="tea"/>2013届(高三)</label>
+			<label class="checkbox inline"><input type="checkbox" name="tea"/>2014届(高二)</label>
+			<label class="checkbox inline"><input type="checkbox" name="tea"/>2015届(高一)</label>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" style="width: 200px">允许添加的活动数量范围：</label>
+				<div class="controls">
+					<input type="text" class="input-mini"/> &nbsp; &nbsp; ~ &nbsp; &nbsp; <input type="text" class="input-mini"/>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" style="width: 200px">每个学生参与的课题数上限：</label>
+				<div class="controls">
+					 <input type="text" class="input-mini"/>个
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" style="width: 200px"> 学生可以新建课题：</label>
+				<div class="controls">
+					<label class="radio inline"><input type="radio" name="tea" checked=""/>是</label>
+             <label class="radio inline"><input type="radio" name="tea"/>否</label>
+				</div>
+			</div>
+			<div class="controls">
+					 <button class="btn btn-primary">确定</button>
+               <button class="btn btn-primary">取消</button>
+				</div>
+		</form>
+			</div>
+		</div>
+		<br/>
+	</div>
+</div>

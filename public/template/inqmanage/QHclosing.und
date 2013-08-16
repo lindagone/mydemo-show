@@ -21,7 +21,7 @@
 								<td ></td>
 							</tr>
 							<tr>
-								<td class="inCenter" rowspan="5">小组成员情况</td>
+								<td class="inCenter" rowspan="5" style="vertical-align: middle;">小组成员情况</td>
 								<td width="200px" class="inCenter">成员</td>
 								<td width="200px" class="inCenter">所在班级</td>
 								<td class="inCenter" width="100px">成员</td>
@@ -83,7 +83,7 @@
 								<td ></td>
 							</tr>
 							<tr>
-								<td class="inCenter" rowspan="5">小组成员情况</td>
+								<td class="inCenter" rowspan="5" style="vertical-align: middle;">小组成员情况</td>
 								<td width="200px" class="inCenter">成员</td>
 								<td width="200px" class="inCenter">所在班级</td>
 								<td class="inCenter" width="100px">成员</td>
@@ -136,52 +136,138 @@
 			</legend>
 			<div class="box corner-all">
 				<table class="table table-condensed table-bordered inCenter" style="width: 900px;margin-left: auto;margin-right: auto;">
-					<thead>
-						<tr class="headColor">
-							<th>评价项目</th>
-							<th>评价内容</th>
-							<th>评价要点</th>
-							<th>得分</th>
-						</tr>
-					</thead>
+					
 					<tbody>
 						<tr>
-							<td rowspan="5" style="vertical-align: middle;">结题报告</td>
-							<td>1．结构</td>
-							<td>①完整</td>
-							<td class="inRight">--</td>
+							<td class="inCenter" >课题名称</td>
+							<td colspan="6">软件破密技术的研究</td>
+							
 						</tr>
 						<tr>
-							<td>2．研究方案</td>
-							<td>①逻辑性; ②严谨性</td>
-							<td class="inRight">--</td>
+							<td class="inCenter" >指导教师</td>
+							<td colspan="6">雪飞</td>
+							
 						</tr>
 						<tr>
-							<td>3．方法与过程</td>
-							<td>①科学; ②合理; ③资料丰富</td>
-							<td class="inRight">--</td>
-						</tr>
-						<tr>
-							<td>4．研究成果</td>
-							<td>①可信; ②有价值</td>
-							<td class="inRight">--</td>
-						</tr>
-						<tr>
-							<td colspan="2">总计</td>
-							<td class="inRight">--</td>
-						</tr>
-						<tr>
-							<td>结题宣讲</td>
-							<td colspan="3" class="inRight">--</td>
-						</tr>
-						<tr>
-							<td>总计</td>
-							<td colspan="3" class="inRight">--</td>
-						</tr>
-						<tr>
-							<td rowspan="2">导师评语</td>
-							<td colspan="3" style="height:100px">导师对研究方案的意见和建议：</td>
-						</tr>
+								<td class="inCenter" rowspan="5" style="vertical-align: middle;">小组成员</td>
+								<td  class="inCenter">成员</td>
+								<td  class="inCenter">班级</td>
+								<td  class="inCenter">姓名</td>
+								<td  class="inCenter">成员</td>
+								<td  class="inCenter">班级</td>
+								<td  class="inCenter">姓名</td>
+							</tr>
+							<tr>
+								<td  class="inCenter">组长</td>
+								<td  >高三1班</td>
+								<td  >王可</td>
+								<td class="inCenter" >组员4</td>
+								<td class="inCenter"></td>
+								<td  class="inCenter"></td>
+							</tr>
+							<tr>
+								<td  class="inCenter">组员1</td>
+								<td  >高三1班</td>
+								<td  >李飞</td>
+								<td class="inCenter" >组员5</td>
+								<td class="inCenter"></td>
+								<td  class="inCenter"></td>
+							</tr>
+							<tr>
+								<td  class="inCenter">组员2</td>
+								<td  >高三1班</td>
+								<td  >赵龙</td>
+								<td class="inCenter" >组员6</td>
+								<td class="inCenter"></td>
+								<td  class="inCenter"></td>
+							</tr>
+							<tr>
+								<td  class="inCenter">组员3</td>
+								<td  >高三1班</td>
+								<td  >王可</td>
+								<td class="inCenter" >组员7</td>
+								<td class="inCenter"></td>
+								<td  class="inCenter"></td>
+							</tr>
+							<tr>
+								<td class="inCenter">评价项目</td>
+								<td colspan="6" class="inCenter" >评价要点</td>
+							</tr>
+							<tr>
+								<td rowspan="4" class="inCenter" style="vertical-align: middle;">结题报告的内容(40分)</td>
+								<td colspan="5"  >
+									1.课题的选择具有现实性和可行性。
+								</td>
+								<td rowspan="4" class="inCenter" style="vertical-align: middle;">35</td>
+							</tr>
+							<tr>
+								<td colspan="5" >
+									2.结题研究的思路清楚，理论观点的阐述能与具体的材料相结合。
+								</td>
+							</tr>
+							<tr>
+								<td colspan="5" >
+									3.结题报告的题目简洁、概括、语义明确。
+								</td>
+							</tr>
+							<tr>
+								<td colspan="5" >
+									4.结题报告格式规范(如：参考文献引用)，文字表述清楚、通畅且重点突出。
+								</td>
+							</tr>
+							
+							<tr>
+								<td rowspan="4" class="inCenter" style="vertical-align: middle;">课题研究的成果(40分)</td>
+								<td colspan="5"  >
+									5.课题研究的目的明确，方法恰当且实现了预期目标。
+								</td>
+								<td rowspan="4" class="inCenter" style="vertical-align: middle;">35</td>
+							</tr>
+							<tr>
+								<td colspan="5" >
+									6.课题研究有自己独到的见解，有个人的切身体验。
+								</td>
+							</tr>
+							<tr>
+								<td colspan="5" >
+									7.结题报告的观点鲜明、论据充分、结论正确。
+								</td>
+							</tr>
+							<tr>
+								<td colspan="5" >
+									8.课题研究具有创新性，并获得了具体的成果(如论文发表或提出的方案被有关部门采纳或有具体的作品)。
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="2" class="inCenter" style="vertical-align: middle;">报告的陈述答辩(20分)</td>
+								<td colspan="5" >
+									9.报告陈述人及小组成员能正确回答指导教师和同学们的提问，且回答的有理有据。
+								</td>
+								<td rowspan="2" class="inCenter" style="vertical-align: middle;">15</td>
+							</tr>
+							<tr>
+								<td colspan="5" >
+									10.报告陈述人仪态大方，语句清楚，口头表达流畅。
+								</td>
+							</tr>
+							<tr>
+							<td class="inCenter" style="height:100px;vertical-align: middle">指导教师的综合评价(评语)</td>
+							<td colspan="6">
+								
+							</td>
+							</tr>
+							<tr>
+								<td class="inCenter">
+									最后得分
+								</td>
+								<td colspan="6">
+									<div class="row-fluid">
+										<div class="span12">
+											<div class="pull-right">85</div>
+										</div>
+									</div>
+								</td>
+							</tr>
 					</tbody>
 				</table>
 			</div>
@@ -197,76 +283,146 @@
 			</legend>
 			<div class="box corner-all">
 				<table class="table table-condensed table-bordered inCenter" style="width: 900px;margin-left: auto;margin-right: auto;">
-					<thead>
-						<tr class="headColor">
-							<th width=60px>评价项目</th>
-							<th width=100px>评价内容</th>
-							<th>评价要点</th>
-							<th colspan="5" width=400px>评价</th>
-							<th width=50px>得分</th>
-						</tr>
-					</thead>
+					
 					<tbody>
 						<tr>
-							<td rowspan="5" style="vertical-align: middle;">结题报告</td>
-							<td>1．结构</td>
-							<td>①完整</td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">A</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">B</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">C</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">D</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">E</label></td>
-							<td class="inRight">--</td>
+							<td class="inCenter" >课题名称</td>
+							<td colspan="6">软件破密技术的研究</td>
+							
 						</tr>
 						<tr>
-							<td>2．研究方案</td>
-							<td>①逻辑性; ②严谨性</td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">A</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">B</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">C</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">D</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">E</label></td>
-							<td class="inRight">--</td>
+							<td class="inCenter" >指导教师</td>
+							<td colspan="6">雪飞</td>
+							
 						</tr>
 						<tr>
-							<td>3．方法与过程</td>
-							<td>①科学; ②合理; ③资料丰富</td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">A</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">B</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">C</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">D</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">E</label></td>
-							<td class="inRight">--</td>
-						</tr>
-						<tr>
-							<td>4．研究成果</td>
-							<td>①可信; ②有价值</td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">A</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">B</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">C</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">D</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">E</label></td>
-							<td class="inRight">--</td>
-						</tr>
-						<tr>
-							<td colspan="7">总计</td>
-							<td class="inRight">--</td>
-						</tr>
-						<tr>
-							<td colspan="3">结题宣讲</td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">优秀</label></td>
-							<td><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">良好</label></td>
-							<td colspan="3"><label><input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source" value="10">及格</label></td>
-							<td class="inRight">--</td>
-						</tr>
-						<tr>
-							<td>总计</td>
-							<td colspan="8" class="inRight">--</td>
-						</tr>
-						<tr>
-							<td rowspan="2" style="vertical-align: middle;">导师评语</td>
-							<td colspan="8" style="height:100px">导师对研究方案的意见和建议：</td>
-						</tr>
+								<td class="inCenter" rowspan="5" style="vertical-align: middle;">小组成员</td>
+								<td  class="inCenter">成员</td>
+								<td  class="inCenter">班级</td>
+								<td  class="inCenter">姓名</td>
+								<td  class="inCenter">成员</td>
+								<td  class="inCenter">班级</td>
+								<td  class="inCenter">姓名</td>
+							</tr>
+							<tr>
+								<td  class="inCenter">组长</td>
+								<td  >高三1班</td>
+								<td  >王可</td>
+								<td class="inCenter" >组员4</td>
+								<td class="inCenter"></td>
+								<td  class="inCenter"></td>
+							</tr>
+							<tr>
+								<td  class="inCenter">组员1</td>
+								<td  >高三1班</td>
+								<td  >李飞</td>
+								<td class="inCenter" >组员5</td>
+								<td class="inCenter"></td>
+								<td  class="inCenter"></td>
+							</tr>
+							<tr>
+								<td  class="inCenter">组员2</td>
+								<td  >高三1班</td>
+								<td  >赵龙</td>
+								<td class="inCenter" >组员6</td>
+								<td class="inCenter"></td>
+								<td  class="inCenter"></td>
+							</tr>
+							<tr>
+								<td  class="inCenter">组员3</td>
+								<td >高三1班</td>
+								<td >王可</td>
+								<td class="inCenter" >组员7</td>
+								<td class="inCenter"></td>
+								<td  class="inCenter"></td>
+							</tr>
+							<tr>
+								<td class="inCenter" >评价项目</td>
+								<td colspan="5" class="inCenter" >评价要点</td>
+								<td class="inCenter" >得分</td>
+							</tr>
+							<tr>
+								<td rowspan="4" class="inCenter"  style="vertical-align: middle;">结题报告的内容(40分)</td>
+								<td colspan="5"  >
+									1.课题的选择具有现实性和可行性。
+								</td>
+								<td rowspan="4" style="vertical-align: middle;">
+									<input type="text" class="input-mini" />
+								</td>
+							</tr>
+							<tr>
+								<td colspan="5" >
+									2.结题研究的思路清楚，理论观点的阐述能与具体的材料相结合。
+								</td>
+							</tr>
+							<tr>
+								<td colspan="5" >
+									3.结题报告的题目简洁、概括、语义明确。
+								</td>
+							</tr>
+							<tr>
+								<td colspan="5" >
+									4.结题报告格式规范(如：参考文献引用)，文字表述清楚、通畅且重点突出。
+								</td>
+							</tr>
+							
+							<tr>
+								<td rowspan="4" class="inCenter"  style="vertical-align: middle;">课题研究的成果(40分)</td>
+								<td colspan="5"  >
+									5.课题研究的目的明确，方法恰当且实现了预期目标。
+								</td>
+								<td rowspan="4" style="vertical-align: middle;">
+									<input type="text" class="input-mini" />
+								</td>
+							</tr>
+							<tr>
+								<td colspan="5" >
+									6.课题研究有自己独到的见解，有个人的切身体验。
+								</td>
+							</tr>
+							<tr>
+								<td colspan="5" >
+									7.结题报告的观点鲜明、论据充分、结论正确。
+								</td>
+							</tr>
+							<tr>
+								<td colspan="5" >
+									8.课题研究具有创新性，并获得了具体的成果(如论文发表或提出的方案被有关部门采纳或有具体的作品)。
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="2" class="inCenter" style="vertical-align: middle;">报告的陈述答辩(20分)</td>
+								<td colspan="5"  >
+									9.报告陈述人及小组成员能正确回答指导教师和同学们的提问，且回答的有理有据。
+								</td>
+								<td rowspan="2" style="vertical-align: middle;">
+									<input type="text" class="input-mini" />
+								</td>
+							</tr>
+							<tr>
+								<td colspan="5" >
+									10.报告陈述人仪态大方，语句清楚，口头表达流畅。
+								</td>
+							</tr>
+							<tr>
+							<td class="inCenter" >指导教师的综合评价(评语)</td>
+							<td colspan="6">
+								<textarea style="height:100px;width:500px"></textarea>
+								
+							</td>
+							</tr>
+							<tr>
+								<td class="inCenter" >
+									最后得分
+								</td>
+								<td colspan="6">
+									<div class="row-fluid">
+										<div class="pull-right">
+											--
+										</div>
+									</div>
+								</td>
+							</tr>
 					</tbody>
 				</table>
 			</div>

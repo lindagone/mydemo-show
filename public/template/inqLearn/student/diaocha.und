@@ -1,0 +1,322 @@
+<div class="social-box">
+	<div class="header">
+		<h4><strong>调查记录活动</strong></h4>
+		<div class="tools">
+			<button class="btn btn-primary" ><i class="icon-reply"></i> 返回活动列表</button>
+		</div>
+	</div>
+	<div class="body">
+		<fieldset id="showOpening">
+			<legend>
+				调查记录表
+			</legend>
+			<div class="row-fluid">
+				<div class="span12" style="vertical-align: middle">
+					<table class="table table-bordered table-condensed inCenter" style="width: 800px;margin-left: auto;margin-right: auto;">
+						<tbody>
+							<tr>
+								<td width="100px" class="inCenter">调查对象</td>
+								<td width="300px"></td>
+								<td class="inCenter" width="100px">调查日期</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="inCenter">调查目的</td>
+								<td colspan="3"></td>
+							</tr>
+							<tr>
+								<td class="inCenter">调查员</td>
+								<td colspan="3" class="inCenter">任务分工</td>
+							</tr>
+							<tr>
+								<td class="inCenter">蔡祥</td>
+								<td colspan="3">指挥</td>
+							</tr>
+							<tr>
+								<td class="inCenter">纪翔华</td>
+								<td colspan="3">记录</td>
+							</tr>
+							<tr>
+								<td class="inCenter">苏一晨</td>
+								<td colspan="3">采访</td>
+							</tr>
+							<tr>
+								<td class="inCenter">徐文霞</td>
+								<td colspan="3">调查</td>
+							</tr>
+							<tr>
+								<td class="inCenter" style="vertical-align: middle;">调查内容及结果</td>
+								<td colspan="3" height="100px"></td>
+							</tr>
+							<tr>
+								<td class="inCenter" style="vertical-align: middle;">结论</td>
+								<td colspan="3" height="100px"></td>
+							</tr>
+							<tr>
+								<td class="inCenter" style="vertical-align: middle;">附件</td>
+								<td colspan="3" height="100px">暂无附件</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="inCenter btn-student">
+				<button class="btn btn-primary btn-edit" >
+					编辑
+				</button>
+				<button class="btn btn-primary btn-submit">
+					提交
+				</button>
+			</div>
+		</fieldset>
+		<fieldset id="editOpening" style="display: none;">
+			<legend>
+				调查记录评价表
+			</legend>
+			<div class="row-fluid">
+				<div class="span12" style="vertical-align: middle">
+					<table class="table table-bordered table-condensed inCenter" style="width: 900px;margin-left: auto;margin-right: auto;">
+						<tbody>
+							<tr>
+								<td class="inCenter">调查对象</td>
+								<td width="200px"><input type="text" style="width:95%;"/></td>
+								<td class="inCenter" width="100px">调查日期</td>
+								<td><input type="text" style="width:95%;" placeholder="日期选择框"/></td>
+							</tr>
+							<tr>
+								<td width="100px" class="inCenter">调查目的</td>
+								<td colspan="3">
+                             <textarea style="height: 60px;width: 95%" rows="3"></textarea>
+                            </td>
+							</tr>
+							<tr>
+								<td class="inCenter">调查员</td>
+								<td colspan="3" class="inCenter">调查分工</td>
+							</tr>
+							<tr>
+								<td class="inCenter">蔡祥</td>
+								<td colspan="3">
+									<textarea name="requireForStudents" rows="3" style="height: 60px; width:95%;"></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td class="inCenter">纪翔华</td>
+								<td colspan="3">
+									<textarea name="requireForStudents" rows="3" style="height: 60px; width:95%;"></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td class="inCenter">苏一晨</td>
+								<td colspan="3">
+									<textarea name="requireForStudents" rows="3" style="height: 60px; width:95%;"></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td class="inCenter">徐文霞</td>
+								<td colspan="3">
+									<textarea name="requireForStudents" rows="3" style="height: 60px; width:95%;"></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td class="inCenter" style="vertical-align: middle;">调查内容及结果</td>
+								<td colspan="3">
+									<textarea name="requireForStudents" rows="3" style="height: 200px; width:95%;"></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td class="inCenter" style="vertical-align: middle;">结论</td>
+								<td colspan="3">
+									<textarea name="requireForStudents" rows="3" style="height: 200px; width:95%;"></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td class="inCenter" style="vertical-align: middle;">附件</td>
+								<td colspan="3" class="inCenter">
+										
+								</td>
+							</tr>
+							<tr>
+								
+								<td colspan="4" class="inCenter">
+										<button class="btn btn-primary">
+					上传附件
+				</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="inCenter">
+			
+				<button class="btn btn-primary returnOpening">
+					保存
+				</button>
+				<button class="btn btn-primary returnOpening">
+					取消
+				</button>
+			</div>
+		</fieldset>
+		<br />
+		<fieldset id="showOpeningScore">
+			<legend>
+				调查记录评价表
+			</legend>
+			<div class="box corner-all">
+				<table class="table table-condensed table-bordered inCenter" style="width: 600px;margin-left: auto;margin-right: auto;">
+					<thead>
+						<tr class="headColor">
+							<th width=150px>评价内容</th>
+							
+							<th width=50px>得分</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="inCenter">出勤</td>
+							
+							<td class="inRight">20分</td>
+						</tr>
+						<tr>
+							<td class="inCenter">调查目的合理性</td>
+							
+							<td class="inRight">20分</td>
+						</tr>
+						<tr>
+							<td class="inCenter">调查内容科学性</td>
+							
+							<td class="inRight">20分</td>
+						</tr>
+						<tr>
+							<td class="inCenter">活动实效性</td>
+							
+							<td class="inRight">20分</td>
+						</tr>
+						<tr>
+							<td class="inCenter">总计</td>
+							<td colspan="6" class="inRight">80 分</td>
+						</tr>
+						<tr>
+							<td class="inCenter">实际得分</td>
+							<td  class="inRight">-- 分</td>
+						</tr>
+						<tr>
+							<td rowspan="2" style="vertical-align: middle;" class="inCenter">导师评语</td>
+							<td style="height:100px">					</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="inCenter toremark" style="display: none">
+				<button class="btn btn-primary editOpeningScore" >
+					编辑
+				</button>
+			</div>
+		</fieldset>
+		<fieldset id="editOpeningScore" style="display: none;">
+			<legend>
+				编辑调查记录评价
+			</legend>
+			<div class="box corner-all">
+				<table class="table table-condensed table-bordered inCenter" style="width: 800px;margin-left: auto;margin-right: auto;">
+					<thead>
+						<tr class="headColor">
+							<th width=150px>评价内容</th>
+							<th >A</th>
+							<th >B</th>
+							<th >C</th>
+							<th >D</th>
+							<th width=50px>得分</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="inCenter">出勤</td>
+							<td><label>
+								<input class="evaluation-radio"  style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source1" value="10">
+								20</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source1" value="10">
+								15</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source1" value="10">
+								10</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source1" value="10">
+								5</label></td>
+							<td class="inRight">--分</td>
+						</tr>
+						<tr>
+							<td class="inCenter">调查目的合理性</td>
+							<td><label>
+								<input class="evaluation-radio"  style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source2" value="10">
+								20</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source2" value="10">
+								15</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source2" value="10">
+								10</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source2" value="10">
+								5</label></td>
+							<td class="inRight">--分</td>
+						</tr>
+						<tr>
+							<td class="inCenter">调查内容科学性</td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source3" value="10">
+								30</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source3" value="10">
+								25</label></td>
+							<td><label>
+								<input class="evaluation-radio"  style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source3" value="10">
+								20</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source3" value="10">
+								15</label></td>
+							<td class="inRight">--分</td>
+						</tr>
+						<tr>
+							<td class="inCenter">活动实效性</td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source3" value="10">
+								30</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source3" value="10">
+								25</label></td>
+							<td><label>
+								<input class="evaluation-radio"  style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source3" value="10">
+								20</label></td>
+							<td><label>
+								<input class="evaluation-radio" style="float:left; margin-right:10px" type="radio" data-form="uniform" name="source3" value="10">
+								15</label></td>
+							<td class="inRight">--分</td>
+						</tr>
+						<tr>
+							<td class="inCenter">总计</td>
+							<td colspan="6" class="inRight">-- 分</td>
+						</tr>
+						<tr>
+							<td class="inCenter">实际得分</td>
+							<td colspan="6" class="inRight">-- 分</td>
+						</tr>
+						<tr>
+							<td rowspan="2" style="vertical-align: middle;" class="inCenter">导师评语</td>
+							<td colspan="6" style="height:100px">							<textarea name="requireForStudents" rows="3" style="height: 100px; width:95%;"></textarea></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="inCenter">
+				<button class="btn btn-primary">
+					确定
+				</button>
+				<button class="btn btn-primary returnOpeningScore">
+					取消
+				</button>
+			</div>
+		</fieldset>
+	</div>
+</div>
