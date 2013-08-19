@@ -5,7 +5,10 @@ function(_, Resthub, template) {
 		template : template,
 		
 		events : {
-			
+			'click .btn-edit':'edit',
+			'click .btn-save':'saveandback',
+			'click .btn-set':'setinf',
+			'click .btn-goback':'back'
 			
 		},
 
@@ -22,9 +25,23 @@ function(_, Resthub, template) {
 			return _self;
 		},
 		
+		edit:function(){
+			$('#edit').show();
+			$('#showinf').hide();
+		},
+		saveandback:function(){
+			$('#edit').hide();
+			$('#showinf').show();
+		},
 		
-		
-		
+		setinf:function(){
+			$('#editinf').show();
+			$('#look').hide();
+		},
+		back:function(){
+			$('#editinf').hide();
+			$('#look').show();
+		},
 		
 	});
 	return ModuleView;

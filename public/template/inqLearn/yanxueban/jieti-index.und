@@ -88,14 +88,21 @@
 							<td class="inRight">4/5</td>
 							<td class="inRight">89</td>
 							<td class="inRight" id="xuefen">-</td>
-							<td>选题中</td>
+							<td>开题中</td>
 							<td>
-								<a class="btn btn-mini" href="jietishenhe.html" data-bypass>进入</a>		
+								<a class="btn btn-mini" href="jietishenhe.html" target="_blank" data-bypass>进入</a>		
 							</td>
 						</tr>
 					</tbody>
 				</table>
 				</div>
 				</div>
+  <div class="row-fluid">
+			<div class="span12 ">
+				<div class="pull-right">
+					<button class="btn btn-primary btn-small xuefen"><i class="icon-ok"></i>  同意选中的课题结题</button>
+				</div>
+			</div>
+			</div>
   </div>
   </div>

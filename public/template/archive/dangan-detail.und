@@ -1,0 +1,116 @@
+<div  class="social-box">
+	
+	<div class="body">
+		<div class="row-fluid">
+			<div class="span12">
+				<h4 class="inCenter">档案详情</h4>
+			</div>
+		</div>
+		<br/>
+		<div class="row-fluid">
+			
+			<div id="show">
+				<div class="row-fluid">
+				<div class="span12" >
+					
+						<table class="table table-bordered table-condensed">
+						
+						<tbody >
+							<tr>
+								 <td class="inCenter">栏目</td>
+								 <td >学生档案</td>
+								 <td class="inCenter">关键词</td>
+								 <td >优秀档案</td>						
+							</tr>
+							<tr>
+								<td class="inCenter">档案名称</td>
+								 <td >李飞的档案</td>	
+								  <td class="inCenter">档案编号</td>
+								 <td >001</td>		
+							</tr>
+							<tr>
+								  <td class="inCenter" >上传人</td>
+								 <td colspan="3">陈敏</td> 					
+							</tr>
+								<tr>
+								  <td class="inCenter" style="vertical-align: middle" height="100px">档案简介</td>
+								 <td colspan="3" height="100px"></td> 					
+							</tr>
+							<tr>
+								  <td class="inCenter" >附件</td>
+								 <td colspan="3">暂无附件</td> 					
+							</tr>
+						</tbody>
+						
+					</table>
+					
+
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span12" >
+					<div class="inCenter">
+						<button class="btn btn-primary btn-edit" type="button">
+						编辑
+					</button>
+					</div>
+					</div>
+			</div>
+			</div>
+			
+			<div id="edit" style="display: none">
+				<div class="row-fluid">
+				<div class="span12" >
+					
+						<table class="table table-bordered table-condensed">
+						
+						<tbody >
+							<tr>
+								 <td class="inCenter">栏目</td>
+								 <td ><input type="text" placeholder="档案栏目列表选择框"/></td>
+								 <td class="inCenter">关键词</td>
+								 <td ><input type="text"  /></td>						
+							</tr>
+							<tr>
+								<td class="inCenter">档案名称</td>
+								 <td ><input type="text"  /></td>	
+								  <td class="inCenter">档案编号</td>
+								 <td ><input type="text" /></td>		
+							</tr>
+							<tr>
+								  <td class="inCenter" >上传人</td>
+								 <td colspan="3"><input type="text" placeholder="默认显示当前登录人员"  /></td> 					
+							</tr>
+								<tr>
+								  <td class="inCenter" style="vertical-align: middle" height="100px">档案简介</td>
+								 <td colspan="3" height="100px">
+								 	 <textarea style="height:100px;width: 500px"></textarea>
+								 </td> 					
+							</tr>
+							<tr>
+								  <td class="inCenter" >附件</td>
+								 <td colspan="3"><button class="btn btn-primary">上传附件</button></td> 					
+							</tr>
+						</tbody>
+						
+					</table>
+					
+
+				</div>
+			</div>
+				<div class="row-fluid">
+				<div class="span12" >
+					<div class="inCenter">
+						<button class="btn btn-primary btn-save" type="button">
+						保存
+					</button>
+					<button class="btn btn-primary btn-save" type="button">
+						返回
+					</button>
+					</div>
+					</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>

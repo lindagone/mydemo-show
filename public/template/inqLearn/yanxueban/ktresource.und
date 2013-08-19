@@ -79,9 +79,10 @@
 							<td>蔡祥</td>
 							<td>高一1班</td>
 							<td class="inRight">4/5</td>
-							<td class="inRight">89</td>
-							<td class="inRight">-</td>
 							<td>开题中</td>
+							<td class="inRight">-</td>
+							
+							<td class="inRight">89</td>
 							<td>
 								<a class="btn btn-mini" href="lookdetail.html" data-bypass>进入</a>		
 							</td>
@@ -91,6 +92,27 @@
 				</div>
 				</div>
 		</div>
+		
+			<div class="pagination pagination-right">
+				<ul>
+					<li>
+						<a href="#">Prev</a>
+					</li>
+					<li>
+						<a href="#">1</a>
+					</li>
+					<li>
+						<a href="#">2</a>
+					</li>
+					<li>
+						<a href="#">3</a>
+					</li>
+					
+					<li>
+						<a href="#">Next</a>
+					</li>
+				</ul>
+			</div>
 		
 	</div>
 </div>

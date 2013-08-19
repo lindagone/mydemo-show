@@ -43,6 +43,7 @@ function(_, Resthub, template) {
 		tijiao:function(){
 			if(confirm('提交之后无法编辑结题报告及上传附件！')){
 				$('.btn-edit').hide();
+				$('.btn-submit').hide();
 			}
 			
 		},

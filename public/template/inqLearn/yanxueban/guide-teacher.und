@@ -1,38 +1,363 @@
 <div class="social-box">
 	<div class="header">
-		<h4><strong>指导老师设置</strong></h4>
-     <div class="tools">
-			<button class="btn btn-primary" ><i class="icon-reply"></i> 返回</button>
+		<h4><strong>研学基本设置 </strong></h4>
+		<div class="tools">
+			<ul id="myTab" class="nav nav-tabs">
+				<li class="active" >
+					<a data-bypass href="#tab1" data-toggle="tab"> <i class="icon-list"></i> 基本设置</a>
+				</li>
+				<li  >
+					<a data-bypass href="#tab2" data-toggle="tab"> <i class="icon-list"></i> 权重设置</a>
+				</li>
+
+			</ul>
 		</div>
 	</div>
 	<div class="body">
-		<div class="row-fluid">
-			<div class="span8 offset2">
-				<form class="form-horizontal">
-			<div class="control-group">
-				<label class="control-label" style="width: 200px"> 指导老师名单：</label>
+		<div class="tab-content">
+			<div class="tab-pane active" id="tab1">
+				<div id="look">
+					
+					 <div class="row-fluid">
+					 	<div class="span8 offset4">
+					 		<form class="form-horizontal">
+								<div class="control-group">
+									<label class="control-label" style="width: 200px"> 指导老师名单：</label>
+									<div class="controls">
+										李飞，谢思，陈敏
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label" style="width: 200px"> 老师可以新建课题：</label>
+									<div class="controls">
+										是
+									</div>
+								</div>
+                            <div class="control-group">
+				<label class="control-label" style="width: 200px"> 参与课题的学生年级：</label>
 				<div class="controls">
-					<input type="text" placeholder="多人选择框"/>
+					全部
+				</div>
+			</div>
+			
+			<div class="control-group">
+				<label class="control-label" style="width: 200px">每个学生参与的课题数上限：</label>
+				1个
+			</div>
+			<div class="control-group">
+				<label class="control-label" style="width: 200px"> 学生可以新建课题：</label>
+				<div class="controls">
+					是
 				</div>
 			</div>
 			<div class="control-group">
-				<label class="control-label" style="width: 200px"> 老师可以新建课题：</label>
+				<label class="control-label" style="width: 200px">课题允许添加的活动数量范围：</label>
+				<div class="controls">
+					1 ～ 10个
+				</div>
+			</div>
+			
+							</form>
+					 	</div>
+					 </div>
+
+					<div class="row-fluid">
+						<div class="span12 inCenter">
+							<button class="btn btn-primary btn-set">
+								编辑
+							</button>
+						</div>
+					</div>
+				</div>
+				<div id="editinf" style="display: none">
+					<div class="row-fluid">
+						<div class="span8 offset4">
+							<form class="form-horizontal">
+								<div class="control-group">
+									<label class="control-label" style="width: 200px"> 指导老师名单：</label>
+									<div class="controls">
+										<input type="text" placeholder="多人选择框"/>
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label" style="width: 200px"> 老师可以新建课题：</label>
+									<div class="controls">
+										<label class="radio inline">
+											<input type="radio" name="tea" checked=""/>
+											是</label>
+										<label class="radio inline">
+											<input type="radio" name="tea"/>
+											否</label>
+									</div>
+								</div>
+                            <div class="control-group">
+				<label class="control-label" style="width: 200px"> 参与课题的学生年级：</label>
+				<div class="controls">
+					<label class="checkbox inline"><input type="checkbox" name="tea"/>全部</label>
+			<label class="checkbox inline"><input type="checkbox" name="tea"/>2013届(高三)</label>
+			<label class="checkbox inline"><input type="checkbox" name="tea"/>2014届(高二)</label>
+			<label class="checkbox inline"><input type="checkbox" name="tea"/>2015届(高一)</label>
+				</div>
+			</div>
+			
+			<div class="control-group">
+				<label class="control-label" style="width: 200px">每个学生参与的课题数上限：</label>
+				<div class="controls">
+					 <input type="text" class="input-mini"/>个
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" style="width: 200px"> 学生可以新建课题：</label>
 				<div class="controls">
 					<label class="radio inline"><input type="radio" name="tea" checked=""/>是</label>
              <label class="radio inline"><input type="radio" name="tea"/>否</label>
 				</div>
 			</div>
-			
-			<div class="controls">
-					 <button class="btn btn-primary">确定</button>
-               <button class="btn btn-primary">取消</button>
+			<div class="control-group">
+				<label class="control-label" style="width: 200px">课题允许添加的活动数量范围：</label>
+				<div class="controls">
+					<input type="text" class="input-mini"/> &nbsp; &nbsp; ~ &nbsp; &nbsp; <input type="text" class="input-mini"/>
 				</div>
-		</form>
 			</div>
+			<div class="controls">
+					 <button class="btn btn-primary btn-goback" type="button">保存</button>
+               <button class="btn btn-primary btn-goback" type="button">取消</button>
+				</div>
+				<br/>
+							</form>
+						</div>
+					</div>
+				
+				</div>
+
+			</div>
+			<div class="tab-pane " id="tab2">
+
+				<div id="showinf">
+					<div class="span12">
+						<h4 class="inCenter">课题阶段权重设置</h4>
+					</div>
+					<div class="row-fluid">
+						<div class="span4 offset4">
+							<table class="table table-bordered table-condensed">
+								<thead>
+									<tr class="headColor">
+
+										<th>课题阶段</th>
+										<th>权重/%</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="inCenter">开题阶段</td>
+										<td class="inCenter">20</td>
+
+									</tr>
+									<tr>
+										<td class="inCenter">实践阶段</td>
+										<td class="inCenter">50</td>
+
+									</tr>
+									<tr>
+										<td class="inCenter">结题阶段</td>
+										<td class="inCenter">30</td>
+
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<hr/>
+					<div class="row-fluid">
+						<div class="span12">
+							<h4 class="inCenter">实践活动类型权重设置</h4>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span4 offset4">
+							<table class="table table-bordered table-condensed">
+								<thead>
+									<tr class="headColor">
+
+										<th>课题阶段</th>
+										<th>权重</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="inCenter">资料查阅活动</td>
+										<td class="inCenter">1.0</td>
+
+									</tr>
+									<tr>
+										<td class="inCenter">调查记录活动</td>
+										<td class="inCenter">1.0</td>
+
+									</tr>
+									<tr>
+										<td class="inCenter">实验记录活动</td>
+										<td class="inCenter">1.2</td>
+
+									</tr>
+									<tr>
+										<td class="inCenter">访谈记录活动</td>
+										<td class="inCenter">1.0</td>
+
+									</tr>
+									<tr>
+										<td class="inCenter">小组讨论活动</td>
+										<td class="inCenter">1.0</td>
+
+									</tr>
+									<tr>
+										<td class="inCenter">其它类型活动</td>
+										<td class="inCenter">1.0</td>
+
+									</tr>
+									<tr>
+										<td class="inCenter">读书记录活动</td>
+										<td class="inCenter">1.0</td>
+
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span12 inCenter">
+							<button class="btn btn-primary btn-edit" type="button">
+								编辑
+							</button>
+
+						</div>
+					</div>
+				</div>
+				<div id="edit" style="display:none">
+					<div class="span12">
+						<h4 class="inCenter">课题阶段权重设置</h4>
+					</div>
+					<div class="row-fluid">
+						<div class="span4 offset4">
+							<table class="table table-bordered table-condensed">
+								<thead>
+									<tr class="headColor">
+
+										<th>课题阶段</th>
+										<th>权重/%</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="inCenter">开题阶段</td>
+										<td class="inCenter">
+										<input type="text" class="input-mini" value="20"/>
+										</td>
+
+									</tr>
+									<tr>
+										<td class="inCenter">实践阶段</td>
+										<td class="inCenter">
+										<input type="text" class="input-mini" value="50"/>
+										</td>
+
+									</tr>
+									<tr>
+										<td class="inCenter">结题阶段</td>
+										<td class="inCenter">
+										<input type="text" class="input-mini" value="30"/>
+										</td>
+
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<hr/>
+					<div class="row-fluid">
+						<div class="span12">
+							<h4 class="inCenter">实践活动类型权重设置</h4>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span4 offset4">
+							<table class="table table-bordered table-condensed">
+								<thead>
+									<tr class="headColor">
+
+										<th>课题阶段</th>
+										<th>权重</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="inCenter">资料查阅活动</td>
+										<td class="inCenter">
+										<input type="text" class="input-mini" value="1.0"/>
+										</td>
+
+									</tr>
+									<tr>
+										<td class="inCenter">调查记录活动</td>
+										<td class="inCenter">
+										<input type="text" class="input-mini" value="1.0"/>
+										</td>
+
+									</tr>
+									<tr>
+										<td class="inCenter">实验记录活动</td>
+										<td class="inCenter">
+										<input type="text" class="input-mini" value="1.2"/>
+										</td>
+
+									</tr>
+									<tr>
+										<td class="inCenter">访谈记录活动</td>
+										<td class="inCenter">
+										<input type="text" class="input-mini" value="1.0"/>
+										</td>
+
+									</tr>
+									<tr>
+										<td class="inCenter">小组讨论活动</td>
+										<td class="inCenter">
+										<input type="text" class="input-mini" value="1.0"/>
+										</td>
+
+									</tr>
+									<tr>
+										<td class="inCenter">其它类型活动</td>
+										<td class="inCenter">
+										<input type="text" class="input-mini" value="1.0"/>
+										</td>
+
+									</tr>
+									<tr>
+										<td class="inCenter">读书记录活动</td>
+										<td class="inCenter">
+										<input type="text" class="input-mini" value="1.0"/>
+										</td>
+
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span12 inCenter">
+							<button class="btn btn-primary btn-save" type="button">
+								保存
+							</button>
+							<button class="btn btn-primary btn-save" type="button">
+								取消
+							</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
 		</div>
-		<br/>
-	</div>
-		
-		
+
 	</div>
 </div>
+

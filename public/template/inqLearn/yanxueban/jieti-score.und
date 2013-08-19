@@ -51,13 +51,13 @@
 			</div>
 			</div>
 			<div class="row-fluid">
-			<div class="span12 ">
+		<!--	<div class="span12 ">
 				<div class="pull-right">
 					<button class="btn btn-primary btn-small"><i class="icon-ok"></i>  录入选中课题的成绩</button>
 					<button class="btn btn-primary btn-small"><i class="icon-save"></i>  保存</button>
 				</div>
 			</div>
-			</div>
+			</div>-->
 			<br/>
 			
 		<div class="row-fluid">
@@ -90,13 +90,7 @@
 							<td>选题中</td>
 							<td class="inRight">70</td>
 							<td >
-								<select class="input-small">
-						<option>未录入</option>
-						<option>优秀</option>
-						<option>良好</option>
-						<option>合格</option>
-						<option>不合格</option>
-					</select>
+								未录入
 							</td>
 							<td>
 								<a class="btn btn-mini" href="jietishenhe.html?type=shenhe" data-bypass>进入</a>		
@@ -113,13 +107,7 @@
 							<td>选题中</td>
 							<td class="inRight">70</td>
 							<td >
-								<select class="input-small">
-						<option>未录入</option>
-						<option>优秀</option>
-						<option>良好</option>
-						<option>合格</option>
-						<option>不合格</option>
-					</select>
+								未录入
 							</td>
 							<td>
 								<a class="btn btn-mini" href="jietishenhe.html?type=shenhe" data-bypass>进入</a>		
@@ -129,5 +117,20 @@
 				</table>
 				</div>
 				</div>
+  <div class="row-fluid" >
+			<div class="span12 ">
+				<div >录入选中课题的结题宣讲成绩：
+					<select class="input-small">
+						<option>未录入</option>
+						<option>优秀</option>
+						<option>良好</option>
+						<option>合格</option>
+						<option>不合格</option>
+					</select>
+					<button class="btn btn-primary" onclick="alert('录入成功')">确定</button>
+				</div>
+				
+			</div>
+			</div>
   </div>
   </div>

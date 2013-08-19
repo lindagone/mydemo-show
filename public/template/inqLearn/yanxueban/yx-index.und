@@ -6,41 +6,67 @@
 	<div class="body">
 		<div class="row-fluid">
 			<div class="span12 ">
-				<h4 class="inCenter">研学管理任务列表</h4>
+				<h4 class="inCenter">研学管理中心</h4>
 			</div>
 			</div>
 			<br/>
 		<div class="row-fluid">
 			<div class="span10 offset1 ">
-				<table class="table table-condensed">
-					<tr>
-						<td class="inLeft"><a target="_blank" href="kaitishenhe.html">25个课题待开题审核</a></td>
-						<td class="inLeft" colspan="2"><a target="_blank" href="jietiindex.html">35个课题待结题审核</a></td>
-					</tr>
-					<tr>
-						<td class="inLeft"><a target="_blank" href="kaitiscore.html">开题成绩录入</a></td>
-						<td class="inLeft" colspan="2"><a target="_blank" href="jietiscore.html">结题成绩录入</a></td>
-					</tr>
-					<tr>
-						<td class="inLeft"><a target="_blank" href="editbase.html?type=newone">新建课题</a></td>
-						<td class="inLeft"><a target="_blank" href="shanchu.html">删除无效课题</a></td>
-						<td class="inLeft"><a target="_blank" href="modify.html">修改课题信息</a></td>
-					</tr>
-					<tr>
-						<td class="inLeft"><a target="_blank" href="guideteacher.html">指导老师设置</a></td>
-						<td class="inLeft"><a target="_blank" href="studentsetting.html">学生设置</a></td>
-						<td class="inLeft"><a target="_blank" href="notchoose.html">查看未选课的学生</a></td>
-					</tr>
-					<tr>
-						<td class="inLeft" colspan="3"><a target="_blank" href="quanzhong.html">权重设置</a></td>
-						
-					</tr>
-					<tr>
-						<td class="inLeft" colspan="3"><a target="_blank" href="resource.html">发布研学资源</a></td>
-						
-					</tr>
-
-				</table>
+				<fieldset>
+					<legend><span style="font-size: 16px">课题审核</span></legend>
+				</fieldset>
+				<div class="row-fluid">
+					<div class="span4">
+						<a target="_blank" href="kaitishenhe.html">25个课题待开题审核</a>
+					</div>
+					<div class="span4">
+						<a target="_blank" href="jietiindex.html">35个课题待结题审核</a>
+					</div>
+				</div>
+				<fieldset>
+					<legend><span style="font-size: 16px">成绩录入</span></legend>
+				</fieldset>
+				<div class="row-fluid">
+					<div class="span4">
+						<a target="_blank" href="kaitiscore.html">开题成绩录入</a>
+					</div>
+					<div class="span4">
+						<a target="_blank" href="jietiscore.html">结题成绩录入</a>
+					</div>
+				</div>
+					<fieldset>
+					<legend><span style="font-size: 16px">课题维护</span></legend>
+				</fieldset>
+				<div class="row-fluid">
+					<div class="span4">
+						<a target="_blank" href="editbase.html?type=newone">新建课题</a>
+					</div>
+					<div class="span4">
+						<a target="_blank" href="shanchu.html">删除无效课题</a>
+					</div>
+					<div class="span4">
+						<a target="_blank" href="modify.html">修改课题信息</a>
+					</div>
+				</div>
+				<fieldset>
+					<legend><span style="font-size: 16px">研学设置</span></legend>
+				</fieldset>
+				<div class="row-fluid">
+					<div class="span12">
+						<a target="_blank" href="guideteacher.html">研学设置</a>
+					</div>
+					
+				</div>
+				<fieldset>
+					<legend><span style="font-size: 16px">人员信息</span></legend>
+				</fieldset>
+				<div class="row-fluid">
+					<div class="span12">
+						<a target="_blank" href="notchoose.html">查看未选课的学生</a>
+					</div>
+					
+				</div>
+				
 				
 			</div>
 			

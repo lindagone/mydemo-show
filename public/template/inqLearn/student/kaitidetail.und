@@ -251,7 +251,7 @@
 									<td class="inCenter">2013-5-1</td>
 									<td class="inCenter">-</td>
 									<td class="inRight">-</td>
-									<td><a class="btn btn-mini " target="_blank" href="ziliao.html"> 进入 </a>
+									<td><a class="btn btn-mini " target="_blank" data-bypass href="ziliao.html?type=teacher"> 进入 </a>
 										<button class="btn btn-mini btn-shanchu btn-own" >删除</button>
 									</td>
 								</tr>
@@ -263,7 +263,7 @@
 									<td class="inCenter">2013-5-1</td>
 									<td class="inCenter">-</td>
 									<td class="inRight">-</td>
-									<td><a class="btn btn-mini " target="_blank" href="diaocha.html?type=teacher"> 进入 </a>
+									<td><a class="btn btn-mini " target="_blank" data-bypass href="diaocha.html?type=teacher"> 进入 </a>
 										<button class="btn btn-mini btn-shanchu" >删除</button>
 									</td>
 								</tr>
@@ -377,7 +377,7 @@
 									<td class="inCenter">2013-5-1</td>
 									<td class="inCenter">-</td>
 									<td class="inRight">-</td>
-									<td><a class="btn btn-mini " target="_blank" href="ziliao.html"> 进入 </a>
+									<td><a class="btn btn-mini " target="_blank" href="ziliao.html?type=student"> 进入 </a>
 										<button class="btn btn-mini btn-shanchu btn-own" >删除</button>
 									</td>
 								</tr>
