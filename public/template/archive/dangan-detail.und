@@ -11,7 +11,18 @@
 			
 			<div id="show">
 				<div class="row-fluid">
-				<div class="span12" >
+			<div class="span10 offset1">
+				<div class="pull-right">
+					<button class="btn btn-primary btn-add" type="button">
+						<i class="icon-reply"></i> 返回
+					</button>
+				
+				</div>
+			</div>
+		</div>
+		<br/>
+				<div class="row-fluid">
+				<div class="span10 offset1" >
 					
 						<table class="table table-bordered table-condensed">
 						
@@ -38,7 +49,7 @@
 							</tr>
 							<tr>
 								  <td class="inCenter" >附件</td>
-								 <td colspan="3">暂无附件</td> 					
+								 <td colspan="3">a.txt</td> 					
 							</tr>
 						</tbody>
 						
@@ -60,25 +71,36 @@
 			
 			<div id="edit" style="display: none">
 				<div class="row-fluid">
-				<div class="span12" >
+			<div class="span10 offset1">
+				<div class="pull-right">
+					<button class="btn btn-primary btn-add" type="button">
+						<i class="icon-reply"></i> 返回
+					</button>
+				
+				</div>
+			</div>
+		</div>
+		<br/>
+				<div class="row-fluid">
+				<div class="span10 offset1" >
 					
 						<table class="table table-bordered table-condensed">
 						
 						<tbody >
 							<tr>
-								 <td class="inCenter">栏目</td>
-								 <td ><input type="text" placeholder="档案栏目列表选择框"/></td>
-								 <td class="inCenter">关键词</td>
-								 <td ><input type="text"  /></td>						
+								 <td class="inCenter">栏目<span class="text-error">*</span></td>
+								 <td ><input type="text" placeholder="档案栏目列表选择框" value="学生档案"/></td>
+								 <td class="inCenter">关键词<span class="text-error">*</span></td>
+								 <td ><input type="text" required="" placeholder="必填"/></td>						
 							</tr>
 							<tr>
-								<td class="inCenter">档案名称</td>
-								 <td ><input type="text"  /></td>	
-								  <td class="inCenter">档案编号</td>
-								 <td ><input type="text" /></td>		
+								<td class="inCenter">档案名称<span class="text-error">*</span></td>
+								 <td ><input type="text" placeholder="必填"  required=""/></td>	
+								  <td class="inCenter">档案编号<span class="text-error">*</span></td>
+								 <td ><input type="text" placeholder="必填"/></td>		
 							</tr>
 							<tr>
-								  <td class="inCenter" >上传人</td>
+								  <td class="inCenter" >上传人<span class="text-error">*</span></td>
 								 <td colspan="3"><input type="text" placeholder="默认显示当前登录人员"  /></td> 					
 							</tr>
 								<tr>
@@ -88,8 +110,11 @@
 								 </td> 					
 							</tr>
 							<tr>
-								  <td class="inCenter" >附件</td>
-								 <td colspan="3"><button class="btn btn-primary">上传附件</button></td> 					
+								  <td class="inCenter" >附件<span class="text-error">*</span></td>
+								 <td colspan="3">
+								 	<span id="sc">a.txt  &nbsp;&nbsp;&nbsp;<button class="btn  btn-small btn-deletefj">删除附件</button></span>
+								 	<span id="tj" style="display: none"><button class="btn  btn-small btn-primary ">添加附件</button></span>
+								 </td> 					
 							</tr>
 						</tbody>
 						
@@ -105,7 +130,7 @@
 						保存
 					</button>
 					<button class="btn btn-primary btn-save" type="button">
-						返回
+						取消
 					</button>
 					</div>
 					</div>

@@ -1,17 +1,17 @@
-define([ 'backbone', 'view/mail/mail-base-view', 'view/notice/notice-index-view', 'view/mytest/mytest-view',		     
+define([ 'backbone', 'view/mail/mail-base-view', 'view/notice/notice-index-view', 'view/mytest/mytest-view', 'view/portal/portal-view',		     
            'router/studentmanage-router','router/hr-router',
-		 'router/demogena-router','router/salary-router','router/inq-router','router/lcj-router',
+		 'router/demogena-router','router/salary-router','router/inq-router',
 		 'router/inqlearn-router','router/archive-router',
 		 'backbone-queryparams'], function(
-		Backbone, MailBaseView, NoticeIndexView,TestView,				
-		StuManageRouter,HrRouter,GenaRouter, SalaryRouter, InqRouter,LcjRouter,InqLearnRouter,ArchiveRouter) {
+		Backbone, MailBaseView, NoticeIndexView,TestView, PortalView,				
+		StuManageRouter,HrRouter,GenaRouter, SalaryRouter, InqRouter,InqLearnRouter,ArchiveRouter) {
 	
 	var routes = _.extend(
 		StuManageRouter.localoptions,
 		   HrRouter.localoptions,
 			GenaRouter.localoptions,
 			SalaryRouter.localoptions,
-			InqRouter.localoptions,LcjRouter.localoptions,
+			InqRouter.localoptions,
 			InqLearnRouter.localoptions,ArchiveRouter.localoptions,
 			
 			{
@@ -20,6 +20,7 @@ define([ 'backbone', 'view/mail/mail-base-view', 'view/notice/notice-index-view'
 			'mailbox.html'          : 'mailbox',
 			'notice.html'           : 'notice',			
 			'test.html':'gotest',
+			'portal.html':'goportal',
 	  		'*anything': 'anything'
 	});
 	
@@ -28,7 +29,7 @@ define([ 'backbone', 'view/mail/mail-base-view', 'view/notice/notice-index-view'
 		    HrRouter.localmethod,
 			GenaRouter.localmethod,
 			SalaryRouter.localmethod,
-			InqRouter.localmethod,LcjRouter.localmethod,
+			InqRouter.localmethod,
 			InqLearnRouter.localmethod,ArchiveRouter.localmethod,
 			
 			{
@@ -50,6 +51,10 @@ define([ 'backbone', 'view/mail/mail-base-view', 'view/notice/notice-index-view'
 				console.log("into notice page");
 				new NoticeIndexView({root : $('#bodyContainer')});
 			},
+			goportal : function(){
+				console.log("into portal demo page");
+				new PortalView({root : $('#bodyContainer')});
+			}
 			
 			
 			

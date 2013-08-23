@@ -4,6 +4,7 @@ function(_, Resthub, template) {
 		
 		template : template,
 		currentstatus:null,
+		title:null,
 		events : {
 			
 		},
@@ -11,7 +12,8 @@ function(_, Resthub, template) {
 		initialize : function(options) {
 			var _self = this;
 			currentstatus=options.currentstatus;
-			console.log(currentstatus);
+			title=options.title;
+		
 			_self.render();
 		},
 
@@ -32,10 +34,15 @@ function(_, Resthub, template) {
 				$('#weiguidang').hide();
 			}else if(currentstatus=='quanbu'){
 				$('.btn-weiguidang').show();
-				$('.btn-yiguidang').hide();
+				$('.btn-yiguidang').show();
 				$('#quanbu').show();
 				$('#yiguidang').hide();
 				$('#weiguidang').hide();
+			}
+			if(title=='stu'){
+				$('#stutitle').html('学生');
+			}else{
+			   $('#stutitle').html('');
 			}
 			return _self;
 		},

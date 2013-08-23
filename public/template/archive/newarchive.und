@@ -1,0 +1,122 @@
+<div  class="social-box">
+	<div class="header">
+		<h4>新建档案</h4>
+	</div>
+	<div class="body">
+		<div class="row-fluid">
+			<div class="span12">
+				<h4 class="inCenter">新建档案</h4>
+			</div>
+		</div>
+		<br/>
+		<div class="row-fluid">
+			
+			
+			
+			<div id="edit" >
+				<div class="row-fluid">
+			<div class="span10 offset1">
+				<div class="pull-right">
+					<button class="btn btn-primary btn-add" type="button">
+						<i class="icon-reply"></i> 返回
+					</button>
+				
+				</div>
+			</div>
+		</div>
+		<br/>
+				<div class="row-fluid">
+				<div class="span10 offset1" >
+					
+						<table class="table table-bordered table-condensed">
+						
+						<tbody >
+							<tr>
+								 <td class="inCenter">栏目<span class="text-error">*</span></td>
+								 <td >
+						
+                       <input id="lanmu" type="text" placeholder="档案栏目列表选择框" value="学生档案"/>
+                      <i data-toggle="modal" data-target="#myModal" ></i>							
+                      </div>
+								 	
+								 </td>
+								 <td class="inCenter">关键词<span class="text-error">*</span></td>
+								 <td ><input type="text" required="" placeholder="必填"/></td>						
+							</tr>
+							<tr>
+								<td class="inCenter">档案名称<span class="text-error">*</span></td>
+								 <td ><input type="text" placeholder="必填"  required=""/></td>	
+								  <td class="inCenter">档案编号<span class="text-error">*</span></td>
+								 <td ><input type="text" placeholder="必填" required=""/></td>		
+							</tr>
+							<tr>
+								  <td class="inCenter" >上传人</td>
+								 <td colspan="3"><input type="text" placeholder="默认显示当前登录人；单人选择框"  /></td> 					
+							</tr>
+								<tr>
+								  <td class="inCenter" style="vertical-align: middle" height="100px">档案简介</td>
+								 <td colspan="3" height="100px">
+								 	 <textarea style="height:100px;width: 500px"></textarea>
+								 </td> 					
+							</tr>
+							<tr>
+								  <td class="inCenter" >附件<span class="text-error">*</span></td>
+								 <td colspan="3">
+								 	<span class="addfj">
+								 		<button class="btn btn-primary btn-small">上传附件</button>(必须添加附件，且只能添加一个)
+								 	</span>
+								 	<span class="scfj" style="display: none">
+								 		a.txt  &nbsp;&nbsp;<button class="btn btn-primary btn-small">删除附件</button>
+								 	</span>
+								 	</td> 					
+							</tr>
+						</tbody>
+						
+					</table>
+					
+
+				</div>
+			</div>
+				<div class="row-fluid">
+				<div class="span12" >
+					<div class="inCenter">
+						<button class="btn btn-primary btn-save" type="button">
+						保存
+					</button>
+					<button class="btn btn-primary btn-save" type="button">
+						取消
+					</button>
+					</div>
+					</div>
+			</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+	<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+				×
+			</button>
+			<h3 id="myModalLabel">栏目选择</h3>
+		</div>
+		<div class="modal-body">
+			<div class="content_wrap">
+				<div class="zTreeDemoBackground left">
+					<ul id="deptlist" class="ztree"></ul>
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button class="btn btn-primary"  data-dismiss="modal" aria-hidden="true">
+				确定
+			</button>
+			<button class="btn" data-dismiss="modal" aria-hidden="true">
+				取消
+			</button>
+
+		</div>
+	</div>
+

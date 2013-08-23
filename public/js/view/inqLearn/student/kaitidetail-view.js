@@ -21,10 +21,10 @@ function(_, Resthub, template,xuantiBaseView) {
 			var _self = this;			
 			_self.$el.html(_self.template());
 			$(function() {
-          $( '.wy').tooltip({ content:  "教师姓名：王月 <br/>教学科目:语文<br/> 所在年级：高一年级"
-          	}); 
-          	 $( '.sjm').tooltip({ content:  "教师姓名：宋江名 <br/>教学科目:语文<br/> 所在年级：高一年级"
-          	 });               
+          $( '.wy').tooltip({ content:  "教师姓名：王月 <br/>教学科目:语文<br/> 所在年级：高一年级",position:{ my: "center bottom-10",
+        at: "center top"}          	}); 
+          	 $( '.sjm').tooltip({ content:  "教师姓名：宋江名 <br/>教学科目:语文<br/> 所在年级：高一年级",position:{ my: "center bottom-10",
+        at: "center top"}          	 });               
            });
            setTimeout(function(){
          	$('[data-toggle="popover"]').popover({

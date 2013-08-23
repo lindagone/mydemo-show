@@ -26,7 +26,7 @@
 					
 				</div>
 				<div class="span3">
-					<a class="btn btn-primary jiaru"  href="ketilist.html" target="_blank">
+					<a class="btn btn-primary jiaru"  href="ketilist.html?type=student" target="_blank">
                          <i class="icon-plus-sign"></i> 加入现有课题
                     </a>
 					

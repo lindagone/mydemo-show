@@ -6,7 +6,8 @@ function(_, Resthub, template) {
 		
 		events : {
 			'click .btn-edit':'edit',
-			'click .btn-save':'saveinf'
+			'click .btn-save':'saveinf',
+			'click .btn-deletefj':'deletefj'
 		},
 
 		initialize : function(options) {
@@ -29,7 +30,10 @@ function(_, Resthub, template) {
 			$('#edit').hide();
 			$('#show').show();
 		},
-		
+		deletefj:function(){
+			$('#sc').hide();
+			$('#tj').show();
+		}
 	});
 	return ModuleView;
 }); 

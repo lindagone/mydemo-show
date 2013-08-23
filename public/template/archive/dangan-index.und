@@ -1,9 +1,18 @@
-<div class="social-box">
+<div class="alert">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <label class="radio inline"><input type="radio" name="user" checked value="gly"/>管理员</label>
+  <label class="radio inline"><input type="radio" name="user"  value="fzr"/>栏目负责人</label>
+  <label class="radio inline"><input type="radio" name="user"  value="scr"/>档案上传人</label>
+</div>
+
+
+<div class="social-box" id="admin">
 	<div class="header">
-		<h4>档案维护</h4>
+		<h4>档案归档</h4>
 	</div>
 	<div class="body">
-		<div class="row-fluid">
+		
+			<div class="row-fluid">
 			<div class="span12">
 				<div class="span3">
 					<ul id="myTab" class="nav nav-tabs">
@@ -21,11 +30,13 @@
 						<div class="tab-pane fade in active" id="tab1">
 							<label>
 								<input type="radio" name="leixing" value="1" checked=""/>
-								未归档</label>
+								未归档(100条)</label>
 							<label>
 								<input type="radio" name="leixing" value="2"/>
-								已归档</label>
-
+								已归档(10条)</label>
+                         <label>
+								<input type="radio" name="leixing" value="3"/>
+								全部(110条)</label>
 						</div>
 						<div class="tab-pane fade" id="tab2">
 							<div class="content_wrap">
@@ -37,43 +48,42 @@
 						<div class="tab-pane fade" id="tab3">
 
 							<div>
-								<label>栏目
-									<input type="text" placeholder="选择框" class="input-small"/>
+								<label>栏&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;目&#160;&#160;&#160;&#160;
+									<input type="text" placeholder="单选框,同新建档案界面" class="input-small"/>
 								</label>
 							</div>
 							<div>
-								<label>编号
+								<label>编&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;号&#160;&#160;&#160;&#160;
 									<input type="text" class="input-small"/>
 								</label>
 							</div>
 							<div>
-								<label>名称
+								<label>名&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;称&#160;&#160;&#160;&#160;
 									<input type="text" class="input-small"/>
 								</label>
 							</div>
 							<div>
-								<label>上传人
-									<input type="text" placeholder="选择框" class="input-small"/>
+								<label>上&#160;&#160;&#160;&#160;&#160;传&#160;&#160;&#160;&#160;人&#160;&#160;
+									<input type="text" placeholder="人员单选框" class="input-small"/>
 								</label>
 							</div>
 							<div>
-								<label>附件
+								<label>附&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;件&#160;&#160;&#160;&#160;&#160;&#160;
 									<input type="text" placeholder="附件名称" class="input-small"/>
 								</label>
 							</div>
 							<div>
-								<label>关键词
-									<input type="text"  class="input-small"/>
+								<label>关&#160;&#160;&#160;&#160;键&#160;&#160;&#160;&#160;词&#160;&#160;
+									<input type="text"  class="input-small" />
 								</label>
 							</div>
 							
 							<div>
-								上传时间
-								<br/>
-								<label>开始
+				
+								<label>开始上传时间
 									<input type="text" placeholder="日期选择框"  class="input-small"/>
 								</label>
-								<label>结束
+								<label>结束上传时间
 									<input type="text"  placeholder="日期选择框" class="input-small"/>
 								</label>
 							</div>
@@ -95,5 +105,98 @@
 
 			</div>
 		</div>
+		
+	
+	
+	</div>
+</div>
+<div class="social-box" id="fuzeren" style="display:none">
+	<div class="header">
+		<h4>档案维护</h4>
+	</div>
+	<div class="body">
+
+		<div class="row-fluid">
+			<div class="span12">
+				<div class="span3">
+					<ul id="myTab1" class="nav nav-tabs">
+						
+						<li class="active">
+							<a href="#tab4" data-toggle="tab" class="lanmu"><i class="icon-user"></i> 栏目</a>
+						</li>
+						<li>
+							<a href="#tab5" data-toggle="tab" class="sousuo"><i class="icon-user"></i> 搜索</a>
+						</li>
+					</ul>
+					<div id="myTabContent" class="tab-content">
+						
+						<div class="tab-pane fade in active" id="tab4">
+							<div class="content_wrap">
+								<div class="zTreeDemoBackground left">
+									<ul id="deptlist1" class="ztree"></ul>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="tab5">
+
+							<div>
+								<label>栏&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;目&#160;&#160;&#160;&#160;
+									<input type="text" placeholder="选择框,同新建档案界面" class="input-small"/>
+								</label>
+							</div>
+							<div>
+								<label>编&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;号&#160;&#160;&#160;&#160;
+									<input type="text" class="input-small"/>
+								</label>
+							</div>
+							<div>
+								<label>名&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;称&#160;&#160;&#160;&#160;
+									<input type="text" class="input-small"/>
+								</label>
+							</div>
+							<div>
+								<label>上&#160;&#160;&#160;&#160;&#160;传&#160;&#160;&#160;&#160;人&#160;&#160;
+									<input type="text" placeholder="人员单选框" class="input-small"/>
+								</label>
+							</div>
+							<div>
+								<label>附&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;件&#160;&#160;&#160;&#160;&#160;&#160;
+									<input type="text" placeholder="附件名称" class="input-small"/>
+								</label>
+							</div>
+							<div>
+								<label>关&#160;&#160;&#160;&#160;键&#160;&#160;&#160;&#160;词&#160;&#160;
+									<input type="text"  class="input-small"/>
+								</label>
+							</div>
+							
+							<div>
+				
+								<label>开始上传时间
+									<input type="text" placeholder="日期选择框"  class="input-small"/>
+								</label>
+								<label>结束上传时间
+									<input type="text"  placeholder="日期选择框" class="input-small"/>
+								</label>
+							</div>
+							<div>
+								<button class="btn btn-primary btn-search2" type="button">
+									搜索
+								</button>
+								<button class="btn btn-primary " type="reset">
+									重置
+								</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="span9" id="normalcontent1">
+					
+				</div>
+
+			</div>
+		</div>
+	
 	</div>
 </div>

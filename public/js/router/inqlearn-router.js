@@ -61,8 +61,13 @@ YXBBaseView,ShuoMingView) {
 			
 			new EditBaseView({root:"#bodyContainer",'currentpos':params.type});
 		},
-		ketiList:function(){
-			new KetiListView({root:"#bodyContainer"});
+		ketiList:function(params){
+			if(!params  &&  location.search){
+				params = parseQueryString(window.location.search.substring(1));
+			
+			}
+			
+			new KetiListView({root:"#bodyContainer",'currentuser':params.type});
 		},
 		kaitiAbove:function(params){
 			if(!params  &&  location.search){
@@ -73,10 +78,9 @@ YXBBaseView,ShuoMingView) {
 		comment:function(params){
 			if(!params  &&  location.search){
 				params = parseQueryString(window.location.search.substring(1));
-				new CommentView({root:"#bodyContainer",'currentuser':params.type});
-			}else{
-				new CommentView({root:"#bodyContainer"});
+				
 			}
+			new CommentView({root:"#bodyContainer",'currentuser':params.type});
 			
 		},
 		kaitiBaogao:function(params){
@@ -94,19 +98,17 @@ YXBBaseView,ShuoMingView) {
 		ziLiao:function(params){
 			if(!params  &&  location.search){
 				params = parseQueryString(window.location.search.substring(1));
-				new ZiLiaoView({root:"#bodyContainer",'currentuser':params.type});
-			}else{
-				new ZiLiaoView({root:"#bodyContainer"});
+				
 			}
+			new ZiLiaoView({root:"#bodyContainer",'currentuser':params.type});
 			
 		},
 		diaocha:function(params){
 			if(!params  &&  location.search){
 				params = parseQueryString(window.location.search.substring(1));
-			new DiaoChaView({root:"#bodyContainer",'currentuser':params.type});
-			}else{
-				new DiaoChaView({root:"#bodyContainer"});
+			
 			}
+          new DiaoChaView({root:"#bodyContainer",'currentuser':params.type});
 			
 		},
 		teaIndex: function(){    	
@@ -124,10 +126,9 @@ YXBBaseView,ShuoMingView) {
 		jietishenhe: function(params){  
 			if(!params  &&  location.search){
 				params = parseQueryString(window.location.search.substring(1));
-				new JietiSHView({root:"#bodyContainer",'currentpos':params.type});
-			}else{
-				new JietiSHView({root:"#bodyContainer"});
-			}  	
+				
+			}
+          new JietiSHView({root:"#bodyContainer",'currentpos':params.type}); 	
 			
 		},
 		jietiindex: function(){    	

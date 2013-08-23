@@ -1,0 +1,85 @@
+
+<div class="row-fluid">
+			<div class="span12">
+				<h4 class="inCenter">学生档案查看</h4>
+			</div>
+		</div>
+<br/>
+<div class="row-fluid">
+			<div class="span12 lanmutj">
+				<span>档案总数：<a href="#" data-bypass onclick="alert('显示档案总条数')">50条</a></span>&#160;&#160;&#160;&#160;&#160;
+				<span>未归档总数：<a href="#" data-bypass onclick="alert('只显示未档案总条数')">10条</a></span>&#160;&#160;&#160;&#160;&#160;
+				<span>归档总数：<a href="#" data-bypass onclick="alert('只显示已档案总条数')">40条</a></span>
+			</div>
+		</div>
+		<div class="row-fluid searchtj" style="display: none">
+			<div class="span12">
+				<span>符合条件的档案数：2条</span>
+			</div>
+		</div>
+<div class="row-fluid">
+				<div class="span12" style="overflow-x: auto;">
+					<div style="min-width: 600px;">
+						<table class="table table-bordered table-condensed">
+						<thead>
+							<tr class="headColor">
+                            
+								<th class="listNum">序号</th>
+								<th>栏目</th>
+								<th>编号</th>
+								<th>名称</th>
+								<th>上传人</th>
+								<th>上传时间</th>
+								<th>附件</th>
+								<th>状态</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+
+						<tbody >
+							<tr>
+								
+								 <td class="inCenter">1</td>
+								<td class="inCenter">学生档案</td>
+								<td class="inRightr">002</td>
+								<td >高二学生档案</td>
+								<td >高飞</td>
+								<td class="inCenter">2013-07-01</td>
+								<td ><a href="#" data-bypass onclick="alert('图片类型的附件可以直接预览，非图片类型的附件点击击下载')">a.jpg</a></td>
+								<td >已归档</td>
+								<td >
+									<a class="btn btn-mini " data-bypass target="_blank" href="dalookdetail.html">
+						预览
+					</a>
+					</td>
+							</tr>
+							<tr>
+								
+								 <td class="inCenter">2</td>
+								<td class="inCenter">学生档案</td>
+								<td class="inRightr">003</td>
+								<td >高二学生档案</td>
+								<td >高飞</td>
+								<td class="inCenter">2013-06-01</td>
+								<td ><a href="#" data-bypass onclick="alert('图片类型的附件可以直接预览，非图片类型的附件点击击下载')">b.txt</a></td>
+								<td >已归档</td>
+								<td ><a class="btn btn-mini " data-bypass target="_blank" href="dalookdetail.html">
+						预览
+					</a>
+					</td>
+							</tr>
+						</tbody>
+						
+					</table>
+					</div>
+
+				</div>
+			</div><div class="pagination pagination-right">
+  <ul>
+    <li><a href="#">前一页</a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+   
+    <li><a href="#">后一页</a></li>
+  </ul>
+</div>

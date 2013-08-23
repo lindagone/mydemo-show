@@ -3,19 +3,17 @@
 	<div class="body">
 		<div class="row-fluid">
 			<div class="span12">
-				<h4 class="inCenter"><span id="stutitle"></span>档案归档</h4>
+				<h4 class="inCenter"><span id="titlestu">学生</span>档案维护</h4>
 			</div>
 		</div>
 		<br/>
 		<div class="row-fluid">
 			<div class="span12">
 				<div class="pull-right">
-					<button class="btn btn-primary btn-weiguidang" type="button">
-						<i class="icon-folder-close"></i> 归档
-					</button>
-					<button class="btn btn-primary btn-yiguidang" type="button" style="display: none">
-						<i class="icon-folder-open"></i> 取消归档
-					</button>
+					<a class="btn btn-primary btn-new" data-bypass target="_blank" href="newarchive.html">
+						<i class="icon-plus"></i> 新建
+					</a>
+					
 					<button class="btn btn-primary " type="button">
 						<i class="icon-remove"></i> 删除
 					</button>
@@ -61,9 +59,9 @@
 							<tr>
 								 <td class="inCenter"><input type="checkbox" /></td>
 								 <td class="inCenter">2</td>
-								<td class="inCenter">教师档案</td>
+								<td class="inCenter">学生档案</td>
 								<td class="inRightr">003</td>
-								<td >教师档案</td>
+								<td >高一学生档案</td>
 								<td >高飞</td>
 								<td class="inCenter">2013-06-01</td>
 								<td ><a href="#" data-bypass onclick="alert('图片类型的附件可以直接预览，非图片类型的附件点击击下载')">b.txt</a></td>
@@ -84,7 +82,7 @@
 								<td >高飞</td>
 								<td class="inCenter">2013-07-01</td>
 								<td >a.jpg</td>
-								<td class="inCenter">-</td>
+								<td  class="inCenter">-</td>
 								<td >
 									<a class="btn btn-mini " data-bypass target="_blank" href="dangandetail.html">
 						详情
@@ -92,17 +90,17 @@
 					</td>
 							</tr>
 							<tr>
-								  <td class="inCenter"><input type="checkbox" /></td>
+								 <td class="inCenter"></td>
 								 <td class="inCenter">2</td>
-								<td class="inCenter">教师档案</td>
+								<td class="inCenter">学生档案</td>
 								<td class="inRightr">003</td>
-								<td >教师档案</td>
+								<td >高二学生档案</td>
 								<td >高飞</td>
 								<td class="inCenter">2013-06-01</td>
 								<td >b.jpg</td>
-								<td class="inCenter">已归档</td>
-								<td ><a class="btn btn-mini " data-bypass target="_blank" href="dalookdetail.html">
-						预览
+								<td >已归档</td>
+								<td ><a class="btn btn-mini " data-bypass target="_blank" href="dangandetail.html">
+						详情
 					</a>
 					</td>
 							</tr>
@@ -117,25 +115,25 @@
 								<td >高飞</td>
 								<td class="inCenter">2013-07-01</td>
 								<td >a.jpg</td>
-								<td class="inCenter">已归档</td>
-								<td ><a class="btn btn-mini " data-bypass target="_blank" href="dalookdetail.html">
-						预览
-					</a>
+								<td >已归档</td>
+								<td ><button class="btn btn-mini " type="button">
+						详情
+					</button>
 					</td>
 							</tr>
 							<tr>
 								 <td class="inCenter"><input type="checkbox" /></td>
 								 <td class="inCenter">2</td>
-								<td class="inCenter">教师档案</td>
+								<td class="inCenter">学生档案</td>
 								<td class="inRightr">003</td>
 								<td >教师档案</td>
 								<td >高飞</td>
 								<td class="inCenter">2013-06-01</td>
 								<td >b.jpg</td>
-								<td class="inCenter">已归档</td>
-								<td ><a class="btn btn-mini " data-bypass target="_blank" href="dalookdetail.html">
-						预览
-					</a>
+								<td >已归档</td>
+								<td ><button class="btn btn-mini " type="button">
+						详情
+					</button>
 					</td>
 							</tr>
 						</tbody>

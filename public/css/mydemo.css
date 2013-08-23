@@ -22,3 +22,28 @@ th.listNum, td.listNum {
 input.aligntop {
     vertical-align: top;
 }
+div.portalSmall {
+	width:160px; 
+	height:160px;
+	padding:10px;
+	background:#FAA937;
+	border:1px solid white;
+	float:left;
+}
+div.portalMiddle {
+	width:320px; 
+	height:320px;
+	padding:10px;
+	background:#99CCFF;
+	border:1px solid white;
+	float:left;
+}
+div.portalLarge {
+	width:640px; 
+	height:640px;
+	padding:10px;
+	background:#EE9999;
+	border:1px solid white;
+	float:left;
+}
+

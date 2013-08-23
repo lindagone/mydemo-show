@@ -1,0 +1,68 @@
+<div  class="social-box">
+	<div class="header">
+		<h4>档案详情查看</h4>
+	</div>
+	<div class="body">
+		<div class="row-fluid">
+			<div class="span12">
+				<h4 class="inCenter">档案详情</h4>
+			</div>
+		</div>
+		<br/>
+		<div class="row-fluid">
+			
+			<div id="show">
+				<div class="row-fluid">
+			<div class="span8 offset2">
+				<div class="pull-right">
+					<button class="btn btn-primary btn-add" type="button">
+						<i class="icon-reply"></i> 返回
+					</button>
+				
+				</div>
+			</div>
+		</div>
+		<br/>
+				<div class="row-fluid">
+				<div class="span8 offset2" >
+					
+						<table class="table table-bordered table-condensed">
+						
+						<tbody >
+							<tr>
+								 <td class="inCenter">栏目</td>
+								 <td >学生档案</td>
+								 <td class="inCenter">关键词</td>
+								 <td >优秀档案</td>						
+							</tr>
+							<tr>
+								<td class="inCenter">档案名称</td>
+								 <td >李飞的档案</td>	
+								  <td class="inCenter">档案编号</td>
+								 <td >001</td>		
+							</tr>
+							<tr>
+								  <td class="inCenter" >上传人</td>
+								 <td colspan="3">陈敏</td> 					
+							</tr>
+								<tr>
+								  <td class="inCenter" style="vertical-align: middle" height="100px">档案简介</td>
+								 <td colspan="3" height="100px"></td> 					
+							</tr>
+							<tr>
+								  <td class="inCenter" >附件</td>
+								 <td colspan="3">a.txt</td> 					
+							</tr>
+						</tbody>
+						
+					</table>
+					
+
+				</div>
+			</div>
+			
+			</div>	
+			
+		</div>
+	</div>
+</div>

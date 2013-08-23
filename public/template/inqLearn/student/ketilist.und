@@ -56,7 +56,63 @@
 							<th>操作</th>
 						</tr>
 					</thead>
-					<tbody>
+					<tbody id="stubody">
+						<tr>
+							<td class="inCenter">1</td>
+							<td>北京胡同研究</td>
+							<td>社会</td>
+							<td>陈敏</td>
+                            <td>陈雪</td>
+                            <td>选题中</td>
+                            <td class="inRight">4/5</td>
+							<td class="inCenter">2012-03-01</td>
+							<td>学生</td>
+							<td>
+							<a class="btn btn-mini" href="xuantibase.html?type=student" data-bypass>进入</a>
+                        <button class="btn btn-mini" onclick="alert('申请已发送，请等待')">
+                           申请加入
+                        </button>
+							</td>
+							
+						</tr>
+						<tr>
+							<td class="inCenter">2</td>
+							<td>咖啡因纯品的提取及咖啡因含量的测定</td>
+							<td>社会</td>
+							<td>陈敏</td>
+                            <td>陈雪</td>
+                            <td>开题中</td>
+                            <td class="inRight">5/5</td>
+							<td class="inCenter">2012-03-01</td>
+							<td>学生</td>
+							<td>
+							<a class="btn btn-mini" href="kaitiabove.html?type=student" data-bypass>进入</a>
+                        <button class="btn btn-mini" onclick="alert('人员已满，请选择其它课题')">
+                           申请加入
+                        </button>
+							</td>
+							
+						</tr>
+						<tr>
+							<td class="inCenter">3</td>
+							<td>股民炒股收益和操作心理现状调查报告</td>
+							<td>社会</td>
+							<td>陈敏</td>
+                            <td>陈雪</td>
+                            <td>开题中</td>
+                            <td class="inRight">5/5</td>
+							<td class="inCenter">2012-03-01</td>
+							<td>学生</td>
+							<td>
+							<a class="btn btn-mini" href="kaitiabove.html?type=student" data-bypass>进入</a>
+                        <button class="btn btn-mini" onclick="alert('人员已满，请选择其它课题')">
+                           申请加入
+                        </button>
+							</td>
+							
+						</tr>
+						</tbody>
+						<tbody id="teabody" style="display: none">
 						<tr>
 							<td class="inCenter">1</td>
 							<td>北京胡同研究</td>
@@ -86,7 +142,7 @@
 							<td class="inCenter">2012-03-01</td>
 							<td>学生</td>
 							<td>
-							<a class="btn btn-mini" href="kaitiabove.html?type=student" data-bypass>进入</a>
+							<a class="btn btn-mini" href="kaitiabove.html?type=teacher" data-bypass>进入</a>
                         <button class="btn btn-mini" onclick="alert('人员已满，请选择其它课题')">
                            申请加入
                         </button>
