@@ -129,19 +129,20 @@
     
     
     <!--  申请加入情况查看 -->
- <div id="addstatus-message" title="课题申请加入信息" style="display: none">
+ <div id="addstatus-message" title="课题申请加入信息" style="display: none;">
  <table class="table table-bordered">
     <tbody>
     	<tr>
-    		<td style="width: 250px">王红同学申请加入课题</td>
-    		<td style="width: 150px">
+    		<td class="inCenter">1</td>
+    		<td >王红同学申请加入《鲁迅文化研究与国民素质提高》课题</td>
+    		<td >
        <button class="btn btn-mini btn-agree">同意</button>	
        <button class="btn btn-mini btn-not-agree">不同意</button>	
             </td>
     	</tr>
-    	<tr>
-    		<td style="width: 250px">李西书同学申请加入课题</td>
-    		<td style="width: 150px">
+    	<tr><td class="inCenter">2</td>
+    		<td >李西书同学申请加入《鲁迅文化研究与国民素质提高》课题</td>
+    		<td >
         <button class="btn btn-mini btn-agree">同意</button>	
        <button class="btn btn-mini btn-not-agree">不同意</button>
             </td>

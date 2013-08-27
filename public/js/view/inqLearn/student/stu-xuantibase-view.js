@@ -43,7 +43,7 @@ function(_, Resthub, template) {
 		
 		changeUser:function(e){
 			var str=$(e.target).val();
-			if(str=='1'){
+			if(str=='1'||str=='4'){
 				$('.bianji').show();
 				$('.btn-student').hide();
 			}else  if(str=='2'){

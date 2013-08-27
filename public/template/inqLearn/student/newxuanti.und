@@ -55,7 +55,7 @@
                                 <tr>
                                     <td class="inCenter" style="vertical-align: middle;">课题组长</td>
                                     <td >
-                                        <input type="text" name="teacher" class="grd-white" value="" required="" placeholder="单选人框，学生发布，默认本人">
+                                        <input type="text" name="teacher" class="grd-white" value="" required="" placeholder="多人选人框，学生发布，默认本人">
                                     </td>
                                     <td class="inCenter">班级</td>
                                     <td>--</td>

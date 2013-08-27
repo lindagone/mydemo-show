@@ -3,7 +3,7 @@
   <label class="radio inline"><input type="radio" name="user" checked value="1"/>组长</label>
   <label class="radio inline"><input type="radio" name="user"  value="2"/>无关学生</label>
   <label class="radio inline"><input type="radio" name="user" value="3"/>无关人员</label>
-  
+  <label class="radio inline"><input type="radio" name="user" value="4"/>教师</label>
 </div>
 
 <div class="social-box">

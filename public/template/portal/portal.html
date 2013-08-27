@@ -1,88 +1,832 @@
-<html>
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"  dir="ltr" lang="en-US">
+	<!--<![endif]-->
+
 	<head>
-		<title> 首页 | 博校文达 </title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>ShadowBox - Home</title>
+		<meta name="author" content="">
+		<meta name="description" content="">
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,500,700' rel='stylesheet' type='text/css'>
+		<!--[if IE 7]><link href="css/font-awesome-ie7.min.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
+
+		<link rel="stylesheet" href="/css/portal/framework.css">
+		<link rel="stylesheet" href="/css/portal/settings.css">
+		<link rel="stylesheet" href="/css/portal/style.css">
 		<link href="/css/twitter-bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
 		<link href="/css/mydemo.css" rel="stylesheet" type="text/css">
-		<style media="print">
-			#printHint, #printHint2 {
-				display: none;
-			}
-		</style>
+		<link href="/js/lib/jquery/jquery.isotope/isotope.style.css" rel="stylesheet" type="text/css">
+
+		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	</head>
+
 	<body>
-		<br />
-		<div class="span8 offset2">
-			<div class="alert alert-info" id="printHint">
-				请选择浏览器的打印功能进行打印，点击“文件”-&gt;“打印预览”。
-			</div>	
-			<br />
-			<h3 class="text-center">2013年7月</h3>
-			<h4 class="text-center">(全部套账)</h4>
-			<br />
-			<div class="pull-right" id="printHint2">
-				<button class="btn btn-primary">
-					<i class=" icon-print icon-white"></i> 打印
-				</button>
+
+		<div class="wrapper clearfix">
+			<header>
+				<nav class="navbar navbar-blue navbar-fixed-top social-navbar">
+					<div class="navbar-inner">
+						<div class="container-fluid">
+							<h1 class="logo"><a href=""><small>主页</small> </a> / <a href=""><small>教务</small> </a> / <a href=""><small>办公</small> </a> / <a href=""><small>管理</small> </a></h1>
+						</div>
+					</div>
+				</nav>
+			</header>
+
+			<div class="row-fluid" style="margin-top: 60px">
+				<div class="span6">
+					<img src="./logo.jpg"/>
+				</div>
 			</div>
-			<table class="table table-condensed table-bordered">
-				<thead>
-					<tr>
-						<th width="35%" class="inCenter">分类</th>
-						<th width="35%" class="inCenter">工资条目</th>
-						<th class="inCenter">内容</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>基本工资</td>
-						<td>岗位工资</td>
-						<td class="inRight">2,000.00</td>
-					</tr>
-					<tr>
-						<td rowspan="4" style="vertical-align:middle;">津贴</td>
-						<td>薪级工资</td>
-						<td class="inRight">500.00</td>
-					</tr>
-					<tr>
-						<td>住房补贴</td>
-						<td class="inRight">200.00</td>
-					</tr>
-					<tr>
-						<td>优秀教师奖励</td>
-						<td class="inRight">3,000.00</td>
-					</tr>
-					<tr>
-						<td>数字教学评优</td>
-						<td class="inRight">1,000.00</td>
-					</tr>
-					<tr>
-						<td rowspan="3" style="vertical-align:middle;">课时费</td>
-						<td>课时费1</td>
-						<td class="inRight">20.00</td>
-					</tr>
-					<tr>
-						<td>课时数</td>
-						<td class="inRight">50</td>
-					</tr>
-					<tr>
-						<td>课时费合计</td>
-						<td class="inRight">1,000.00</td>
-					</tr>
-					<tr>
-						<td>基本工资</td>
-						<td>班主任津贴</td>
-						<td class="inRight">1,000.00</td>
-					</tr>
-					<tr>
-						<td colspan="2">实发工资</td>
-						<td class="inRight">7,700.00</td>
-					</tr>
-					<tr>
-						<td colspan="2">发放银行</td>
-						<td>存入工行账户</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
+			<hr />
+			<div id="container1">
+				<div class="portal portalSmall">
+					今天		2013年8月21日
+				</div>
+				<div class="portal portalSmall">
+					<div class="row-fluid">
+						<div class="span3">
+							北京
+						</div>
+						<div align="right">
+							<div class="span5">
+								29~22℃
+							</div>
+						</div>
+						<div align="right">
+							<div class="span9">
+								小雨转多云
+							</div>
+							<div class="span6">
+								微风
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="portal portalSmall">
+					个人信息
+					<div align="center">
+						<div style="width:100px;height:100px;background:blank;border:1px solid #888888"></div>
+					</div>
+					王超（天天开心）
+					<div align="right">
+						注销
+					</div>
+				</div>
+
+				<div class="portal portalMiddle">
+
+					<div class="row-fluid">
+						<div class="span8">
+							上级文件
+						</div>
+						<div class="span4">
+							更多
+						</div>
+						<hr/>
+						<hr/>
+					</div>
+					<div class="row-fluid">
+						<div class="span8">
+							第四周通知.doc
+						</div>
+						<div class="span4">
+							2013-9-22
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span8">
+							第三周通知.doc
+						</div>
+						<div class="span4">
+							2013-9-15
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span8">
+							招聘通知.doc
+						</div>
+						<div class="span4">
+							2013-9-10
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span8">
+							第二周通知.doc
+						</div>
+						<div class="span4">
+							2013-9-8
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span8">
+							第一周通知.doc
+						</div>
+						<div class="span4">
+							2013-9-1
+						</div>
+					</div>
+				</div>
+
+				<div class="portal portalLarge">
+
+					<div class="row-fluid">
+						<div class="span4">
+							周工作安排
+						</div>
+						<div class="span6">
+							本周：第4周 8月19日-8月25日
+						</div>
+						<div class="span2">
+							下周
+						</div>
+						<hr/>
+						<hr/>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span4">
+							周工作重点
+						</div>
+						<div class="span8">
+							开学准备工作
+						</div>
+						<hr/>
+						<hr/>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span4">
+							8月19日（周一）
+						</div>
+						<div class="span8">
+							未发布
+						</div>
+						<hr/>
+						<hr/>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span4">
+							8月20日（周二）
+						</div>
+						<div class="span8">
+							未发布
+						</div>
+						<hr/>
+						<hr/>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span4">
+							8月21日（周三）
+						</div>
+						<div class="span8">
+							报名
+						</div>
+						<hr/>
+						<hr/>
+					</div>
+
+				</div>
+
+				<div class="portal portalMiddle">
+
+					<div class="row-fluid">
+						<div class="span8">
+							邮件（1/10）
+						</div>
+						<div class="span4">
+							更多
+						</div>
+						<hr/>
+						<hr/>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span8">
+							新学期的准备工作请注意
+						</div>
+						<div class="span4">
+							2013-8-21 白雪
+						</div>
+					</div>
+				</div>
+
+				<div class="portal portalMiddle">
+					<div class="row-fluid">
+						<div class="span8">
+							设备维修（3/10）
+						</div>
+						<div class="span4">
+							+ 更多
+						</div>
+						<hr/>
+						<hr/>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span8">
+							023 电脑
+						</div>
+						<div class="span4">
+							待分派
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span8">
+							045 显示器
+						</div>
+						<div class="span4">
+							待维修
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span8">
+							127 电脑
+						</div>
+						<div class="span4">
+							待维修
+						</div>
+					</div>
+
+				</div>
+
+				<div class="portal portalSmall">
+
+					<div class="row-fluid">
+						<div class="span8">
+							今日日程(3)
+						</div>
+						<div class="span4">
+							进入
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span4">
+							10：00
+						</div>
+						<div class="span4">
+							语文课
+						</div>
+						<div class="span4">
+							307
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span4">
+							13：00
+						</div>
+						<div class="span4">
+							语文课
+						</div>
+						<div class="span4">
+							308
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span4">
+							16：00
+						</div>
+						<div class="span4">
+							开会
+						</div>
+						<div class="span4">
+							411
+						</div>
+					</div>
+				</div>
+
+				<div class="portal portalMiddle">
+					<div class="row-fluid">
+						<div class="span8">
+							车辆预约(1/20)
+						</div>
+						<div class="span4">
+							+ 更多
+						</div>
+						<hr/>
+						<hr/>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span4">
+							京N300CP
+						</div>
+						<div class="span4">
+							白雪飞
+						</div>
+						<div class="span4">
+							正在约车
+						</div>
+					</div>
+
+				</div>
+
+				<div class="portal portalLarge">
+					<div class="row-fluid">
+						<div class="span8">
+							学分制成绩
+						</div>
+						<div class="span4">
+							更多
+						</div>
+						<hr/>
+						<hr/>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span4">
+							高中2016届
+						</div>
+						<div class="span2">
+							高一
+						</div>
+						<div class="span2">
+							第一学期
+						</div>
+						<div class="span2">
+							学段1
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span4">
+							高中2016届
+						</div>
+						<div class="span2">
+							高一
+						</div>
+						<div class="span2">
+							第一学期
+						</div>
+						<div class="span2">
+							学段2
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span4">
+							高中2015届
+						</div>
+						<div class="span2">
+							高二
+						</div>
+						<div class="span2">
+							第一学期
+						</div>
+						<div class="span2">
+							学段1
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span4">
+							高中2016届
+						</div>
+						<div class="span2">
+							高一
+						</div>
+						<div class="span2">
+							第一学期
+						</div>
+						<div class="span2">
+							学段2
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span4">
+							高中2014届
+						</div>
+						<div class="span2">
+							高三
+						</div>
+						<div class="span2">
+							第一学期
+						</div>
+						<div class="span2">
+							学段1
+						</div>
+					</div>
+				</div>
+
+				<div class="portal portalMiddle">
+
+					<div class="row-fluid">
+						<div class="span8">
+							通知（3/20）
+						</div>
+						<div class="span4">
+							更多
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span8">
+							新学期教1教室安排
+						</div>
+						<div class="span4">
+							2013-8-19
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span8">
+							新高一班主任安排
+						</div>
+						<div class="span4">
+							2013-8-18
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span8">
+							暑假工作安排
+						</div>
+						<div class="span4">
+							2013-7-10
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span8">
+							期末考试安排
+						</div>
+						<div class="span4">
+							2013-6-20
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span8">
+							劳动节放假通知
+						</div>
+						<div class="span4">
+							2013-4-25
+						</div>
+					</div>
+
+				</div>
+
+				<div class="portal portalMiddle">
+					<div class="row-fluid">
+						<div class="span12">
+							学校链接
+						</div>
+						<hr/>
+						<hr/>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span12">
+							文化长廊
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span12">
+							名师工作室
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span12">
+							学科教学网
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span12">
+							用户手册
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span12">
+							图书管理系统
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span12">
+							教师成长电子档案
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span12">
+							德育论坛
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span12">
+							教学录播系统
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span12">
+							中国基础教育文献...
+						</div>
+					</div>
+
+				</div>
+
+				<div class="portal portalLarge">
+
+					<div class="row-fluid">
+						<div class="span8">
+							超级任务
+						</div>
+						<div class="span4">
+							更多
+						</div>
+						<hr/>
+						<hr/>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span6">
+							实验中学2013-2014年发展规划
+						</div>
+						<div class="span2">
+							2013-1-1
+						</div>
+						<div class="span2">
+							2013-1-15
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span6">
+							校党总支各位教职员工阅读
+						</div>
+						<div class="span2">
+							2012-10-9
+						</div>
+						<div class="span2">
+							2012-10-30
+						</div>
+					</div>
+				</div>
+
+				<div class="portal portalLarge">
+					<div class="row-fluid">
+						<div class="span8">
+							系统消息（2/30）
+						</div>
+						<div class="span4">
+							更多
+						</div>
+						<hr/>
+						<hr/>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span8">
+							[文印申请审核] 白雪提交了一个新申请
+						</div>
+						<div class="span4">
+							2013-8-21 13：30
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span8">
+							[课题申请审批] 王贤提交了一个新申请
+						</div>
+						<div class="span4">
+							2013-8-20 8：45
+						</div>
+					</div>
+				</div>
+
+				<div class="portal portalMiddle">
+
+					<div class="row-fluid">
+						<div class="span12">
+							手机短信
+						</div>
+						<hr/>
+						<hr/>
+					</div>
+
+					<div style="width:200px;height:100px;background:blank;border:2px solid #888888"></div>
+
+					<div style="float:right">
+						<button type="button"class="btn"data-toggle="collapse">
+							发送
+						</button>
+					</div>
+
+					<div style="float:right">
+						<button type="button"class="btn"data-toggle="collapse">
+							重置
+						</button>
+					</div>
+				</div>
+
+				<div class="portal portalLarge">
+					<div class="row-fluid">
+						<div class="span12">
+							模考查询
+						</div>
+						<hr/>
+						<hr/>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span2">
+							年份
+						</div>
+						<select class="span2">
+							<option>2013</option>
+							<option>2012</option>
+							<option>2011</option>
+							<option>2010</option>
+							<option>2009</option>
+						</select>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span4">
+							科目
+						</div>
+					</div>
+
+					<form>
+						<input type="radio" name="subject" value="文科" />
+						文科
+						<br />
+						<input type="radio" name="subject" value="理科" />
+						理科
+					</form>
+
+					<div class="row-fluid">
+						<div class="span2">
+							考试类型
+						</div>
+
+						<div class="btn-toolbar" style="margin: 0;">
+							<div class="btn-group">
+								<button class="btn">
+									模考
+								</button>
+								<button class="btn dropdown-toggle" data-toggle="dropdown">
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">Action</a>
+									</li>
+									<li>
+										<a href="#">Another action</a>
+									</li>
+									<li>
+										<a href="#">Something else here</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span4">
+							分析类型
+						</div>
+					</div>
+
+					<form>
+						<input type="radio" name="subject" value="分数" />
+						分数
+						<br />
+						<input type="radio" name="subject" value="名次" />
+						名次
+					</form>
+
+					<div>
+						<button class="btn btn-Middle btn-primary" type="button">
+							查询
+						</button>
+					</div>
+
+				</div>
+
+				<div class="portal portalLarge">
+
+					<table border= "3px"bordercolor= "0x4C96FF" align="center" width="600">
+
+						<tr>
+							<td colspan="1" align="center">课程表</td>
+							<td colspan="2" align="center">高一1班</td>
+							<td colspan="2" align="center">高一2班</td>
+							<td colspan="1" align="center">第一周</td>
+						</tr>
+
+						<tr>
+							<th>节次/周</th>
+							<th>一</th>
+							<th>二</th>
+							<th>三</th>
+							<th>四</th>
+							<th>五</th>
+						</tr>
+
+						<tr>
+							<td rowspan = "4">上午</td>
+							<td>语文</td>
+							<td>英语</td>
+							<td>数学</td>
+							<td>历史</td>
+							<td>语文</td>
+						</tr>
+
+						<tr>
+							<td>数学</td>
+							<td>语文</td>
+							<td>生物</td>
+							<td>英语</td>
+							<td>数学</td>
+						</tr>
+
+						<tr>
+							<td>英语</td>
+							<td>数学</td>
+							<td>地理</td>
+							<td>信息</td>
+							<td>化学</td>
+						</tr>
+
+						<tr>
+							<td>待定</td>
+							<td>化学</td>
+							<td>计算机</td>
+							<td>劳技</td>
+							<td>音乐</td>
+						</tr>
+
+						<tr>
+							<td rowspan = '2'>下午</td>
+							<td>物理</td>
+							<td>美术</td>
+							<td>音乐</td>
+							<td>数学</td>
+							<td>英语</td>
+						</tr>
+
+						<tr>
+							<td>化学</td>
+							<td>待定</td>
+							<td>政治</td>
+							<td>待定</td>
+							<td>待定</td>
+						</tr>
+					</table>
+
+				</div>
+
+			</div>
+			<div id="drawer-wrapper" class="drawer-wrapper">
+				<div class="drawer-toggler">
+					THEME OPTIONS&nbsp;↓
+				</div>
+				<div id="theme-drawer" style="display: none;">
+					<div id="theme-carousel">
+						wahahaha
+					</div><!-- end #theme-carousel -->
+				</div><!-- end #theme-drawer -->
+			</div>
 	</body>
+	<script type="text/javascript" src="/js/lib/jquery.js"></script>
+	<script type="text/javascript" src="/js/lib/jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/js/lib/jquery/jquery.isotope/jquery.isotope.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('#container1').isotope({
+				// options
+				itemSelector : '.portal',
+				masonry : {
+
+				},
+			});
+			$("div.drawer-toggler").click(function(e) {
+				console.log($("#drawer-wrapper").size());
+				$("#drawer-wrapper").toggleClass("showdrawer", 500)
+				return false;
+			})
+		})
+	</script>
 </html>

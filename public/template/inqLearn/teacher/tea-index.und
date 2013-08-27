@@ -8,8 +8,8 @@
 			<legend>申报课题</legend>
 		</fieldset>
 		<div class="row-fluid" style="height:200px">
-			<div class="span10 offset2">
-				<div class="span3">
+			<div class="span12">
+				<div class="span2 offset1">
 					<a class="btn btn-primary" data-bypass target="_blank" href="editbase.html?type=newone">
                             <i class="icon-plus"></i> 创建新课题
                     </a>
@@ -23,6 +23,10 @@
 				</div>
 				<div class="span3">
 					<button class="btn btn-primary btn-asktoadd"><i class="icon-info-sign"></i> 2个同学申请加入</button>
+				     
+				</div>
+				<div class="span3">
+					<button class="btn btn-primary btn-asktojoin"><i class="icon-info-sign"></i> 2个课题邀请您加入</button>
 				     
 				</div>
 			</div>
@@ -94,16 +98,38 @@
  <div id="addstatus-message" title="课题申请加入信息" style="display: none">
  <table class="table table-bordered">
     <tbody>
-    	<tr>
-    		<td style="width: 250px">王红同学申请加入课题</td>
-    		<td style="width: 150px">
+    	<tr><td class="inCenter">1</td>
+    		<td>王红同学申请加入《鲁迅文化研究与国民素质提高》课题</td>
+    		<td>
        <button class="btn btn-mini btn-agree">同意</button>	
        <button class="btn btn-mini btn-not-agree">不同意</button>	
             </td>
     	</tr>
-    	<tr>
-    		<td style="width: 250px">李西书同学申请加入课题</td>
-    		<td style="width: 150px">
+    	<tr><td class="inCenter">2</td>
+    		<td >李西书同学申请加入《胡适文化研究与国民素质提高》课题</td>
+    		<td >
+        <button class="btn btn-mini btn-agree">同意</button>	
+       <button class="btn btn-mini btn-not-agree">不同意</button>
+            </td>
+    	</tr>
+    </tbody>
+ </table>
+</div>
+</div>
+ <!--  指导邀请加入情况查看 -->
+ <div id="joinstatus-message" title="课题申请加入信息" style="display: none">
+ <table class="table table-bordered">
+    <tbody>
+    	<tr><td class="inCenter">1</td>
+    		<td >《商场中商品楼层摆放位置与消费者心理关系的研究》课题组邀请您加入</td>
+    		<td>
+       <button class="btn btn-mini btn-agree">同意</button>	
+       <button class="btn btn-mini btn-not-agree">不同意</button>	
+            </td>
+    	</tr>
+    	<tr><td class="inCenter">2</td>
+    		<td >《悄然兴起的国学私塾教育情况调研》课题组邀请您加入</td>
+    		<td >
         <button class="btn btn-mini btn-agree">同意</button>	
        <button class="btn btn-mini btn-not-agree">不同意</button>
             </td>

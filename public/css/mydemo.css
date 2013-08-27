@@ -22,28 +22,60 @@ th.listNum, td.listNum {
 input.aligntop {
     vertical-align: top;
 }
+div.portal{
+	margin:5px;
+	position: absolute;
+	padding: 5px;
+	width: 310px;
+	height: 310px;
+	overflow-x:auto;x§
+}
 div.portalSmall {
-	width:160px; 
-	height:160px;
-	padding:10px;
-	background:#FAA937;
-	border:1px solid white;
-	float:left;
+	background:green;
 }
 div.portalMiddle {
-	width:320px; 
-	height:320px;
-	padding:10px;
+	width: 310px;
+	height: 150px;
 	background:#99CCFF;
-	border:1px solid white;
-	float:left;
 }
 div.portalLarge {
-	width:640px; 
-	height:640px;
-	padding:10px;
 	background:#EE9999;
-	border:1px solid white;
-	float:left;
+	width: 630px;
+	height: 310px;
 }
-
+div.drawer-wrapper{
+	position: fixed;
+	background :#00ECFF;
+	bottom: -52px;
+	width: 20%;
+	height: 100px;
+	z-index: 10000;
+	right:0px;
+	-khtml-opacity: 0.55;
+	-moz-opacity: 0.55;
+	opacity: 0.55;
+	filter: alpha(opacity=55);
+}
+div.showdrawer{
+	bottom: 0px;
+	width: 80%;
+	background : #356635;
+	-khtml-opacity: 0.95;
+	-moz-opacity: 0.95;
+	opacity: 0.95;
+	filter: alpha(opacity=95);
+	
+}
+div.drawer-toggler {
+	background: #000;
+	color: #e5e5e5;
+	font-size: 1em;
+	font-weight: 700;
+	text-align: center;
+	cursor: pointer;
+	padding: 10px 0;
+	width: 140px;
+	position: absolute;
+	top: -30px;
+	right: 10px;
+}

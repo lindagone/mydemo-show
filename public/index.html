@@ -12,9 +12,9 @@
 			window.jsRoot = staticFileServer + "/js/";
 			window.imgRoot = staticFileServer + "/img/";
 			window.contextBase = window.location.pathname.split("/")[1] + "/";
-			window.loadCss = function(urls) {
+			window.loadCss=function(urls) {
 				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < urls.length; i++) {
+				for (var i = 0 ; i < urls.length; i++){
 					var link = document.createElement("link");
 					link.type = "text/css";
 					link.rel = "stylesheet";
@@ -22,7 +22,18 @@
 					head.appendChild(link);
 				}
 			}
-			loadCss(["/css/twitter-bootstrap/bootstrap.css?v1.3.1", "/js/lib/jquery/jquery.ui.bootstrap/assets/css/docs.css", "/css/social.css?v1.3.1", "/css/social-jquery-ui-1.10.0.custom.css?v1.3.1", "/css/social.plugins.css?v1.3.1", "/css/font-awesome.css?v1.3.1", "/css/themes/social.theme-blue.css?v1.3.1", "/css/twitter-bootstrap/bootstrap-responsive.css?v1.3.1", "/js/lib/jquery/jquery.ztree/css/zTreeStyle/zTreeStyle.css", "/css/mydemo.css"])
+			loadCss([
+			"/css/twitter-bootstrap/bootstrap.css?v1.3.1",
+			"/js/lib/jquery/jquery.ui.bootstrap/assets/css/docs.css",
+			"/css/social.css?v1.3.1",
+			"/css/social-jquery-ui-1.10.0.custom.css?v1.3.1",
+			"/css/social.plugins.css?v1.3.1",
+			"/css/font-awesome.css?v1.3.1",
+			"/css/themes/social.theme-blue.css?v1.3.1",
+			"/css/twitter-bootstrap/bootstrap-responsive.css?v1.3.1",
+			"/js/lib/jquery/jquery.ztree/css/zTreeStyle/zTreeStyle.css",
+			"/css/mydemo.css"
+			])
 		</script>
 		<style>
 			.wraper #main {
@@ -35,14 +46,7 @@
 				left: 0;
 			}
 			#infoContainer {
-				position: fixed;
-				right: 0;
-				left: 0;
-				top: 50px;
-				max-width: 350px;
-				margin: 0 auto;
-				border: 2px solid;
-				display: none;
+				position:fixed; right:0; left:0; top:50px; max-width:350px; margin:0 auto; border:2px solid; display:none;
 			}
 		</style>
 	</head>
@@ -84,11 +88,11 @@
 											</li>
 										</ul>
 									</li>
-
+									
 									<li class="dropdown bxnavbar">
 										<a href="" class="dropdown-toggle" data-toggle="dropdown"> 管理类 <b class="caret"></b></a>
 										<ul class="dropdown-menu">
-											<li class="dropdown-submenu">
+										<li class="dropdown-submenu">
 												<a tabindex="-1" href=""> 人事管理</a>
 												<ul class="dropdown-menu">
 													<li>
@@ -113,39 +117,108 @@
 														<a href="hrmanage.html"><i class="icon-edit"></i><span> 部门人事维护</span></a>
 													</li>
 												</ul>
-											</li>
+										</li>
 											<li class="dropdown-submenu">
 												<a tabindex="-1" href=""> 学籍管理</a>
 												<ul class="dropdown-menu">
-
+														
+											<li>
+												<a href="stuinf.html"><i class="icon-user"></i><span> 学生信息维护</span></a>
+											</li>
+											<li>
+												<a href="stusetting.html"><i class=" icon-cog"></i><span> 学生信息状态设置</span></a>
+											</li>
+											
+											<li>
+												<a href="enrollmentchange.html"><i class="icon-edit"></i><span> 学籍异动维护</span></a>
+											</li>
+											<li>
+												<a href="look.html"><i class="icon-edit"></i><span> 学籍异动查看</span></a>
+											</li>
+											<li>
+												<a href="namelist.html"><i class="icon-th"></i><span> 班级学生名单维护</span></a>
+											</li>
+											<li>
+												<a href="lookinf.html"><i class=" icon-search"></i><span> 学生信息查看</span></a>
+											</li>
+											
+											<li>
+												<a href="stuimprove.html"><i class="icon-briefcase"></i><span> 学生信息自我完善</span></a>
+											</li>
+												</ul>
+										</li>
+										</ul>
+									</li>
+								<!--	<li class="dropdown bxnavbar">
+										<a href="" class="dropdown-toggle" data-toggle="dropdown"> 应用类 <b class="caret"></b></a>
+										<ul class="dropdown-menu">
+											<li class="dropdown-submenu">
+												<a tabindex="-1" href=""> 研学系统</a>
+												<ul class="dropdown-menu">
 													<li>
-														<a href="stuinf.html"><i class="icon-user"></i><span> 学生信息维护</span></a>
+														<a tabindex="-1" href="ismanage.html"><span>研学管理 | 超级管理员</span></a>
 													</li>
 													<li>
-														<a href="stusetting.html"><i class=" icon-cog"></i><span> 学生信息状态设置</span></a>
-													</li>
-
-													<li>
-														<a href="enrollmentchange.html"><i class="icon-edit"></i><span> 学籍异动维护</span></a>
+														<a tabindex="-1" href="inqmanage.html"><span>课题维护 | 管理员</span></a>
 													</li>
 													<li>
-														<a href="look.html"><i class="icon-edit"></i><span> 学籍异动查看</span></a>
+														<a tabindex="-1" href="myinq-stu.html"><span>我的研学 | 学生</span></a>
 													</li>
 													<li>
-														<a href="namelist.html"><i class="icon-th"></i><span> 班级学生名单维护</span></a>
+														<a tabindex="-1" href="myinq-tch.html"><span>我的研学 | 老师</span></a>
 													</li>
 													<li>
-														<a href="lookinf.html"><i class=" icon-search"></i><span> 学生信息查看</span></a>
+														<a tabindex="-1" href="myinq-mng.html"><span>课题审核 | 研学办</span></a>
 													</li>
-
 													<li>
-														<a href="stuimprove.html"><i class="icon-briefcase"></i><span> 学生信息自我完善</span></a>
+														<a tabindex="-1" href="issueinq.html"><span>发布意向课题 | 学生/老师/研学办</span></a>
 													</li>
+                                                    <li>
+                                                        <a tabindex="-1" href="inqshow.html"><span>课题展示 | 所有人都能看</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a tabindex="-1" href="inqinfo.html"><span>课题资源 | 所有人都能查询已结题的课题</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a tabindex="-1" href="inqinfolook.html"><span>课题详情 | 学生</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a tabindex="-1" href="inqinfolooktch.html"><span>课题详情 | 老师</span></a>
+                                                    </li>
+                                                     <li>
+                                                        <a tabindex="-1" href="inqinfolookadmin.html"><span>课题详情 | 管理员</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a tabindex="-1" href="inqinfolookyxb.html"><span>课题详情 | 研学办</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a tabindex="-1" href="inqinfolookcwh.html"><span>课题详情 | 纯围观</span></a>
+                                                    </li>
+                                                    <li class="dropdown-submenu">
+                                                        <a tabindex="-1" href="inqinfolookQH.html"><span>清华附中的表格</span></a>
+                                                        <ul class="dropdown-menu">
+															<li>
+																<a tabindex="-1" href="QHopening.html"><span>开题信息</span></a>
+															</li>
+															<li>
+																<a tabindex="-1" href="QHclosing.html"><span>结题信息</span></a>
+															</li>
+															<li>
+																<a tabindex="-1" href="QHscore.html"><span>学分成绩评定表</span></a>
+															</li>
+															<li>
+																<a tabindex="-1" href="QHactivity.html"><span>活动记录表</span></a>
+															</li>
+															<li>
+																<a tabindex="-1" href="QHgroup.html"><span>小组评价表</span></a>
+															</li>
+														</ul>
+                                                    </li>
 												</ul>
 											</li>
 										</ul>
-									</li>
-									<li class="dropdown bxnavbar">
+								</li>-->
+								<li class="dropdown bxnavbar">
 										<a href="" class="dropdown-toggle" data-toggle="dropdown"> 应用类 <b class="caret"></b></a>
 										<ul class="dropdown-menu">
 											<li class="dropdown-submenu">
@@ -167,7 +240,7 @@
 														<a tabindex="-1" href="ktresource.html"><span>课题资源查看</span></a>
 													</li>
 													<!--<li>
-													<a tabindex="-1" href="lookresource.html"><span>研学资源</span></a>
+														<a tabindex="-1" href="lookresource.html"><span>研学资源</span></a>
 													</li>-->
 												</ul>
 											</li>
@@ -183,25 +256,19 @@
 													<li>
 														<a tabindex="-1" href="danganlook.html"><span>档案查看</span></a>
 													</li>
-
+												
 												</ul>
 											</li>
 										</ul>
-									</li>
-
+										</li>
+									
 								</ul>
 							</div>
 							<div class="pull-right">
 								<ul class="nav visible-desktop">
-									<li>
-										<a href="portal.html"><span> 首页块 </span></a>
-									</li>
-									<li>
-										<a data-bypass href="/template/portal/portal.html" target="_blank"><span> 首页demo </span></a>
-									</li>
-									<li>
-										<a href="generateDemo.html"><span> 工具 </span></a>
-									</li>
+									<li><a href="portal.html"><span> 首页元素 </span></a></li>
+									<li><a data-bypass href="/template/portal/portal.html" target="_blank"><span> 首页demo </span></a></li>
+									<li><a href="generateDemo.html"><span> 工具 </span></a></li>
 								</ul>
 							</div>
 						</div>
