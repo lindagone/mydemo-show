@@ -26,30 +26,33 @@ div.portal{
 	margin:5px;
 	position: absolute;
 	padding: 5px;
-	width: 310px;
-	height: 310px;
+	width: 80px;
+	height: 80px;
 	overflow-x:auto;x§
 }
 div.portalSmall {
 	background:green;
 }
 div.portalMiddle {
+
 	width: 310px;
 	height: 150px;
+
 	background:#99CCFF;
 }
 div.portalLarge {
 	background:#EE9999;
-	width: 630px;
-	height: 310px;
+	width: 170px;
+	height: 80px;
 }
 div.drawer-wrapper{
 	position: fixed;
 	background :#00ECFF;
-	bottom: -52px;
+	bottom: -102px;
 	width: 20%;
 	height: 100px;
 	z-index: 10000;
+	overflow:visible !important;
 	right:0px;
 	-khtml-opacity: 0.55;
 	-moz-opacity: 0.55;
@@ -73,9 +76,57 @@ div.drawer-toggler {
 	font-weight: 700;
 	text-align: center;
 	cursor: pointer;
-	padding: 10px 0;
-	width: 140px;
+	padding: 5px 0;
+	width: 30px;
 	position: absolute;
 	top: -30px;
 	right: 10px;
+}
+/*-----------*/
+  * {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.packery {
+  background: #FDD;
+  background: hsla(242, 98%, 28%, 0.04);
+  width: 100%;
+}
+
+/* clearfix */
+.packery:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+
+.item {
+  width: 160px;
+  height:160px;
+  float: left;
+
+  border-color: hsla(0, 0%, 0%, 0.3);
+    background: #F7F7F7;
+  border: 1px solid #D5D5D5;
+}
+
+.item:hover {
+  border-color: white;
+  cursor: move;
+}
+
+
+.item.w2 { width:   320px; background: #E8F5FE; }
+.item.h2 { height:  320px; background: #e8edd6; }
+.item.h4 { height: 640px; background: #F2FDDB; }
+.item.w4 { width:  640px; background: #FFE7F4; }
+
+
+.item.is-dragging,
+.item.is-positioning-post-drag {
+  border-color: #F9F7ED;
+  background: #EEEEEE;
+  z-index: 2;
 }

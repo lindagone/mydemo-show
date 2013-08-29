@@ -83,7 +83,7 @@
 							<th>课题名称</th>
 							<th>指导老师</th>
 							<th>组长</th>
-							<th>班级</th>
+							
 							<th>现有人数/人数上限</th>
 							<th>课题状态</th>	
 							<th>开题报告成绩</th>	
@@ -97,8 +97,8 @@
 							<td class="inCenter">1</td>
 							<td>鲁迅研究</td>
 							<td>陈敏</td>
-							<td>蔡祥</td>
-							<td>高一1班</td>
+							<td>蔡祥(2014届1班),赵可(2014届2班)</td>
+							
 							<td class="inRight">4/5</td>
 							<td>选题中</td>
 							<td class="inRight">70</td>
@@ -114,8 +114,8 @@
 							<td class="inCenter">1</td>
 							<td>王蒙研究</td>
 							<td>陈敏</td>
-							<td>蔡祥</td>
-							<td>高一1班</td>
+							<td>蔡祥(2014届1班),赵可(2014届2班)</td>
+							
 							<td class="inRight">4/5</td>
 							<td>选题中</td>
 							<td class="inRight">70</td>

@@ -64,12 +64,21 @@
 							</div>
 							<div>
 								<label>上&#160;&#160;&#160;&#160;&#160;传&#160;&#160;&#160;&#160;人&#160;&#160;
-									<input type="text" placeholder="人员单选框" class="input-small"/>
+									<input type="text" placeholder="人员多选框" class="input-small"/>
 								</label>
 							</div>
 							<div>
 								<label>附&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;件&#160;&#160;&#160;&#160;&#160;&#160;
 									<input type="text" placeholder="附件名称" class="input-small"/>
+								</label>
+							</div>
+							<div >
+								<label>状&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;态&#160;&#160;&#160;&#160;
+									<select  class="input-small">
+										<option>全部</option>
+										<option>未归档</option>
+										<option>已归档</option>
+									</select>
 								</label>
 							</div>
 							<div>
@@ -156,12 +165,21 @@
 							</div>
 							<div>
 								<label>上&#160;&#160;&#160;&#160;&#160;传&#160;&#160;&#160;&#160;人&#160;&#160;
-									<input type="text" placeholder="人员单选框" class="input-small"/>
+									<input type="text" placeholder="人员多选框" class="input-small"/>
 								</label>
 							</div>
 							<div>
 								<label>附&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;件&#160;&#160;&#160;&#160;&#160;&#160;
 									<input type="text" placeholder="附件名称" class="input-small"/>
+								</label>
+							</div>
+							<div >
+								<label>状&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;态&#160;&#160;&#160;&#160;
+									<select  class="input-small">
+										<option>全部</option>
+										<option>未归档</option>
+										<option>已归档</option>
+									</select>
 								</label>
 							</div>
 							<div>

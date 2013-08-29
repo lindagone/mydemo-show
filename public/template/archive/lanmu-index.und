@@ -36,7 +36,7 @@
 						<thead>
 							<tr class="headColor">
                                <th class="inCenter" rowspan="2">序号</th>
-								<th class="listNum" rowspan="2">编号</th>
+								<th  rowspan="2">档案编号</th>
 								<th rowspan="2">栏目名称</th>								
 								<th colspan="3">授权</th>								
 								<th rowspan="2">操作</th>
@@ -50,11 +50,11 @@
 						<tbody>
 							<tr >
 							<td class="inCenter"></td>
-							<td class="inCenter"></td>
+							<td class="inCenter"><input type="text" value="" class="input-small" placeholder="必填" required=""/><span class="text-error">*</span></td>
 							<td ><input type="text" value="" class="input-small" placeholder="必填" required=""/><span class="text-error">*</span></td>
 							<td ><input type="text" value="" class="input-small"  placeholder="必填,多人选择框" required=""/><span class="text-error">*</span></td>
 							<td ><input type="text" value="" class="input-small"  placeholder="选填,多人选择框"/></td>
-							<td ><input type="text" value="" class="input-small"  placeholder="选填,多人选择框"/></td>
+							<td ><input type="text" value=""   placeholder="选填,多人选择框"/></td>
 							<td style="vertical-align: middle"><button class="btn btn-mini " type="button">
 						保存
 					</button>
@@ -67,9 +67,9 @@
 							<td class="inCenter">1</td>
 							<td class="inCenter">001</td>
 							<td >学生档案</td>
-							<td >李敏</td>
-							<td >王敏</td>
-							<td >李涛</td>
+							<td >李敏，赵可</td>
+							<td >王敏，赵可</td>
+							<td >李涛,李雪，赵可，陆毅</td>
 							<td ><button class="btn btn-mini btn-xiugai" type="button">
 						修改
 					</button>
@@ -80,11 +80,11 @@
 					</tr>
 						<tr >
 							<td class="inCenter" style="vertical-align: middle">2</td>
-							<td class="inCenter" style="vertical-align: middle">002</td>
-							<td ><input type="text" value="学生档案" class="input-small"/><span class="text-error">*</span></td>
-							<td ><input type="text" value="李敏" class="input-small"/><span class="text-error">*</span></td>
-							<td ><input type="text" value="王敏" class="input-small"/></td>
-							<td ><input type="text" value="李涛" class="input-small"/></td>
+							<td class="inCenter" style="vertical-align: middle"><input type="text" value="002" class="input-small" required="required"/><span class="text-error">*</span></td>
+							<td ><input type="text" value="学生档案" required="" class="input-small"/><span class="text-error">*</span></td>
+							<td ><input type="text" value="李敏，赵可" class="input-small" required=""/><span class="text-error">*</span></td>
+							<td ><input type="text" value="王敏，赵可" class="input-small"/></td>
+							<td ><input type="text" value="李涛,李雪，赵可" /></td>
 							<td  style="vertical-align: middle"><button class="btn btn-mini " type="button">
 						保存
 					</button>
@@ -168,7 +168,7 @@
 						<thead>
 							<tr class="headColor">
                                <th class="listNum" rowspan="2">序号</th>
-								<th class="listNum" rowspan="2">编号</th>
+								<th  rowspan="2">档案编号</th>
 								<th rowspan="2">栏目名称</th>								
 								<th colspan="2">授权</th>								
 								<th rowspan="2">操作</th>
@@ -196,11 +196,11 @@
 						<tr >
 						
 							<td class="inCenter" style="vertical-align: middle">2</td>
-							<td class="inCenter" style="vertical-align: middle">002</td>
+							<td class="inCenter" style="vertical-align: middle"><input type="text" value="002" class="input-small"/><span class="text-error">*</span></td>
 							<td style="vertical-align: middle">学生档案</td>
 						
 							<td ><input type="text" value="王敏,李飞" class="input-small"/><span class="text-error">*</span></td>
-							<td ><input type="text" value="" placeholder="多人选择框" class="input-small"/><span class="text-error">*</span></td>
+							<td ><input type="text" value="" placeholder="多人选择框" /><span class="text-error">*</span></td>
 							<td  style="vertical-align: middle"><button class="btn btn-mini " type="button">
 						保存
 					</button>

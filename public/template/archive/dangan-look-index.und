@@ -70,9 +70,10 @@
 							<tr class="headColor">
                             
 								<th class="listNum">序号</th>
-								<th>栏目</th>
-								<th>编号</th>
-								<th>名称</th>
+								<th>档案编号</th>
+								<th>栏目名称</th>
+								
+								<th>档案名称</th>
 								<th>上传人</th>
 								<th>上传时间</th>
 								<th>附件</th>
@@ -85,8 +86,9 @@
 							<tr>
 								
 								 <td class="inCenter">1</td>
+								 <td class="inRightr">002</td>
 								<td class="inCenter">学生档案</td>
-								<td class="inRightr">002</td>
+								
 								<td >高二学生档案</td>
 								<td >高飞</td>
 								<td class="inCenter">2013-07-01</td>
@@ -101,8 +103,9 @@
 							<tr>
 								
 								 <td class="inCenter">2</td>
+								 <td class="inRightr">003</td>
 								<td class="inCenter">学生档案</td>
-								<td class="inRightr">003</td>
+								
 								<td >高二学生档案</td>
 								<td >高飞</td>
 								<td class="inCenter">2013-06-01</td>
@@ -154,7 +157,7 @@
 							</div>
 							<div>
 								<label>上&#160;&#160;&#160;&#160;&#160;传&#160;&#160;&#160;&#160;人&#160;&#160;
-									<input type="text" placeholder="人员单选框" class="input-small"/>
+									<input type="text" placeholder="人员多选框" class="input-small"/>
 								</label>
 							</div>
 							<div>
@@ -165,7 +168,7 @@
 							<div id="shifougd">
 								<label>状&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;态&#160;&#160;&#160;&#160;
 									<select  class="input-small">
-										<option></option>
+										<option>全部</option>
 										<option>未归档</option>
 										<option>已归档</option>
 									</select>
@@ -220,9 +223,10 @@
 							<tr class="headColor">
                             
 								<th class="listNum">序号</th>
-								<th>栏目</th>
-								<th>编号</th>
-								<th>名称</th>
+								<th>档案编号</th>
+								<th>栏目名称</th>
+								
+								<th>档案名称</th>
 								<th>上传人</th>
 								<th>上传时间</th>
 								<th>附件</th>
@@ -235,8 +239,9 @@
 							<tr>
 								
 								 <td class="inCenter">1</td>
+								 <td class="inRightr">002</td>
 								<td class="inCenter">学生档案</td>
-								<td class="inRightr">002</td>
+								
 								<td >高二学生档案</td>
 								<td >高飞</td>
 								<td class="inCenter">2013-07-01</td>
@@ -251,8 +256,9 @@
 							<tr>
 								
 								 <td class="inCenter">2</td>
+								 <td class="inRightr">003</td>
 								<td class="inCenter">学生档案</td>
-								<td class="inRightr">003</td>
+								
 								<td >高二学生档案</td>
 								<td >高飞</td>
 								<td class="inCenter">2013-06-01</td>
@@ -351,9 +357,10 @@
 							<tr class="headColor">
                             
 								<th class="listNum">序号</th>
-								<th>栏目</th>
-								<th>编号</th>
-								<th>名称</th>
+								<th>档案编号</th>
+								<th>栏目名称</th>
+								
+								<th>档案名称</th>
 								<th>上传人</th>
 								<th>上传时间</th>
 								<th>附件</th>
@@ -366,8 +373,9 @@
 							<tr>
 								
 								 <td class="inCenter">1</td>
+								 <td class="inRightr">002</td>
 								<td class="inCenter">学生档案</td>
-								<td class="inRightr">002</td>
+								
 								<td >高二学生档案</td>
 								<td >高飞</td>
 								<td class="inCenter">2013-07-01</td>
@@ -382,8 +390,9 @@
 							<tr>
 								
 								 <td class="inCenter">2</td>
+								 <td class="inRightr">003</td>
 								<td class="inCenter">学生档案</td>
-								<td class="inRightr">003</td>
+								
 								<td >高二学生档案</td>
 								<td >高飞</td>
 								<td class="inCenter">2013-06-01</td>
@@ -435,7 +444,7 @@
 							</div>
 							<div>
 								<label>上&#160;&#160;&#160;&#160;&#160;传&#160;&#160;&#160;&#160;人&#160;&#160;
-									<input type="text" placeholder="人员单选框" class="input-small"/>
+									<input type="text" placeholder="人员多选框" class="input-small"/>
 								</label>
 							</div>
 							<div>
@@ -493,9 +502,10 @@
 							<tr class="headColor">
                             
 								<th class="listNum">序号</th>
-								<th>栏目</th>
-								<th>编号</th>
-								<th>名称</th>
+								<th>档案编号</th>
+								<th>栏目名称</th>
+								
+								<th>档案名称</th>
 								<th>上传人</th>
 								<th>上传时间</th>
 								<th>附件</th>
@@ -508,8 +518,9 @@
 							<tr>
 								
 								 <td class="inCenter">1</td>
+								 <td class="inRightr">002</td>
 								<td class="inCenter">学生档案</td>
-								<td class="inRightr">002</td>
+								
 								<td >高二学生档案</td>
 								<td >高飞</td>
 								<td class="inCenter">2013-07-01</td>
@@ -524,8 +535,9 @@
 							<tr>
 								
 								 <td class="inCenter">2</td>
+								 <td class="inRightr">003</td>
 								<td class="inCenter">学生档案</td>
-								<td class="inRightr">003</td>
+								
 								<td >高二学生档案</td>
 								<td >高飞</td>
 								<td class="inCenter">2013-06-01</td>

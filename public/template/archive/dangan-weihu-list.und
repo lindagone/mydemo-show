@@ -30,9 +30,10 @@
 							<tr class="headColor">
                                <th class="inCenter"><input type="checkbox" /></th>
 								<th class="listNum">序号</th>
-								<th>栏目</th>
-								<th>编号</th>
-								<th>名称</th>
+								<th>档案编号</th>
+								<th>栏目名称</th>
+								
+								<th>档案名称</th>
 								<th>上传人</th>
 								<th>上传时间</th>
 								<th>附件</th>
@@ -45,8 +46,9 @@
 							<tr>
 								 <td class="inCenter"><input type="checkbox" /></td>
 								 <td class="inCenter">1</td>
+								 <td class="inRightr">002</td>
 								<td class="inCenter">学生档案</td>
-								<td class="inRightr">002</td>
+								
 								<td >高二学生档案</td>
 								<td >高飞</td>
 								<td class="inCenter">2013-07-01</td>
@@ -61,8 +63,9 @@
 							<tr>
 								 <td class="inCenter"><input type="checkbox" /></td>
 								 <td class="inCenter">2</td>
+								 <td class="inRightr">003</td>
 								<td class="inCenter">教师档案</td>
-								<td class="inRightr">003</td>
+								
 								<td >教师档案</td>
 								<td >高飞</td>
 								<td class="inCenter">2013-06-01</td>
@@ -78,8 +81,9 @@
 							<tr>
 								 <td class="inCenter"><input type="checkbox" /></td>
 								 <td class="inCenter">1</td>
+								 <td class="inRightr">002</td>
 								<td class="inCenter">学生档案</td>
-								<td class="inRightr">002</td>
+								
 								<td >高二学生档案</td>
 								<td >高飞</td>
 								<td class="inCenter">2013-07-01</td>
@@ -94,8 +98,9 @@
 							<tr>
 								  <td class="inCenter"><input type="checkbox" /></td>
 								 <td class="inCenter">2</td>
+								 <td class="inRightr">003</td>
 								<td class="inCenter">教师档案</td>
-								<td class="inRightr">003</td>
+								
 								<td >教师档案</td>
 								<td >高飞</td>
 								<td class="inCenter">2013-06-01</td>
@@ -111,8 +116,9 @@
 							<tr>
 								 <td class="inCenter"><input type="checkbox" /></td>
 								 <td class="inCenter">1</td>
+								 <td class="inRightr">002</td>
 								<td class="inCenter">学生档案</td>
-								<td class="inRightr">002</td>
+								
 								<td >高二学生档案</td>
 								<td >高飞</td>
 								<td class="inCenter">2013-07-01</td>
@@ -126,8 +132,9 @@
 							<tr>
 								 <td class="inCenter"><input type="checkbox" /></td>
 								 <td class="inCenter">2</td>
+								 <td class="inRightr">003</td>
 								<td class="inCenter">教师档案</td>
-								<td class="inRightr">003</td>
+								
 								<td >教师档案</td>
 								<td >高飞</td>
 								<td class="inCenter">2013-06-01</td>

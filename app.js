@@ -33,7 +33,9 @@ app.post("/api/genademo", function(req, res){
         res.send("gena ok!");
     }); 
 });
-
+app.get("/panel*",function(req,res){
+	res.sendfile(app.get("root") + "/public/template/portal/_panel.html")
+})
 app.get('/*', function(req, res){
 	res.sendfile(app.get("root") + "/public/index.html");
 });

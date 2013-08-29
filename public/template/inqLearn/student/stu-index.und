@@ -49,7 +49,7 @@
 							<th>课题名称</th>
 							<th>指导老师</th>
 							<th>组长</th>
-							<th>班级</th>
+							
 							<th>现有人数/人数上限</th>
 							<th>课题状态</th>
 							<th>综合成绩</th>
@@ -63,8 +63,8 @@
 							<td class="inCenter">1</td>
 							<td>鲁迅研究</td>
 							<td>陈敏</td>
-							<td>王玉</td>
-							<td>2014届3班</td>
+							<td>陈玉(2014届1班),赵可(2014届2班)</td>
+							
 							<td class="inRight">4/5</td>
 							<td>专家审核</td>
 							<td class="inRight">-</td>
@@ -78,8 +78,7 @@
 							<td class="inCenter">1</td>
 							<td>鲁迅研究</td>
 							<td>王敏</td>
-							<td>李玉</td>
-							<td>2014届1班</td>
+							<td>李玉(2014届1班),赵玉(2014届2班)</td>
 							<td class="inRight">2/5</td>
 							<td>开题中</td>
 							<td class="inRight">-</td>
@@ -93,8 +92,7 @@
 							<td class="inCenter">1</td>
 							<td>鲁迅研究</td>
 							<td>王敏</td>
-							<td>李玉</td>
-							<td>2014届1班</td>
+							<td>李玉(2014届1班),赵玉(2014届2班)</td>
 							<td class="inRight">2/5</td>
 							<td>开题中</td>
 							<td class="inRight">-</td>
@@ -108,8 +106,7 @@
 							<td class="inCenter">1</td>
 							<td>鲁迅研究</td>
 							<td>陈敏</td>
-							<td>王玉</td>
-							<td>2014届3班</td>
+							<td>李玉(2014届1班),赵玉(2014届2班)</td>
 							<td class="inRight">4/5</td>
 							<td>研究中</td>
 							<td class="inRight">-</td>
@@ -129,13 +126,13 @@
     
     
     <!--  申请加入情况查看 -->
- <div id="addstatus-message" title="课题申请加入信息" style="display: none;">
- <table class="table table-bordered">
+ <div id="addstatus-message" title="课题申请信息" style="display: none;">
+ <table class="table table-condensed">
     <tbody>
     	<tr>
-    		<td class="inCenter">1</td>
-    		<td >王红同学申请加入《鲁迅文化研究与国民素质提高》课题</td>
-    		<td >
+    		<td class="inCenter" style="border-top-color: #fff">1</td>
+    		<td style="border-top-color: #fff">王红同学申请加入《鲁迅文化研究与国民素质提高》课题</td>
+    		<td style="border-top-color: #fff">
        <button class="btn btn-mini btn-agree">同意</button>	
        <button class="btn btn-mini btn-not-agree">不同意</button>	
             </td>
