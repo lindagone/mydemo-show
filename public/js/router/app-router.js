@@ -1,10 +1,10 @@
 define([ 'backbone', 'view/mail/mail-base-view', 'view/notice/notice-index-view', 'view/mytest/mytest-view', 'view/portal/portal-view',		     
            'router/studentmanage-router','router/hr-router',
 		 'router/demogena-router','router/salary-router','router/inq-router',
-		 'router/inqlearn-router','router/archive-router',
+		 'router/inqlearn-router','router/archive-router','view/picture/pic-index-view',
 		 'backbone-queryparams'], function(
 		Backbone, MailBaseView, NoticeIndexView,TestView, PortalView,				
-		StuManageRouter,HrRouter,GenaRouter, SalaryRouter, InqRouter,InqLearnRouter,ArchiveRouter) {
+		StuManageRouter,HrRouter,GenaRouter, SalaryRouter, InqRouter,InqLearnRouter,ArchiveRouter,PicIndexView) {
 	
 	var routes = _.extend(
 		StuManageRouter.localoptions,
@@ -15,7 +15,7 @@ define([ 'backbone', 'view/mail/mail-base-view', 'view/notice/notice-index-view'
 			InqLearnRouter.localoptions,ArchiveRouter.localoptions,
 			
 			{
-				
+			'pic.html':'viewPicture',	
 			'': 'anything',
 			'mailbox.html'          : 'mailbox',
 			'notice.html'           : 'notice',			
@@ -54,6 +54,9 @@ define([ 'backbone', 'view/mail/mail-base-view', 'view/notice/notice-index-view'
 			goportal : function(){
 				console.log("into portal demo page");
 				new PortalView({root : $('#bodyContainer')});
+			},
+			viewPicture:function(){
+				new PicIndexView({root : $('#bodyContainer')});
 			}
 			
 			

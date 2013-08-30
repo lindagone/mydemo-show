@@ -106,7 +106,7 @@ div.drawer-toggler {
   width: 160px;
   height:160px;
   float: left;
-
+  padding: 5px;
   border-color: hsla(0, 0%, 0%, 0.3);
     background: #F7F7F7;
   border: 1px solid #D5D5D5;

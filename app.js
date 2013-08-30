@@ -22,8 +22,11 @@ app.post("/api/code", function(req, res){
 app.get("/download/*",function(req,res){
 	
 	res.sendfile(app.get("root") + "/" + req.params[0]);
-})
-
+});
+app.get("/api/getpicturename",function(req,res){	   
+    var s=require("./service/readFileName").getfileName;
+    res.send(s);
+});
 app.post("/api/genademo", function(req, res){
     var demoHandler = require("./service/generateDemo").generating;
     

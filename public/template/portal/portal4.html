@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"  dir="ltr" lang="en-US"> <!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>首页 - 数字校园</title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,700' rel='stylesheet' type='text/css'>
+    <!--[if IE 7]><link href="css/font-awesome-ie7.min.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
+    
+	<link href="/css/twitter-bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="/css/social.css" rel="stylesheet" type="text/css">
+	<link href="/css/social-jquery-ui-1.10.0.custom.css" rel="stylesheet" type="text/css">
+	<link href="/css/social.plugins.css" rel="stylesheet" type="text/css">
+	<link href="/css/font-awesome.css" rel="stylesheet" type="text/css">
+	
+	<link href="/css/twitter-bootstrap/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+	<link href="/css/mydemo.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <style>
+  .wraper #main{
+    margin-top: 40px;
+  }
+  #main {
+    margin-left: 0;
+    margin-top:45px;
+  }
+  .social-navbar {
+    left: 0;
+  }
+  
+    </style>
+</head>
+<body>
+	<div class="wrapper clearfix">
+		
+	<header>
+          <!-- BEGIN NAVBAR -->
+          <nav class="navbar navbar-blue navbar-fixed-top social-navbar" >
+            <div class="navbar-inner">
+              <div class="container-fluid">
+                <!-- BEGIN SIDEBAR COLLAPSER -->
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".social-sidebar">
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+                </a>
+                <!-- END SIDEBAR COLLAPSER -->
+                <!-- BEGIN BRAND LINK -->
+                <a class="brand" href="dashboard.html">
+                学校
+                </a>
+                <!-- END BRAND LINK -->
+                <ul class="nav nav-pills">
+					<li class="active"><a href="javascript:;" >主页</a></li>
+					<li><a href="javascript:;">教务</a></li>
+					<li><a href="javascript:;">班级</a></li>
+					<li><a href="javascript:;">其他</a></li>
+				</ul>
+                <!-- BEGIN NAVBAR INDICATORS -->
+                <ul class="nav pull-right nav-indicators">
+                  <li class="dropdown nav-notifications">
+                    <a  href="javascript:;" class="sitemap"><i class="icon-sitemap"></i></a>
+                  </li>
+                  <!-- BEGIN DROPDOWN NOTIFICATIONS -->
+                  <li class="dropdown nav-notifications">
+                    <!-- BEGIN DROPDOWN TOGGLE -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="badge">9</span><i class="icon-warning-sign"></i>
+                    </a>
+                    <!-- END DROPDOWN TOGGLE -->
+                    <!-- BEGIN DROPDOWN MENU -->
+                    <ul class="dropdown-menu">
+                      <!-- BEGIN DROPDOWN HEADER -->
+                      <li class="nav-notifications-header">
+                        <a tabindex="-1" href="#">You have <strong>9</strong> new notifications</a>
+                      </li>
+                      <!-- END DROPDOWN HEADER -->
+                      <!-- BEGIN NOTIFICATION ITEMS -->
+                      
+                      <li class="nav-notification-body">
+                        <a href="#">
+                        <i class="icon-briefcase"></i> Backup is completed
+                        <small class="pull-right">6 minutes ago</small>
+                        </a>
+                      </li>
+                      <!-- END NOTIFICATION ITEMS -->
+                      <!-- BEGIN DROPDOWN FOOTER -->
+                      <li class="nav-notifications-footer">
+                        <a tabindex="-1" href="#">View all messages
+                        </a>
+                      </li>
+                      <!-- END DROPDOWN FOOTER -->
+                    </ul>
+                    <!-- END DROPDOWN MENU -->
+                  </li>
+                  <!-- END DROPDOWN NOTIFICATIONS -->
+                  <!-- BEGIN DROPDOWN TASKS -->
+                  <li class="dropdown nav-tasks">
+                    <!-- BEGIN DROPDOWN TOGGLE -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="badge">13</span>
+                    <i class="icon-tasks"></i>
+                    </a>
+                    <!-- END DROPDOWN TOGGLE -->
+                    <!-- BEGIN DROPDOWN MENU -->
+                    <ul class="dropdown-menu">
+                      <!-- BEGIN DROPDOWN HEADER -->
+                      <li class="nav-taks-header">
+                        <a tabindex="-1" href="#">You have <strong>13</strong> tasks in progress</a>
+                      </li>
+                      <!-- END DROPDOWN HEADER -->
+                      <!-- BEGIN DROPDOWN ITEMS -->
+                      
+                      <li>
+                        <a>
+                          <strong>Others</strong><span class="pull-right">15%</span>
+                          <div class="progress progress-warning active">
+                            <div class="bar" style="width: 15%;"></div>
+                          </div>
+                        </a>
+                      </li>
+                      <!-- END DROPDOWN ITEMS -->
+                      <!-- BEGIN DROPDOWN FOOTER -->
+                      <li class="nav-taks-footer">
+                        <a tabindex="-1" href="#">View all tasks
+                        </a>
+                      </li>
+                      <!-- END DROPDOWN FOOTER -->
+                    </ul>
+                    <!-- END DROPDOWN MENU -->
+                  </li>
+                  <!-- END DROPDOWN TASKS -->
+                  <!-- BEGIN DROPDOWN MESSAGES -->
+                  <li class="dropdown nav-messages">
+                    <!-- BEGIN DROPDOWN TOGGLE -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="badge">8</span>
+                    <i class="icon-envelope"></i>
+                    </a>
+                    <!-- END DROPDOWN TOGGLE -->
+                    <!-- BEGIN DROPDOWN MENU -->
+                    <ul class="dropdown-menu">
+                      <!-- BEGIN DROPDOWN HEADER -->
+                      <li class="nav-messages-header">
+                        <a tabindex="-1" href="#">You have <strong>8</strong> new messages</a>
+                      </li>
+                      <!-- END DROPDOWN HEADER -->
+                      <!-- BEGIN DROPDOWN ITEMS -->
+                      
+                      <li class="nav-message-body">
+                        <a>
+                          <img src="../assets/img/people-face/user4_55.jpg" alt="User">
+                          <div>
+                            <small class="pull-right">Just Now</small>
+                            <strong>Tobei Tsumura</strong>
+                          </div>
+                          <div>
+                            Lorem ipsum dolor sit amet, consectetur...
+                          </div>
+                        </a>
+                      </li>
+                      <!-- END DROPDOWN ITEMS -->
+                      <!-- BEGIN DROPDOWN FOOTER -->
+                      <li class="nav-messages-footer">
+                        <a tabindex="-1" href="pages/chat-inbox.html">View all messages
+                        </a>
+                      </li>
+                      <!-- END DROPDOWN FOOTER -->
+                    </ul>
+                    <!-- END DROPDOWN MENU -->
+                  </li>
+                  <!-- END DROPDOWN MESSAGES -->
+                  <li class="divider-vertical"></li>
+                  <!-- BEGIN EXTRA DROPDOWN -->
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="pages/basic-user-profile.html"><i class="icon-user"></i> My Profile</a></li>
+                      <li><a href="#"><i class="icon-cogs"></i> Settings</a></li>
+                      <li><a href="login.html"><i class="icon-off"></i> Log Out</a></li>
+                      <li class="divider"></li>
+                      <li><a href="pages/faq.html"><i class="icon-info-sign"></i> Help</a></li>
+                      <li><a href="javascript:;" id="btnswitcher">开关</a></li>
+                    </ul>
+                  </li>
+                  <!-- END EXTRA DROPDOWN -->
+                </ul>
+                <!-- END NAVBAR INDICATORS -->
+               
+              </div>
+            </div>
+          </nav>
+          <!-- END NAVBAR -->
+        </header>
+		<aside id="mapModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		    <div class="modal-header">
+		        <h3 id="myModalLabel">数字校园系统模块</h3>
+		    </div>
+		    <div class="modal-body">
+		        <div class="span4">
+		              <h4><strong>Unordered</strong></h4>
+		                <ul>
+		                  <li>Lorem ipsum dolor sit amet</li>
+		                  <li>Consectetur adipiscing elit</li>
+		                  <li>Integer molestie lorem at massa</li>
+		                  <li>Facilisis in pretium nisl aliquet</li>
+		                  <li>Nulla volutpat aliquam velit
+		                    <ul>
+		                      <li>Phasellus iaculis neque</li>
+		                      <li>Purus sodales ultricies</li>
+		                      <li>Vestibulum laoreet porttitor sem</li>
+		                      <li>Ac tristique libero volutpat at</li>
+		                    </ul>
+		                  </li>
+		                  <li>Faucibus porta lacus fringilla vel</li>
+		                  <li>Aenean sit amet erat nunc</li>
+		                  <li>Eget porttitor lorem</li>
+		                </ul>
+		            </div>
+		            <div class="span4">
+		                <h4><strong>Ordered</strong></h4>
+		                <ol>
+		                  <li>Lorem ipsum dolor sit amet</li>
+		                  <li>Consectetur adipiscing elit</li>
+		                  <li>Integer molestie lorem at massa</li>
+		                  <li>Facilisis in pretium nisl aliquet</li>
+		                  <li>Nulla volutpat aliquam velit</li>
+		                  <li>Faucibus porta lacus fringilla vel</li>
+		                  <li>Aenean sit amet erat nunc</li>
+		                  <li>Eget porttitor lorem</li>
+		                </ol>
+		            </div>
+		            <div class="span4">
+		              <h4>Unstyled</h4>
+		              <ul class="unstyled">
+		                <li>Lorem ipsum dolor sit amet</li>
+		                <li>Consectetur adipiscing elit</li>
+		                <li>Integer molestie lorem at massa</li>
+		                <li>Facilisis in pretium nisl aliquet</li>
+		                <li>Nulla volutpat aliquam velit
+		                  <ul>
+		                    <li>Phasellus iaculis neque</li>
+		                    <li>Purus sodales ultricies</li>
+		                    <li>Vestibulum laoreet porttitor sem</li>
+		                    <li>Ac tristique libero volutpat at</li>
+		                  </ul>
+		                </li>
+		                <li>Faucibus porta lacus fringilla vel</li>
+		                <li>Aenean sit amet erat nunc</li>
+		                <li>Eget porttitor lorem</li>
+		              </ul>
+		            </div>
+		            <div class="clearfix"></div>
+		    </div>
+		    <div class="modal-footer">
+		        <button class="btn btn-danger" data-dismiss="modal">关闭</button>
+		    </div>
+		</aside>
+		<div id="main" class=" clearfix">
+			<div class="container-fluid">
+				<div class="row-fluid">
+	            <div class="span12">  
+				<div class="packery">
+				<div class="item w2">
+					<div class="pull-right"><i class="icon-th"></i>  <i class="icon-remove"></i></div>
+					<img src="./weather.png" style="height:150px"/>
+				</div>
+				
+				<div class="item w4">
+					<div class="row-fluid">
+						<div class="span4"><strong>新通知 ( <a href="">8</a> )</strong></div>
+						<div class="span8"><div class="pull-right"><i class="icon-th"></i>  <i class="icon-remove"></i></div></div>
+					</div>
+					<div class="row-fluid">
+						<div class="span12">
+							<p> 关于开展浙江省2013年高等教育课堂教学改革项目申报工作的通知 (2013-08-23 12:48:28) 白雪飞</p>
+							<p> 关于做好省普通高校党建研究专业委员会第九次年会论文征集和立项... (2013-07-30 11:41:51) 白雪飞</p>
+							<p> 关于召开部门网站建设交流会的通知 (2013-08-23 12:48:28) 白雪飞</p>
+							<p> 关于举办第九届“挑战杯”大学生创业计划竞赛的通知 (2013-08-23 12:48:28) 白雪飞</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="item w2">
+					<div class="row-fluid">
+						<div class="span12"><div class="pull-right"><i class="icon-th"></i>  <i class="icon-remove"></i></div></div>
+					</div>
+					<div class="row-fluid">
+						<div class="span4">
+							<img src="./pic.png" class="inCenter"/>
+						</div>
+						<div class="span8">
+							<div style="margin-top: 30px">
+								<strong>王超</strong>
+								<p>有志者事竟成。</p>
+								<p>上次登录:2013-08-20 16:30</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="item w4">
+					<div class="row-fluid">
+						<div class="span4"><strong>新邮件 ( <a href="">7</a> )</strong></div>
+						<div class="span8"><div class="pull-right"><i class="icon-th"></i>  <i class="icon-remove"></i></div></div>
+					</div>
+					<div class="row-fluid">
+						<div class="span12">
+							<p> 转发:关于开展浙江省2013年高等教育课堂教学改革项目申报工作... (2013-08-23 12:48:28) 白雪飞</p>
+							<p> 请阅:关于做好省普通高校党建研究专业委员会第九次年会论文征集... (2013-07-30 11:41:51) 白雪飞</p>
+							<p> 关于召开部门网站建设交流会的通知 (2013-08-23 12:48:28) 白雪飞</p>
+							<p> 关于举办第九届“挑战杯”大学生创业计划竞赛的通知 (2013-08-23 12:48:28) 白雪飞</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="item w2">
+					<div class="row-fluid">
+						<div class="span4"><strong>今日日程 ( <a href="">3</a> )</strong></div>
+						<div class="span8"><div class="pull-right"><i class="icon-th"></i>  <i class="icon-remove"></i></div></div>
+					</div>
+					<div class="row-fluid">
+						<div class="span12">[10:00] 语文课 (二教 307)</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span12">[13:00] 语文课 (逸夫教学楼 317)</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span12">[18:00] 开会 (大礼堂)</div>
+					</div>
+				</div>
+				
+				<div class="item w4 ">
+					<div class="row-fluid">
+						<div class="span4"><strong>系统消息 ( <a href="">20</a> )</strong></div>
+						<div class="span8"><div class="pull-right"><i class="icon-th"></i>  <i class="icon-remove"></i></div></div>
+					</div>
+					<div class="row-fluid">
+						<div class="span12">[文印申请审核] 白雪提交了一个新申请 (2013-8-21 13:30)</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span12">[课题申请审批] 白雪提交了一个新申请 (2013-8-21 11:30)</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span12">[课题申请审批] 白雪提交了一个新申请 (2013-8-2 13:30)</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span12">[教室申请审批] 白雪提交了一个新申请 (2013-8-1 13:30)</div>
+					</div>
+				</div>
+				
+				<div class="item w2">
+					<div class="row-fluid">
+						<div class="span4"><strong>待办事宜 ( <a href="">5</a> )</strong></div>
+						<div class="span8"><div class="pull-right"><i class="icon-th"></i>  <i class="icon-remove"></i></div></div>
+					</div>
+					<div class="row-fluid">
+						<div class="span12">新成绩填报 (2013-8-15)</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span12">新成绩填报 (2013-7-1)</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span12">准备使用102教室 (2013-6-21)</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span12">新成绩填报 (2013-6-21)</div>
+					</div>
+				</div>
+				
+				<div class="item w2">
+					<div class="row-fluid">
+						<div class="span10"><i class="icon-user"> 请选择联系人</i></div>	
+						<div class="span2"><div class="pull-right"><i class="icon-th"></i>  <i class="icon-remove"></i></div></div>
+					</div>
+					
+					<div class="row-fluid">
+						<div class="span12"><textarea style="width:300px; height: 86px;" placeholder="请输入短信内容，字数不能大于56个。请输入短信内容，字数不能大于56个。请输入短信内容，字数不能大于56个。请输入短信内容，"></textarea></div>	
+					</div>
+					<div class="row-fluid">
+						<div class="span12">
+							<div class=" pull-right">
+								<div class="btn btn-small btn-info">发送</div>
+								<div class="btn btn-small btn-info">重置</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+				
+				<div class="item w2 ">
+					<div class="row-fluid">
+						<div class="span4"><strong>上级文件 ( <a href="">5</a> )</strong></div>
+						<div class="span8"><div class="pull-right"><i class="icon-th"></i>  <i class="icon-remove"></i></div></div>
+					</div>
+					<div>
+						<div class="row-fluid">
+							<div class="span8">第四周通知.doc</div>
+							<div class="span4">2013-9-22</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span8">第三周通知.doc</div>
+							<div class="span4">2013-9-15</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span8">招聘通知.doc</div>
+							<div class="span4">2013-9-10</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span8">招聘通知.doc</div>
+							<div class="span4">2013-9-10</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="item w4 h2">
+			
+					<div class="row-fluid">
+						<div class="span4"><strong>周工作安排 ( <a href="">5</a> )</strong></div>
+						<div class="span4">本周 ( 第4周 8月19日-8月25日 )</div>
+						<div class="span2">下周</div>
+						<div class="span2"><div class="pull-right"><i class="icon-th"></i>  <i class="icon-remove"></i></div></div>
+					</div>
+			
+					<div class="row-fluid">
+						<div class="span4">周工作重点</div>
+						<div class="span8">开学准备工作</div>
+					</div>
+					<hr />
+					<div class="row-fluid">
+						<div class="span4">8月19日（周一）</div>
+						<div class="span8">未发布</div>
+					</div>
+			
+					<div class="row-fluid">
+						<div class="span4">8月20日（周二）</div>
+						<div class="span8">未发布</div>
+					</div>
+			
+					<div class="row-fluid">
+						<div class="span4">8月21日（周三）</div>
+						<div class="span8">报名</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span4">8月22日（周四）</div>
+						<div class="span8">报名</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span4">8月23日（周五）</div>
+						<div class="span8">报名</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span4">8月24日（周六）</div>
+						<div class="span8">报名</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span4">8月25日（周日）</div>
+						<div class="span8">报名</div>
+					</div>
+				</div>
+			
+				<div class="item w2">
+					<div class="row-fluid">
+						<div class="span4"><strong>设备维修 ( <a href="">5</a> )</strong></div>
+						<div class="span8"><div class="pull-right"><i class="icon-th"></i>  <i class="icon-remove"></i></div></div>
+					</div>
+					<div class="row-fluid">
+						<div class="span8">023 电脑</div>
+						<div class="span4">待分派</div>
+					</div>
+			
+					<div class="row-fluid">
+						<div class="span8">045 显示器</div>
+						<div class="span4">待分派</div>
+					</div>
+			
+					<div class="row-fluid">
+						<div class="span8">127 电脑</div>
+						<div class="span4">待维修</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span8">170 投影仪</div>
+						<div class="span4">待维修</div>
+					</div>
+				</div>
+			
+				
+			
+				<div class="item w2 ">
+					<div class="row-fluid">
+						<div class="span4"><strong>车辆预约 ( <a href="">5</a> )</strong></div>
+						<div class="span8"><div class="pull-right"><i class="icon-th"></i>  <i class="icon-remove"></i></div></div>
+					</div>
+					<div class="row-fluid">
+						<div class="span4">京N300CP</div>
+						<div class="span4">白雪飞</div>
+						<div class="span4">正在约车</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span4">京N200GF</div>
+						<div class="span4">安妮</div>
+						<div class="span4">正在约车</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span4">京B360CA</div>
+						<div class="span4">李想</div>
+						<div class="span4">已批准</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span4">京B360C2</div>
+						<div class="span4">李想</div>
+						<div class="span4">已批准</div>
+					</div>
+				</div>
+				
+				<div class="item w4 ">
+					<div class="row-fluid">
+						<div class="span4"><strong>超级任务 ( <a href="">2</a> )</strong></div>
+						<div class="span8"><div class="pull-right"><i class="icon-th"></i>  <i class="icon-remove"></i></div></div>
+					</div>
+					<div class="row-fluid">
+						<div class="span12">实验中学2013-2014年发展规划 (2013-1-1 ~ 2013-1-15)</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span12">校党总支各位教职员工阅读 (2012-10-9 ~ 2012-10-30)</div>
+					</div>
+				</div>
+			
+				<div class="item w4 h2">
+					<div class="row-fluid">
+						<div class="span4"><strong>学分制成绩</strong></div>
+						<div class="span8"><div class="pull-right"><i class="icon-th"></i>  <i class="icon-remove"></i></div></div>
+					</div>
+					<hr />
+					<div class="row-fluid">
+						<div class="span4">高中2016届</div>
+						<div class="span2">高一</div>
+						<div class="span2">第一学期</div>
+						<div class="span2">学段1</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span4">高中2016届</div>
+						<div class="span2">高一</div>
+						<div class="span2">第一学期</div>
+						<div class="span2">学段2</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span4">高中2015届</div>
+						<div class="span2">高二</div>
+						<div class="span2">第一学期</div>
+						<div class="span2">学段1</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span4">高中2015届</div>
+						<div class="span2">高二</div>
+						<div class="span2">第一学期</div>
+						<div class="span2">学段2</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span4">高中2014届</div>
+						<div class="span2">高三</div>
+						<div class="span2">第一学期</div>
+						<div class="span2">学段1</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span4">高中2014届</div>
+						<div class="span2">高三</div>
+						<div class="span2">第一学期</div>
+						<div class="span2">学段2</div>
+					</div>
+				</div>
+
+				<div class="item w4">
+					<div class="row-fluid">
+						<div class="span4"><strong>模考查询</strong></div>
+						<div class="span8"><div class="pull-right"><i class="icon-th"></i>  <i class="icon-remove"></i></div></div>
+					</div>
+					<div class="row-fluid">
+						<div class="span2">年份</div>
+						<div class="span4">
+							<select class="input-small">
+								<option>2013</option>
+								<option>2012</option>
+								<option>2011</option>
+								<option>2010</option>
+								<option>2009</option>
+							</select>
+						</div>
+						<div class="span2">科目</div>
+						<div class="span4">
+							<label class="radio inline">
+							  <input type="radio" name="subject" id="optionsRadios1" value="option1" checked>
+							  文科
+							</label>
+							<label class="radio inline">
+							  <input type="radio" name="subject" id="optionsRadios2" value="option2" >
+							  理科
+							</label>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span2">考试类型</div>
+						<div class="span4">
+							<select class="input-small">
+								<option>模考</option>
+							</select>
+						</div>
+						<div class="span2">分析类型</div>
+						<div class="span4">
+							<label class="radio inline">
+							  <input type="radio" name="anaType" id="optionsRadios1" value="option1" checked>
+							  分数
+							</label>
+							<label class="radio inline">
+							  <input type="radio" name="anaType" id="optionsRadios2" value="option2" >
+							  名次
+							</label>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span2">区间</div>
+						<div class="span6">
+							<input type="text" class="input-small"></input> -
+							<input type="text" class="input-small"></input> 
+						</div>
+						<div class="span4">
+							<button class="btn pull-right">查询</button>
+						</div>
+					</div>
+				</div>
+			
+				<div class="item w4 h2">
+					<div class="row-fluid">
+						<div class="span4"><strong>课程表</strong></div>
+						<div class="span4"><a href="">高一 1 班</a> | <a href="">高一 2 班</a></div>
+						<div class="span2">第<select class="input-mini"><option>1</option><option>2</option></select>周</div>
+						<div class="span2"><div class="pull-right"><i class="icon-th"></i>  <i class="icon-remove"></i></div></div>
+					</div>
+					<div class="row-fluid">
+						<div class="span12">
+							<table class="table table-bordered">
+								<tr>
+									<th class="inCenter">节次</th>
+									<th class="inCenter">一</th>
+									<th class="inCenter">二</th>
+									<th class="inCenter">三</th>
+									<th class="inCenter">四</th>
+									<th class="inCenter">五</th>
+								</tr>
+					
+								<tr>
+									<td class="inCenter">1</td>
+									<td>语文</td>
+									<td>英语</td>
+									<td>数学</td>
+									<td>历史</td>
+									<td>语文</td>
+								</tr>
+					
+								<tr>
+									<td class="inCenter">2</td>
+									<td>数学</td>
+									<td>语文</td>
+									<td>生物</td>
+									<td>英语</td>
+									<td>数学</td>
+								</tr>
+					
+								<tr>
+									<td class="inCenter">3</td>
+									<td>英语</td>
+									<td>数学</td>
+									<td>地理</td>
+									<td>信息</td>
+									<td>化学</td>
+								</tr>
+					
+								<tr>
+									<td class="inCenter">4</td>
+									<td>-</td>
+									<td>化学</td>
+									<td>计算机</td>
+									<td>劳技</td>
+									<td>音乐</td>
+								</tr>
+					
+								<tr>
+									<td class="inCenter">5</td>
+									<td>物理</td>
+									<td>美术</td>
+									<td>音乐</td>
+									<td>数学</td>
+									<td>英语</td>
+								</tr>
+					
+								<tr>
+									<td class="inCenter">6</td>
+									<td>化学</td>
+									<td>-</td>
+									<td>政治</td>
+									<td>-</td>
+									<td>-</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+	
+				</div><!--.packery-->
+	            </div><!--span12-->
+	            </div><!--row-fluid-->
+			</div><!--container-fluid-->
+		</div><!--main-->
+		
+
+		
+	</div><!--wrap-->
+	<div id="drawer-wrapper" class="drawer-wrapper">
+	    <div class="drawer-toggler"><i class="icon-user"></i></div>
+	        <div id="theme-drawer" style="display: none;">
+	            <div id="theme-carousel">
+	                
+	            </div><!-- end #theme-carousel -->
+	    </div><!-- end #theme-drawer -->
+	</div>
+	</body>
+</body>
+<script type="text/javascript" src="/js/lib/jquery.js"></script>
+<script type="text/javascript" src="/js/lib/underscore.js"></script>
+<script type="text/javascript" src="/js/lib/jquery/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/lib/jquery/jquery.isotope/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="/js/lib/jquery/jquery.packery/packery.pkgd.min.js"></script>
+<script type="text/javascript" src="/js/lib/jquery/jquery.packery/draggabilly.pkgd.min.js"></script>
+
+<script src="/js/lib/jquery/jquery.ui.touch-punch/jquery.ui.touch-punch.js?v1.4.0"></script>
+<script src="/js/lib/jquery/twitter-bootstrap/bootstrap.js?v1.4.0"></script>
+<script type="text/javascript">
+	$(function(){
+		var $packeryContainer = $('#main .packery');
+		var isdragable = true;
+		var startPackery = function(){
+			$packeryContainer.packery({
+			  columnWidth: 320,
+			  rowHeight: 320
+			});
+			var $itemElems = $( $packeryContainer.packery('getItemElements') );
+			$itemElems.draggable();
+			$packeryContainer.packery( 'bindUIDraggableEvents', $itemElems );
+		}
+		var destoryPackery = function(){
+			$packeryContainer.packery('destroy');
+		}
+		$("#btnswitcher").click(function(){
+			$itemElems.draggable(isdragable?'disable':'enable').css("opacity","1");
+			isdragable = !isdragable;
+		})
+		//-------------------------------------------------------
+		
+		
+		$("div.drawer-toggler").click(function(e){
+			$("#drawer-wrapper").toggleClass("showdrawer",500)
+			return false;
+		})
+		//-------------------------------------------------------
+		$('#mapModal').modal({
+	        show: false
+        }).css({
+           'width': function () { 
+               return ($(document).width() * .9) + 'px';  
+           },
+           'margin-left': function () { 
+               return -($(this).width() / 2); 
+           }
+		});
+		$("a.sitemap").click(function(){
+			$('#mapModal').modal('show')
+		})
+		
+	})
+	</script>
+</html>	

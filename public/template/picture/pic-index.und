@@ -1,0 +1,24 @@
+<div class="social-box">
+	<div class="header">
+		<h4><strong>图片浏览</strong></h4>
+		
+	</div>
+	<div class="body">
+		<div class="row-fluid">
+			<div class="span12">
+				<div class="span4">
+					<div class="content_wrap">
+								<div class="zTreeDemoBackground left">
+									<ul id="piclist" class="ztree"></ul>
+								</div>
+							</div>
+				</div>
+				<div class="span7 offset1">
+					<img  src="/img/1成果/1-0展示区.png" id="picname"/>
+				</div>
+			</div>
+		</div>
+		
+		
+	</div>
+</div>
